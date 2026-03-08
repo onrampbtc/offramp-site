@@ -1,7 +1,8 @@
 "use client";
 
-import { useState, useEffect, useMemo } from "react";
+import { useMemo } from "react";
 import Link from "next/link";
+import { useGoldPrice } from "@/hooks/useGoldPrice";
 
 /* ------------------------------------------------------------------ */
 /*  Constants                                                          */
@@ -33,28 +34,7 @@ function fmtBTC(n: number) {
 /* ------------------------------------------------------------------ */
 
 export default function GoldPricePage() {
-  /* placeholder prices */
-  const spotPrice = 5185.8;
-  const btcPrice = 87420;
-  const change24h = 42.6;
-  const changePct = 0.83;
-
-  const [lastUpdated, setLastUpdated] = useState("");
-
-  useEffect(() => {
-    const update = () => {
-      setLastUpdated(
-        new Date().toLocaleTimeString("en-US", {
-          hour: "2-digit",
-          minute: "2-digit",
-          second: "2-digit",
-        })
-      );
-    };
-    update();
-    const id = setInterval(update, 60_000);
-    return () => clearInterval(id);
-  }, []);
+  const { goldPerOz: spotPrice, btcPrice, lastUpdated, isLive } = useGoldPrice();
 
   /* derived prices */
   const prices = useMemo(() => {
@@ -112,8 +92,8 @@ export default function GoldPricePage() {
           <div className="flex items-center justify-between mb-8">
             <div className="flex items-center gap-2 text-sm text-cream-45 font-body">
               <span className="relative flex h-2.5 w-2.5">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
-                <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-green-500" />
+                <span className={`absolute inline-flex h-full w-full animate-ping rounded-full ${isLive ? "bg-green-400" : "bg-yellow-400"} opacity-75`} />
+                <span className={`relative inline-flex h-2.5 w-2.5 rounded-full ${isLive ? "bg-green-500" : "bg-yellow-500"}`} />
               </span>
               <span>
                 Live &middot; Updated {lastUpdated || "--:--:--"}
@@ -133,23 +113,11 @@ export default function GoldPricePage() {
               {fmtUSD(spotPrice)}
             </p>
 
-            {/* 24h change */}
-            <div className="mt-4 inline-flex items-center gap-2 rounded-full bg-green-500/10 border border-green-500/20 px-4 py-1.5">
-              <svg
-                className="h-4 w-4 text-green-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M5.293 9.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 7.414V15a1 1 0 11-2 0V7.414L6.707 9.707a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              <span className="font-mono text-sm text-green-400">
-                +{fmtUSD(change24h)} (+{changePct}%)
+            {/* Live price badge */}
+            <div className="mt-4 inline-flex items-center gap-2 rounded-full bg-gold-500/10 border border-gold-500/20 px-4 py-1.5">
+              <span className="font-mono text-sm text-gold-400">
+                Updated every 60s
               </span>
-              <span className="font-body text-xs text-green-400/60">24h</span>
             </div>
           </div>
 

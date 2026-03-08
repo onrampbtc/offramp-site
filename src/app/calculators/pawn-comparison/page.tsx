@@ -2,11 +2,10 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
+import { useGoldPrice } from "@/hooks/useGoldPrice";
 
 /* ──────────────────────────── constants ──────────────────────────── */
 
-const SPOT_PRICE = 5185.80;
-const BTC_PRICE = 87420;
 const GRAMS_PER_OZ = 31.1035;
 
 const KARATS = [
@@ -60,8 +59,6 @@ const BUYERS = [
   },
 ] as const;
 
-const PRICE_PER_GRAM_PURE = SPOT_PRICE / GRAMS_PER_OZ;
-
 /* ──────────────────────────── helpers ──────────────────────────── */
 
 function fmt(n: number, decimals = 2) {
@@ -78,13 +75,15 @@ function fmtUSD(n: number) {
 /* ──────────────────────────── component ──────────────────────────── */
 
 export default function PawnComparisonCalculator() {
+  const { goldPerOz, btcPrice } = useGoldPrice();
   const [karatIdx, setKaratIdx] = useState(1); // default 14K
   const [weight, setWeight] = useState<string>("10");
   const [unit, setUnit] = useState<"g" | "oz">("g");
 
   const weightNum = parseFloat(weight) || 0;
   const selectedKarat = KARATS[karatIdx];
-  const pricePerGram = PRICE_PER_GRAM_PURE * selectedKarat.purity;
+  const pricePerGramPure = goldPerOz / GRAMS_PER_OZ;
+  const pricePerGram = pricePerGramPure * selectedKarat.purity;
 
   const results = useMemo(() => {
     const grams = unit === "oz" ? weightNum * GRAMS_PER_OZ : weightNum;
@@ -101,10 +100,10 @@ export default function PawnComparisonCalculator() {
     const offrampPay = meltValue * 0.8;
     const pawnAvg = meltValue * ((0.2 + 0.55) / 2);
     const savings = offrampPay - pawnAvg;
-    const btcEquivalent = offrampPay / BTC_PRICE;
+    const btcEquivalent = offrampPay / btcPrice;
 
     return { grams, meltValue, buyerResults, offrampPay, savings, btcEquivalent };
-  }, [weightNum, unit, pricePerGram]);
+  }, [weightNum, unit, pricePerGram, btcPrice]);
 
   // Width of bar in the comparison (percentage relative to Offramp)
   const maxPay = results.buyerResults[results.buyerResults.length - 1]?.highPay || 1;

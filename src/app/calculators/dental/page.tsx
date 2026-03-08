@@ -2,11 +2,10 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
+import { useGoldPrice } from "@/hooks/useGoldPrice";
 
 /* ──────────────────────────── constants ──────────────────────────── */
 
-const SPOT_PRICE = 5185.80;
-const BTC_PRICE = 87420;
 const GRAMS_PER_OZ = 31.1035;
 
 const DENTAL_KARATS = [
@@ -21,8 +20,6 @@ const TYPICAL_WEIGHTS = [
   { item: "Bridge (3-unit)", range: "5 - 10g", avg: 7.5 },
   { item: "Inlay / Onlay", range: "1 - 3g", avg: 2.0 },
 ] as const;
-
-const PRICE_PER_GRAM_PURE = SPOT_PRICE / GRAMS_PER_OZ;
 
 /* ──────────────────────────── helpers ──────────────────────────── */
 
@@ -40,23 +37,25 @@ function fmtUSD(n: number) {
 /* ──────────────────────────── component ──────────────────────────── */
 
 export default function DentalGoldCalculator() {
+  const { goldPerOz, btcPrice } = useGoldPrice();
   const [karatIdx, setKaratIdx] = useState(0); // default 16K
   const [weight, setWeight] = useState<string>("3.5");
   const [unit, setUnit] = useState<"g" | "oz">("g");
 
   const weightNum = parseFloat(weight) || 0;
   const selectedKarat = DENTAL_KARATS[karatIdx];
-  const pricePerGram = PRICE_PER_GRAM_PURE * selectedKarat.purity;
+  const pricePerGramPure = goldPerOz / GRAMS_PER_OZ;
+  const pricePerGram = pricePerGramPure * selectedKarat.purity;
 
   const results = useMemo(() => {
     const grams = unit === "oz" ? weightNum * GRAMS_PER_OZ : weightNum;
     const meltValue = grams * pricePerGram;
     const offrampPays = meltValue * 0.8;
     const pawnPays = meltValue * 0.35;
-    const btcEquivalent = offrampPays / BTC_PRICE;
+    const btcEquivalent = offrampPays / btcPrice;
 
     return { grams, meltValue, offrampPays, pawnPays, btcEquivalent };
-  }, [weightNum, unit, pricePerGram]);
+  }, [weightNum, unit, pricePerGram, btcPrice]);
 
   return (
     <div className="relative min-h-screen bg-bg">
@@ -206,7 +205,7 @@ export default function DentalGoldCalculator() {
                 {results.btcEquivalent.toFixed(6)} BTC
               </p>
               <p className="text-cream-35 font-mono text-xs mt-1">
-                @ {fmtUSD(BTC_PRICE)}/BTC
+                @ {fmtUSD(btcPrice)}/BTC
               </p>
             </div>
           </div>

@@ -1,7 +1,8 @@
 "use client";
 
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo } from "react";
 import Link from "next/link";
+import { useGoldPrice } from "@/hooks/useGoldPrice";
 
 /* ──────────────────────────── constants ──────────────────────────── */
 
@@ -75,27 +76,9 @@ export default function GoldCalculatorPage() {
   const [selectedKarat, setSelectedKarat] = useState(1); // index into KARATS (default 14K)
   const [weightGrams, setWeightGrams] = useState(10);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [lastUpdated, setLastUpdated] = useState<string>("");
 
-  /* ── placeholder live prices ── */
-  const spotPricePerOz = 5185.8;
-  const btcPrice = 87420;
-
-  /* ── timestamp ── */
-  useEffect(() => {
-    const update = () => {
-      setLastUpdated(
-        new Date().toLocaleTimeString("en-US", {
-          hour: "2-digit",
-          minute: "2-digit",
-          second: "2-digit",
-        })
-      );
-    };
-    update();
-    const id = setInterval(update, 60_000);
-    return () => clearInterval(id);
-  }, []);
+  /* ── live prices ── */
+  const { goldPerOz: spotPricePerOz, btcPrice, lastUpdated, isLive } = useGoldPrice();
 
   /* ── derived calculations ── */
   const calc = useMemo(() => {
@@ -239,11 +222,11 @@ export default function GoldCalculatorPage() {
             </div>
             <div className="flex items-center gap-2 text-xs text-cream-35">
               <span className="relative flex h-2 w-2">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500" />
+                <span className={`absolute inline-flex h-full w-full animate-ping rounded-full ${isLive ? "bg-green-400" : "bg-yellow-400"} opacity-75`} />
+                <span className={`relative inline-flex h-2 w-2 rounded-full ${isLive ? "bg-green-500" : "bg-yellow-500"}`} />
               </span>
               <span>
-                Live &middot; Updated {lastUpdated || "--:--:--"}
+                {isLive ? "Live" : "Loading"} &middot; Updated {lastUpdated || "--:--:--"}
               </span>
             </div>
           </div>
