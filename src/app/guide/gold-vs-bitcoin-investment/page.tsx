@@ -15,14 +15,14 @@ export default function GoldVsBitcoinInvestmentPage() {
             publisher: {
               "@type": "Organization",
               name: "Offramp",
-              url: "https://offramp.com",
+              url: "https://offrampgold.com",
             },
             datePublished: "2026-03-01",
             dateModified: "2026-03-01",
             description:
               "Investment comparison of gold and Bitcoin across returns, volatility, and portfolio theory.",
             mainEntityOfPage:
-              "https://offramp.com/guide/gold-vs-bitcoin-investment",
+              "https://offrampgold.com/guide/gold-vs-bitcoin-investment",
           }),
         }}
       />

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: "article",
     locale: "en_US",
     siteName: "Offramp",
-    url: "https://offramp.com/guide/gold-vs-bitcoin-investment",
+    url: "https://offrampgold.com/guide/gold-vs-bitcoin-investment",
   },
   twitter: {
     card: "summary_large_image",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       "Gold vs Bitcoin: which is the better investment?",
   },
   alternates: {
-    canonical: "https://offramp.com/guide/gold-vs-bitcoin-investment",
+    canonical: "https://offrampgold.com/guide/gold-vs-bitcoin-investment",
   },
 };
 

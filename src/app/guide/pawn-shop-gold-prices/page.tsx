@@ -15,14 +15,14 @@ export default function PawnShopGoldPricesPage() {
             publisher: {
               "@type": "Organization",
               name: "Offramp",
-              url: "https://offramp.com",
+              url: "https://offrampgold.com",
             },
             datePublished: "2026-03-01",
             dateModified: "2026-03-01",
             description:
               "Pawn shops typically pay 20-55% of gold's melt value. Breakdown of pawn shop economics and alternatives.",
             mainEntityOfPage:
-              "https://offramp.com/guide/pawn-shop-gold-prices",
+              "https://offrampgold.com/guide/pawn-shop-gold-prices",
           }),
         }}
       />

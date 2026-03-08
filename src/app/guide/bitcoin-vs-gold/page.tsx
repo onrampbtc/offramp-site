@@ -16,13 +16,13 @@ export default function BitcoinVsGoldPage() {
             publisher: {
               "@type": "Organization",
               name: "Offramp",
-              url: "https://offramp.com",
+              url: "https://offrampgold.com",
             },
             datePublished: "2026-03-01",
             dateModified: "2026-03-01",
             description:
               "Bitcoin and gold share fundamental properties as stores of value: scarcity, durability, and resistance to debasement.",
-            mainEntityOfPage: "https://offramp.com/guide/bitcoin-vs-gold",
+            mainEntityOfPage: "https://offrampgold.com/guide/bitcoin-vs-gold",
           }),
         }}
       />

@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "Offramp",
-    url: "https://offramp.com/sell",
+    url: "https://offrampgold.com/sell",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Sell Gold Online — Offramp" }],
   },
   twitter: {
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   alternates: {
-    canonical: "https://offramp.com/sell",
+    canonical: "https://offrampgold.com/sell",
   },
 };
 
@@ -48,8 +48,8 @@ export default function SellLayout({
     <>
       <BreadcrumbJsonLd
         items={[
-          { name: "Home", url: "https://offramp.com" },
-          { name: "Sell Gold", url: "https://offramp.com/sell" },
+          { name: "Home", url: "https://offrampgold.com" },
+          { name: "Sell Gold", url: "https://offrampgold.com/sell" },
         ]}
       />
       <HowToJsonLd

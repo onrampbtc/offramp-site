@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     type: "article",
     locale: "en_US",
     siteName: "Offramp",
-    url: "https://offramp.com/guide/currency-debasement",
+    url: "https://offrampgold.com/guide/currency-debasement",
   },
   twitter: {
     card: "summary_large_image",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
       "Why hard money always wins. A 5,000 year history.",
   },
   alternates: {
-    canonical: "https://offramp.com/guide/currency-debasement",
+    canonical: "https://offrampgold.com/guide/currency-debasement",
   },
 };
 

@@ -15,13 +15,13 @@ export default function DigitalGoldPage() {
             publisher: {
               "@type": "Organization",
               name: "Offramp",
-              url: "https://offramp.com",
+              url: "https://offrampgold.com",
             },
             datePublished: "2026-03-01",
             dateModified: "2026-03-01",
             description:
               "Bitcoin is called digital gold because it shares gold's core properties: fixed supply, resistance to debasement, and no counterparty risk.",
-            mainEntityOfPage: "https://offramp.com/guide/digital-gold",
+            mainEntityOfPage: "https://offrampgold.com/guide/digital-gold",
           }),
         }}
       />

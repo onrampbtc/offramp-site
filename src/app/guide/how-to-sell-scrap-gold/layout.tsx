@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: "article",
     locale: "en_US",
     siteName: "Offramp",
-    url: "https://offramp.com/guide/how-to-sell-scrap-gold",
+    url: "https://offrampgold.com/guide/how-to-sell-scrap-gold",
   },
   twitter: {
     card: "summary_large_image",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     description: "Sell scrap gold for the best price. Complete guide.",
   },
   alternates: {
-    canonical: "https://offramp.com/guide/how-to-sell-scrap-gold",
+    canonical: "https://offrampgold.com/guide/how-to-sell-scrap-gold",
   },
 };
 

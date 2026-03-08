@@ -15,13 +15,13 @@ export default function MoneyPrintingPage() {
             publisher: {
               "@type": "Organization",
               name: "Offramp",
-              url: "https://offramp.com",
+              url: "https://offrampgold.com",
             },
             datePublished: "2026-03-01",
             dateModified: "2026-03-01",
             description:
               "How money printing and quantitative easing reduce purchasing power and why hard assets protect your wealth.",
-            mainEntityOfPage: "https://offramp.com/guide/money-printing",
+            mainEntityOfPage: "https://offrampgold.com/guide/money-printing",
           }),
         }}
       />

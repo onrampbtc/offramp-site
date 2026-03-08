@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     type: "article",
     locale: "en_US",
     siteName: "Offramp",
-    url: "https://offramp.com/guide/how-to-sell-gold-jewelry",
+    url: "https://offrampgold.com/guide/how-to-sell-gold-jewelry",
   },
   twitter: {
     card: "summary_large_image",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
       "Sell gold jewelry for the most money. Step-by-step guide.",
   },
   alternates: {
-    canonical: "https://offramp.com/guide/how-to-sell-gold-jewelry",
+    canonical: "https://offrampgold.com/guide/how-to-sell-gold-jewelry",
   },
 };
 

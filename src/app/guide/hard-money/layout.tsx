@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     type: "article",
     locale: "en_US",
     siteName: "Offramp",
-    url: "https://offramp.com/guide/hard-money",
+    url: "https://offrampgold.com/guide/hard-money",
   },
   twitter: {
     card: "summary_large_image",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
       "From the gold standard to the Bitcoin standard.",
   },
   alternates: {
-    canonical: "https://offramp.com/guide/hard-money",
+    canonical: "https://offrampgold.com/guide/hard-money",
   },
 };
 

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     type: "article",
     locale: "en_US",
     siteName: "Offramp",
-    url: "https://offramp.com/guide/store-of-value",
+    url: "https://offrampgold.com/guide/store-of-value",
   },
   twitter: {
     card: "summary_large_image",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     description: "What makes an asset a store of value?",
   },
   alternates: {
-    canonical: "https://offramp.com/guide/store-of-value",
+    canonical: "https://offrampgold.com/guide/store-of-value",
   },
 };
 

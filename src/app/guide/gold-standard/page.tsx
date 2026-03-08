@@ -15,13 +15,13 @@ export default function GoldStandardPage() {
             publisher: {
               "@type": "Organization",
               name: "Offramp",
-              url: "https://offramp.com",
+              url: "https://offrampgold.com",
             },
             datePublished: "2026-03-01",
             dateModified: "2026-03-01",
             description:
               "A complete history of the gold standard from its origins to its collapse, and what Bitcoin means for the future of sound money.",
-            mainEntityOfPage: "https://offramp.com/guide/gold-standard",
+            mainEntityOfPage: "https://offrampgold.com/guide/gold-standard",
           }),
         }}
       />

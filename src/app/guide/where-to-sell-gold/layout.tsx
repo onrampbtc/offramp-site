@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: "article",
     locale: "en_US",
     siteName: "Offramp",
-    url: "https://offramp.com/guide/where-to-sell-gold",
+    url: "https://offrampgold.com/guide/where-to-sell-gold",
   },
   twitter: {
     card: "summary_large_image",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       "Compare pawn shops, jewelers, online gold buyers, and refineries. See payout percentages.",
   },
   alternates: {
-    canonical: "https://offramp.com/guide/where-to-sell-gold",
+    canonical: "https://offrampgold.com/guide/where-to-sell-gold",
   },
 };
 

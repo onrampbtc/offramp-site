@@ -15,14 +15,14 @@ export default function SellInheritedGoldPage() {
             publisher: {
               "@type": "Organization",
               name: "Offramp",
-              url: "https://offramp.com",
+              url: "https://offrampgold.com",
             },
             datePublished: "2026-03-01",
             dateModified: "2026-03-01",
             description:
               "A sensitive guide to selling inherited gold and jewelry with care.",
             mainEntityOfPage:
-              "https://offramp.com/guide/sell-inherited-gold",
+              "https://offrampgold.com/guide/sell-inherited-gold",
           }),
         }}
       />

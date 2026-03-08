@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: "article",
     locale: "en_US",
     siteName: "Offramp",
-    url: "https://offramp.com/guide/when-to-sell-gold",
+    url: "https://offrampgold.com/guide/when-to-sell-gold",
   },
   twitter: {
     card: "summary_large_image",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       "Gold prices are near all-time highs. Should you sell?",
   },
   alternates: {
-    canonical: "https://offramp.com/guide/when-to-sell-gold",
+    canonical: "https://offrampgold.com/guide/when-to-sell-gold",
   },
 };
 

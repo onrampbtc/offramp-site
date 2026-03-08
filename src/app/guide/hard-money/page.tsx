@@ -16,13 +16,13 @@ export default function HardMoneyPage() {
             publisher: {
               "@type": "Organization",
               name: "Offramp",
-              url: "https://offramp.com",
+              url: "https://offrampgold.com",
             },
             datePublished: "2026-03-01",
             dateModified: "2026-03-01",
             description:
               "The evolution of hard money from ancient gold to the gold standard to Bitcoin, and why sound money matters.",
-            mainEntityOfPage: "https://offramp.com/guide/hard-money",
+            mainEntityOfPage: "https://offrampgold.com/guide/hard-money",
           }),
         }}
       />

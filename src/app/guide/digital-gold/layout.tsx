@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: "article",
     locale: "en_US",
     siteName: "Offramp",
-    url: "https://offramp.com/guide/digital-gold",
+    url: "https://offrampgold.com/guide/digital-gold",
   },
   twitter: {
     card: "summary_large_image",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     description: "Why Bitcoin is digital gold. A deep exploration.",
   },
   alternates: {
-    canonical: "https://offramp.com/guide/digital-gold",
+    canonical: "https://offrampgold.com/guide/digital-gold",
   },
 };
 

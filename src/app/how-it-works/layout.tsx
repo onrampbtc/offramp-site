@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "Offramp",
-    url: "https://offramp.com/how-it-works",
+    url: "https://offrampgold.com/how-it-works",
   },
   twitter: {
     card: "summary_large_image",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
       "Three simple steps to sell your gold by mail. Free insured kit, XRF assay, wire payment in 48 hours.",
   },
   alternates: {
-    canonical: "https://offramp.com/how-it-works",
+    canonical: "https://offrampgold.com/how-it-works",
   },
 };
 

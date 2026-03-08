@@ -15,13 +15,13 @@ export default function StoreOfValuePage() {
             publisher: {
               "@type": "Organization",
               name: "Offramp",
-              url: "https://offramp.com",
+              url: "https://offrampgold.com",
             },
             datePublished: "2026-03-01",
             dateModified: "2026-03-01",
             description:
               "The properties that make gold and Bitcoin reliable stores of value for preserving wealth.",
-            mainEntityOfPage: "https://offramp.com/guide/store-of-value",
+            mainEntityOfPage: "https://offrampgold.com/guide/store-of-value",
           }),
         }}
       />

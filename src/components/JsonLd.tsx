@@ -15,8 +15,8 @@ export function OrganizationJsonLd() {
         "@type": "Organization",
         name: "Offramp",
         alternateName: "Offramp by Onramp",
-        url: "https://offramp.com",
-        logo: "https://offramp.com/logo.png",
+        url: "https://offrampgold.com",
+        logo: "https://offrampgold.com/logo.png",
         description:
           "Sell your gold for cash or Bitcoin. Free insured shipping, XRF spectrometer assay, wire payment.",
         sameAs: [
@@ -41,10 +41,10 @@ export function WebSiteJsonLd() {
         "@context": "https://schema.org",
         "@type": "WebSite",
         name: "Offramp",
-        url: "https://offramp.com",
+        url: "https://offrampgold.com",
         potentialAction: {
           "@type": "SearchAction",
-          target: "https://offramp.com/search?q={search_term_string}",
+          target: "https://offrampgold.com/search?q={search_term_string}",
           "query-input": "required name=search_term_string",
         },
       }}
@@ -109,7 +109,7 @@ export function ArticleJsonLd({
           name: "Offramp",
           logo: {
             "@type": "ImageObject",
-            url: "https://offramp.com/logo.png",
+            url: "https://offrampgold.com/logo.png",
           },
         },
       }}

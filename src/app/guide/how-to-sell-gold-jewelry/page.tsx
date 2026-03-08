@@ -15,14 +15,14 @@ export default function HowToSellGoldJewelryPage() {
             publisher: {
               "@type": "Organization",
               name: "Offramp",
-              url: "https://offramp.com",
+              url: "https://offrampgold.com",
             },
             datePublished: "2026-03-01",
             dateModified: "2026-03-01",
             description:
               "Step-by-step guide to selling gold jewelry for the most money.",
             mainEntityOfPage:
-              "https://offramp.com/guide/how-to-sell-gold-jewelry",
+              "https://offrampgold.com/guide/how-to-sell-gold-jewelry",
           }),
         }}
       />

@@ -15,13 +15,13 @@ export default function BestPlaceSellGoldPage() {
             publisher: {
               "@type": "Organization",
               name: "Offramp",
-              url: "https://offramp.com",
+              url: "https://offrampgold.com",
             },
             datePublished: "2026-03-01",
             dateModified: "2026-03-01",
             description:
               "The best place to sell gold depends on what you prioritize. Compare options by payout, speed, and convenience.",
-            mainEntityOfPage: "https://offramp.com/guide/best-place-sell-gold",
+            mainEntityOfPage: "https://offrampgold.com/guide/best-place-sell-gold",
           }),
         }}
       />

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: "article",
     locale: "en_US",
     siteName: "Offramp",
-    url: "https://offramp.com/guide/bitcoin-vs-gold",
+    url: "https://offrampgold.com/guide/bitcoin-vs-gold",
   },
   twitter: {
     card: "summary_large_image",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       "Bitcoin and gold compared across scarcity, portability, divisibility, durability, and censorship resistance.",
   },
   alternates: {
-    canonical: "https://offramp.com/guide/bitcoin-vs-gold",
+    canonical: "https://offrampgold.com/guide/bitcoin-vs-gold",
   },
 };
 

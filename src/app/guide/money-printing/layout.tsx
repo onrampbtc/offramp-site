@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     type: "article",
     locale: "en_US",
     siteName: "Offramp",
-    url: "https://offramp.com/guide/money-printing",
+    url: "https://offrampgold.com/guide/money-printing",
   },
   twitter: {
     card: "summary_large_image",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
       "How money printing reduces purchasing power.",
   },
   alternates: {
-    canonical: "https://offramp.com/guide/money-printing",
+    canonical: "https://offrampgold.com/guide/money-printing",
   },
 };
 

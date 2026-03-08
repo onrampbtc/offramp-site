@@ -15,13 +15,13 @@ export default function WhereToSellGoldPage() {
             publisher: {
               "@type": "Organization",
               name: "Offramp",
-              url: "https://offramp.com",
+              url: "https://offrampgold.com",
             },
             datePublished: "2026-03-01",
             dateModified: "2026-03-01",
             description:
               "Compare pawn shops, jewelers, online gold buyers, and refineries to find the best place to sell your gold.",
-            mainEntityOfPage: "https://offramp.com/guide/where-to-sell-gold",
+            mainEntityOfPage: "https://offrampgold.com/guide/where-to-sell-gold",
           }),
         }}
       />

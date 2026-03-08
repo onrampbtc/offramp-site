@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: "article",
     locale: "en_US",
     siteName: "Offramp",
-    url: "https://offramp.com/guide/sell-inherited-gold",
+    url: "https://offrampgold.com/guide/sell-inherited-gold",
   },
   twitter: {
     card: "summary_large_image",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       "A sensitive guide to selling inherited gold and jewelry.",
   },
   alternates: {
-    canonical: "https://offramp.com/guide/sell-inherited-gold",
+    canonical: "https://offrampgold.com/guide/sell-inherited-gold",
   },
 };
 

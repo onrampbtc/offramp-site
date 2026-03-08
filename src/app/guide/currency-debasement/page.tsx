@@ -15,14 +15,14 @@ export default function CurrencyDebasementPage() {
             publisher: {
               "@type": "Organization",
               name: "Offramp",
-              url: "https://offramp.com",
+              url: "https://offrampgold.com",
             },
             datePublished: "2026-03-01",
             dateModified: "2026-03-01",
             description:
               "A 5,000 year history of currency debasement from Roman denarii to modern fiat, and why hard money always wins.",
             mainEntityOfPage:
-              "https://offramp.com/guide/currency-debasement",
+              "https://offrampgold.com/guide/currency-debasement",
           }),
         }}
       />

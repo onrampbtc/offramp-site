@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     type: "article",
     locale: "en_US",
     siteName: "Offramp",
-    url: "https://offramp.com/guide/gold-standard",
+    url: "https://offrampgold.com/guide/gold-standard",
   },
   twitter: {
     card: "summary_large_image",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
       "What the gold standard teaches us about sound money.",
   },
   alternates: {
-    canonical: "https://offramp.com/guide/gold-standard",
+    canonical: "https://offrampgold.com/guide/gold-standard",
   },
 };
 

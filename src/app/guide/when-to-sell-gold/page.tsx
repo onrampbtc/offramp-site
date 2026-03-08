@@ -15,14 +15,14 @@ export default function WhenToSellGoldPage() {
             publisher: {
               "@type": "Organization",
               name: "Offramp",
-              url: "https://offramp.com",
+              url: "https://offrampgold.com",
             },
             datePublished: "2026-03-01",
             dateModified: "2026-03-01",
             description:
               "Gold prices are trading near all-time highs as of March 2026. Analysis of market conditions and timing.",
             mainEntityOfPage:
-              "https://offramp.com/guide/when-to-sell-gold",
+              "https://offrampgold.com/guide/when-to-sell-gold",
           }),
         }}
       />

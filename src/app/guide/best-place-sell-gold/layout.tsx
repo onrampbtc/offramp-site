@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     type: "article",
     locale: "en_US",
     siteName: "Offramp",
-    url: "https://offramp.com/guide/best-place-sell-gold",
+    url: "https://offrampgold.com/guide/best-place-sell-gold",
   },
   twitter: {
     card: "summary_large_image",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
       "Find the best place to sell gold for maximum cash in 2026.",
   },
   alternates: {
-    canonical: "https://offramp.com/guide/best-place-sell-gold",
+    canonical: "https://offrampgold.com/guide/best-place-sell-gold",
   },
 };
 

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: "article",
     locale: "en_US",
     siteName: "Offramp",
-    url: "https://offramp.com/guide/pawn-shop-gold-prices",
+    url: "https://offrampgold.com/guide/pawn-shop-gold-prices",
   },
   twitter: {
     card: "summary_large_image",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       "Pawn shops pay 20-55% of gold's melt value. Here is why.",
   },
   alternates: {
-    canonical: "https://offramp.com/guide/pawn-shop-gold-prices",
+    canonical: "https://offrampgold.com/guide/pawn-shop-gold-prices",
   },
 };
 

@@ -29,14 +29,14 @@ export default function GoldCalculatorLayout({
     <>
       <BreadcrumbJsonLd
         items={[
-          { name: "Home", url: "https://offramp.com" },
-          { name: "Gold Calculator", url: "https://offramp.com/gold-calculator" },
+          { name: "Home", url: "https://offrampgold.com" },
+          { name: "Gold Calculator", url: "https://offrampgold.com/gold-calculator" },
         ]}
       />
       <WebApplicationJsonLd
         name="Gold Value Calculator"
         description="Free gold calculator with live spot prices. Calculate the value of your gold in USD and Bitcoin by weight and karat."
-        url="https://offramp.com/gold-calculator"
+        url="https://offrampgold.com/gold-calculator"
       />
       {children}
     </>

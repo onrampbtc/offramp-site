@@ -15,14 +15,14 @@ export default function HowToSellScrapGoldPage() {
             publisher: {
               "@type": "Organization",
               name: "Offramp",
-              url: "https://offramp.com",
+              url: "https://offrampgold.com",
             },
             datePublished: "2026-03-01",
             dateModified: "2026-03-01",
             description:
               "Complete guide to selling scrap gold for the best price.",
             mainEntityOfPage:
-              "https://offramp.com/guide/how-to-sell-scrap-gold",
+              "https://offrampgold.com/guide/how-to-sell-scrap-gold",
           }),
         }}
       />
