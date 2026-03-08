@@ -71,6 +71,9 @@ export const metadata: Metadata = {
       "Sell your gold for cash or Bitcoin. Free insured shipping, XRF assay, wire payment.",
     images: ["/og-image.png"],
   },
+  verification: {
+    google: "kE79H4vFl-MtuLVjy_QxEXdEgb0YWarxhZvouY0GLbo",
+  },
   robots: {
     index: true,
     follow: true,
