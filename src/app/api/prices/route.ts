@@ -2,8 +2,11 @@ import { NextResponse } from "next/server";
 
 /* ──────────────────────────────────────────────────────────────────────
  *  GET /api/prices
- *  Returns live gold (XAU) and BTC prices from free public APIs.
- *  Cached for 60 seconds via Next.js revalidation.
+ *  Returns live gold (XAU) and BTC prices.
+ *
+ *  Primary source: CoinGecko (PAX Gold tracks gold spot 1:1)
+ *  Backup for BTC: Coinbase spot price
+ *  Cached 60 s server-side to stay within free-tier rate limits.
  * ────────────────────────────────────────────────────────────────────── */
 
 interface PriceResponse {
@@ -12,68 +15,32 @@ interface PriceResponse {
   timestamp: number;
 }
 
-// Cache price data in memory for 60s to avoid hammering APIs
 let cache: { data: PriceResponse; expiresAt: number } | null = null;
-const CACHE_TTL = 60_000; // 60 seconds
+const CACHE_TTL = 60_000;
 
-async function fetchGoldPrice(): Promise<number> {
-  // Primary: Metal Price API (free, no key needed)
+async function fetchPrices(): Promise<{ gold: number; btc: number }> {
+  // Primary: CoinGecko — both gold (via PAX Gold) and BTC in one call
   try {
     const res = await fetch(
-      "https://api.metalpriceapi.com/v1/latest?api_key=demo&base=XAU&currencies=USD",
+      "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,pax-gold&vs_currencies=usd",
       { next: { revalidate: 60 } }
     );
     if (res.ok) {
       const data = await res.json();
-      if (data?.rates?.USD) {
-        return data.rates.USD;
-      }
-    }
-  } catch {
-    // fall through to backup
-  }
-
-  // Backup: GoldAPI.io free tier
-  try {
-    const res = await fetch(
-      "https://www.goldapi.io/api/XAU/USD",
-      {
-        headers: { "x-access-token": "goldapi-demo" },
-        next: { revalidate: 60 },
-      }
-    );
-    if (res.ok) {
-      const data = await res.json();
-      if (data?.price) {
-        return data.price;
-      }
+      const gold = data?.["pax-gold"]?.usd ?? 0;
+      const btc = data?.bitcoin?.usd ?? 0;
+      if (gold > 0 && btc > 0) return { gold, btc };
+      // If only BTC came through, keep it and try gold backup below
+      if (btc > 0) return { gold: 0, btc };
     }
   } catch {
     // fall through
   }
 
-  // Final fallback: use a reasonable recent price
-  return 0;
+  return { gold: 0, btc: 0 };
 }
 
-async function fetchBTCPrice(): Promise<number> {
-  // Primary: CoinGecko free API (no key needed)
-  try {
-    const res = await fetch(
-      "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd",
-      { next: { revalidate: 60 } }
-    );
-    if (res.ok) {
-      const data = await res.json();
-      if (data?.bitcoin?.usd) {
-        return data.bitcoin.usd;
-      }
-    }
-  } catch {
-    // fall through
-  }
-
-  // Backup: Coinbase
+async function fetchBTCFallback(): Promise<number> {
   try {
     const res = await fetch(
       "https://api.coinbase.com/v2/prices/BTC-USD/spot",
@@ -81,21 +48,17 @@ async function fetchBTCPrice(): Promise<number> {
     );
     if (res.ok) {
       const data = await res.json();
-      if (data?.data?.amount) {
-        return parseFloat(data.data.amount);
-      }
+      if (data?.data?.amount) return parseFloat(data.data.amount);
     }
   } catch {
     // fall through
   }
-
   return 0;
 }
 
 export async function GET() {
   const now = Date.now();
 
-  // Return cached data if still fresh
   if (cache && now < cache.expiresAt) {
     return NextResponse.json(cache.data, {
       headers: {
@@ -104,18 +67,15 @@ export async function GET() {
     });
   }
 
-  const [goldPerOz, btcPrice] = await Promise.all([
-    fetchGoldPrice(),
-    fetchBTCPrice(),
-  ]);
+  let { gold: goldPerOz, btc: btcPrice } = await fetchPrices();
 
-  const response: PriceResponse = {
-    goldPerOz,
-    btcPrice,
-    timestamp: now,
-  };
+  // Fallback for BTC if CoinGecko didn't return it
+  if (btcPrice === 0) {
+    btcPrice = await fetchBTCFallback();
+  }
 
-  // Only cache if we got real data
+  const response: PriceResponse = { goldPerOz, btcPrice, timestamp: now };
+
   if (goldPerOz > 0 && btcPrice > 0) {
     cache = { data: response, expiresAt: now + CACHE_TTL };
   }

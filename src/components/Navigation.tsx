@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
+import { useGoldPrice } from "@/hooks/useGoldPrice";
 
 const NAV_LINKS = [
   { href: "/how-it-works", label: "How It Works" },
@@ -10,9 +11,13 @@ const NAV_LINKS = [
   { href: "/gold-to-bitcoin", label: "Gold to Bitcoin" },
 ] as const;
 
+const fmtUSD = (n: number) =>
+  n.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
 export function Navigation() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { goldPerOz, btcPrice, isLive } = useGoldPrice();
 
   const handleScroll = useCallback(() => {
     setScrolled(window.scrollY > 16);
@@ -44,17 +49,15 @@ export function Navigation() {
       <div className="relative z-50 w-full bg-[#080808] border-b border-cream-08">
         <div className="mx-auto flex max-w-7xl items-center justify-center px-4 py-1.5 sm:justify-between">
           <div className="flex items-center gap-2 text-xs tracking-wider font-mono">
-            <span className="inline-block h-1.5 w-1.5 rounded-full bg-green-500 animate-pulse" />
+            <span className={`inline-block h-1.5 w-1.5 rounded-full ${isLive ? "bg-green-500" : "bg-yellow-500"} animate-pulse`} />
             <span className="text-cream-45">LIVE</span>
             <span className="mx-1 text-cream-15">|</span>
             <span className="text-gold-500 font-medium">GOLD:</span>
-            <span className="text-cream">$5,185.80</span>
+            <span className="text-cream">${fmtUSD(goldPerOz)}</span>
             <span className="text-cream-35">/oz</span>
           </div>
           <div className="hidden items-center gap-4 text-xs font-mono text-cream-35 sm:flex">
-            <span>24h: <span className="text-green-500">+1.2%</span></span>
-            <span className="text-cream-15">|</span>
-            <span>BTC: <span className="text-gold-400">$94,250</span></span>
+            <span>BTC: <span className="text-gold-400">${fmtUSD(btcPrice)}</span></span>
           </div>
         </div>
       </div>
@@ -252,8 +255,8 @@ export function Navigation() {
           {/* Bottom info */}
           <div className="mt-auto pb-10">
             <div className="flex items-center gap-2 font-mono text-xs text-cream-35">
-              <span className="inline-block h-1.5 w-1.5 rounded-full bg-green-500" />
-              <span>GOLD: $5,185.80/oz</span>
+              <span className={`inline-block h-1.5 w-1.5 rounded-full ${isLive ? "bg-green-500" : "bg-yellow-500"}`} />
+              <span>GOLD: ${fmtUSD(goldPerOz)}/oz</span>
             </div>
             <p className="mt-3 font-mono text-[11px] text-cream-25">
               Insured shipping. Transparent pricing.
