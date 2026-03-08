@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { OrganizationJsonLd, WebSiteJsonLd } from "@/components/JsonLd";
+import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -84,6 +85,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <GoogleAnalytics />
+      </head>
       <body
         className={`${cormorant.variable} ${sora.variable} ${dmMono.variable} font-body antialiased bg-bg text-cream`}
       >
