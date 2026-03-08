@@ -216,3 +216,87 @@ export function BreadcrumbJsonLd({
     />
   );
 }
+
+export function ServiceJsonLd() {
+  return (
+    <JsonLd
+      data={{
+        "@context": "https://schema.org",
+        "@type": "Service",
+        name: "Offramp Gold Selling Service",
+        provider: {
+          "@type": "Organization",
+          name: "Offramp",
+          url: "https://offrampgold.com",
+        },
+        description:
+          "Sell gold jewelry, coins, bullion, dental gold, and scrap gold online for cash or Bitcoin. Free insured shipping, XRF spectrometer assay under video, wire payment within 48 hours.",
+        serviceType: "Gold Buying",
+        areaServed: {
+          "@type": "Country",
+          name: "United States",
+        },
+        hasOfferCatalog: {
+          "@type": "OfferCatalog",
+          name: "Gold Selling Services",
+          itemListElement: [
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Sell Gold Jewelry",
+                url: "https://offrampgold.com/sell-jewelry",
+              },
+            },
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Sell Gold Coins & Bullion",
+                url: "https://offrampgold.com/sell-coins",
+              },
+            },
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Sell Dental Gold",
+                url: "https://offrampgold.com/sell-dental-gold",
+              },
+            },
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Gold to Bitcoin Conversion",
+                url: "https://offrampgold.com/gold-to-bitcoin",
+              },
+            },
+          ],
+        },
+      }}
+    />
+  );
+}
+
+export function SpeakableJsonLd({
+  url,
+  cssSelectors,
+}: {
+  url: string;
+  cssSelectors: string[];
+}) {
+  return (
+    <JsonLd
+      data={{
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        url,
+        speakable: {
+          "@type": "SpeakableSpecification",
+          cssSelector: cssSelectors,
+        },
+      }}
+    />
+  );
+}

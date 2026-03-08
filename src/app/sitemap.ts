@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/gold-calculator", changeFrequency: "daily" as const, priority: 0.9 },
     { url: "/gold-to-bitcoin", changeFrequency: "weekly" as const, priority: 0.9 },
     { url: "/gold-price", changeFrequency: "daily" as const, priority: 0.9 },
+    { url: "/get-kit", changeFrequency: "weekly" as const, priority: 0.9 },
     { url: "/buy-gold", changeFrequency: "weekly" as const, priority: 0.8 },
     { url: "/sell-jewelry", changeFrequency: "weekly" as const, priority: 0.8 },
     { url: "/sell-coins", changeFrequency: "weekly" as const, priority: 0.8 },

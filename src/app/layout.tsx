@@ -3,7 +3,7 @@ import { Cormorant_Garamond, Sora, DM_Mono } from "next/font/google";
 import "./globals.css";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
-import { OrganizationJsonLd, WebSiteJsonLd } from "@/components/JsonLd";
+import { OrganizationJsonLd, WebSiteJsonLd, ServiceJsonLd } from "@/components/JsonLd";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 
 const cormorant = Cormorant_Garamond({
@@ -28,6 +28,7 @@ const dmMono = DM_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://offrampgold.com"),
   title: {
     default: "Offramp | Sell Gold for Cash or Bitcoin",
     template: "%s | Offramp",
@@ -74,6 +75,9 @@ export const metadata: Metadata = {
   verification: {
     google: "kE79H4vFl-MtuLVjy_QxEXdEgb0YWarxhZvouY0GLbo",
   },
+  other: {
+    "msvalidate.01": "PENDING_BING_VERIFICATION_CODE",
+  },
   robots: {
     index: true,
     follow: true,
@@ -96,6 +100,7 @@ export default function RootLayout({
       >
         <OrganizationJsonLd />
         <WebSiteJsonLd />
+        <ServiceJsonLd />
         <Navigation />
         <main className="min-h-screen">{children}</main>
         <Footer />
