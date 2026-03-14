@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ArticleJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "How Much Do Pawn Shops Pay for Gold? (2026) | Offramp",
@@ -37,5 +38,23 @@ export default function PawnShopGoldPricesLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://offrampgold.com" },
+          { name: "Guides", url: "https://offrampgold.com/guide" },
+          { name: "Pawn Shop Gold Prices", url: "https://offrampgold.com/guide/pawn-shop-gold-prices" },
+        ]}
+      />
+      <ArticleJsonLd
+        headline="How Much Do Pawn Shops Pay for Gold? (2026)"
+        description="Pawn shops pay 20-55% of gold's melt value. Learn why pawn shop prices are low, what determines your offer, and how online buyers pay significantly more."
+        url="https://offrampgold.com/guide/pawn-shop-gold-prices"
+        datePublished="2026-03-01"
+        author="Offramp"
+      />
+      {children}
+    </>
+  );
 }

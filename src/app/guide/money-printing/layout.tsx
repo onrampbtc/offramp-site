@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ArticleJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "Money Printing: Why Gold and Bitcoin Exist | Offramp",
@@ -38,5 +39,23 @@ export default function MoneyPrintingLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://offrampgold.com" },
+          { name: "Guides", url: "https://offrampgold.com/guide" },
+          { name: "Money Printing", url: "https://offrampgold.com/guide/money-printing" },
+        ]}
+      />
+      <ArticleJsonLd
+        headline="Money Printing: Why Gold and Bitcoin Exist"
+        description="How money printing and quantitative easing reduce purchasing power and why hard assets like gold and Bitcoin exist as protection against currency debasement."
+        url="https://offrampgold.com/guide/money-printing"
+        datePublished="2026-03-01"
+        author="Offramp"
+      />
+      {children}
+    </>
+  );
 }

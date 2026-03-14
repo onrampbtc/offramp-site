@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { WebApplicationJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "Scrap Gold Calculator | Live Value Estimate | Offramp",
@@ -18,5 +19,21 @@ export const metadata: Metadata = {
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://offrampgold.com" },
+          { name: "Calculators", url: "https://offrampgold.com/calculators" },
+          { name: "Scrap Gold Calculator", url: "https://offrampgold.com/calculators/scrap" },
+        ]}
+      />
+      <WebApplicationJsonLd
+        name="Scrap Gold Calculator"
+        description="Calculate the value of your scrap gold based on weight, purity, and today's spot price. Instant estimates for all karats."
+        url="https://offrampgold.com/calculators/scrap"
+      />
+      {children}
+    </>
+  );
 }

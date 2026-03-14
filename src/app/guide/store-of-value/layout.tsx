@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ArticleJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "Store of Value: Gold, Bitcoin, and Preserving Wealth | Offramp",
@@ -37,5 +38,23 @@ export default function StoreOfValueLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://offrampgold.com" },
+          { name: "Guides", url: "https://offrampgold.com/guide" },
+          { name: "Store of Value", url: "https://offrampgold.com/guide/store-of-value" },
+        ]}
+      />
+      <ArticleJsonLd
+        headline="Store of Value: Gold, Bitcoin, and Preserving Wealth"
+        description="What makes an asset a reliable store of value? Explore the properties of gold and Bitcoin that preserve purchasing power across time and economic cycles."
+        url="https://offrampgold.com/guide/store-of-value"
+        datePublished="2026-03-01"
+        author="Offramp"
+      />
+      {children}
+    </>
+  );
 }

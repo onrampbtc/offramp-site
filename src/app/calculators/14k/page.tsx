@@ -2,17 +2,13 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
+import { useGoldPrice } from "@/hooks/useGoldPrice";
 
 /* ──────────────────────────── constants ──────────────────────────── */
 
-const SPOT_PRICE = 5185.80;
-const BTC_PRICE = 87420;
 const GRAMS_PER_OZ = 31.1035;
 const PURITY = 0.583;
 const KARAT_LABEL = "14K";
-
-const PRICE_PER_GRAM_PURE = SPOT_PRICE / GRAMS_PER_OZ;
-const PRICE_PER_GRAM_14K = PRICE_PER_GRAM_PURE * PURITY;
 
 /* ──────────────────────────── helpers ──────────────────────────── */
 
@@ -32,18 +28,21 @@ function fmtUSD(n: number) {
 export default function FourteenKaratCalculator() {
   const [weight, setWeight] = useState<string>("5");
   const [unit, setUnit] = useState<"g" | "oz">("g");
+  const { goldPerOz, btcPrice, lastUpdated, isLive } = useGoldPrice();
 
   const weightNum = parseFloat(weight) || 0;
+  const pricePerGramPure = goldPerOz / GRAMS_PER_OZ;
+  const pricePerGram14K = pricePerGramPure * PURITY;
 
   const results = useMemo(() => {
     const grams = unit === "oz" ? weightNum * GRAMS_PER_OZ : weightNum;
-    const meltValue = grams * PRICE_PER_GRAM_14K;
+    const meltValue = grams * pricePerGram14K;
     const offrampPays = meltValue * 0.8;
     const pawnPays = meltValue * 0.35;
-    const btcEquivalent = offrampPays / BTC_PRICE;
+    const btcEquivalent = offrampPays / btcPrice;
 
     return { grams, meltValue, offrampPays, pawnPays, btcEquivalent };
-  }, [weightNum, unit]);
+  }, [weightNum, unit, pricePerGram14K, btcPrice]);
 
   return (
     <div className="relative min-h-screen bg-bg">
@@ -72,10 +71,10 @@ export default function FourteenKaratCalculator() {
               {KARAT_LABEL} Gold Per Gram
             </p>
             <p className="text-gold-shimmer font-display text-5xl sm:text-6xl md:text-7xl font-bold">
-              {fmtUSD(PRICE_PER_GRAM_14K)}
+              {fmtUSD(pricePerGram14K)}
             </p>
             <p className="text-cream-35 font-mono text-xs mt-3">
-              Spot: {fmtUSD(SPOT_PRICE)}/oz &middot; Purity: {(PURITY * 100).toFixed(1)}%
+              Spot: {fmtUSD(goldPerOz)}/oz &middot; Purity: {(PURITY * 100).toFixed(1)}%
             </p>
           </div>
         </div>
@@ -140,7 +139,7 @@ export default function FourteenKaratCalculator() {
               <p className="text-cream-45 font-body text-sm mb-1">Melt Value</p>
               <p className="text-cream font-mono text-2xl">{fmtUSD(results.meltValue)}</p>
               <p className="text-cream-35 font-mono text-xs mt-1">
-                {fmt(results.grams, 2)}g &times; {fmtUSD(PRICE_PER_GRAM_14K)}/g
+                {fmt(results.grams, 2)}g &times; {fmtUSD(pricePerGram14K)}/g
               </p>
             </div>
             <div className="bg-bg rounded-xl p-5 border border-gold-500/30 glow-gold">
@@ -165,7 +164,7 @@ export default function FourteenKaratCalculator() {
                 {results.btcEquivalent.toFixed(6)} BTC
               </p>
               <p className="text-cream-35 font-mono text-xs mt-1">
-                @ {fmtUSD(BTC_PRICE)}/BTC
+                @ {fmtUSD(btcPrice)}/BTC
               </p>
             </div>
           </div>

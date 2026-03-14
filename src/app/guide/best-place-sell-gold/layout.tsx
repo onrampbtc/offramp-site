@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ArticleJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "Best Place to Sell Gold in 2026 | Offramp",
@@ -36,5 +37,23 @@ export default function BestPlaceSellGoldLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://offrampgold.com" },
+          { name: "Guides", url: "https://offrampgold.com/guide" },
+          { name: "Best Place to Sell Gold", url: "https://offrampgold.com/guide/best-place-sell-gold" },
+        ]}
+      />
+      <ArticleJsonLd
+        headline="Best Place to Sell Gold in 2026"
+        description="Find the best place to sell gold for maximum cash. Decision framework comparing online buyers, pawn shops, jewelers, and refineries by payout, speed, and convenience."
+        url="https://offrampgold.com/guide/best-place-sell-gold"
+        datePublished="2026-03-01"
+        author="Offramp"
+      />
+      {children}
+    </>
+  );
 }

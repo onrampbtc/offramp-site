@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { WebApplicationJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "10K Gold Price Per Gram Today | Live Calculator | Offramp",
@@ -18,5 +19,21 @@ export const metadata: Metadata = {
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://offrampgold.com" },
+          { name: "Calculators", url: "https://offrampgold.com/calculators" },
+          { name: "10K Gold Calculator", url: "https://offrampgold.com/calculators/10k" },
+        ]}
+      />
+      <WebApplicationJsonLd
+        name="10K Gold Price Calculator"
+        description="The current 10K gold price per gram is updated live. 10K gold contains 41.7% pure gold. Calculate your 10K gold value instantly."
+        url="https://offrampgold.com/calculators/10k"
+      />
+      {children}
+    </>
+  );
 }

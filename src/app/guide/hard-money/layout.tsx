@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ArticleJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "Hard Money: From Gold to Bitcoin | Offramp",
@@ -38,5 +39,23 @@ export default function HardMoneyLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://offrampgold.com" },
+          { name: "Guides", url: "https://offrampgold.com/guide" },
+          { name: "Hard Money", url: "https://offrampgold.com/guide/hard-money" },
+        ]}
+      />
+      <ArticleJsonLd
+        headline="Hard Money: From Gold to Bitcoin"
+        description="Trace the evolution of hard money from ancient gold coins to the gold standard to Bitcoin. Learn why sound money matters and how hard assets protect purchasing power."
+        url="https://offrampgold.com/guide/hard-money"
+        datePublished="2026-03-01"
+        author="Offramp"
+      />
+      {children}
+    </>
+  );
 }

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "Buy Physical Gold With Bitcoin | Offramp by Onramp",
@@ -22,5 +23,15 @@ export default function BuyGoldLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://offrampgold.com" },
+          { name: "Buy Gold with Bitcoin", url: "https://offrampgold.com/buy-gold" },
+        ]}
+      />
+      {children}
+    </>
+  );
 }

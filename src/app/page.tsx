@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { useGoldPrice } from "@/hooks/useGoldPrice";
 
 /* ------------------------------------------------------------------ */
 /*  Gold karat purity map                                              */
@@ -14,22 +15,34 @@ const KARAT_PURITY: Record<string, number> = {
   "10K": 0.4167,
 };
 
-const GOLD_SPOT = 5185.8; // $/troy oz placeholder
-const BTC_PRICE = 87420; // $ placeholder
 const GRAMS_PER_TROY_OZ = 31.1035;
+
+function fmt(n: number, decimals = 2) {
+  return n.toLocaleString("en-US", {
+    minimumFractionDigits: decimals,
+    maximumFractionDigits: decimals,
+  });
+}
+
+function fmtUSD(n: number) {
+  return `$${fmt(n)}`;
+}
 
 /* ------------------------------------------------------------------ */
 /*  Page                                                               */
 /* ------------------------------------------------------------------ */
 export default function Home() {
+  /* Live prices */
+  const { goldPerOz, btcPrice } = useGoldPrice();
+
   /* Calculator state */
   const [karat, setKarat] = useState("14K");
   const [weightG, setWeightG] = useState(10);
 
   const purity = KARAT_PURITY[karat] ?? 0.5833;
   const goldOz = (weightG / GRAMS_PER_TROY_OZ) * purity;
-  const usdValue = goldOz * GOLD_SPOT * 0.82; // 82% of spot
-  const btcValue = usdValue / BTC_PRICE;
+  const usdValue = goldOz * goldPerOz * 0.82; // 82% of spot
+  const btcValue = usdValue / btcPrice;
 
   return (
     <div className="relative overflow-hidden">
@@ -125,7 +138,7 @@ export default function Home() {
                   Gold Spot
                 </span>
                 <span className="font-mono text-2xl sm:text-3xl font-medium text-cream">
-                  $5,185.80
+                  {fmtUSD(goldPerOz)}
                   <span className="text-sm text-score-green ml-1">/oz</span>
                 </span>
                 <svg className="h-4 w-4 text-score-green" fill="currentColor" viewBox="0 0 20 20">
@@ -142,7 +155,7 @@ export default function Home() {
                   Bitcoin
                 </span>
                 <span className="font-mono text-2xl sm:text-3xl font-medium text-cream">
-                  $87,420
+                  {fmtUSD(btcPrice)}
                 </span>
               </div>
 
@@ -155,7 +168,7 @@ export default function Home() {
                   1 oz Gold
                 </span>
                 <span className="font-mono text-xl sm:text-2xl font-medium text-gold-400">
-                  &asymp; 0.0593 BTC
+                  &asymp; {(goldPerOz / btcPrice).toFixed(4)} BTC
                 </span>
               </div>
             </div>

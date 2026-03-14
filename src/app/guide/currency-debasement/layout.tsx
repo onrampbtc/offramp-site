@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ArticleJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "Currency Debasement: A 5,000 Year History | Offramp",
@@ -38,5 +39,23 @@ export default function CurrencyDebasementLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://offrampgold.com" },
+          { name: "Guides", url: "https://offrampgold.com/guide" },
+          { name: "Currency Debasement", url: "https://offrampgold.com/guide/currency-debasement" },
+        ]}
+      />
+      <ArticleJsonLd
+        headline="Currency Debasement: A 5,000 Year History"
+        description="From Roman denarii to modern fiat, governments have debased currencies throughout history. Learn why hard money always wins and how gold and Bitcoin protect wealth."
+        url="https://offrampgold.com/guide/currency-debasement"
+        datePublished="2026-03-01"
+        author="Offramp"
+      />
+      {children}
+    </>
+  );
 }

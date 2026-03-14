@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ArticleJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "How to Sell Inherited Gold and Jewelry | Offramp",
@@ -37,5 +38,23 @@ export default function SellInheritedGoldLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://offrampgold.com" },
+          { name: "Guides", url: "https://offrampgold.com/guide" },
+          { name: "Sell Inherited Gold", url: "https://offrampgold.com/guide/sell-inherited-gold" },
+        ]}
+      />
+      <ArticleJsonLd
+        headline="How to Sell Inherited Gold and Jewelry"
+        description="A sensitive guide to selling inherited gold and jewelry. Learn how to inventory, appraise, and sell inherited precious metals while respecting sentimental value."
+        url="https://offrampgold.com/guide/sell-inherited-gold"
+        datePublished="2026-03-01"
+        author="Offramp"
+      />
+      {children}
+    </>
+  );
 }

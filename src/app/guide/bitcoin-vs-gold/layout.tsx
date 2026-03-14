@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ArticleJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "Bitcoin vs Gold: The Complete Comparison | Offramp",
@@ -37,5 +38,23 @@ export default function BitcoinVsGoldLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://offrampgold.com" },
+          { name: "Guides", url: "https://offrampgold.com/guide" },
+          { name: "Bitcoin vs Gold", url: "https://offrampgold.com/guide/bitcoin-vs-gold" },
+        ]}
+      />
+      <ArticleJsonLd
+        headline="Bitcoin vs Gold: The Complete Comparison"
+        description="Bitcoin and gold compared across scarcity, portability, divisibility, durability, and censorship resistance. Learn why owning both is the optimal strategy."
+        url="https://offrampgold.com/guide/bitcoin-vs-gold"
+        datePublished="2026-03-01"
+        author="Offramp"
+      />
+      {children}
+    </>
+  );
 }

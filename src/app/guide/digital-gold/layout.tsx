@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ArticleJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "Bitcoin: The Digital Gold | Offramp",
@@ -36,5 +37,23 @@ export default function DigitalGoldLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://offrampgold.com" },
+          { name: "Guides", url: "https://offrampgold.com/guide" },
+          { name: "Digital Gold", url: "https://offrampgold.com/guide/digital-gold" },
+        ]}
+      />
+      <ArticleJsonLd
+        headline="Bitcoin: The Digital Gold"
+        description="Why Bitcoin is called digital gold. Deep comparison of Bitcoin and gold's core properties: fixed supply, resistance to debasement, and no counterparty risk."
+        url="https://offrampgold.com/guide/digital-gold"
+        datePublished="2026-03-01"
+        author="Offramp"
+      />
+      {children}
+    </>
+  );
 }

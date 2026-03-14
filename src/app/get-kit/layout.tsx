@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "Get Your Free Shipping Kit",
@@ -23,5 +24,15 @@ export default function GetKitLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  return (
+    <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://offrampgold.com" },
+          { name: "Get Free Shipping Kit", url: "https://offrampgold.com/get-kit" },
+        ]}
+      />
+      {children}
+    </>
+  );
 }

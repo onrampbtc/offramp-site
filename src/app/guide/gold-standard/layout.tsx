@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ArticleJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "The Gold Standard: History and Lessons | Offramp",
@@ -38,5 +39,23 @@ export default function GoldStandardLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://offrampgold.com" },
+          { name: "Guides", url: "https://offrampgold.com/guide" },
+          { name: "The Gold Standard", url: "https://offrampgold.com/guide/gold-standard" },
+        ]}
+      />
+      <ArticleJsonLd
+        headline="The Gold Standard: History and Lessons"
+        description="A complete history of the gold standard from its origins to its collapse, what it taught us about sound money, and what comes next with Bitcoin."
+        url="https://offrampgold.com/guide/gold-standard"
+        datePublished="2026-03-01"
+        author="Offramp"
+      />
+      {children}
+    </>
+  );
 }

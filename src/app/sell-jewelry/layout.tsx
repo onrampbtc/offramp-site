@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "Sell Gold Jewelry for Cash Online | Offramp",
@@ -22,5 +23,16 @@ export default function SellJewelryLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://offrampgold.com" },
+          { name: "Sell Gold", url: "https://offrampgold.com/sell" },
+          { name: "Sell Gold Jewelry", url: "https://offrampgold.com/sell-jewelry" },
+        ]}
+      />
+      {children}
+    </>
+  );
 }

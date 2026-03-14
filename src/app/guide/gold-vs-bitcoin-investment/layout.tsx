@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ArticleJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "Gold vs Bitcoin as an Investment (2026) | Offramp",
@@ -37,5 +38,23 @@ export default function GoldVsBitcoinInvestmentLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://offrampgold.com" },
+          { name: "Guides", url: "https://offrampgold.com/guide" },
+          { name: "Gold vs Bitcoin Investment", url: "https://offrampgold.com/guide/gold-vs-bitcoin-investment" },
+        ]}
+      />
+      <ArticleJsonLd
+        headline="Gold vs Bitcoin as an Investment (2026)"
+        description="Gold vs Bitcoin investment comparison: returns, volatility, risk profile, and portfolio allocation theory. Which is the better investment in 2026?"
+        url="https://offrampgold.com/guide/gold-vs-bitcoin-investment"
+        datePublished="2026-03-01"
+        author="Offramp"
+      />
+      {children}
+    </>
+  );
 }

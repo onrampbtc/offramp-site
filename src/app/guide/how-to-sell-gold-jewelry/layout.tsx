@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ArticleJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "How to Sell Gold Jewelry: Step-by-Step Guide | Offramp",
@@ -38,5 +39,23 @@ export default function HowToSellGoldJewelryLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://offrampgold.com" },
+          { name: "Guides", url: "https://offrampgold.com/guide" },
+          { name: "How to Sell Gold Jewelry", url: "https://offrampgold.com/guide/how-to-sell-gold-jewelry" },
+        ]}
+      />
+      <ArticleJsonLd
+        headline="How to Sell Gold Jewelry: Step-by-Step Guide"
+        description="Learn how to sell gold jewelry for the most money. Identify karat stamps, weigh your pieces, calculate melt value, and choose the best buyer."
+        url="https://offrampgold.com/guide/how-to-sell-gold-jewelry"
+        datePublished="2026-03-01"
+        author="Offramp"
+      />
+      {children}
+    </>
+  );
 }
