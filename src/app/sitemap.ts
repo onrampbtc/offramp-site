@@ -45,6 +45,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/guide/store-of-value", changeFrequency: "monthly" as const, priority: 0.5 },
     { url: "/guide/hard-money", changeFrequency: "monthly" as const, priority: 0.5 },
     { url: "/guide/gold-standard", changeFrequency: "monthly" as const, priority: 0.5 },
+    { url: "/blog", changeFrequency: "weekly" as const, priority: 0.8 },
+    { url: "/blog/should-i-sell-gold-for-bitcoin", changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: "/blog/best-way-to-convert-gold-to-bitcoin", changeFrequency: "monthly" as const, priority: 0.7 },
   ];
 
   return pages.map((page) => ({
