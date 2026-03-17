@@ -48,6 +48,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog", changeFrequency: "weekly" as const, priority: 0.8 },
     { url: "/blog/should-i-sell-gold-for-bitcoin", changeFrequency: "monthly" as const, priority: 0.7 },
     { url: "/blog/best-way-to-convert-gold-to-bitcoin", changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: "/blog/gold-vs-bitcoin-investment-comparison", changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: "/blog/how-to-sell-gold-coins-online", changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: "/blog/is-bitcoin-the-new-gold", changeFrequency: "monthly" as const, priority: 0.7 },
   ];
 
   return pages.map((page) => ({

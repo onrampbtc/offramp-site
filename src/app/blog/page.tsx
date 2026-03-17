@@ -24,6 +24,36 @@ const posts = [
     readTime: "10 min read",
     tags: ["Bitcoin", "How To", "Gold"],
   },
+  {
+    slug: "gold-vs-bitcoin-investment-comparison",
+    title: "Gold vs Bitcoin as an Investment: A 2026 Comparison",
+    excerpt:
+      "Compare gold and Bitcoin as investments with real data: historical returns, risk profiles, correlation, and portfolio allocation strategies. A balanced, evidence-based analysis.",
+    date: "March 15, 2026",
+    author: "Yasmine",
+    readTime: "10 min read",
+    tags: ["Investment", "Bitcoin", "Gold"],
+  },
+  {
+    slug: "how-to-sell-gold-coins-online",
+    title: "How to Sell Gold Coins Online: Complete Guide for 2026",
+    excerpt:
+      "Learn how to sell gold coins for the best price. Compare bullion vs numismatic value, find the best buyers, and avoid common mistakes that cost sellers money.",
+    date: "March 15, 2026",
+    author: "Yasmine",
+    readTime: "8 min read",
+    tags: ["How To", "Gold", "Selling"],
+  },
+  {
+    slug: "is-bitcoin-the-new-gold",
+    title: "Is Bitcoin the New Gold? What the Data Says in 2026",
+    excerpt:
+      "The 'digital gold' narrative is Bitcoin's most powerful meme. But does the data support it? An evidence-based analysis of where the comparison holds — and where it breaks down.",
+    date: "March 15, 2026",
+    author: "Yasmine",
+    readTime: "11 min read",
+    tags: ["Bitcoin", "Gold", "Analysis"],
+  },
 ] as const;
 
 /* ------------------------------------------------------------------ */
