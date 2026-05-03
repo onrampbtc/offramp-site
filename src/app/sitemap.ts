@@ -51,6 +51,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/gold-vs-bitcoin-investment-comparison", changeFrequency: "monthly" as const, priority: 0.7 },
     { url: "/blog/how-to-sell-gold-coins-online", changeFrequency: "monthly" as const, priority: 0.7 },
     { url: "/blog/is-bitcoin-the-new-gold", changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: "/blog/best-place-to-sell-gold", changeFrequency: "monthly" as const, priority: 0.8 },
   ];
 
   return pages.map((page) => ({

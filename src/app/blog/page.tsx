@@ -54,6 +54,16 @@ const posts = [
     readTime: "11 min read",
     tags: ["Bitcoin", "Gold", "Analysis"],
   },
+  {
+    slug: "best-place-to-sell-gold",
+    title: "Best Place to Sell Gold in 2026: 7 Options Compared",
+    excerpt:
+      "Where is the best place to sell gold? We compare 7 options including online buyers, pawn shops, jewelers, and coin dealers — with payout percentages, speed, and red flags to avoid.",
+    date: "April 7, 2026",
+    author: "Offramp",
+    readTime: "9 min read",
+    tags: ["Selling", "Gold", "Guide"],
+  },
 ] as const;
 
 /* ------------------------------------------------------------------ */

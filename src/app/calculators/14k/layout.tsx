@@ -5,10 +5,12 @@ export const metadata: Metadata = {
   title: "14K Gold Price Per Gram Today | Live Calculator | Offramp",
   description:
     "The current 14K gold price per gram is updated live. 14K gold contains 58.3% pure gold. Calculate your 14K gold value instantly with the Offramp calculator.",
+  alternates: { canonical: "https://offrampgold.com/calculators/14k" },
   openGraph: {
     title: "14K Gold Price Per Gram Today | Live Calculator | Offramp",
     description:
       "The current 14K gold price per gram is updated live. 14K gold contains 58.3% pure gold. Calculate your 14K gold value instantly.",
+    url: "https://offrampgold.com/calculators/14k",
   },
   twitter: {
     card: "summary_large_image",

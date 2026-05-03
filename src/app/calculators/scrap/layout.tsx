@@ -2,19 +2,21 @@ import type { Metadata } from "next";
 import { WebApplicationJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Scrap Gold Calculator | Live Value Estimate | Offramp",
+  title: "Scrap Gold Calculator — Current Scrap Gold Price Per Gram | Offramp",
   description:
-    "Use the Offramp scrap gold calculator to find the value of your scrap gold based on weight, purity, and today's spot price. Instant estimates for all karats.",
+    "Calculate your scrap gold value instantly with live spot prices. Get current scrap gold prices per gram for 10K, 14K, 18K, 22K, and 24K. Free scrap gold calculator updated in real time.",
+  alternates: { canonical: "https://offrampgold.com/calculators/scrap" },
   openGraph: {
-    title: "Scrap Gold Calculator | Live Value Estimate | Offramp",
+    title: "Scrap Gold Calculator — Current Scrap Gold Price Per Gram | Offramp",
     description:
-      "Use the Offramp scrap gold calculator to find the value of your scrap gold based on weight, purity, and today's spot price.",
+      "Calculate your scrap gold value instantly with live spot prices for all karats. Free scrap gold calculator.",
+    url: "https://offrampgold.com/calculators/scrap",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Scrap Gold Calculator | Live Value Estimate | Offramp",
+    title: "Scrap Gold Calculator — Current Scrap Gold Price Per Gram | Offramp",
     description:
-      "Use the Offramp scrap gold calculator to find the value of your scrap gold based on weight, purity, and today's spot price.",
+      "Calculate your scrap gold value instantly with live spot prices for all karats.",
   },
 };
 

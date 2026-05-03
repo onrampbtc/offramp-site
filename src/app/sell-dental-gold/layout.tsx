@@ -2,19 +2,21 @@ import type { Metadata } from "next";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Sell Dental Gold for Cash | Offramp",
+  title: "Sell Dental Gold — Dental Gold Value Calculator | Offramp",
   description:
-    "Sell dental gold including crowns, bridges, inlays, and dental scrap. We accept both clean and unclean pieces. XRF analysis determines exact gold content for a fair payout based on current market prices.",
+    "Find out what your dental gold is worth and sell it for cash. Free dental gold value calculator for crowns, bridges, and dental scrap. XRF analysis, insured shipping, fair payouts.",
+  alternates: { canonical: "https://offrampgold.com/sell-dental-gold" },
   openGraph: {
-    title: "Sell Dental Gold for Cash | Offramp",
+    title: "Sell Dental Gold — Dental Gold Value Calculator | Offramp",
     description:
-      "Sell dental gold for cash. Crowns, bridges, inlays, and scrap — clean or unclean. XRF assay, fair market payouts.",
+      "Find out what your dental gold is worth and sell it for cash. Free dental gold value calculator for crowns, bridges, and dental scrap.",
+    url: "https://offrampgold.com/sell-dental-gold",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sell Dental Gold for Cash | Offramp",
+    title: "Sell Dental Gold — Dental Gold Value Calculator | Offramp",
     description:
-      "Sell dental gold for cash. Crowns, bridges, inlays, and scrap. XRF assay, fair market payouts.",
+      "Free dental gold value calculator for crowns, bridges, and dental scrap. XRF assay, insured shipping.",
   },
 };
 

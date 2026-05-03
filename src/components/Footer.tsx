@@ -219,6 +219,35 @@ export function Footer() {
           ))}
         </div>
 
+        {/* Network Sites */}
+        <div className="mt-10 rounded-xl border border-cream-08 bg-bg-card p-6">
+          <h3 className="font-body text-xs font-semibold uppercase tracking-[0.15em] text-cream-60 mb-4">
+            Our Network
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {[
+              { name: "Gold to BTC", url: "https://goldtobtc.com", desc: "Convert gold to Bitcoin" },
+              { name: "Gold Buyer", url: "https://goldbuyer.io", desc: "Sell gold for the best price" },
+              { name: "Gold vs Bitcoin", url: "https://goldvsbitcoin.org", desc: "Educational comparison hub" },
+            ].map((site) => (
+              <a
+                key={site.name}
+                href={site.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex flex-col gap-1 rounded-lg border border-cream-08 p-3 transition-all hover:border-gold-500/30 hover:bg-gold-500/[0.04]"
+              >
+                <span className="font-body text-sm font-medium text-cream group-hover:text-gold-500 transition-colors">
+                  {site.name}
+                </span>
+                <span className="font-body text-xs text-cream-35">
+                  {site.desc}
+                </span>
+              </a>
+            ))}
+          </div>
+        </div>
+
         {/* Divider */}
         <div className="mt-14 h-px bg-cream-08" />
 
