@@ -1,8 +1,10 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, useCallback, Suspense } from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { useGoldPrice } from "@/hooks/useGoldPrice";
+import { WebApplicationJsonLd, FAQJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 /* ──────────────────────────── constants ──────────────────────────── */
 
@@ -16,6 +18,15 @@ const KARATS = [
 
 const GRAMS_PER_OZ = 31.1035;
 const GRAMS_PER_DWT = 1.55517;
+
+// URL-shareable karat slugs, index-aligned with KARATS above
+const KARAT_SLUGS = ["10k", "14k", "18k", "22k", "24k"] as const;
+
+function karatIndexFromSlug(slug: string | null): number | null {
+  if (!slug) return null;
+  const i = KARAT_SLUGS.indexOf(slug.toLowerCase() as (typeof KARAT_SLUGS)[number]);
+  return i >= 0 ? i : null;
+}
 
 const BUYERS = [
   { name: "Pawn Shop", low: 0.2, high: 0.35, accent: "text-red-400", highlight: false },
@@ -71,11 +82,36 @@ function fmtSats(btc: number) {
 
 /* ──────────────────────────── component ──────────────────────────── */
 
-export default function GoldCalculatorPage() {
-  /* ── state ── */
-  const [selectedKarat, setSelectedKarat] = useState(1); // index into KARATS (default 14K)
-  const [weightGrams, setWeightGrams] = useState(10);
+function CalculatorInner() {
+  const searchParams = useSearchParams();
+
+  /* ── state (initialized from shareable URL params if present) ── */
+  const [selectedKarat, setSelectedKarat] = useState(
+    () => karatIndexFromSlug(searchParams.get("k")) ?? 1 // default 14K
+  );
+  const [weightGrams, setWeightGrams] = useState(() => {
+    const g = parseFloat(searchParams.get("g") ?? "");
+    return !isNaN(g) && g > 0 ? g : 10;
+  });
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [copied, setCopied] = useState(false);
+
+  /* ── keep the URL in sync so every result is a shareable, indexable page ── */
+  useEffect(() => {
+    const params = new URLSearchParams();
+    params.set("k", KARAT_SLUGS[selectedKarat]);
+    params.set("g", String(weightGrams));
+    const next = `${window.location.pathname}?${params.toString()}`;
+    window.history.replaceState(null, "", next);
+  }, [selectedKarat, weightGrams]);
+
+  const copyShareLink = useCallback(() => {
+    if (typeof window === "undefined") return;
+    navigator.clipboard?.writeText(window.location.href).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    });
+  }, []);
 
   /* ── live prices ── */
   const { goldPerOz: spotPricePerOz, btcPrice, lastUpdated, isLive } = useGoldPrice();
@@ -308,6 +344,33 @@ export default function GoldCalculatorPage() {
                 </span>
               </div>
             </div>
+
+            {/* ── Share this result ── */}
+            <div className="relative mt-6 flex flex-col items-center gap-3 border-t border-cream-08 pt-6 sm:flex-row sm:justify-between">
+              <p className="font-body text-xs text-cream-45">
+                Share this estimate &mdash; the link saves your karat and weight.
+              </p>
+              <button
+                onClick={copyShareLink}
+                className="inline-flex items-center gap-2 rounded-full border border-gold-500/40 bg-gold-500/[0.06] px-5 py-2.5 font-body text-sm font-medium text-gold-400 transition-all hover:border-gold-500 hover:bg-gold-500/10"
+              >
+                {copied ? (
+                  <>
+                    <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                    Link copied
+                  </>
+                ) : (
+                  <>
+                    <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                    </svg>
+                    Copy shareable link
+                  </>
+                )}
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -487,5 +550,31 @@ export default function GoldCalculatorPage() {
         </div>
       </section>
     </div>
+  );
+}
+
+/* ──────────────────────────── page (Suspense + structured data) ──────────────────────────── */
+
+export default function GoldCalculatorPage() {
+  return (
+    <>
+      <WebApplicationJsonLd
+        name="Gold Value Calculator"
+        description="Calculate the live melt value and Offramp payout for 10K, 14K, 18K, 22K, and 24K gold in USD and Bitcoin. Updated every 60 seconds from global spot prices."
+        url="https://offrampgold.com/gold-calculator"
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://offrampgold.com" },
+          { name: "Gold Value Calculator", url: "https://offrampgold.com/gold-calculator" },
+        ]}
+      />
+      <FAQJsonLd
+        questions={FAQS.map((f) => ({ question: f.q, answer: f.a }))}
+      />
+      <Suspense fallback={null}>
+        <CalculatorInner />
+      </Suspense>
+    </>
   );
 }

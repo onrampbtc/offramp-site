@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gold Value Calculator — Offramp</title>
+<meta name="robots" content="noindex" />
+<style>
+  :root {
+    --bg: #0A0A0A; --card: #111111; --gold: #C9A84C; --gold-bright: #D4AF37;
+    --cream: #F5F0E8; --cream-60: rgba(245,240,232,.6); --cream-35: rgba(245,240,232,.35);
+    --cream-15: rgba(245,240,232,.15); --cream-08: rgba(245,240,232,.08); --green: #22c55e;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--bg); color: var(--cream);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  .wrap { max-width: 420px; margin: 0 auto; padding: 18px; }
+  .card { background: var(--card); border: 1px solid var(--cream-15); border-radius: 16px; padding: 20px; }
+  h1 { font-size: 16px; font-weight: 600; letter-spacing: -.01em; margin-bottom: 2px; }
+  .sub { font-size: 12px; color: var(--cream-35); margin-bottom: 18px; }
+  label { display: block; font-size: 10px; text-transform: uppercase; letter-spacing: .12em;
+    color: var(--cream-35); margin-bottom: 8px; }
+  .karats { display: flex; gap: 6px; margin-bottom: 16px; }
+  .karat { flex: 1; padding: 8px 0; border: 1px solid var(--cream-15); background: var(--card);
+    color: var(--cream-60); border-radius: 8px; font-size: 13px; font-family: monospace; cursor: pointer;
+    transition: all .15s; }
+  .karat.active { border-color: var(--gold); background: rgba(201,168,76,.1); color: var(--gold-bright); }
+  .wrow { display: flex; align-items: center; gap: 8px; margin-bottom: 18px; }
+  .wbtn { width: 40px; height: 44px; border: 1px solid var(--cream-15); background: var(--card);
+    color: var(--cream-60); border-radius: 8px; font-size: 18px; cursor: pointer; }
+  .winput { flex: 1; background: var(--bg); border: 1px solid var(--cream-15); border-radius: 8px;
+    color: var(--cream); font-size: 20px; font-family: monospace; padding: 10px 14px; width: 100%; }
+  .winput:focus { outline: none; border-color: var(--gold); }
+  .result { border: 1px solid rgba(201,168,76,.4); border-radius: 12px; padding: 16px;
+    background: linear-gradient(180deg, rgba(201,168,76,.05), transparent); margin-bottom: 14px; }
+  .rrow { display: flex; justify-content: space-between; align-items: baseline; padding: 6px 0; }
+  .rlabel { font-size: 11px; text-transform: uppercase; letter-spacing: .1em; color: var(--cream-35); }
+  .rval { font-family: monospace; font-size: 15px; }
+  .pays { padding: 12px 0; border-top: 1px solid var(--cream-08); border-bottom: 1px solid var(--cream-08); margin: 6px 0; }
+  .pays .rval { font-size: 26px; color: var(--gold-bright); font-weight: 500; }
+  .pays .rlabel { color: var(--gold); }
+  .btc { font-size: 13px; color: var(--cream-60); }
+  .save { color: var(--green); }
+  .cta { display: block; text-align: center; text-decoration: none; background: var(--gold);
+    color: var(--bg); font-weight: 600; font-size: 14px; padding: 12px; border-radius: 999px; margin-top: 4px; }
+  .live { display: flex; align-items: center; gap: 6px; font-size: 10px; color: var(--cream-35); margin-bottom: 12px; }
+  .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--green); }
+  .credit { text-align: center; font-size: 10px; color: var(--cream-35); margin-top: 12px; }
+  .credit a { color: var(--gold); text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <h1>Gold Value Calculator</h1>
+    <p class="sub">Live spot price · updated every 60s</p>
+
+    <label>Gold Purity (Karat)</label>
+    <div class="karats" id="karats"></div>
+
+    <label>Weight (grams)</label>
+    <div class="wrow">
+      <button class="wbtn" id="minus">&minus;</button>
+      <input class="winput" id="weight" type="number" min="0.1" step="0.1" value="10" />
+      <button class="wbtn" id="plus">+</button>
+    </div>
+
+    <div class="live"><span class="dot" id="dot"></span><span id="livetxt">Loading live price…</span></div>
+
+    <div class="result">
+      <div class="rrow"><span class="rlabel">Melt Value</span><span class="rval" id="melt">—</span></div>
+      <div class="rrow pays"><span class="rlabel">Offramp Pays</span><span class="rval" id="pays">—</span></div>
+      <div class="rrow"><span class="rlabel">In Bitcoin</span><span class="rval btc" id="btc">—</span></div>
+      <div class="rrow"><span class="rlabel save">You Save vs Pawn</span><span class="rval save" id="save">—</span></div>
+    </div>
+
+    <a class="cta" id="cta" href="https://offrampgold.com/get-kit" target="_blank" rel="noopener">Get a Free Insured Kit →</a>
+    <p class="credit">Powered by <a href="https://offrampgold.com/gold-calculator" target="_blank" rel="noopener">Offramp</a> — sell gold for cash or Bitcoin</p>
+  </div>
+</div>
+
+<script>
+(function () {
+  var KARATS = [
+    { label: "10K", purity: 0.417 }, { label: "14K", purity: 0.583 },
+    { label: "18K", purity: 0.75 }, { label: "22K", purity: 0.917 }, { label: "24K", purity: 0.999 }
+  ];
+  var GRAMS_PER_OZ = 31.1035;
+  var FALLBACK_GOLD = 2950, FALLBACK_BTC = 88000;
+  var gold = FALLBACK_GOLD, btc = FALLBACK_BTC, isLive = false;
+  var selected = 1, weight = 10;
+
+  // honor ?k=14k&g=10 so embedded results are pre-fillable
+  var qp = new URLSearchParams(location.search);
+  var slugs = ["10k","14k","18k","22k","24k"];
+  var ki = slugs.indexOf((qp.get("k")||"").toLowerCase());
+  if (ki >= 0) selected = ki;
+  var qg = parseFloat(qp.get("g")); if (!isNaN(qg) && qg > 0) weight = qg;
+
+  var karatsEl = document.getElementById("karats");
+  KARATS.forEach(function (k, i) {
+    var b = document.createElement("button");
+    b.className = "karat" + (i === selected ? " active" : "");
+    b.textContent = k.label;
+    b.onclick = function () { selected = i; renderKarats(); render(); };
+    karatsEl.appendChild(b);
+  });
+  function renderKarats() {
+    [].forEach.call(karatsEl.children, function (c, i) {
+      c.className = "karat" + (i === selected ? " active" : "");
+    });
+  }
+
+  var weightEl = document.getElementById("weight");
+  weightEl.value = weight;
+  weightEl.oninput = function () { var v = parseFloat(this.value); if (!isNaN(v) && v > 0) { weight = v; render(); } };
+  document.getElementById("minus").onclick = function () { weight = Math.max(0.1, Math.round((weight - 1) * 10) / 10); weightEl.value = weight; render(); };
+  document.getElementById("plus").onclick = function () { weight = Math.round((weight + 1) * 10) / 10; weightEl.value = weight; render(); };
+
+  function usd(n) { return "$" + n.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
+  function fmtBTC(n) { return n < 0.0001 ? n.toFixed(8) : n.toFixed(6); }
+
+  function render() {
+    var purity = KARATS[selected].purity;
+    var perGram = gold / GRAMS_PER_OZ;
+    var melt = weight * purity * perGram;
+    var pays = melt * 0.8;
+    var pawn = melt * 0.35;
+    document.getElementById("melt").textContent = usd(melt);
+    document.getElementById("pays").textContent = usd(pays);
+    document.getElementById("btc").textContent = fmtBTC(pays / btc) + " BTC";
+    document.getElementById("save").textContent = "+" + usd(pays - pawn);
+    var cta = document.getElementById("cta");
+    cta.href = "https://offrampgold.com/gold-calculator?k=" + slugs[selected] + "&g=" + weight;
+  }
+
+  function fetchPrices() {
+    fetch("https://offrampgold.com/api/prices").then(function (r) { return r.json(); }).then(function (d) {
+      if (d.goldPerOz > 0 && d.btcPrice > 0) { gold = d.goldPerOz; btc = d.btcPrice; isLive = true; }
+      document.getElementById("dot").style.background = isLive ? "#22c55e" : "#eab308";
+      document.getElementById("livetxt").textContent = isLive
+        ? "Live · " + usd(gold) + "/oz gold"
+        : "Estimated price";
+      render();
+    }).catch(function () { render(); });
+  }
+
+  render();
+  fetchPrices();
+  setInterval(fetchPrices, 60000);
+})();
+</script>
+</body>
+</html>
