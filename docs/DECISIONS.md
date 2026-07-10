@@ -2,6 +2,24 @@
 
 Material operating decisions are recorded here in reverse chronological order. Do not store credentials, payment details, recovery material, private identifiers, or API keys in this file.
 
+## 2026-07-09 — Workspace DNS cutover started
+
+- **Owner:** Michael Tanguma
+- **Context:** Namecheap DNS was updated after Workspace mailbox and aliases were created.
+- **Decision:** Route root-domain mail to Google Workspace and use Google as the root-domain SPF sender while keeping DMARC in monitor mode during setup.
+- **Evidence:** Public DNS shows MX `smtp.google.com` priority `1`, root SPF `v=spf1 include:_spf.google.com ~all`, and DMARC `v=DMARC1; p=none; pct=100; adkim=r; aspf=r`. Google setup page shows Gmail is now ready. Google DKIM is not yet present.
+- **Operational note:** Generate the Google DKIM TXT record, then run external send/receive/reply tests for the named mailbox and aliases before marking business email done.
+- **Review trigger:** Any delivery failure, any additional root-domain sender, Resend/HubSpot mail setup, or DMARC policy tightening.
+
+## 2026-07-09 — Workspace mailbox and aliases created
+
+- **Owner:** Michael Tanguma
+- **Context:** The Google Workspace signup moved from the contact/payment handoff into the Admin Console, and the user profile is now visible.
+- **Decision:** Use `michael@offrampgold.com` as the named owner mailbox and add public aliases `hello@offrampgold.com`, `support@offrampgold.com`, and `clients@offrampgold.com` to the same mailbox.
+- **Evidence:** Admin Console user profile showed `michael@offrampgold.com` as active, created Jul 9, 2026, with those three aliases listed under alternate email addresses.
+- **Operational note:** Superseded by the Workspace DNS cutover entry above. Google DKIM and send/receive tests remain open.
+- **Review trigger:** Before publishing any customer-facing email address, before changing MX records, after first successful inbound/outbound tests, and during the first monthly account audit.
+
 ## 2026-07-09 — Google Workspace plan and human-email architecture
 
 - **Owner:** Michael Tanguma

@@ -245,7 +245,7 @@ Required outcomes:
 
 - Domain/DNS ownership is documented and recoverable.
 - Password manager and account-recovery standard are in place.
-- Google Workspace is live; named mailbox and `hello@` work; authentication records are verified.
+- Google Workspace is live; named mailbox and public aliases work; authentication records are verified.
 - OpenPhone is live and tested.
 - Entity is formed or in active formation.
 - Business-bank application is submitted once the entity permits it.
@@ -356,7 +356,8 @@ OpenPhone is already listed as confirmed in the current state board. Supabase is
 ### Desired v1 architecture
 
 - **Named human mailbox:** `michael@offrampgold.com` for ownership and person-to-person communication.
-- **Public inbox:** `hello@offrampgold.com` as an alias or group delivered to the named mailbox. It must accept replies.
+- **Public inbox:** `hello@offrampgold.com` as the primary public alias or group delivered to the named mailbox. It must accept replies.
+- **Secondary aliases:** `support@offrampgold.com` and `clients@offrampgold.com` may route to the named mailbox in v1. Convert any alias into a group or separate mailbox only when volume, delegation, or audit needs justify it.
 - **Admin identity:** a separate, non-public admin identity where practical; document a temporary exception if v1 uses the named user as super admin.
 - **Transactional sender:** Resend on a dedicated subdomain such as `mail.offrampgold.com`, with `Reply-To: hello@offrampgold.com`. This isolates application-mail reputation from human mail.
 - **Newsletter:** use the same Resend sending subdomain at low volume. Split to a separate marketing subdomain only when volume or reputation data justifies the added system.
@@ -368,7 +369,7 @@ Do not use a catch-all mailbox. Do not use `hello@` as a privileged admin login.
 1. Confirm registrar, authoritative DNS host, and domain recovery access.
 2. Choose the Workspace plan and exact named user. Purchasing the plan is Tier 3.
 3. Verify the domain using the record Google currently supplies.
-4. Create the named user; route `hello@` to it as an alias or group.
+4. Create the named user; route public aliases (`hello@`, `support@`, and `clients@` where used) to it as aliases or groups.
 5. Enroll MFA/passkeys and store backup recovery material offline.
 6. Add Google's current MX records. Remove legacy forwarding MX records only when the Workspace mailbox is ready, minimizing delivery interruption.
 7. Publish one SPF record for the root domain authorizing only actual root-domain senders.
@@ -395,7 +396,7 @@ Use the exact records supplied by the current Google Admin console; do not rely 
 
 ```text
 [ ] Named mailbox sends and receives
-[ ] hello@ receives and can be replied to
+[ ] Public aliases receive and can be replied to
 [ ] MFA and recovery tested
 [ ] Workspace MX, SPF, DKIM, and DMARC resolve correctly
 [ ] Resend subdomain is verified

@@ -81,6 +81,12 @@ export default function AustinPage() {
             >
               Prefer mail? Free insured kit
             </Link>
+            <Link
+              href="/consult"
+              className="rounded-full border border-line-2 px-6 py-3 font-body text-sm font-semibold text-ink hover:border-ink"
+            >
+              Not sure yet? Free consult
+            </Link>
           </div>
         </div>
 

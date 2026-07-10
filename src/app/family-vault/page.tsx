@@ -67,7 +67,14 @@ export default function FamilyVaultPage() {
 
       <div className="mt-10">
         <p className="font-body text-sm text-ink-2">
-          Ready to sell now instead?{" "}
+          Talking it through as a family?{" "}
+          <Link
+            href="/consult"
+            className="font-medium text-gold-400 underline decoration-line-2 underline-offset-4 hover:text-ink"
+          >
+            Book a free consult
+          </Link>
+          . Ready to sell now instead?{" "}
           <Link
             href="/gold-calculator"
             className="font-medium text-gold-400 underline decoration-line-2 underline-offset-4 hover:text-ink"

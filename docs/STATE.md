@@ -31,7 +31,7 @@ Next milestones: M2 estimate flow → M3 money pages → M4 vault → M5 lane 2 
 - ▢ Trademark knockout search "Offramp" in financial services (pre-M1, spec §18)
 - ▢ Onramp written referral + name-peace agreement
 - ▢ Grab @offrampgold on X / YouTube / LinkedIn
-- ◐ Business email — Workspace Business Starter flexible monthly selected at $8.40/user/month; signup started in the visible Codex in-app browser. Business name `Offramp`, one employee, United States entered. Paused at Google's contact-info screen for Michael to enter his current contact email and legal name directly. No account, charge, mailbox, or DNS change yet. Planned user: `michael@offrampgold.com`; planned alias: `hello@offrampgold.com`. Keep Namecheap forwarding live until the mailbox is ready for a tested cutover.
+- ◐ Business email — Google Workspace Business Starter flexible monthly is active. Admin console shows `michael@offrampgold.com` active, created Jul 9, 2026, with aliases `hello@offrampgold.com`, `support@offrampgold.com`, and `clients@offrampgold.com` on the user profile. Google setup page shows Gmail is now ready. Public DNS shows Google MX (`smtp.google.com`), Google SPF (`include:_spf.google.com`), and DMARC monitor record (`p=none`). Google DKIM is not yet present. Next: generate DKIM and run send/receive/reply tests.
 - ● Confirm 512-983-5997 is the OpenPhone line (confirmed 2026-07-10)
 - ● Supabase fully wired (keys in Vercel, migration applied, cron storing) — done 2026-07-10
 - ▢ Resend account + API key

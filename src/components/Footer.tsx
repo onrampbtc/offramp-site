@@ -32,6 +32,7 @@ const LINK_COLUMNS = [
       { label: "Gold to bitcoin", href: "/gold-to-bitcoin" },
       { label: "Family vault", href: "/family-vault" },
       { label: "Austin drop-off", href: "/austin" },
+      { label: "Free gold consult", href: "/consult" },
     ],
   },
 ] as const;
