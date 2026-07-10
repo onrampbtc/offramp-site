@@ -19,8 +19,9 @@
 Next milestones: M2 estimate flow → M3 money pages → M4 vault → M5 lane 2 + proof → M6 scale. Full criteria in spec §16.
 
 ## Content inventory (backlog — build in this order within each type)
+- **Prices: ● 14k-per-gram SHIPPED 2026-07-10** (74k/mo target; dated facts from DB, honesty table, sparkline-as-history-accrues)
 - **Calculators (15):** ▢ scrap-gold (27.1k) · ▢ 14k · ▢ pawn-comparison · ▢ dental · ▢ melt-value · ▢ 10k · ▢ 18k · ▢ 24k · ▢ gold-coin · ▢ class-ring · ▢ wedding-band · ▢ silver · ▢ platinum · ▢ gold-to-btc-converter · ▢ cash-for-gold
-- **Prices (6):** ▢ 14k-per-gram (74k/mo!) · ▢ 10k · ▢ 18k · ▢ white-gold · ▢ dental-gold · ▢ hub
+- **Prices (6):** ● 14k-per-gram · ▢ 10k · ▢ 18k · ▢ white-gold · ▢ dental-gold · ▢ hub
 - **Worth (12):** ▢ gold-chain · ▢ class-ring · ▢ wedding-band · ▢ dental-gold · ▢ 5-dollar-gold-coin · ▢ krugerrand · ▢ gold-watch · ▢ grillz · ▢ charm-bracelet · ▢ white-gold-ring · ▢ 10k-gold-ring · ▢ inherited-jewelry-box
 - **Guides (8):** ▢ where-to-sell-gold · ▢ how-to-sell-gold · ▢ is-it-a-good-time · ▢ pawn-shop-gold-prices · ▢ tax-on-selling-gold · ▢ how-to-weigh-gold-at-home · ▢ spot-vs-melt-vs-retail · ▢ avoid-gold-buyer-scams
 - **Learn (6):** ▢ gold-vs-bitcoin · ▢ is-gold-a-good-investment · ▢ currency-debasement · ▢ should-i-sell-gold-for-bitcoin · ▢ gold-btc-ratio · ▢ what-to-do-with-inherited-gold
@@ -42,7 +43,8 @@ Next milestones: M2 estimate flow → M3 money pages → M4 vault → M5 lane 2 
 - ● Methodology v1.0 written (`apps/goldbuyer/src/data/methodology.ts`): payout 30 · proof 25 · tracking 15 · service 10 · tech 10 · reputation 10; tier grades; FTC disclosure text; honesty rules (Offramp scored by same rubric, real weaknesses shown).
 - ● Research complete: 8 competitor evidence files + 12 state-law files (real statutes: AZ cash-payout ban, NC hotel-buy ban, FL felony rule) in `apps/goldbuyer/research/`.
 - ● buyers.ts scored: **Offramp 70.5 B- #1** (wins payout 90 + proof 70; reputation 20 shown honestly) · Worthy 67.8 · GoldFellow 60 · EGC 59 · SYG 57.8 · **Alloy 56 (#6 — publishes no rate)** · Abe Mor 36.5 · **CFGUSA 29 (biggest ad spender, least disclosure)** · Luriya 29. No buyer above B- = the editorial headline.
-- ▢ Next: rankings homepage → /methodology → /reviews/[buyer] ×9 → /states/[state] ×12 → FTC disclosure footer sitewide → deploy.
+- ● **SHIPPED LIVE 2026-07-10:** rankings homepage (ItemList schema) · /methodology (full rubric) · /reviews/[buyer] ×9 (line-by-line evidence) · /states/[state] ×12 (cited statutes + FAQPage) · FTC disclosure sitewide · Offramp NAP removed for entity hygiene · sitemap +22. All verified 200 with content.
+- ▢ Next: remaining 38 states · quarterly re-score ritual · comparison pages ([A] vs [B]) · GSC submission.
 - Targets: "best place to sell gold" 3,600/mo · "+near me" 2,400/mo · 50× "sell gold [state]" long-tail.
 
 ## Satellites
