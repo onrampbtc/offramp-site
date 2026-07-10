@@ -31,7 +31,7 @@ Next milestones: M2 estimate flow → M3 money pages → M4 vault → M5 lane 2 
 - ▢ Onramp written referral + name-peace agreement
 - ▢ Grab @offrampgold on X / YouTube / LinkedIn
 - ▢ hello@offrampgold.com created + warming
-- ▢ Confirm 512-983-5997 is the OpenPhone line
+- ● Confirm 512-983-5997 is the OpenPhone line (confirmed 2026-07-10)
 - ▢ Create Supabase project (unblocks M1 items 5–6, all of M2/M4)
 - ▢ Resend account + API key
 - ▢ TX precious-metals dealer registration (blocks purchases, not build)
@@ -42,6 +42,7 @@ Next milestones: M2 estimate flow → M3 money pages → M4 vault → M5 lane 2 
 - goldvsbitcoin.org repoint to /learn/ = wk 7–8 (M5). goldbuyer.io ranking site = Phase 2, month 4+.
 
 ## Shipped log
+- 2026-07-10: Vendored emilkowalski/skills design-engineering reference into `docs/design-skills/` (audited clean; BUILD-SPEC wins on conflicts — see OFFRAMP-NOTES.md). Desktop copy at `~/Desktop/design-skills-emilkowalski/` for cross-project use.
 - 2026-07-10: Command center installed (CLAUDE.md + docs/), repo untangled, v1.1 spec canon.
 - 2026-06-22 *(pre-spec, dark theme — superseded but live)*: /gold-price per-karat + Dataset/FAQ JSON-LD · /gold-calculator shareable URLs · /embed/calculator.html + /widget · kit-request/newsletter HubSpot-dormant wiring. These URLs survive; rebuild on Estate Paper templates per migration rules.
 - 2026-07-09: Root-caused + fixed 105-day Vercel deploy failure (git author not a team member).
