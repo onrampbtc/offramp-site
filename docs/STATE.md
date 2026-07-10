@@ -28,9 +28,10 @@ Next milestones: M2 estimate flow → M3 money pages → M4 vault → M5 lane 2 
 - **Proof:** ▢ methodology · ▢ payouts ledger · ▢ assay video #1 · ▢ reviews
 
 ## Michael's checklist (external — agent cannot do these)
+- ● Google Search Console set up ✓ (2026-07-10) — REMAINING: submit sitemap.xml for each property if not done
 - ▢ Trademark knockout search "Offramp" in financial services (pre-M1, spec §18)
 - ▢ Onramp written referral + name-peace agreement
-- ▢ Grab @offrampgold on X / YouTube / LinkedIn
+- ▢ Grab @offrampgold on X / YouTube / LinkedIn (still open)
 - ◐ Business email — Google Workspace Business Starter flexible monthly is active. Admin console shows `michael@offrampgold.com` active, created Jul 9, 2026, with aliases `hello@offrampgold.com`, `support@offrampgold.com`, and `clients@offrampgold.com` on the user profile. Google setup page shows Gmail is now ready. Public DNS shows Google MX (`smtp.google.com`), Google SPF (`include:_spf.google.com`), and DMARC monitor record (`p=none`). Google DKIM is not yet present. Next: generate DKIM and run send/receive/reply tests.
 - ● Confirm 512-983-5997 is the OpenPhone line (confirmed 2026-07-10)
 - ● Supabase fully wired (keys in Vercel, migration applied, cron storing) — done 2026-07-10
