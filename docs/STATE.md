@@ -3,7 +3,7 @@
 > Read first every session. Update before every shipping commit. Statuses: ▢ todo · ◐ in progress · ● done · ⊘ blocked.
 > Last updated: 2026-07-10
 
-## Current milestone: **M1 — Reskin + foundation** (spec §16)
+## Current milestone: **M1 — COMPLETE ✓ (2026-07-10)** → next: M3 money pages
 
 | # | M1 item | Status |
 |---|---|---|
@@ -11,8 +11,8 @@
 | 2 | Delete `.text-gold-shimmer`, `.glow-gold`, pulse rings, shimmer keyframes | ● |
 | 3 | Real phone everywhere (`NEXT_PUBLIC_PHONE`, nav + footer + schema) | ● |
 | 4 | Homepage per spec §6 (ticker + review line hidden until real data) | ● |
-| 5 | Supabase project + schema §12 + RLS | ◐ migration ready (supabase/migrations/0001); needs keys in Vercel + SQL applied |
-| 6 | Spot cron (`/api/cron/spot`) accruing daily rows | ◐ cron live + secured; stores rows once Supabase keys land |
+| 5 | Supabase project + schema §12 + RLS | ● 20 tables + RLS live (ref cbqqtyenksrbhtzfxika, us-east-2) |
+| 6 | Spot cron (`/api/cron/spot`) accruing daily rows | ● verified end-to-end in prod; daily 11:00 UTC |
 | 7 | Redirect map §3: sell-X-for-bitcoin → /gold-to-bitcoin ● · blog/* 301s land in M3 with targets | ◐ |
 | — | Acceptance: Lighthouse mobile ≥90 home · no placeholder phone · spot rows daily | |
 
@@ -32,7 +32,7 @@ Next milestones: M2 estimate flow → M3 money pages → M4 vault → M5 lane 2 
 - ▢ Grab @offrampgold on X / YouTube / LinkedIn
 - ◐ Business email — Workspace Business Starter flexible monthly selected at $8.40/user/month; signup started in the visible Codex in-app browser. Business name `Offramp`, one employee, United States entered. Paused at Google's contact-info screen for Michael to enter his current contact email and legal name directly. No account, charge, mailbox, or DNS change yet. Planned user: `michael@offrampgold.com`; planned alias: `hello@offrampgold.com`. Keep Namecheap forwarding live until the mailbox is ready for a tested cutover.
 - ● Confirm 512-983-5997 is the OpenPhone line (confirmed 2026-07-10)
-- ◐ Supabase project created ✓ — REMAINING: paste URL + anon + service_role keys into Vercel env, then run supabase/migrations/0001_init.sql in the SQL editor
+- ● Supabase fully wired (keys in Vercel, migration applied, cron storing) — done 2026-07-10
 - ▢ Resend account + API key
 - ▢ TX precious-metals dealer registration (blocks purchases, not build)
 - ▢ New HubSpot instance (optional, later — never the Onramp one)
