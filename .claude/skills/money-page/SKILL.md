@@ -25,12 +25,16 @@ is `docs/BUILD-SPEC.md`; this skill operationalizes it.
 1. **Semrush** (MCP): confirm the primary keyword's live volume + who ranks top 5.
    Pull 3–5 secondary keywords from the same cluster and the question keywords
    (these become the FAQ blocks).
-2. **Firecrawl**: scrape the top-ranking competitor page for this keyword (usually
+2. **SpyFu** (API key in .env.local): check if competitors BUY this keyword —
+   `ad_history_api/domain_ad_history?d={domain}&r=40&api_key=` shows their ad copy.
+   A keyword they pay for is proven commercial intent; mirror the promise their ad
+   makes (payout, speed, safety) in our direct answer, honestly.
+3. **Firecrawl**: scrape the top-ranking competitor page for this keyword (usually
    thealloymarket.com). Extract: their H1, section order, table structures, FAQ
    questions, word count, schema types. We clone the *skeleton that already ranks*,
    then beat it on: freshness (dated facts), honesty (three-way payout table),
    schema depth, and page speed.
-3. Note both findings in one short comment block at the top of the page's data file.
+4. Note the findings in one short comment block at the top of the page's data file.
 
 ## Step 2 — Build from the template (spec §9)
 - One React template per content type; pages are **data files** under `src/content/`

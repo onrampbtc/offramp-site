@@ -51,5 +51,8 @@ Next milestones: M2 estimate flow → M3 money pages → M4 vault → M5 lane 2 
 - 2026-07-09: Root-caused + fixed 105-day Vercel deploy failure (git author not a team member).
 
 ## Standing intel notes
-- Semrush re-pull monthly (MCP tools; US db). Key baselines 2026-07-09: alloy 25,248 kw / 33,969 visits · CFGUSA $32,382/mo paid · offrampgold 187 kw / ~0 visits.
+- Semrush re-pull monthly (MCP tools; US db). Key baselines 2026-07-09: alloy 25,248 kw / 33,969 visits · offrampgold 187 kw / ~0 visits.
+- **SpyFu (API, key in .env.local + KPI & Dashboards/.env) corrects the paid picture (2026-07-10):** Alloy spends **$65,870/mo** on PPC (2,852 ads, avg ad rank 2.3 — not the $950 Semrush showed); CFGUSA spends **$90,960/mo** (3,730 ads, 16,450 paid clicks). Combined ~$157k/mo of rented traffic on exactly the question keywords our money pages target organically ("how much is scrap gold worth", "10 k gold value", "how do i sell gold jewelry").
+- **Converting ad angles to counter/steal:** Alloy = geo-personalized "Biggest Payouts In [State]" + question keywords; CFGUSA = heavy brand-defense on "cash for gold usa reviews", "Guaranteed Highest Payouts", "Paid in 24 Hrs", and third-party validation ("#1 By TopConsumerReviews" — the exact psychology goldbuyer.io's Phase-2 ranking site harvests).
+- SpyFu working endpoints: `domain_stats_api/v2/getLatestDomainStats?domain=&countryCode=US&api_key=` · `ad_history_api/domain_ad_history?d=&r=&api_key=` · full index: developer.spyfu.com/llms.txt. Raw pulls in .firecrawl/spyfu/ (gitignored).
 - Old sitemap/xlsx keyword artifacts are superseded — archive only.
