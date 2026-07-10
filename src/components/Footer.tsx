@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Seal } from "@/components/Logo";
 
 const PHONE_DISPLAY = "(512) 983-5997";
 const PHONE_HREF = `tel:${process.env.NEXT_PUBLIC_PHONE ?? "+15129835997"}`;
@@ -46,7 +47,9 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
           {/* NAP block */}
           <div>
-            <p className="font-display text-xl font-semibold text-ink">Offramp</p>
+            <p className="flex items-center gap-2 font-display text-xl font-semibold text-ink">
+              <Seal size={22} className="text-ink" /> Offramp
+            </p>
             <p className="mt-3 max-w-xs font-body text-sm leading-relaxed text-ink-2">
               The family way to know, keep, and sell your gold.
             </p>
@@ -59,6 +62,11 @@ export function Footer() {
                 </a>
               </p>
               <p className="text-ink-3">Mon-Fri 9:00-5:00 CT · by appointment</p>
+              <p>
+                <a href="mailto:hello@offrampgold.com" className="text-ink transition-colors hover:text-gold-400">
+                  hello@offrampgold.com
+                </a>
+              </p>
             </address>
           </div>
 
@@ -86,26 +94,7 @@ export function Footer() {
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <div className="flex items-center gap-3">
               {/* Stamped-seal mark */}
-              <svg
-                width="34"
-                height="34"
-                viewBox="0 0 34 34"
-                aria-hidden="true"
-                className="text-line-2"
-              >
-                <circle cx="17" cy="17" r="15.5" fill="none" stroke="currentColor" strokeWidth="1" />
-                <circle cx="17" cy="17" r="11.5" fill="none" stroke="currentColor" strokeWidth="0.5" />
-                <text
-                  x="17"
-                  y="21"
-                  textAnchor="middle"
-                  fontFamily="var(--font-cormorant), Georgia, serif"
-                  fontSize="12"
-                  fill="#8A6D1F"
-                >
-                  O
-                </text>
-              </svg>
+              <Seal size={34} className="text-ink-3" />
               <p className="font-body text-xs leading-relaxed text-ink-3">
                 © {year} Offramp. Texas precious-metals dealer registration in progress.{" "}
                 <br className="hidden sm:block" />

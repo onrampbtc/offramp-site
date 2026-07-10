@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Lockup } from "@/components/Logo";
 
 const NAV_LINKS = [
   { href: "/sell", label: "Sell gold" },
@@ -47,10 +48,8 @@ export function Navigation() {
       >
         <nav className="mx-auto flex h-[68px] max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           {/* Wordmark */}
-          <Link href="/" aria-label="Offramp home" className="flex items-baseline gap-1">
-            <span className="font-display text-[1.6rem] font-semibold tracking-tight text-ink">
-              Offramp
-            </span>
+          <Link href="/" aria-label="Offramp home">
+            <Lockup />
           </Link>
 
           {/* Desktop links */}

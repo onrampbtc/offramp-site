@@ -11,7 +11,7 @@ This repo is the single source of truth for offrampgold.com AND the operating hu
 
 ## Hard laws (from spec — do not violate)
 - **Five content types only:** calculator · price table · worth page · thesis page · proof asset. No blog posts, no listicles.
-- **Estate Paper** design system (spec §4): light paper default, dark only for instrument panels + /gold-to-bitcoin. No shimmer/glow/pulse. All numbers DM Mono `tabular-nums`.
+- **Assay Ledger** design system (spec §4, chosen 2026-07-10): bone/graphite/champagne, gold only as photographed material, THE ASSAY LINE on every page, one vault-band dark moment per page, documentary captions on real photos. No shimmer/glow/pulse. All numbers Geist Mono `tabular-nums`.
 - **Never write** "unlock the value", "turn clutter into cash", countdown timers. "Cash out" only at decision moments (vault sell, alerts, offer accept) — never first-contact copy.
 - **BTC is a differentiator, not acquisition** ("sell gold for bitcoin" = 20 searches/mo). Never build pages targeting gold→BTC keywords.
 - No fabricated proof: no fake reviews, ticker hidden until ≥5 real payouts.

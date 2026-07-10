@@ -10,7 +10,8 @@ import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 const cormorant = Source_Serif_4({
   variable: "--font-cormorant",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  axes: ["opsz"],
+  weight: "variable",
   display: "swap",
 });
 

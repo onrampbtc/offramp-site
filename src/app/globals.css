@@ -81,6 +81,17 @@ body {
 /* Every number on the site is tabular mono (spec §4) */
 .font-mono { font-variant-numeric: tabular-nums; }
 
+/* Assay Ledger type discipline: optical sizing on the serif, tight display
+   tracking, balanced headings. */
+.font-display {
+  font-optical-sizing: auto;
+  letter-spacing: -0.015em;
+}
+h1, h2, h3 { text-wrap: balance; }
+h1.font-display { font-weight: 550; }
+h2.font-display, h3.font-display { font-weight: 560; }
+.font-body { letter-spacing: -0.006em; }
+
 /*
   LEGACY EFFECT CLASSES — shimmer/glow/pulse deleted per spec §4.
   Class names kept as inert, estate-paper-sane fallbacks so existing pages

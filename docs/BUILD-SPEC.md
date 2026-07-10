@@ -64,7 +64,22 @@ Repo: `offramp-site` — Next.js App Router + Tailwind v4 (tokens inline in `src
 
 ## PART II — BRAND SYSTEM
 
-## 4. "Estate Paper" design system
+## 4. "Assay Ledger" design system (v1.2 — CHOSEN by Michael 2026-07-10, supersedes Estate Paper)
+
+World: a private bank crossed with an assay laboratory. Warm bone paper, graphite ink,
+champagne as accent INK (gold appears as photographed material, never UI paint), numbers
+set like ledger entries. Signature: THE ASSAY LINE — a persistent champagne hairline
+carrying live dated data (spot, serials) across every page. One sanctioned dark moment
+per page (the vault band, #16130E + #D9BC82). Every real photo carries a documentary
+caption. Tokens:
+bone #F6F2E9 (ground) · white #FFFFFF (cards) · graphite #232019 (ink) · champagne
+#A98D4B (accent ink, AA on light) · oxblood #7A3B2E (caution/pawn) · ledger green
+#3E6152 (positive) · vault #16130E + champagne-bright #D9BC82 (dark panels only).
+Type: Source Serif 4 (display, optical sizing) · Geist (body) · Geist Mono tabular
+(every number). Full research: docs/design-research/. The section below is the
+superseded Estate Paper record, kept for migration reference.
+
+## 4-LEGACY. "Estate Paper" design system
 
 World: an appraiser's letterhead meets a family album. Warm paper, ink, one gold line, real photography (hands, pieces, the XRF gun, Austin). Human first; precise underneath — numbers are always monospace/tabular, estimates get serial numbers, data lives in dark "instrument panels" set into light pages.
 
@@ -469,5 +484,6 @@ Weekly (~4h): Mon ship 2 backlog pages (worth→guides order per §2 volumes) ·
 **Pre-M1 checklist:** trademark knockout search on "Offramp" in financial services · Onramp written referral + name-peace agreement · grab @offrampgold on X/YouTube/LinkedIn · hello@offrampgold.com created and warming.
 
 ## Changelog
+- v1.2 (2026-07-10): Assay Ledger design system chosen (research-driven; see docs/design-research/DIRECTIONS.md). Estate Paper superseded.
 - v1.1 (2026-07-09): Name locked (Offramp); three-property architecture (goldvsbitcoin editorial, goldbuyer.io Phase 2 ranking site w/ FTC disclosure, goldtobtc 301); "Cash out" adopted as decision-moment product verb with usage rule.
 - v1.0 (2026-07-09): Initial complete build spec consolidating master plan v2.0 + all research.
