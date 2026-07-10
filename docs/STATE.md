@@ -37,6 +37,13 @@ Next milestones: M2 estimate flow → M3 money pages → M4 vault → M5 lane 2 
 - ▢ TX precious-metals dealer registration (blocks purchases, not build)
 - ▢ New HubSpot instance (optional, later — never the Onramp one)
 
+## Workstream: goldbuyer.io ranking site (Phase 2 — PULLED FORWARD 2026-07-10, owner decision)
+- Spec §3.3 authority play accelerated from month 4. Justification: SpyFu shows CFGUSA paying for third-party-ranking keywords; Alloy's converting ad angle is geo "Biggest Payouts In [State]".
+- ● Methodology v1.0 written (`apps/goldbuyer/src/data/methodology.ts`): payout 30 · proof 25 · tracking 15 · service 10 · tech 10 · reputation 10; tier grades; FTC disclosure text; honesty rules (Offramp scored by same rubric, real weaknesses shown).
+- ◐ Research agents running: 8 competitor evidence files + 12-state law files → `apps/goldbuyer/research/` (gitignored).
+- ▢ Next: buyers.ts scored data (evidence-cited) → rankings homepage → /methodology page → /reviews/[buyer] pages → /states/[state] ×12→50 → FTC disclosure footer sitewide.
+- Targets: "best place to sell gold" 3,600/mo · "+near me" 2,400/mo · 50× "sell gold [state]" long-tail.
+
 ## Satellites
 - **gold-domains** repo (`~/Desktop/gold-domains`, onrampbtc/gold-domains @ d4213c5): goldtobtc 301→Offramp committed ✓ · goldbuyer /reviews stripped ✓ · goldvsbitcoin glossary build-crash fixed ✓. ⊘ **Vercel deploys unproven since the git-author fix** — next push tests it; if UNKNOWN again, inspect project build settings in dashboard.
 - goldvsbitcoin.org repoint to /learn/ = wk 7–8 (M5). goldbuyer.io ranking site = Phase 2, month 4+.
