@@ -19,6 +19,15 @@ export function OrganizationJsonLd() {
         logo: "https://offrampgold.com/logo.png",
         description:
           "Sell your gold for cash or Bitcoin. Free insured shipping, XRF spectrometer assay, wire payment.",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "500 W 2nd St Ste 1900",
+          addressLocality: "Austin",
+          addressRegion: "TX",
+          postalCode: "78701",
+          addressCountry: "US",
+        },
+        telephone: "+15129835997",
         sameAs: [
           "https://x.com/offramp",
           "https://youtube.com/@offramp",
@@ -190,6 +199,58 @@ export function WebApplicationJsonLd({
           "@type": "Offer",
           price: "0",
           priceCurrency: "USD",
+        },
+      }}
+    />
+  );
+}
+
+export function DatasetJsonLd({
+  name,
+  description,
+  url,
+}: {
+  name: string;
+  description: string;
+  url: string;
+}) {
+  return (
+    <JsonLd
+      data={{
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        name,
+        description,
+        url,
+        creator: {
+          "@type": "Organization",
+          name: "Offramp",
+          url: "https://offrampgold.com",
+        },
+        license: "https://creativecommons.org/licenses/by/4.0/",
+        isAccessibleForFree: true,
+        keywords: [
+          "gold price today",
+          "gold spot price",
+          "gold price per gram",
+          "gold price per ounce",
+          "10k gold price",
+          "14k gold price",
+          "18k gold price",
+          "gold price in bitcoin",
+        ],
+        variableMeasured: [
+          "Gold spot price per troy ounce (USD)",
+          "Gold price per gram (USD)",
+          "Gold price per pennyweight (USD)",
+          "Gold price per karat (10k, 14k, 18k, 22k, 24k)",
+          "Gold price in Bitcoin",
+        ],
+        temporalCoverage: "2020/..",
+        distribution: {
+          "@type": "DataDownload",
+          encodingFormat: "application/json",
+          contentUrl: "https://offrampgold.com/api/prices",
         },
       }}
     />

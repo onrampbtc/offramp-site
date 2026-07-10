@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { upsertContact, isHubSpotConfigured } from "@/lib/hubspot";
 
 export async function POST(request: Request) {
   try {
@@ -22,18 +23,38 @@ export async function POST(request: Request) {
       );
     }
 
-    // TODO: Integrate with email service (Beehiiv, SendGrid, etc.)
-    // TODO: Store in CRM / database
-    // TODO: Trigger shipping kit fulfillment
-    // For now, log the submission
-    console.log("Kit request received:", {
-      name: `${firstName} ${lastName}`,
+    // Push into HubSpot (Offramp-Transactions). No-ops gracefully until the
+    // HUBSPOT_PRIVATE_APP_TOKEN env var is set — see onramp-hq/secrets/KEYS-INDEX.md.
+    const crm = await upsertContact({
       email,
-      address: `${address}, ${city}, ${state} ${zip}`,
-      goldType: body.goldType,
-      paymentPreference: body.paymentPreference,
-      timestamp: new Date().toISOString(),
+      firstname: firstName,
+      lastname: lastName,
+      address,
+      city,
+      state,
+      zip,
+      // custom contact properties (create these in the HubSpot portal):
+      gold_type: body.goldType,
+      payment_preference: body.paymentPreference,
+      lead_source: "offramp-kit-request",
     });
+
+    if (!crm.ok) {
+      // Don't fail the user's request if CRM is down — log and continue.
+      console.error("Kit request CRM upsert failed:", crm.error);
+    }
+
+    if (!isHubSpotConfigured()) {
+      // Fallback audit log until CRM is wired.
+      console.log("Kit request received (CRM not configured):", {
+        name: `${firstName} ${lastName}`,
+        email,
+        address: `${address}, ${city}, ${state} ${zip}`,
+        goldType: body.goldType,
+        paymentPreference: body.paymentPreference,
+        timestamp: new Date().toISOString(),
+      });
+    }
 
     return NextResponse.json({ success: true });
   } catch {

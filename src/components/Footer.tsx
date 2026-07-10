@@ -172,6 +172,18 @@ export function Footer() {
               The most trusted way to sell your gold. Get paid in dollars or
               Bitcoin with fully insured shipping and transparent pricing.
             </p>
+            {/* Contact info */}
+            <address className="mt-6 flex flex-col gap-1 not-italic">
+              <p className="font-body text-sm text-cream-45">
+                500 W 2nd St Ste 1900, Austin, TX 78701
+              </p>
+              <a
+                href="tel:+15129835997"
+                className="font-body text-sm text-cream-45 transition-colors hover:text-gold-500"
+              >
+                (512) 983-5997
+              </a>
+            </address>
             {/* Trust badges */}
             <div className="mt-6 flex items-center gap-4">
               <div className="flex items-center gap-1.5 rounded-full border border-cream-08 bg-cream-08 px-3 py-1.5">

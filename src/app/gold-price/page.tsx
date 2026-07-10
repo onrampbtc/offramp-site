@@ -1,8 +1,9 @@
 "use client";
 
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import Link from "next/link";
 import { useGoldPrice } from "@/hooks/useGoldPrice";
+import { GOLD_PRICE_FAQ } from "./faq";
 
 /* ------------------------------------------------------------------ */
 /*  Constants                                                          */
@@ -11,6 +12,18 @@ import { useGoldPrice } from "@/hooks/useGoldPrice";
 const GRAMS_PER_OZ = 31.1035;
 const DWT_PER_OZ = 20;
 const GRAMS_PER_KG = 1000;
+
+// Karat purities for the per-karat breakdown + inline calculator.
+const KARATS = [
+  { label: "10K", slug: "10k", purity: 0.417 },
+  { label: "14K", slug: "14k", purity: 0.583 },
+  { label: "18K", slug: "18k", purity: 0.75 },
+  { label: "22K", slug: "22k", purity: 0.917 },
+  { label: "24K", slug: "24k", purity: 0.999 },
+] as const;
+
+// Offramp pays up to 80% of melt; typical pawn shop ~35%.
+const OFFRAMP_PAYOUT = 0.8;
 
 /* ------------------------------------------------------------------ */
 /*  Helpers                                                            */
@@ -35,6 +48,35 @@ function fmtBTC(n: number) {
 
 export default function GoldPricePage() {
   const { goldPerOz: spotPrice, btcPrice, lastUpdated, isLive } = useGoldPrice();
+
+  /* inline "what's my gold worth" calculator state */
+  const [calcKarat, setCalcKarat] = useState(1); // default 14K
+  const [calcGrams, setCalcGrams] = useState(10);
+
+  /* per-karat price breakdown (per gram + per dwt), derived from spot */
+  const karatRows = useMemo(() => {
+    const perGram24 = spotPrice / GRAMS_PER_OZ;
+    const perDwt24 = spotPrice / DWT_PER_OZ;
+    return KARATS.map((k) => ({
+      ...k,
+      perGram: perGram24 * k.purity,
+      perDwt: perDwt24 * k.purity,
+    }));
+  }, [spotPrice]);
+
+  /* inline calculator result */
+  const calc = useMemo(() => {
+    const purity = KARATS[calcKarat].purity;
+    const perGram = spotPrice / GRAMS_PER_OZ;
+    const melt = calcGrams * purity * perGram;
+    const pays = melt * OFFRAMP_PAYOUT;
+    return {
+      melt,
+      pays,
+      btc: pays / btcPrice,
+      slug: KARATS[calcKarat].slug,
+    };
+  }, [calcKarat, calcGrams, spotPrice, btcPrice]);
 
   /* derived prices */
   const prices = useMemo(() => {
@@ -240,6 +282,185 @@ export default function GoldPricePage() {
       </section>
 
       {/* ============================================================ */}
+      {/*  PRICE BY KARAT                                              */}
+      {/* ============================================================ */}
+      <section className="mx-auto mt-20 max-w-4xl px-6">
+        <div className="text-center mb-12">
+          <p className="text-xs font-body uppercase tracking-[0.25em] text-gold-500 mb-4">
+            By Karat
+          </p>
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight">
+            Gold Price by Karat
+          </h2>
+          <p className="mt-4 max-w-2xl mx-auto text-base text-cream-60 font-body">
+            Most jewelry is not pure gold. These are live melt values per gram
+            and per pennyweight for each common karat, based on the spot price
+            above.
+          </p>
+        </div>
+
+        <div className="overflow-x-auto rounded-xl border border-cream-15">
+          <table className="w-full min-w-[500px] text-left">
+            <thead>
+              <tr className="border-b border-cream-08 bg-bg-card">
+                <th className="px-6 py-4 font-body text-xs font-semibold uppercase tracking-widest text-cream-45">
+                  Karat
+                </th>
+                <th className="px-6 py-4 font-body text-xs font-semibold uppercase tracking-widest text-cream-45">
+                  Purity
+                </th>
+                <th className="px-6 py-4 text-right font-body text-xs font-semibold uppercase tracking-widest text-cream-45">
+                  Per Gram
+                </th>
+                <th className="px-6 py-4 text-right font-body text-xs font-semibold uppercase tracking-widest text-gold-500">
+                  Per DWT
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {karatRows.map((row) => (
+                <tr
+                  key={row.slug}
+                  className="border-b border-cream-08 bg-bg-card transition-colors hover:bg-bg-card-hover"
+                >
+                  <td className="px-6 py-5">
+                    <span className="font-body text-sm font-medium text-cream">
+                      {row.label}
+                    </span>
+                  </td>
+                  <td className="px-6 py-5">
+                    <span className="font-mono text-sm text-cream-45">
+                      {(row.purity * 100).toFixed(1)}%
+                    </span>
+                  </td>
+                  <td className="px-6 py-5 text-right">
+                    <span className="font-mono text-base text-cream">
+                      {fmtUSD(row.perGram)}
+                    </span>
+                  </td>
+                  <td className="px-6 py-5 text-right">
+                    <span className="font-mono text-base text-gold-400">
+                      {fmtUSD(row.perDwt)}
+                    </span>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="mt-4 text-center text-xs text-cream-35 font-body">
+          Melt value shown. When you sell, Offramp pays up to{" "}
+          {Math.round(OFFRAMP_PAYOUT * 100)}% of melt &mdash; roughly double a
+          typical pawn shop.
+        </p>
+      </section>
+
+      {/* ============================================================ */}
+      {/*  INLINE "WHAT'S MY GOLD WORTH" CALCULATOR                    */}
+      {/* ============================================================ */}
+      <section className="mx-auto mt-20 max-w-3xl px-6">
+        <div className="border-gold-gradient rounded-2xl p-8 sm:p-10">
+          <div className="text-center mb-8">
+            <p className="text-xs font-body uppercase tracking-[0.25em] text-gold-500 mb-3">
+              Instant Estimate
+            </p>
+            <h2 className="font-display text-2xl sm:text-3xl font-semibold tracking-tight">
+              What is your gold worth right now?
+            </h2>
+          </div>
+
+          {/* Karat selector */}
+          <label className="block text-[10px] font-body uppercase tracking-widest text-cream-35 mb-2">
+            Gold Purity (Karat)
+          </label>
+          <div className="flex gap-2 mb-6">
+            {KARATS.map((k, i) => (
+              <button
+                key={k.slug}
+                onClick={() => setCalcKarat(i)}
+                className={`flex-1 rounded-lg border py-2.5 font-mono text-sm transition-all ${
+                  i === calcKarat
+                    ? "border-gold-500 bg-gold-500/10 text-gold-400"
+                    : "border-cream-15 bg-bg-card text-cream-60 hover:border-cream-35"
+                }`}
+              >
+                {k.label}
+              </button>
+            ))}
+          </div>
+
+          {/* Weight input */}
+          <label className="block text-[10px] font-body uppercase tracking-widest text-cream-35 mb-2">
+            Weight (grams)
+          </label>
+          <div className="flex items-center gap-2 mb-8">
+            <button
+              onClick={() =>
+                setCalcGrams((g) => Math.max(0.1, Math.round((g - 1) * 10) / 10))
+              }
+              className="h-12 w-12 rounded-lg border border-cream-15 bg-bg-card text-xl text-cream-60 transition-colors hover:border-cream-35"
+              aria-label="Decrease weight"
+            >
+              &minus;
+            </button>
+            <input
+              type="number"
+              min="0.1"
+              step="0.1"
+              value={calcGrams}
+              onChange={(e) => {
+                const v = parseFloat(e.target.value);
+                if (!isNaN(v) && v > 0) setCalcGrams(v);
+              }}
+              className="flex-1 rounded-lg border border-cream-15 bg-bg px-4 py-3 text-center font-mono text-xl text-cream focus:border-gold-500 focus:outline-none"
+            />
+            <button
+              onClick={() =>
+                setCalcGrams((g) => Math.round((g + 1) * 10) / 10)
+              }
+              className="h-12 w-12 rounded-lg border border-cream-15 bg-bg-card text-xl text-cream-60 transition-colors hover:border-cream-35"
+              aria-label="Increase weight"
+            >
+              +
+            </button>
+          </div>
+
+          {/* Result */}
+          <div className="grid grid-cols-3 gap-3 text-center">
+            <div className="rounded-xl bg-bg/50 border border-cream-08 p-4">
+              <p className="text-[10px] font-body uppercase tracking-widest text-cream-35 mb-1">
+                Melt Value
+              </p>
+              <p className="font-mono text-lg text-cream">{fmtUSD(calc.melt)}</p>
+            </div>
+            <div className="rounded-xl bg-gold-500/[0.06] border border-gold-500/20 p-4">
+              <p className="text-[10px] font-body uppercase tracking-widest text-gold-500 mb-1">
+                Offramp Pays
+              </p>
+              <p className="font-mono text-lg text-gold-400">
+                {fmtUSD(calc.pays)}
+              </p>
+            </div>
+            <div className="rounded-xl bg-bg/50 border border-cream-08 p-4">
+              <p className="text-[10px] font-body uppercase tracking-widest text-cream-35 mb-1">
+                In Bitcoin
+              </p>
+              <p className="font-mono text-lg text-cream">
+                {fmtBTC(calc.btc)}
+              </p>
+            </div>
+          </div>
+
+          <Link
+            href={`/gold-calculator?k=${calc.slug}&g=${calcGrams}`}
+            className="mt-6 flex w-full items-center justify-center rounded-full bg-gradient-to-r from-gold-500 via-gold-400 to-gold-600 px-6 py-3.5 font-body text-sm font-semibold text-bg transition-all hover:scale-[1.02]"
+          >
+            Open the full calculator &rarr;
+          </Link>
+        </div>
+      </section>
+
+      {/* ============================================================ */}
       {/*  BTC CONVERSION SECTION                                      */}
       {/* ============================================================ */}
       <section className="mx-auto mt-20 max-w-4xl px-6">
@@ -374,6 +595,39 @@ export default function GoldPricePage() {
               ))}
             </ul>
           </div>
+        </div>
+      </section>
+
+      {/* ============================================================ */}
+      {/*  FAQ                                                         */}
+      {/* ============================================================ */}
+      <section className="mx-auto mt-20 max-w-3xl px-6">
+        <div className="text-center mb-12">
+          <p className="text-xs font-body uppercase tracking-[0.25em] text-gold-500 mb-4">
+            Questions
+          </p>
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight">
+            Gold Price FAQ
+          </h2>
+        </div>
+
+        <div className="space-y-4">
+          {GOLD_PRICE_FAQ.map((item) => (
+            <details
+              key={item.question}
+              className="group rounded-xl border border-cream-08 bg-bg-card p-6 transition-colors hover:border-cream-15"
+            >
+              <summary className="flex cursor-pointer items-center justify-between gap-4 font-body text-base font-medium text-cream marker:content-none">
+                {item.question}
+                <span className="shrink-0 text-gold-500 transition-transform group-open:rotate-45">
+                  +
+                </span>
+              </summary>
+              <p className="mt-4 font-body text-sm leading-relaxed text-cream-60">
+                {item.answer}
+              </p>
+            </details>
+          ))}
         </div>
       </section>
 

@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { upsertContact, isHubSpotConfigured } from "@/lib/hubspot";
 
 export async function POST(request: Request) {
   try {
@@ -11,15 +12,23 @@ export async function POST(request: Request) {
       );
     }
 
-    // TODO: Integrate with Beehiiv or preferred email service
-    // Example Beehiiv integration:
-    // const res = await fetch(`https://api.beehiiv.com/v2/publications/${PUBLICATION_ID}/subscriptions`, {
-    //   method: "POST",
-    //   headers: { "Content-Type": "application/json", Authorization: `Bearer ${API_KEY}` },
-    //   body: JSON.stringify({ email, utm_source: "offramp-site" }),
-    // });
+    // Push into HubSpot. No-ops gracefully until the HUBSPOT_PRIVATE_APP_TOKEN
+    // env var is set — see onramp-hq/secrets/KEYS-INDEX.md.
+    const crm = await upsertContact({
+      email,
+      lead_source: "offramp-newsletter",
+    });
 
-    console.log("Newsletter signup:", { email, timestamp: new Date().toISOString() });
+    if (!crm.ok) {
+      console.error("Newsletter CRM upsert failed:", crm.error);
+    }
+
+    if (!isHubSpotConfigured()) {
+      console.log("Newsletter signup (CRM not configured):", {
+        email,
+        timestamp: new Date().toISOString(),
+      });
+    }
 
     return NextResponse.json({ success: true });
   } catch {
