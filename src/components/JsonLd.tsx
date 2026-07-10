@@ -14,7 +14,6 @@ export function OrganizationJsonLd() {
         "@context": "https://schema.org",
         "@type": "Organization",
         name: "Offramp",
-        alternateName: "Offramp by Onramp",
         url: "https://offrampgold.com",
         logo: "https://offrampgold.com/logo.png",
         description:
@@ -28,11 +27,6 @@ export function OrganizationJsonLd() {
           addressCountry: "US",
         },
         telephone: "+15129835997",
-        sameAs: [
-          "https://x.com/offramp",
-          "https://youtube.com/@offramp",
-          "https://linkedin.com/company/offramp",
-        ],
         contactPoint: {
           "@type": "ContactPoint",
           contactType: "customer service",

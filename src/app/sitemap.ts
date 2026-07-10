@@ -17,13 +17,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/sell-jewelry", changeFrequency: "weekly" as const, priority: 0.8 },
     { url: "/sell-coins", changeFrequency: "weekly" as const, priority: 0.8 },
     { url: "/sell-dental-gold", changeFrequency: "weekly" as const, priority: 0.8 },
-    { url: "/sell-gold-for-bitcoin", changeFrequency: "weekly" as const, priority: 0.8 },
-    { url: "/sell-gold-coins-for-bitcoin", changeFrequency: "weekly" as const, priority: 0.7 },
-    { url: "/sell-jewelry-for-bitcoin", changeFrequency: "weekly" as const, priority: 0.7 },
-    { url: "/sell-silver-for-bitcoin", changeFrequency: "weekly" as const, priority: 0.7 },
-    { url: "/convert-gold-to-bitcoin", changeFrequency: "weekly" as const, priority: 0.7 },
-    { url: "/mail-in-gold-for-bitcoin", changeFrequency: "weekly" as const, priority: 0.7 },
-    { url: "/precious-metals-to-crypto", changeFrequency: "weekly" as const, priority: 0.7 },
     { url: "/calculators/14k", changeFrequency: "daily" as const, priority: 0.8 },
     { url: "/calculators/10k", changeFrequency: "daily" as const, priority: 0.7 },
     { url: "/calculators/18k", changeFrequency: "daily" as const, priority: 0.7 },
@@ -53,6 +46,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/is-bitcoin-the-new-gold", changeFrequency: "monthly" as const, priority: 0.7 },
     { url: "/blog/best-place-to-sell-gold", changeFrequency: "monthly" as const, priority: 0.8 },
     { url: "/widget", changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: "/calculators", changeFrequency: "weekly" as const, priority: 0.8 },
+    { url: "/family-vault", changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: "/austin", changeFrequency: "monthly" as const, priority: 0.8 },
   ];
 
   return pages.map((page) => ({

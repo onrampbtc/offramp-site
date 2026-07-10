@@ -78,7 +78,6 @@ export default function SellPage() {
 
         {/* Concentric rings */}
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center" aria-hidden="true">
-          <div className="absolute h-[500px] w-[500px] rounded-full border border-gold-500/[0.04] animate-pulse" />
           <div className="absolute h-[800px] w-[800px] rounded-full border border-gold-500/[0.03]" style={{ animation: "pulse 3s cubic-bezier(0.4,0,0.6,1) infinite" }} />
         </div>
 

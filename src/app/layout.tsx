@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     "sell gold coins",
     "gold buyer online",
   ],
-  authors: [{ name: "Offramp by Onramp" }],
+  authors: [{ name: "Offramp" }],
   creator: "Offramp",
   openGraph: {
     type: "website",
@@ -91,12 +91,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <head>
         <GoogleAnalytics />
       </head>
       <body
-        className={`${cormorant.variable} ${sora.variable} ${dmMono.variable} font-body antialiased bg-bg text-cream`}
+        className={`${cormorant.variable} ${sora.variable} ${dmMono.variable} font-body antialiased bg-paper text-ink`}
       >
         <OrganizationJsonLd />
         <WebSiteJsonLd />

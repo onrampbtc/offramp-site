@@ -134,7 +134,6 @@ export default function GoldPricePage() {
           <div className="flex items-center justify-between mb-8">
             <div className="flex items-center gap-2 text-sm text-cream-45 font-body">
               <span className="relative flex h-2.5 w-2.5">
-                <span className={`absolute inline-flex h-full w-full animate-ping rounded-full ${isLive ? "bg-green-400" : "bg-yellow-400"} opacity-75`} />
                 <span className={`relative inline-flex h-2.5 w-2.5 rounded-full ${isLive ? "bg-green-500" : "bg-yellow-500"}`} />
               </span>
               <span>

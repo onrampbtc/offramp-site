@@ -1,0 +1,1961 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Offramp Wireframes</title>
+<style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;max-width:736px;height:calc(100vh - 2rem);margin:0 auto;border:0}</style>
+</head>
+<body>
+<iframe sandbox="allow-scripts" referrerpolicy="no-referrer" title="Offramp Wireframes" srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; &#x27;wasm-unsafe-eval&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src &#x27;unsafe-inline&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;&quot;&gt;
+&lt;title&gt;Offramp Wireframes&lt;/title&gt;
+&lt;style&gt;:root {
+  color-scheme: light dark;
+  background-color: var(--background) !important;
+
+  /* Agent-facing contract; keep in sync with SKILL.md. */
+  --background: light-dark(rgb(255 255 255), rgb(24 24 24));
+  --foreground: light-dark(rgb(26 28 31), rgb(255 255 255));
+  --card: color-mix(in oklab, var(--foreground) 5%, transparent);
+  --card-foreground: var(--foreground);
+  --popover: light-dark(rgb(255 255 255), rgb(45 45 45));
+  --popover-foreground: var(--foreground);
+  --primary: light-dark(rgb(51 156 255), rgb(131 195 255));
+  --primary-foreground: light-dark(rgb(255 255 255), rgb(13 13 13));
+  --secondary: light-dark(rgb(255 255 255 / 96%), rgb(54 54 54 / 96%));
+  --secondary-foreground: var(--foreground);
+  --muted: color-mix(in srgb, var(--foreground) 10%, transparent);
+  --muted-foreground: light-dark(
+    rgb(26 28 31 / 49.4%),
+    rgb(255 255 255 / 49.8%)
+  );
+  --accent: light-dark(rgb(229 242 255), rgb(13 39 63));
+  --accent-foreground: var(--primary);
+  --destructive: light-dark(rgb(226 85 7), rgb(255 133 73));
+  --border: light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%));
+  --input: light-dark(
+    rgb(26 28 31 / 11.8%),
+    color-mix(in oklab, rgb(0 0 0) 10%, transparent)
+  );
+  --ring: light-dark(rgb(51 156 255), rgb(131 195 255 / 76%));
+  --font-size-base: 14px;
+  --viz-series-1: var(--primary);
+  --viz-series-2: light-dark(rgb(243 136 59), rgb(245 154 86));
+  --viz-series-3: light-dark(rgb(93 201 119), rgb(116 213 139));
+  --viz-series-4: light-dark(rgb(235 119 177), rgb(240 143 192));
+  --viz-series-5: light-dark(rgb(155 121 236), rgb(170 145 239));
+  --viz-series-6: light-dark(rgb(58 185 177), rgb(90 203 194));
+
+  /* Internal implementation variables; not part of the agent contract. */
+  --font-sans: -apple-system, system-ui, &quot;Segoe UI&quot;, sans-serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;Liberation Mono&quot;,
+    monospace;
+  --font-size-normal: max(11px, var(--font-size-base));
+  --font-size-tooltip: calc(var(--font-size-base) - 1px);
+  --font-size-small: max(11px, calc(var(--font-size-base) - 2px));
+  --font-size-h1: calc(var(--font-size-normal) * 1.7142857143);
+  --font-size-h2: calc(var(--font-size-normal) * 1.4285714286);
+  --font-size-h3: calc(var(--font-size-normal) * 1.2857142857);
+  --font-weight-normal: 430;
+  --font-weight-medium: 500;
+  --line-height-normal: calc(var(--font-size-normal) * 1.5);
+  --line-height-tooltip: calc(var(--font-size-tooltip) * 1.4285714286);
+  --line-height-small: calc(var(--font-size-small) + 4px);
+  --radius: 12.5px;
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-2xl: calc(var(--radius) * 1.6);
+  --radius-full: 9999px;
+  --shadow-sm: 0 1px 2px -1px rgb(0 0 0 / 8%);
+  --checkmark-image: url(&quot;data:image/svg+xml,%3Csvg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 17 17&#x27;%3E%3Cpath d=&#x27;M12.8961 3.64101C13.1297 3.41418 13.4984 3.37523 13.7779 3.56581C14.0571 3.75635 14.1554 4.11331 14.0299 4.41347L13.9615 4.53847L7.71151 13.7045C7.59411 13.8767 7.4063 13.9877 7.19881 14.0072C6.99136 14.0267 6.78564 13.9533 6.63826 13.806L2.88826 10.056L2.79842 9.9457C2.6192 9.67407 2.64927 9.30496 2.88826 9.06581C3.12738 8.82669 3.49647 8.79676 3.76815 8.97597L3.8785 9.06581L7.03084 12.2182L12.8053 3.74941L12.8961 3.64101Z&#x27;/%3E%3C/svg%3E&quot;);
+
+  /* Legacy aliases; not part of the current agent contract. */
+  --viz-bg: transparent;
+  --viz-panel: var(--card);
+  --viz-border: var(--border);
+  --viz-text: var(--foreground);
+  --viz-muted: var(--muted-foreground);
+  --viz-accent: var(--primary);
+  --viz-accent-text: var(--primary-foreground);
+  --viz-accent-bg: var(--accent);
+  --viz-font-size: var(--font-size-base);
+  --viz-warning: var(--destructive);
+  --color-background-primary: var(--background);
+  --color-text-primary: var(--foreground);
+  --color-border-secondary: var(--border);
+}
+
+:root[data-theme=&quot;light&quot;] {
+  color-scheme: light;
+}
+
+:root[data-theme=&quot;dark&quot;] {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html &gt; body {
+  margin: 0;
+  padding: 5px;
+  color: var(--foreground);
+  background: transparent !important;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+}
+
+a {
+  color: color-mix(in srgb, var(--viz-accent) 80%, var(--viz-text) 20%);
+  cursor: pointer;
+  font-weight: var(--viz-font-weight-medium);
+  text-decoration: none;
+  text-underline-offset: 2px;
+}
+
+a:is(:hover, :focus-visible) {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 0.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-block: 0;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.3;
+}
+
+b,
+strong,
+th {
+  font-weight: var(--font-weight-medium);
+}
+
+code:not(pre code) {
+  display: inline;
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  corner-shape: superellipse(1.5);
+  background: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  overflow-wrap: anywhere;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  word-break: break-word;
+}
+
+#widget {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  padding: 0;
+  background: transparent !important;
+}
+
+.card {
+  min-width: 0;
+  padding: 12px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  border-radius: var(--radius-2xl);
+  corner-shape: superellipse(1.5);
+  color: var(--card-foreground);
+  background: var(--card);
+}
+
+#widget &gt; :not(.card) {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.tooltip {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: max-content;
+  max-width: min(
+    20rem,
+    var(--tooltip-available-width, calc(100vw - 10px)),
+    calc(100vw - 10px)
+  );
+  max-height: min(
+    var(--tooltip-available-height, calc(100vh - 10px)),
+    calc(100vh - 10px)
+  );
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  corner-shape: superellipse(1.5);
+  color: var(--popover-foreground);
+  background: var(--popover);
+  box-shadow: none;
+  font-size: var(--font-size-tooltip);
+  line-height: var(--line-height-tooltip);
+  overflow-wrap: break-word;
+  white-space: normal;
+  pointer-events: none;
+  user-select: none;
+}
+
+.viz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(max(180px, 24%), 1fr));
+  gap: 10px;
+}
+
+.viz-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.viz-stat-value {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+.viz-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.viz-badge {
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  color: var(--accent-foreground);
+  background: var(--accent);
+  font-weight: var(--font-weight-medium);
+}
+
+small,
+.text-small,
+.viz-badge {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+.text-muted {
+  color: var(--muted-foreground);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.viz-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.viz-controls &gt; .form-label {
+  display: grid;
+  min-width: min(100%, 260px);
+  flex: 1 1 280px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 2px 12px;
+  margin-bottom: 0;
+}
+
+.viz-controls &gt; .form-label &gt; :is(.form-control, .form-range, .form-select) {
+  grid-column: 1 / -1;
+}
+
+.btn,
+.form-check-input,
+.form-control,
+.form-range,
+.form-select {
+  font: inherit;
+}
+
+.btn {
+  appearance: button;
+  display: inline-flex;
+  inline-size: fit-content;
+  max-inline-size: 100%;
+  min-height: 28px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0 8px;
+  -webkit-app-region: no-drag;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: superellipse(1.5);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: var(--cursor-interaction, pointer);
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn:is(.btn-block, .viz-tile) {
+  inline-size: 100%;
+}
+
+.btn.viz-tile {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+a.btn {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:not(:disabled):hover {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.btn-primary {
+  border-color: transparent;
+  color: var(--primary-foreground);
+  background: var(--foreground);
+  background-clip: padding-box;
+}
+
+.btn-primary .text-muted {
+  color: color-mix(in srgb, var(--primary-foreground) 50%, transparent);
+}
+
+.btn-primary:not(:disabled):hover {
+  background: color-mix(in srgb, var(--foreground) 80%, transparent);
+  background-clip: padding-box;
+}
+
+.btn-ghost {
+  border-color: transparent;
+  color: var(--muted-foreground);
+  background: transparent;
+}
+
+.btn-ghost:not(:disabled):hover {
+  color: var(--foreground);
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+[data-lucide] {
+  stroke-width: 1.6;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--foreground);
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  padding: 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: superellipse(1.5);
+  color: var(--foreground);
+  background: var(--secondary);
+}
+
+.form-control::placeholder {
+  color: var(--muted-foreground);
+}
+
+.form-control[type=&quot;file&quot;] {
+  padding: 0;
+  overflow: hidden;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control[type=&quot;file&quot;]::file-selector-button {
+  min-height: 26px;
+  margin-right: 8px;
+  padding: 0 8px;
+  border: 0;
+  border-right: 1px solid var(--input);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: inherit;
+  font: inherit;
+}
+
+.form-control[type=&quot;file&quot;]:not(:disabled):hover::file-selector-button {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-control-color[type=&quot;color&quot;] {
+  width: 40px;
+  height: 28px;
+  padding: 3px;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch {
+  border: 0;
+  border-radius: calc(var(--radius-lg) - 4px);
+  corner-shape: superellipse(1.5);
+}
+
+textarea.form-control {
+  height: auto;
+  min-height: 72px;
+  padding: 8px 10px;
+  resize: vertical;
+}
+
+.form-control:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-control:disabled,
+.form-select:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.form-select {
+  appearance: none;
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  margin: 0;
+  padding: 0 32px 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: superellipse(1.5);
+  color: var(--foreground);
+  background-color: var(--secondary);
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--muted-foreground) 50%),
+    linear-gradient(135deg, var(--muted-foreground) 50%, transparent 50%);
+  background-position:
+    calc(100% - 14px) 50%,
+    calc(100% - 10px) 50%;
+  background-repeat: no-repeat;
+  background-size: 4px 4px;
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-select:not(:disabled):hover {
+  background-color: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-select:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-check {
+  display: flex;
+  min-height: 20px;
+  align-items: center;
+  gap: 6px;
+}
+
+.form-check-input {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+  margin: 0;
+  border: 1px solid var(--input);
+  color: var(--primary-foreground);
+  background-color: transparent;
+  cursor: var(--cursor-interaction, default);
+  transition:
+    background-color 150ms,
+    border-color 150ms,
+    box-shadow 150ms;
+}
+
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;] {
+  border-color: var(--input);
+  border-radius: var(--radius-sm);
+  corner-shape: superellipse(1.5);
+  background-color: var(--secondary);
+  box-shadow: var(--shadow-sm);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input:not(:disabled):not(:checked):hover {
+  background-color: var(--card);
+}
+
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;]:checked {
+  border-color: var(--primary);
+  background-color: var(--primary);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input[type=&quot;checkbox&quot;]:checked::before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-foreground);
+  content: &quot;&quot;;
+  mask: var(--checkmark-image) center / 12px 12px no-repeat;
+}
+
+.form-check-input[type=&quot;radio&quot;] {
+  width: 14px;
+  height: 14px;
+  border-radius: var(--radius-full);
+}
+
+.form-check-input[type=&quot;radio&quot;]:checked {
+  border: 2px solid var(--primary);
+  background:
+    radial-gradient(circle, var(--primary-foreground) 0 2.5px, transparent 3px),
+    var(--primary);
+}
+
+.form-check:not(.form-switch) .form-check-input:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+}
+
+.form-switch .form-check-input:disabled,
+.form-switch .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.form-check-label {
+  color: var(--foreground);
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-switch .form-check-input {
+  position: relative;
+  width: 32px;
+  height: 20px;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+  box-shadow: none;
+  transition: background-color 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border: 1px solid light-dark(var(--primary-foreground), var(--foreground));
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+  box-shadow: var(--shadow-sm);
+  content: &quot;&quot;;
+  transform: translate(2px, -50%);
+  transition: transform 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input:checked {
+  background: var(--primary);
+}
+
+.form-switch .form-check-input:checked::before {
+  transform: translate(14px, -50%);
+}
+
+.form-switch .form-check-input:focus-visible {
+  box-shadow: 0 0 0 2px var(--ring);
+}
+
+.form-range {
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 28px;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: 0;
+  accent-color: var(--primary);
+  background: linear-gradient(
+      color-mix(in srgb, var(--foreground) 7%, transparent),
+      color-mix(in srgb, var(--foreground) 7%, transparent)
+    )
+    center / 100% 2px no-repeat;
+}
+
+.form-range::-webkit-slider-runnable-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-webkit-slider-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range::-moz-range-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-moz-range-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.btn:not(.btn-primary, .viz-tile):is(
+    [aria-pressed=&quot;true&quot;],
+    [aria-selected=&quot;true&quot;],
+    .is-selected
+  ) {
+  border-color: var(--primary);
+  color: var(--primary-foreground);
+  background: var(--primary);
+}
+
+.btn.viz-tile:is([aria-pressed=&quot;true&quot;], [aria-selected=&quot;true&quot;], .is-selected) {
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px var(--primary);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#widget &gt; svg {
+  width: 100%;
+}
+
+.text-warning,
+.text-destructive {
+  color: var(--destructive);
+}
+
+html&gt;body{padding:0}&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;offramp-wireframes-vis&quot;&gt;
+  &lt;div class=&quot;viz-controls&quot; aria-label=&quot;Wireframe controls&quot;&gt;
+    &lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot; data-screen=&quot;home&quot; aria-pressed=&quot;true&quot;&gt;Home&lt;/button&gt;
+    &lt;button class=&quot;btn&quot; type=&quot;button&quot; data-screen=&quot;capture&quot; aria-pressed=&quot;false&quot;&gt;Estimate&lt;/button&gt;
+    &lt;button class=&quot;btn&quot; type=&quot;button&quot; data-screen=&quot;result&quot; aria-pressed=&quot;false&quot;&gt;Result&lt;/button&gt;
+    &lt;button class=&quot;btn&quot; type=&quot;button&quot; data-screen=&quot;calculator&quot; aria-pressed=&quot;false&quot;&gt;Calculator&lt;/button&gt;
+    &lt;button class=&quot;btn&quot; type=&quot;button&quot; data-screen=&quot;vault&quot; aria-pressed=&quot;false&quot;&gt;Vault&lt;/button&gt;
+    &lt;button class=&quot;btn&quot; type=&quot;button&quot; data-screen=&quot;tracker&quot; aria-pressed=&quot;false&quot;&gt;Tracker&lt;/button&gt;
+    &lt;button class=&quot;btn&quot; type=&quot;button&quot; data-screen=&quot;bitcoin&quot; aria-pressed=&quot;false&quot;&gt;Gold → BTC&lt;/button&gt;
+    &lt;span class=&quot;wf-control-spacer&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+    &lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot; data-device=&quot;desktop&quot; aria-pressed=&quot;true&quot;&gt;Desktop&lt;/button&gt;
+    &lt;button class=&quot;btn&quot; type=&quot;button&quot; data-device=&quot;mobile&quot; aria-pressed=&quot;false&quot;&gt;Mobile&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;p class=&quot;text-small text-muted wf-current&quot; aria-live=&quot;polite&quot;&gt;
+    W01 · Homepage · establish the family-first proposition and begin an estimate
+  &lt;/p&gt;
+
+  &lt;div class=&quot;card wf-device&quot; data-current-device=&quot;desktop&quot;&gt;
+    &lt;div class=&quot;wf-browser&quot;&gt;
+      &lt;span class=&quot;wf-dot&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;wf-dot&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;wf-dot&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;text-small text-muted&quot;&gt;offrampgold.com&lt;/span&gt;
+    &lt;/div&gt;
+
+    &lt;section class=&quot;wf-screen&quot; data-view=&quot;home&quot; aria-label=&quot;Homepage wireframe&quot;&gt;
+      &lt;header class=&quot;wf-nav&quot;&gt;
+        &lt;strong class=&quot;wf-wordmark&quot;&gt;Offramp&lt;/strong&gt;
+        &lt;nav class=&quot;wf-nav-links&quot; aria-label=&quot;Homepage navigation&quot;&gt;
+          &lt;span&gt;Sell gold&lt;/span&gt;
+          &lt;span&gt;What it’s worth&lt;/span&gt;
+          &lt;span&gt;Family vault&lt;/span&gt;
+          &lt;span&gt;Austin&lt;/span&gt;
+          &lt;span class=&quot;wf-mono&quot;&gt;(512) 983-5997&lt;/span&gt;
+        &lt;/nav&gt;
+        &lt;span class=&quot;wf-action wf-primary&quot;&gt;See what it’s worth&lt;/span&gt;
+      &lt;/header&gt;
+
+      &lt;div class=&quot;wf-hero wf-section&quot;&gt;
+        &lt;div class=&quot;wf-copy&quot;&gt;
+          &lt;span class=&quot;wf-kicker&quot;&gt;Austin, Texas — and everywhere by insured mail&lt;/span&gt;
+          &lt;h2&gt;The family gold, finally in one place.&lt;/h2&gt;
+          &lt;p&gt;Photograph each piece for an honest range. Keep it in a shared family vault and sell only when everyone is ready.&lt;/p&gt;
+          &lt;div class=&quot;wf-actions&quot;&gt;
+            &lt;span class=&quot;wf-action wf-primary&quot;&gt;See what it’s worth&lt;/span&gt;
+            &lt;span class=&quot;wf-action&quot;&gt;Start a family vault&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;span class=&quot;text-small text-muted&quot;&gt;Review line omitted until real reviews exist&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;wf-box wf-vault-preview&quot;&gt;
+          &lt;div class=&quot;wf-row-between&quot;&gt;
+            &lt;strong&gt;The Alvarez vault&lt;/strong&gt;
+            &lt;span class=&quot;text-small text-muted&quot;&gt;illustrative&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;wf-item&quot;&gt;
+            &lt;span class=&quot;wf-thumb&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+            &lt;span&gt;Grandma’s wedding band&lt;/span&gt;
+            &lt;strong class=&quot;wf-mono&quot;&gt;$410–560&lt;/strong&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;wf-item&quot;&gt;
+            &lt;span class=&quot;wf-thumb&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+            &lt;span&gt;Dad’s class ring&lt;/span&gt;
+            &lt;strong class=&quot;wf-mono&quot;&gt;$680–740&lt;/strong&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;wf-item&quot;&gt;
+            &lt;span class=&quot;wf-thumb&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+            &lt;span&gt;Coin from 1962&lt;/span&gt;
+            &lt;strong class=&quot;wf-mono&quot;&gt;$2,805+&lt;/strong&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;wf-row-between wf-total&quot;&gt;
+            &lt;span&gt;Today’s range&lt;/span&gt;
+            &lt;strong class=&quot;wf-mono&quot;&gt;$3,895–4,075&lt;/strong&gt;
+          &lt;/div&gt;
+          &lt;span class=&quot;text-small text-muted&quot;&gt;Maria · Luis · +2 family members&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;wf-panel wf-live&quot;&gt;
+        &lt;div&gt;&lt;span&gt;Gold spot&lt;/span&gt;&lt;strong class=&quot;wf-mono&quot;&gt;$3,412.10 /oz&lt;/strong&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;span&gt;Bitcoin&lt;/span&gt;&lt;strong class=&quot;wf-mono&quot;&gt;$118,420&lt;/strong&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;span&gt;1 oz gold&lt;/span&gt;&lt;strong class=&quot;wf-mono&quot;&gt;≈ 0.0288 BTC&lt;/strong&gt;&lt;/div&gt;
+        &lt;span class=&quot;text-small&quot;&gt;Observed Jul 9 · 9:12 PM CT&lt;/span&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;wf-section&quot;&gt;
+        &lt;span class=&quot;wf-kicker&quot;&gt;How it works&lt;/span&gt;
+        &lt;div class=&quot;wf-three&quot;&gt;
+          &lt;div class=&quot;wf-step&quot;&gt;&lt;strong&gt;01 · Photograph&lt;/strong&gt;&lt;span&gt;A photo is enough. No account.&lt;/span&gt;&lt;/div&gt;
+          &lt;div class=&quot;wf-step&quot;&gt;&lt;strong&gt;02 · Send or visit&lt;/strong&gt;&lt;span&gt;Free insured kit or Austin appointment.&lt;/span&gt;&lt;/div&gt;
+          &lt;div class=&quot;wf-step&quot;&gt;&lt;strong&gt;03 · Verify and decide&lt;/strong&gt;&lt;span&gt;XRF assay on video. Paid your way.&lt;/span&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;wf-section wf-compare&quot;&gt;
+        &lt;div&gt;
+          &lt;span class=&quot;wf-kicker&quot;&gt;A fairer comparison&lt;/span&gt;
+          &lt;h3&gt;Know where the spread goes.&lt;/h3&gt;
+          &lt;p&gt;Visible payout ranges make the decision inspectable.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;wf-box&quot;&gt;
+          &lt;div class=&quot;wf-row-between&quot;&gt;&lt;span&gt;Pawn shop&lt;/span&gt;&lt;strong class=&quot;wf-mono&quot;&gt;20–55%&lt;/strong&gt;&lt;/div&gt;
+          &lt;div class=&quot;wf-row-between&quot;&gt;&lt;span&gt;Typical mail-in&lt;/span&gt;&lt;strong class=&quot;wf-mono&quot;&gt;70–80%&lt;/strong&gt;&lt;/div&gt;
+          &lt;div class=&quot;wf-row-between wf-highlight&quot;&gt;&lt;span&gt;Offramp&lt;/span&gt;&lt;strong class=&quot;wf-mono&quot;&gt;80–90%&lt;/strong&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;wf-section wf-proof-slot&quot;&gt;
+        &lt;span class=&quot;text-small text-muted&quot;&gt;Payout ticker slot hidden until at least 5 real public payout records exist&lt;/span&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;wf-panel wf-thesis&quot;&gt;
+        &lt;h3&gt;Gold preserved wealth for 5,000 years. Decide its next 5,000.&lt;/h3&gt;
+        &lt;span class=&quot;wf-action wf-inverse&quot;&gt;Explore gold to Bitcoin&lt;/span&gt;
+      &lt;/div&gt;
+
+      &lt;footer class=&quot;wf-footer&quot;&gt;
+        &lt;strong&gt;Offramp&lt;/strong&gt;
+        &lt;span&gt;Austin · appointment only&lt;/span&gt;
+        &lt;span&gt;Methodology · Assays · Privacy&lt;/span&gt;
+      &lt;/footer&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;wf-screen&quot; data-view=&quot;capture&quot; aria-label=&quot;Estimate capture wireframe&quot; hidden&gt;
+      &lt;header class=&quot;wf-nav&quot;&gt;
+        &lt;strong class=&quot;wf-wordmark&quot;&gt;Offramp&lt;/strong&gt;
+        &lt;span class=&quot;text-small text-muted&quot;&gt;Photo estimate · no account needed&lt;/span&gt;
+        &lt;span class=&quot;wf-mono&quot;&gt;1 / 3&lt;/span&gt;
+      &lt;/header&gt;
+
+      &lt;div class=&quot;wf-app-shell&quot;&gt;
+        &lt;div class=&quot;wf-app-intro&quot;&gt;
+          &lt;span class=&quot;wf-kicker&quot;&gt;Honest range in about a minute&lt;/span&gt;
+          &lt;h2&gt;Show us the piece.&lt;/h2&gt;
+          &lt;p&gt;Center the piece. Get the stamp or hallmark if you can: 14K · 585 · 750 · 10K.&lt;/p&gt;
+          &lt;div class=&quot;wf-tips&quot;&gt;
+            &lt;span&gt;Good light&lt;/span&gt;
+            &lt;span&gt;One piece&lt;/span&gt;
+            &lt;span&gt;Hallmark close-up&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;wf-panel wf-camera&quot;&gt;
+          &lt;div class=&quot;wf-camera-target&quot;&gt;
+            &lt;span class=&quot;wf-camera-icon&quot; aria-hidden=&quot;true&quot;&gt;◎&lt;/span&gt;
+            &lt;strong&gt;Photo area&lt;/strong&gt;
+            &lt;span class=&quot;text-small&quot;&gt;Jewelry, coin, bullion, dental, or scrap&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;wf-actions wf-actions-center&quot;&gt;
+            &lt;span class=&quot;wf-action wf-inverse&quot;&gt;Take a photo&lt;/span&gt;
+            &lt;span class=&quot;wf-action wf-inverse-outline&quot;&gt;Choose from library&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;wf-section&quot;&gt;
+        &lt;div class=&quot;wf-row-between&quot;&gt;
+          &lt;strong&gt;Optional second photo&lt;/strong&gt;
+          &lt;span class=&quot;text-small text-muted&quot;&gt;Improves confidence&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;wf-two&quot;&gt;
+          &lt;div class=&quot;wf-box wf-upload-small&quot;&gt;&lt;span&gt;Hallmark close-up&lt;/span&gt;&lt;strong&gt;+&lt;/strong&gt;&lt;/div&gt;
+          &lt;div class=&quot;wf-box wf-upload-small&quot;&gt;&lt;span&gt;Next to a coin for scale&lt;/span&gt;&lt;strong&gt;+&lt;/strong&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;wf-section wf-note&quot;&gt;
+        &lt;strong&gt;Before upload&lt;/strong&gt;
+        &lt;span&gt;Preview · remove · retry · client downscale to 1600px&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;wf-screen&quot; data-view=&quot;result&quot; aria-label=&quot;Estimate result wireframe&quot; hidden&gt;
+      &lt;header class=&quot;wf-nav&quot;&gt;
+        &lt;strong class=&quot;wf-wordmark&quot;&gt;Offramp&lt;/strong&gt;
+        &lt;span class=&quot;text-small text-muted&quot;&gt;Estimate complete&lt;/span&gt;
+        &lt;span class=&quot;wf-mono&quot;&gt;EST-2026-07341&lt;/span&gt;
+      &lt;/header&gt;
+
+      &lt;div class=&quot;wf-app-shell wf-result-shell&quot;&gt;
+        &lt;div class=&quot;wf-panel wf-reading&quot;&gt;
+          &lt;span class=&quot;wf-kicker wf-panel-kicker&quot;&gt;What we read&lt;/span&gt;
+          &lt;div class=&quot;wf-reading-line&quot;&gt;&lt;span&gt;✓ Hallmark&lt;/span&gt;&lt;strong class=&quot;wf-mono&quot;&gt;585 · 14k&lt;/strong&gt;&lt;/div&gt;
+          &lt;div class=&quot;wf-reading-line&quot;&gt;&lt;span&gt;✓ Estimated weight&lt;/span&gt;&lt;strong class=&quot;wf-mono&quot;&gt;8–11 g&lt;/strong&gt;&lt;/div&gt;
+          &lt;div class=&quot;wf-reading-line&quot;&gt;&lt;span&gt;✓ Collector check&lt;/span&gt;&lt;strong&gt;No flag&lt;/strong&gt;&lt;/div&gt;
+          &lt;div class=&quot;wf-photo-placeholder&quot;&gt;&lt;span&gt;Uploaded piece&lt;/span&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;wf-certificate&quot;&gt;
+          &lt;span class=&quot;wf-kicker&quot;&gt;Guidance, not an appraisal&lt;/span&gt;
+          &lt;h2 class=&quot;wf-range&quot;&gt;$410–$560&lt;/h2&gt;
+          &lt;div class=&quot;wf-certificate-meta&quot;&gt;
+            &lt;span class=&quot;wf-mono&quot;&gt;at 82% of spot&lt;/span&gt;
+            &lt;span class=&quot;wf-mono&quot;&gt;XAU $3,412.10 · Jul 9&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;strong&gt;Final price set by XRF assay on video.&lt;/strong&gt;
+          &lt;div class=&quot;wf-actions wf-actions-stack&quot;&gt;
+            &lt;span class=&quot;wf-action wf-primary&quot;&gt;Lock this price for 48h — free kit&lt;/span&gt;
+            &lt;span class=&quot;wf-action&quot;&gt;Save to your family vault&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;span class=&quot;text-small text-muted&quot;&gt;Methodology · How the range was calculated&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;wf-section wf-two&quot;&gt;
+        &lt;div class=&quot;wf-box&quot;&gt;
+          &lt;strong&gt;Sell path&lt;/strong&gt;
+          &lt;span&gt;≤5 fields · free insured kit · magic-link tracking&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;wf-box&quot;&gt;
+          &lt;strong&gt;Patient path&lt;/strong&gt;
+          &lt;span&gt;Save · story-name · invite family · price alerts&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;wf-screen&quot; data-view=&quot;calculator&quot; aria-label=&quot;Calculator template wireframe&quot; hidden&gt;
+      &lt;header class=&quot;wf-nav&quot;&gt;
+        &lt;strong class=&quot;wf-wordmark&quot;&gt;Offramp&lt;/strong&gt;
+        &lt;nav class=&quot;wf-nav-links&quot; aria-label=&quot;Calculator navigation&quot;&gt;
+          &lt;span&gt;Calculators&lt;/span&gt;
+          &lt;span&gt;Prices&lt;/span&gt;
+          &lt;span&gt;Worth&lt;/span&gt;
+          &lt;span&gt;Methodology&lt;/span&gt;
+        &lt;/nav&gt;
+        &lt;span class=&quot;wf-action wf-primary&quot;&gt;Photo estimate&lt;/span&gt;
+      &lt;/header&gt;
+
+      &lt;div class=&quot;wf-section&quot;&gt;
+        &lt;span class=&quot;text-small text-muted&quot;&gt;Home / Calculators / 14k gold&lt;/span&gt;
+        &lt;div class=&quot;wf-row-between wf-heading-row&quot;&gt;
+          &lt;div&gt;
+            &lt;span class=&quot;wf-kicker&quot;&gt;Updated daily&lt;/span&gt;
+            &lt;h2&gt;14k gold value calculator&lt;/h2&gt;
+            &lt;p&gt;As of July 9, 14k gold melts at &lt;span class=&quot;wf-mono&quot;&gt;$63.98/g&lt;/span&gt;.&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;wf-panel wf-spot-chip&quot;&gt;
+            &lt;span&gt;Gold spot&lt;/span&gt;
+            &lt;strong class=&quot;wf-mono&quot;&gt;$3,412.10 /oz&lt;/strong&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;wf-section wf-calculator-grid&quot;&gt;
+        &lt;div class=&quot;wf-controls-panel&quot;&gt;
+          &lt;strong&gt;Your gold&lt;/strong&gt;
+          &lt;label&gt;Karat &lt;span class=&quot;wf-field&quot;&gt;14k ▾&lt;/span&gt;&lt;/label&gt;
+          &lt;label&gt;Weight &lt;span class=&quot;wf-field wf-mono&quot;&gt;10.0 grams&lt;/span&gt;&lt;/label&gt;
+          &lt;label&gt;Payout rate &lt;span class=&quot;wf-field wf-mono&quot;&gt;82% ───●──&lt;/span&gt;&lt;/label&gt;
+          &lt;span class=&quot;text-small text-muted&quot;&gt;Shareable result URL&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;wf-box wf-result-card&quot;&gt;
+          &lt;span&gt;Estimated melt value&lt;/span&gt;
+          &lt;h2 class=&quot;wf-mono&quot;&gt;$639.80&lt;/h2&gt;
+          &lt;span&gt;Expected Offramp range&lt;/span&gt;
+          &lt;strong class=&quot;wf-mono&quot;&gt;$511–$576&lt;/strong&gt;
+          &lt;div class=&quot;wf-actions wf-actions-stack&quot;&gt;
+            &lt;span class=&quot;wf-action wf-primary&quot;&gt;Get an exact range from a photo&lt;/span&gt;
+            &lt;span class=&quot;wf-action&quot;&gt;Lock this price — free kit&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;wf-section wf-compare&quot;&gt;
+        &lt;div&gt;
+          &lt;span class=&quot;wf-kicker&quot;&gt;Three-way honesty table&lt;/span&gt;
+          &lt;h3&gt;What buyers may pay&lt;/h3&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;wf-box&quot;&gt;
+          &lt;div class=&quot;wf-row-between&quot;&gt;&lt;span&gt;Pawn shops&lt;/span&gt;&lt;strong class=&quot;wf-mono&quot;&gt;$128–352&lt;/strong&gt;&lt;/div&gt;
+          &lt;div class=&quot;wf-row-between&quot;&gt;&lt;span&gt;Typical mail-in&lt;/span&gt;&lt;strong class=&quot;wf-mono&quot;&gt;$448–512&lt;/strong&gt;&lt;/div&gt;
+          &lt;div class=&quot;wf-row-between wf-highlight&quot;&gt;&lt;span&gt;Offramp&lt;/span&gt;&lt;strong class=&quot;wf-mono&quot;&gt;$511–576&lt;/strong&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;wf-panel wf-per-gram&quot;&gt;
+        &lt;strong&gt;Live value per gram&lt;/strong&gt;
+        &lt;span class=&quot;wf-mono&quot;&gt;10k $45.69&lt;/span&gt;
+        &lt;span class=&quot;wf-mono&quot;&gt;14k $63.98&lt;/span&gt;
+        &lt;span class=&quot;wf-mono&quot;&gt;18k $82.26&lt;/span&gt;
+        &lt;span class=&quot;wf-mono&quot;&gt;24k $109.57&lt;/span&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;wf-section wf-two&quot;&gt;
+        &lt;div class=&quot;wf-box&quot;&gt;&lt;strong&gt;Methodology + dated source&lt;/strong&gt;&lt;span&gt;Spot · purity · payout range · assay&lt;/span&gt;&lt;/div&gt;
+        &lt;div class=&quot;wf-box&quot;&gt;&lt;strong&gt;FAQ + assay proof&lt;/strong&gt;&lt;span&gt;Visible answers match structured data&lt;/span&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;wf-screen&quot; data-view=&quot;vault&quot; aria-label=&quot;Family Vault wireframe&quot; hidden&gt;
+      &lt;header class=&quot;wf-nav&quot;&gt;
+        &lt;strong class=&quot;wf-wordmark&quot;&gt;Offramp&lt;/strong&gt;
+        &lt;nav class=&quot;wf-nav-links&quot; aria-label=&quot;Vault navigation&quot;&gt;
+          &lt;span&gt;Vault&lt;/span&gt;
+          &lt;span&gt;Activity&lt;/span&gt;
+          &lt;span&gt;Alerts&lt;/span&gt;
+        &lt;/nav&gt;
+        &lt;span&gt;Maria A. ▾&lt;/span&gt;
+      &lt;/header&gt;
+
+      &lt;div class=&quot;wf-section&quot;&gt;
+        &lt;div class=&quot;wf-vault-header&quot;&gt;
+          &lt;div&gt;
+            &lt;span class=&quot;wf-kicker&quot;&gt;Family Vault&lt;/span&gt;
+            &lt;h2&gt;The Alvarez vault&lt;/h2&gt;
+            &lt;span class=&quot;text-small text-muted&quot;&gt;Maria · Luis · +2&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;wf-vault-total&quot;&gt;
+            &lt;span&gt;Today’s range&lt;/span&gt;
+            &lt;strong class=&quot;wf-mono&quot;&gt;$3,895–$4,075&lt;/strong&gt;
+            &lt;span class=&quot;wf-mono&quot;&gt;+3.2% this month&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;wf-actions&quot;&gt;
+            &lt;span class=&quot;wf-action wf-primary&quot;&gt;Cash out — get a free kit&lt;/span&gt;
+            &lt;span class=&quot;wf-action&quot;&gt;Invite family&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;wf-section wf-note&quot;&gt;
+        &lt;strong&gt;Family sign-off is on&lt;/strong&gt;
+        &lt;span&gt;All four members will be notified before a kit is requested.&lt;/span&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;wf-section&quot;&gt;
+        &lt;div class=&quot;wf-row-between&quot;&gt;
+          &lt;h3&gt;Four pieces&lt;/h3&gt;
+          &lt;span class=&quot;wf-action&quot;&gt;+ Add a piece&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;wf-item-grid&quot;&gt;
+          &lt;div class=&quot;wf-vault-item&quot;&gt;
+            &lt;div class=&quot;wf-image-placeholder&quot;&gt;&lt;span&gt;Photo&lt;/span&gt;&lt;/div&gt;
+            &lt;strong&gt;Grandma’s wedding band&lt;/strong&gt;
+            &lt;span class=&quot;text-small text-muted&quot;&gt;14k ring · added by Maria&lt;/span&gt;
+            &lt;div class=&quot;wf-row-between&quot;&gt;&lt;span class=&quot;wf-mono&quot;&gt;$410–560&lt;/span&gt;&lt;span&gt;↑ 3.1%&lt;/span&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;wf-vault-item&quot;&gt;
+            &lt;div class=&quot;wf-image-placeholder&quot;&gt;&lt;span&gt;Photo&lt;/span&gt;&lt;/div&gt;
+            &lt;strong&gt;Dad’s class ring&lt;/strong&gt;
+            &lt;span class=&quot;text-small text-muted&quot;&gt;10k ring · added by Luis&lt;/span&gt;
+            &lt;div class=&quot;wf-row-between&quot;&gt;&lt;span class=&quot;wf-mono&quot;&gt;$680–740&lt;/span&gt;&lt;span&gt;↑ 2.8%&lt;/span&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;wf-vault-item&quot;&gt;
+            &lt;div class=&quot;wf-image-placeholder&quot;&gt;&lt;span&gt;Photo&lt;/span&gt;&lt;/div&gt;
+            &lt;strong&gt;Coin from 1962&lt;/strong&gt;
+            &lt;span class=&quot;text-small text-muted&quot;&gt;Collector check · review&lt;/span&gt;
+            &lt;div class=&quot;wf-row-between&quot;&gt;&lt;span class=&quot;wf-mono&quot;&gt;$2,805+&lt;/span&gt;&lt;span&gt;Flag&lt;/span&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;wf-vault-item wf-add-item&quot;&gt;
+            &lt;strong&gt;Start with one piece.&lt;/strong&gt;
+            &lt;span&gt;A photo is enough.&lt;/span&gt;
+            &lt;span class=&quot;wf-action&quot;&gt;Add another&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;wf-section wf-two&quot;&gt;
+        &lt;div class=&quot;wf-box&quot;&gt;&lt;strong&gt;Price alert&lt;/strong&gt;&lt;span class=&quot;wf-mono&quot;&gt;Gold above $3,500 /oz&lt;/span&gt;&lt;/div&gt;
+        &lt;div class=&quot;wf-box&quot;&gt;&lt;strong&gt;Monthly statement&lt;/strong&gt;&lt;span&gt;Next issue · Aug 1&lt;/span&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;wf-screen&quot; data-view=&quot;tracker&quot; aria-label=&quot;Kit tracker wireframe&quot; hidden&gt;
+      &lt;header class=&quot;wf-nav&quot;&gt;
+        &lt;strong class=&quot;wf-wordmark&quot;&gt;Offramp&lt;/strong&gt;
+        &lt;span class=&quot;text-small text-muted&quot;&gt;Secure kit tracker&lt;/span&gt;
+        &lt;span class=&quot;wf-mono&quot;&gt;KIT-8842&lt;/span&gt;
+      &lt;/header&gt;
+
+      &lt;div class=&quot;wf-section&quot;&gt;
+        &lt;span class=&quot;wf-kicker&quot;&gt;Current status&lt;/span&gt;
+        &lt;div class=&quot;wf-row-between wf-heading-row&quot;&gt;
+          &lt;div&gt;
+            &lt;h2&gt;Your assay is ready.&lt;/h2&gt;
+            &lt;p&gt;Four items were tested by XRF on video.&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;span class=&quot;wf-action wf-primary&quot;&gt;Review offer&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;wf-section wf-tracker-layout&quot;&gt;
+        &lt;ol class=&quot;wf-timeline&quot;&gt;
+          &lt;li class=&quot;wf-done&quot;&gt;&lt;strong&gt;Requested&lt;/strong&gt;&lt;span&gt;Jul 9 · 9:42 PM&lt;/span&gt;&lt;/li&gt;
+          &lt;li class=&quot;wf-done&quot;&gt;&lt;strong&gt;Shipped&lt;/strong&gt;&lt;span&gt;$25k insured · UPS&lt;/span&gt;&lt;/li&gt;
+          &lt;li class=&quot;wf-done&quot;&gt;&lt;strong&gt;Delivered&lt;/strong&gt;&lt;span&gt;Jul 12 · 10:08 AM&lt;/span&gt;&lt;/li&gt;
+          &lt;li class=&quot;wf-done&quot;&gt;&lt;strong&gt;Received&lt;/strong&gt;&lt;span&gt;4 items logged&lt;/span&gt;&lt;/li&gt;
+          &lt;li class=&quot;wf-current-step&quot;&gt;&lt;strong&gt;Offered&lt;/strong&gt;&lt;span&gt;Expires Jul 20 · 5:00 PM&lt;/span&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;Accepted&lt;/strong&gt;&lt;span&gt;Next&lt;/span&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;Paid&lt;/strong&gt;&lt;span&gt;Wire or Onramp reference&lt;/span&gt;&lt;/li&gt;
+        &lt;/ol&gt;
+        &lt;div class=&quot;wf-offer&quot;&gt;
+          &lt;div class=&quot;wf-panel wf-video&quot;&gt;&lt;span&gt;Recorded XRF assay&lt;/span&gt;&lt;strong&gt;▶ Watch 06:42&lt;/strong&gt;&lt;/div&gt;
+          &lt;div class=&quot;wf-row-between&quot;&gt;&lt;span&gt;4 item assay total&lt;/span&gt;&lt;strong class=&quot;wf-mono&quot;&gt;$3,942.18&lt;/strong&gt;&lt;/div&gt;
+          &lt;div class=&quot;wf-row-between&quot;&gt;&lt;span&gt;Price lock&lt;/span&gt;&lt;strong class=&quot;wf-mono&quot;&gt;7 days&lt;/strong&gt;&lt;/div&gt;
+          &lt;div class=&quot;wf-row-between&quot;&gt;&lt;span&gt;Payout&lt;/span&gt;&lt;strong&gt;USD wire&lt;/strong&gt;&lt;/div&gt;
+          &lt;div class=&quot;wf-actions wf-actions-stack&quot;&gt;
+            &lt;span class=&quot;wf-action wf-primary&quot;&gt;Accept and cash out&lt;/span&gt;
+            &lt;span class=&quot;wf-action&quot;&gt;Free return instead&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;span class=&quot;text-small text-muted&quot;&gt;Itemized assay · terms · identity check at payout&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;wf-screen wf-dark-room&quot; data-view=&quot;bitcoin&quot; aria-label=&quot;Gold to Bitcoin wireframe&quot; hidden&gt;
+      &lt;header class=&quot;wf-nav&quot;&gt;
+        &lt;strong class=&quot;wf-wordmark&quot;&gt;Offramp&lt;/strong&gt;
+        &lt;nav class=&quot;wf-nav-links&quot; aria-label=&quot;Gold to Bitcoin navigation&quot;&gt;
+          &lt;span&gt;Ratio&lt;/span&gt;
+          &lt;span&gt;How it works&lt;/span&gt;
+          &lt;span&gt;Methodology&lt;/span&gt;
+        &lt;/nav&gt;
+        &lt;span class=&quot;wf-action wf-inverse&quot;&gt;Check your gold&lt;/span&gt;
+      &lt;/header&gt;
+
+      &lt;div class=&quot;wf-section wf-dark-hero&quot;&gt;
+        &lt;span class=&quot;wf-kicker&quot;&gt;Gold to Bitcoin · without custody shortcuts&lt;/span&gt;
+        &lt;h2&gt;Gold preserved wealth for 5,000 years. Decide its next 5,000.&lt;/h2&gt;
+        &lt;p&gt;Offramp assays and pays USD. Your seller-owned Onramp account handles the Bitcoin purchase and custody path.&lt;/p&gt;
+        &lt;div class=&quot;wf-actions&quot;&gt;
+          &lt;span class=&quot;wf-action wf-inverse&quot;&gt;Check your gold in 60 seconds&lt;/span&gt;
+          &lt;span class=&quot;wf-action wf-inverse-outline&quot;&gt;Read the methodology&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;wf-section wf-ratio-grid&quot;&gt;
+        &lt;div&gt;
+          &lt;span class=&quot;wf-kicker&quot;&gt;Today’s ratio&lt;/span&gt;
+          &lt;h2 class=&quot;wf-mono&quot;&gt;1 oz = 0.0288 BTC&lt;/h2&gt;
+          &lt;span class=&quot;text-small&quot;&gt;Observed Jul 9 · daily snapshot&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;wf-chart&quot; role=&quot;img&quot; aria-label=&quot;Placeholder for historical gold to Bitcoin ratio chart&quot;&gt;
+          &lt;span&gt;Historical gold / BTC ratio chart&lt;/span&gt;
+          &lt;svg viewBox=&quot;0 0 500 140&quot; aria-hidden=&quot;true&quot;&gt;
+            &lt;path d=&quot;M10 110 C70 95, 90 120, 145 85 S230 75, 270 60 S350 90, 390 45 S455 55, 490 25&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;3&quot;/&gt;
+            &lt;path d=&quot;M10 125 H490&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1&quot; opacity=&quot;.35&quot;/&gt;
+          &lt;/svg&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;wf-section&quot;&gt;
+        &lt;span class=&quot;wf-kicker&quot;&gt;The custody handoff&lt;/span&gt;
+        &lt;div class=&quot;wf-five&quot;&gt;
+          &lt;div class=&quot;wf-step&quot;&gt;&lt;strong&gt;1 · Your gold&lt;/strong&gt;&lt;span&gt;Photo and insured kit&lt;/span&gt;&lt;/div&gt;
+          &lt;div class=&quot;wf-step&quot;&gt;&lt;strong&gt;2 · Offramp&lt;/strong&gt;&lt;span&gt;XRF assay on video&lt;/span&gt;&lt;/div&gt;
+          &lt;div class=&quot;wf-step&quot;&gt;&lt;strong&gt;3 · USD wire&lt;/strong&gt;&lt;span&gt;Seller receives proceeds&lt;/span&gt;&lt;/div&gt;
+          &lt;div class=&quot;wf-step&quot;&gt;&lt;strong&gt;4 · Onramp&lt;/strong&gt;&lt;span&gt;Separate account handoff&lt;/span&gt;&lt;/div&gt;
+          &lt;div class=&quot;wf-step&quot;&gt;&lt;strong&gt;5 · Bitcoin&lt;/strong&gt;&lt;span&gt;Seller-selected custody&lt;/span&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;wf-section wf-two&quot;&gt;
+        &lt;div class=&quot;wf-converter&quot;&gt;
+          &lt;strong&gt;Ratio converter&lt;/strong&gt;
+          &lt;span class=&quot;wf-field wf-mono&quot;&gt;10 oz gold&lt;/span&gt;
+          &lt;span class=&quot;wf-field wf-mono&quot;&gt;≈ 0.288 BTC&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;wf-box wf-dark-box&quot;&gt;
+          &lt;strong&gt;Terms and disclosure&lt;/strong&gt;
+          &lt;span&gt;Bonus hidden until written terms are approved.&lt;/span&gt;
+          &lt;span&gt;Offramp never holds or transmits Bitcoin.&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+  #offramp-wireframes-vis {
+    color: var(--foreground);
+    width: 100%;
+  }
+  #offramp-wireframes-vis * {
+    box-sizing: border-box;
+  }
+  #offramp-wireframes-vis .viz-controls {
+    margin-bottom: 12px;
+  }
+  #offramp-wireframes-vis .wf-control-spacer {
+    flex: 1 1 20px;
+  }
+  #offramp-wireframes-vis .wf-current {
+    margin: 0 0 12px;
+  }
+  #offramp-wireframes-vis .wf-device {
+    width: min(100%, 1080px);
+    margin: 0 auto;
+    padding: 0;
+    transition: max-width 180ms ease;
+  }
+  #offramp-wireframes-vis .wf-device[data-current-device=&quot;mobile&quot;] {
+    max-width: 390px;
+  }
+  #offramp-wireframes-vis .wf-browser {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--border);
+  }
+  #offramp-wireframes-vis .wf-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--muted-foreground);
+    opacity: .45;
+  }
+  #offramp-wireframes-vis .wf-screen {
+    background: var(--background);
+    color: var(--foreground);
+  }
+  #offramp-wireframes-vis .wf-nav,
+  #offramp-wireframes-vis .wf-row-between,
+  #offramp-wireframes-vis .wf-actions,
+  #offramp-wireframes-vis .wf-reading-line {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  #offramp-wireframes-vis .wf-nav {
+    justify-content: space-between;
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--border);
+  }
+  #offramp-wireframes-vis .wf-wordmark {
+    letter-spacing: .05em;
+  }
+  #offramp-wireframes-vis .wf-nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+  }
+  #offramp-wireframes-vis .wf-section {
+    padding: 34px 32px;
+    border-bottom: 1px solid var(--border);
+  }
+  #offramp-wireframes-vis .wf-hero,
+  #offramp-wireframes-vis .wf-app-shell,
+  #offramp-wireframes-vis .wf-calculator-grid,
+  #offramp-wireframes-vis .wf-tracker-layout,
+  #offramp-wireframes-vis .wf-ratio-grid {
+    display: grid;
+    grid-template-columns: 1.05fr .95fr;
+    gap: 32px;
+    align-items: center;
+  }
+  #offramp-wireframes-vis .wf-copy,
+  #offramp-wireframes-vis .wf-app-intro,
+  #offramp-wireframes-vis .wf-certificate,
+  #offramp-wireframes-vis .wf-offer,
+  #offramp-wireframes-vis .wf-controls-panel,
+  #offramp-wireframes-vis .wf-vault-item,
+  #offramp-wireframes-vis .wf-converter {
+    display: grid;
+    gap: 14px;
+  }
+  #offramp-wireframes-vis .wf-kicker {
+    color: var(--muted-foreground);
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+  #offramp-wireframes-vis .wf-actions {
+    flex-wrap: wrap;
+  }
+  #offramp-wireframes-vis .wf-actions-stack {
+    display: grid;
+    align-items: stretch;
+  }
+  #offramp-wireframes-vis .wf-actions-center {
+    justify-content: center;
+  }
+  #offramp-wireframes-vis .wf-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 14px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+  }
+  #offramp-wireframes-vis .wf-primary {
+    background: var(--primary);
+    color: var(--primary-foreground);
+    border-color: var(--primary);
+  }
+  #offramp-wireframes-vis .wf-inverse {
+    background: var(--background);
+    color: var(--foreground);
+    border-color: var(--background);
+  }
+  #offramp-wireframes-vis .wf-inverse-outline {
+    color: inherit;
+    border-color: currentColor;
+  }
+  #offramp-wireframes-vis .wf-box,
+  #offramp-wireframes-vis .wf-step,
+  #offramp-wireframes-vis .wf-vault-item,
+  #offramp-wireframes-vis .wf-controls-panel,
+  #offramp-wireframes-vis .wf-converter,
+  #offramp-wireframes-vis .wf-certificate,
+  #offramp-wireframes-vis .wf-offer {
+    border: 1px dashed var(--border);
+    padding: 18px;
+  }
+  #offramp-wireframes-vis .wf-vault-preview {
+    display: grid;
+    gap: 12px;
+  }
+  #offramp-wireframes-vis .wf-item {
+    display: grid;
+    grid-template-columns: 36px 1fr auto;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  #offramp-wireframes-vis .wf-thumb {
+    width: 36px;
+    height: 36px;
+    background: var(--muted);
+    border: 1px solid var(--border);
+  }
+  #offramp-wireframes-vis .wf-row-between {
+    justify-content: space-between;
+  }
+  #offramp-wireframes-vis .wf-total,
+  #offramp-wireframes-vis .wf-highlight {
+    padding-top: 12px;
+    border-top: 2px solid var(--foreground);
+  }
+  #offramp-wireframes-vis .wf-panel {
+    background: var(--foreground);
+    color: var(--background);
+  }
+  #offramp-wireframes-vis .wf-live,
+  #offramp-wireframes-vis .wf-per-gram {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    padding: 24px 32px;
+  }
+  #offramp-wireframes-vis .wf-live div {
+    display: grid;
+    gap: 5px;
+  }
+  #offramp-wireframes-vis .wf-three,
+  #offramp-wireframes-vis .wf-five,
+  #offramp-wireframes-vis .wf-two,
+  #offramp-wireframes-vis .wf-item-grid {
+    display: grid;
+    gap: 16px;
+  }
+  #offramp-wireframes-vis .wf-three {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #offramp-wireframes-vis .wf-five {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  #offramp-wireframes-vis .wf-two {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #offramp-wireframes-vis .wf-step {
+    display: grid;
+    gap: 8px;
+  }
+  #offramp-wireframes-vis .wf-compare {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 28px;
+    align-items: center;
+  }
+  #offramp-wireframes-vis .wf-proof-slot,
+  #offramp-wireframes-vis .wf-note {
+    background: var(--muted);
+  }
+  #offramp-wireframes-vis .wf-thesis {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 36px 32px;
+  }
+  #offramp-wireframes-vis .wf-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 24px 32px;
+  }
+  #offramp-wireframes-vis .wf-camera {
+    padding: 24px;
+  }
+  #offramp-wireframes-vis .wf-camera-target {
+    min-height: 260px;
+    display: grid;
+    place-content: center;
+    justify-items: center;
+    gap: 10px;
+    border: 1px dashed currentColor;
+    margin-bottom: 18px;
+  }
+  #offramp-wireframes-vis .wf-camera-icon {
+    font-size: 3rem;
+  }
+  #offramp-wireframes-vis .wf-tips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  #offramp-wireframes-vis .wf-tips span {
+    padding: 6px 10px;
+    background: var(--muted);
+  }
+  #offramp-wireframes-vis .wf-upload-small {
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #offramp-wireframes-vis .wf-reading {
+    padding: 24px;
+  }
+  #offramp-wireframes-vis .wf-panel-kicker {
+    color: inherit;
+    opacity: .65;
+  }
+  #offramp-wireframes-vis .wf-reading-line {
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid currentColor;
+  }
+  #offramp-wireframes-vis .wf-photo-placeholder,
+  #offramp-wireframes-vis .wf-image-placeholder,
+  #offramp-wireframes-vis .wf-video {
+    min-height: 130px;
+    display: grid;
+    place-content: center;
+    background: var(--muted);
+    color: var(--muted-foreground);
+  }
+  #offramp-wireframes-vis .wf-certificate {
+    border-style: solid;
+  }
+  #offramp-wireframes-vis .wf-certificate-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  #offramp-wireframes-vis .wf-heading-row {
+    align-items: end;
+  }
+  #offramp-wireframes-vis .wf-spot-chip {
+    padding: 16px;
+    display: grid;
+    gap: 6px;
+  }
+  #offramp-wireframes-vis .wf-controls-panel label {
+    display: grid;
+    gap: 6px;
+  }
+  #offramp-wireframes-vis .wf-field {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+  }
+  #offramp-wireframes-vis .wf-result-card {
+    border-style: solid;
+    display: grid;
+    gap: 12px;
+  }
+  #offramp-wireframes-vis .wf-vault-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 18px;
+    align-items: end;
+  }
+  #offramp-wireframes-vis .wf-vault-header .wf-actions {
+    grid-column: 1 / -1;
+  }
+  #offramp-wireframes-vis .wf-vault-total {
+    display: grid;
+    gap: 6px;
+    text-align: right;
+  }
+  #offramp-wireframes-vis .wf-item-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  #offramp-wireframes-vis .wf-add-item {
+    place-content: center;
+  }
+  #offramp-wireframes-vis .wf-timeline {
+    margin: 0;
+    padding-left: 20px;
+    display: grid;
+    gap: 14px;
+  }
+  #offramp-wireframes-vis .wf-timeline li {
+    padding: 0 0 14px 10px;
+    border-bottom: 1px solid var(--border);
+  }
+  #offramp-wireframes-vis .wf-timeline li span {
+    display: block;
+    color: var(--muted-foreground);
+  }
+  #offramp-wireframes-vis .wf-current-step {
+    color: var(--foreground);
+    border-left: 3px solid var(--primary);
+  }
+  #offramp-wireframes-vis .wf-done {
+    opacity: .72;
+  }
+  #offramp-wireframes-vis .wf-video {
+    background: var(--foreground);
+    color: var(--background);
+    gap: 10px;
+  }
+  #offramp-wireframes-vis .wf-dark-room {
+    background: var(--foreground);
+    color: var(--background);
+  }
+  #offramp-wireframes-vis .wf-dark-room .wf-nav,
+  #offramp-wireframes-vis .wf-dark-room .wf-section {
+    border-color: color-mix(in srgb, var(--background), transparent 72%);
+  }
+  #offramp-wireframes-vis .wf-dark-hero {
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    gap: 14px;
+    padding: 56px 12%;
+  }
+  #offramp-wireframes-vis .wf-chart {
+    border: 1px dashed currentColor;
+    padding: 18px;
+  }
+  #offramp-wireframes-vis .wf-chart svg {
+    width: 100%;
+    display: block;
+    margin-top: 14px;
+  }
+  #offramp-wireframes-vis .wf-dark-box {
+    border-color: color-mix(in srgb, var(--background), transparent 60%);
+  }
+  #offramp-wireframes-vis .wf-mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+  #offramp-wireframes-vis [hidden] {
+    display: none !important;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    #offramp-wireframes-vis .wf-device {
+      transition: none;
+    }
+  }
+  #offramp-wireframes-vis .wf-device[data-current-device=&quot;mobile&quot;] .wf-nav-links {
+    display: none;
+  }
+  #offramp-wireframes-vis .wf-device[data-current-device=&quot;mobile&quot;] .wf-nav {
+    padding: 14px 16px;
+  }
+  #offramp-wireframes-vis .wf-device[data-current-device=&quot;mobile&quot;] .wf-nav &gt; .wf-action {
+    display: none;
+  }
+  #offramp-wireframes-vis .wf-device[data-current-device=&quot;mobile&quot;] .wf-section {
+    padding: 26px 18px;
+  }
+  #offramp-wireframes-vis .wf-device[data-current-device=&quot;mobile&quot;] .wf-hero,
+  #offramp-wireframes-vis .wf-device[data-current-device=&quot;mobile&quot;] .wf-app-shell,
+  #offramp-wireframes-vis .wf-device[data-current-device=&quot;mobile&quot;] .wf-calculator-grid,
+  #offramp-wireframes-vis .wf-device[data-current-device=&quot;mobile&quot;] .wf-tracker-layout,
+  #offramp-wireframes-vis .wf-device[data-current-device=&quot;mobile&quot;] .wf-ratio-grid,
+  #offramp-wireframes-vis .wf-device[data-current-device=&quot;mobile&quot;] .wf-compare,
+  #offramp-wireframes-vis .wf-device[data-current-device=&quot;mobile&quot;] .wf-two {
+    grid-template-columns: 1fr;
+  }
+  #offramp-wireframes-vis .wf-device[data-current-device=&quot;mobile&quot;] .wf-live,
+  #offramp-wireframes-vis .wf-device[data-current-device=&quot;mobile&quot;] .wf-per-gram {
+    grid-template-columns: 1fr 1fr;
+    padding: 22px 18px;
+  }
+  #offramp-wireframes-vis .wf-device[data-current-device=&quot;mobile&quot;] .wf-three,
+  #offramp-wireframes-vis .wf-device[data-current-device=&quot;mobile&quot;] .wf-five,
+  #offramp-wireframes-vis .wf-device[data-current-device=&quot;mobile&quot;] .wf-item-grid {
+    grid-template-columns: 1fr;
+  }
+  #offramp-wireframes-vis .wf-device[data-current-device=&quot;mobile&quot;] .wf-thesis,
+  #offramp-wireframes-vis .wf-device[data-current-device=&quot;mobile&quot;] .wf-footer,
+  #offramp-wireframes-vis .wf-device[data-current-device=&quot;mobile&quot;] .wf-heading-row {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  #offramp-wireframes-vis .wf-device[data-current-device=&quot;mobile&quot;] .wf-action {
+    width: 100%;
+  }
+  #offramp-wireframes-vis .wf-device[data-current-device=&quot;mobile&quot;] .wf-vault-header {
+    grid-template-columns: 1fr;
+  }
+  #offramp-wireframes-vis .wf-device[data-current-device=&quot;mobile&quot;] .wf-vault-total {
+    text-align: left;
+  }
+  #offramp-wireframes-vis .wf-device[data-current-device=&quot;mobile&quot;] .wf-camera-target {
+    min-height: 220px;
+  }
+  #offramp-wireframes-vis .wf-device[data-current-device=&quot;mobile&quot;] .wf-item {
+    grid-template-columns: 36px 1fr;
+  }
+  #offramp-wireframes-vis .wf-device[data-current-device=&quot;mobile&quot;] .wf-item strong {
+    grid-column: 2;
+  }
+  @media (max-width: 520px) {
+    #offramp-wireframes-vis .wf-nav-links {
+      display: none;
+    }
+    #offramp-wireframes-vis .wf-live,
+    #offramp-wireframes-vis .wf-per-gram,
+    #offramp-wireframes-vis .wf-three,
+    #offramp-wireframes-vis .wf-five,
+    #offramp-wireframes-vis .wf-two,
+    #offramp-wireframes-vis .wf-item-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+&lt;/style&gt;
+
+&lt;script&gt;
+  (() =&gt; {
+    const root = document.getElementById(&quot;offramp-wireframes-vis&quot;);
+    const deviceFrame = root.querySelector(&quot;.wf-device&quot;);
+    const current = root.querySelector(&quot;.wf-current&quot;);
+    const descriptions = {
+      home: &quot;W01 · Homepage · establish the family-first proposition and begin an estimate&quot;,
+      capture: &quot;W02 · Estimate capture · collect usable photos without an account&quot;,
+      result: &quot;W03 · Estimate result · explain the range and present the kit / vault fork&quot;,
+      calculator: &quot;W04 · Calculator template · answer the value question and convert to a photo estimate&quot;,
+      vault: &quot;W05 · Family Vault · preserve context, share value, and invite family&quot;,
+      tracker: &quot;W06 · Kit tracker · make custody, evidence, and the next action unmistakable&quot;,
+      bitcoin: &quot;W07 · Gold to Bitcoin · explain the USD-to-Onramp custody handoff&quot;
+    };
+
+    root.querySelectorAll(&quot;[data-screen]&quot;).forEach((button) =&gt; {
+      button.addEventListener(&quot;click&quot;, () =&gt; {
+        const selected = button.dataset.screen;
+        root.querySelectorAll(&quot;[data-screen]&quot;).forEach((peer) =&gt; {
+          const active = peer === button;
+          peer.setAttribute(&quot;aria-pressed&quot;, String(active));
+          peer.classList.toggle(&quot;btn-primary&quot;, active);
+        });
+        root.querySelectorAll(&quot;[data-view]&quot;).forEach((view) =&gt; {
+          view.hidden = view.dataset.view !== selected;
+        });
+        current.textContent = descriptions[selected];
+      });
+    });
+
+    root.querySelectorAll(&quot;[data-device]&quot;).forEach((button) =&gt; {
+      button.addEventListener(&quot;click&quot;, () =&gt; {
+        const selected = button.dataset.device;
+        deviceFrame.dataset.currentDevice = selected;
+        root.querySelectorAll(&quot;[data-device]&quot;).forEach((peer) =&gt; {
+          const active = peer === button;
+          peer.setAttribute(&quot;aria-pressed&quot;, String(active));
+          peer.classList.toggle(&quot;btn-primary&quot;, active);
+        });
+      });
+    });
+  })();
+&lt;/script&gt;
+
+&lt;script src=&quot;https://unpkg.com/@floating-ui/core@1.7.3/dist/floating-ui.core.umd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://unpkg.com/@floating-ui/dom@1.7.4/dist/floating-ui.dom.umd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  if (window.FloatingUIDOM == null) {
+    return;
+  }
+  const { autoUpdate, computePosition, flip, offset, shift, size } =
+    window.FloatingUIDOM;
+  const tooltipPlacements = new Set([&quot;top&quot;, &quot;right&quot;, &quot;bottom&quot;, &quot;left&quot;]);
+  const tooltipId = `codex-visualization-tooltip-${
+    window.crypto?.randomUUID?.() ?? Date.now().toString(36)
+  }`;
+  const tooltipGap = 5;
+  const hoverDelay = 700;
+  const skipDelay = 300;
+  let activeTrigger = null;
+  let pendingTrigger = null;
+  let tooltip = null;
+  let openTimeout = null;
+  let autoUpdateCleanup = null;
+  let positionRequest = 0;
+  let skipDelayUntil = 0;
+
+  const getTrigger = (target) =&gt;
+    target?.nodeType === Node.ELEMENT_NODE
+      ? target.closest(&quot;[data-tooltip]&quot;)
+      : null;
+  const containsTarget = (trigger, target) =&gt;
+    target?.nodeType != null &amp;&amp; trigger.contains(target);
+  const getContent = (trigger) =&gt;
+    trigger.getAttribute(&quot;data-tooltip&quot;)?.trim() ?? &quot;&quot;;
+  const getPlacement = (trigger) =&gt; {
+    const placement = trigger.getAttribute(&quot;data-tooltip-placement&quot;);
+    return tooltipPlacements.has(placement) ? placement : &quot;top&quot;;
+  };
+  const getTooltip = () =&gt; {
+    if (tooltip == null) {
+      tooltip = document.createElement(&quot;div&quot;);
+      tooltip.id = tooltipId;
+      tooltip.className = &quot;tooltip&quot;;
+      tooltip.setAttribute(&quot;role&quot;, &quot;tooltip&quot;);
+    }
+    return tooltip;
+  };
+  const setDescribedBy = (trigger, described) =&gt; {
+    const ids = new Set(
+      (trigger.getAttribute(&quot;aria-describedby&quot;) ?? &quot;&quot;)
+        .split(/\s+/)
+        .filter(Boolean),
+    );
+    if (described) {
+      ids.add(tooltipId);
+    } else {
+      ids.delete(tooltipId);
+    }
+    if (ids.size === 0) {
+      trigger.removeAttribute(&quot;aria-describedby&quot;);
+    } else {
+      trigger.setAttribute(&quot;aria-describedby&quot;, [...ids].join(&quot; &quot;));
+    }
+  };
+  const clearOpenTimeout = () =&gt; {
+    if (openTimeout != null) {
+      window.clearTimeout(openTimeout);
+      openTimeout = null;
+    }
+    pendingTrigger = null;
+  };
+  const closeTooltip = (activateSkipDelay = true) =&gt; {
+    clearOpenTimeout();
+    positionRequest += 1;
+    autoUpdateCleanup?.();
+    autoUpdateCleanup = null;
+    if (activeTrigger == null) {
+      return;
+    }
+    setDescribedBy(activeTrigger, false);
+    activeTrigger = null;
+    tooltip?.remove();
+    if (activateSkipDelay) {
+      skipDelayUntil = Date.now() + skipDelay;
+    }
+  };
+  const updatePosition = (trigger, floating) =&gt; {
+    const request = ++positionRequest;
+    void computePosition(trigger, floating, {
+      middleware: [
+        offset(tooltipGap),
+        flip({ padding: tooltipGap }),
+        shift({ padding: tooltipGap }),
+        size({
+          padding: tooltipGap,
+          apply({ availableHeight, availableWidth, elements }) {
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-width&quot;,
+              `${Math.max(0, availableWidth)}px`,
+            );
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-height&quot;,
+              `${Math.max(0, availableHeight)}px`,
+            );
+          },
+        }),
+      ],
+      placement: getPlacement(trigger),
+      strategy: &quot;fixed&quot;,
+    })
+      .then(({ x, y }) =&gt; {
+        if (activeTrigger !== trigger || request !== positionRequest) {
+          return;
+        }
+        const scale = window.devicePixelRatio || 1;
+        floating.style.transform = `translate(${Math.round(x * scale) / scale}px, ${Math.round(y * scale) / scale}px)`;
+        floating.style.visibility = &quot;visible&quot;;
+      })
+      .catch(() =&gt; {
+        if (activeTrigger === trigger &amp;&amp; request === positionRequest) {
+          closeTooltip(false);
+        }
+      });
+  };
+  const openTooltip = (trigger) =&gt; {
+    const content = getContent(trigger);
+    if (!trigger.isConnected || content.length === 0) {
+      return;
+    }
+    clearOpenTimeout();
+    if (activeTrigger === trigger) {
+      return;
+    }
+    closeTooltip();
+    const floating = getTooltip();
+    floating.textContent = content;
+    floating.style.visibility = &quot;hidden&quot;;
+    floating.style.transform = &quot;translate(0, 0)&quot;;
+    document.body.appendChild(floating);
+    activeTrigger = trigger;
+    setDescribedBy(trigger, true);
+    autoUpdateCleanup = autoUpdate(trigger, floating, () =&gt; {
+      updatePosition(trigger, floating);
+    });
+  };
+  const requestOpen = (trigger, immediate = false) =&gt; {
+    if (
+      getContent(trigger).length === 0 ||
+      activeTrigger === trigger ||
+      pendingTrigger === trigger
+    ) {
+      return;
+    }
+    clearOpenTimeout();
+    pendingTrigger = trigger;
+    const delay =
+      immediate || activeTrigger != null || Date.now() &lt; skipDelayUntil
+        ? 0
+        : hoverDelay;
+    if (delay === 0) {
+      openTooltip(trigger);
+      return;
+    }
+    openTimeout = window.setTimeout(() =&gt; {
+      openTimeout = null;
+      pendingTrigger = null;
+      openTooltip(trigger);
+    }, delay);
+  };
+  const handlePointerOpen = (event) =&gt; {
+    if (event.pointerType === &quot;touch&quot;) {
+      return;
+    }
+    const trigger = getTrigger(event.target);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    requestOpen(trigger);
+  };
+  const handleLeave = (event) =&gt; {
+    const trigger = getTrigger(event.target);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const handleFocusIn = (event) =&gt; {
+    const trigger = getTrigger(event.target);
+    if (trigger?.matches(&quot;:focus-visible&quot;)) {
+      requestOpen(trigger, true);
+    }
+  };
+  const handleKeyDown = (event) =&gt; {
+    if (event.key === &quot;Escape&quot;) {
+      closeTooltip();
+    }
+  };
+  const handleContextMenu = (event) =&gt; {
+    const trigger = getTrigger(event.target);
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const destroy = () =&gt; {
+    closeTooltip(false);
+    document.removeEventListener(&quot;pointerover&quot;, handlePointerOpen);
+    document.removeEventListener(&quot;pointerout&quot;, handleLeave);
+    document.removeEventListener(&quot;focusin&quot;, handleFocusIn);
+    document.removeEventListener(&quot;focusout&quot;, handleLeave);
+    document.removeEventListener(&quot;keydown&quot;, handleKeyDown);
+    document.removeEventListener(&quot;contextmenu&quot;, handleContextMenu);
+    tooltip = null;
+  };
+
+  document.addEventListener(&quot;pointerover&quot;, handlePointerOpen);
+  document.addEventListener(&quot;pointerout&quot;, handleLeave);
+  document.addEventListener(&quot;focusin&quot;, handleFocusIn);
+  document.addEventListener(&quot;focusout&quot;, handleLeave);
+  document.addEventListener(&quot;keydown&quot;, handleKeyDown);
+  document.addEventListener(&quot;contextmenu&quot;, handleContextMenu);
+  window.addEventListener(&quot;pagehide&quot;, destroy, { once: true });
+})();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-lucide&quot; async src=&quot;https://unpkg.com/lucide@1.17.0/dist/umd/lucide.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  const initialize = () =&gt; {
+    globalThis.lucide?.createIcons({ attrs: { width: 16, height: 16 } });
+  };
+  if (globalThis.lucide != null) {
+    initialize();
+    return;
+  }
+  document
+    .getElementById(&quot;codex-visualization-lucide&quot;)
+    ?.addEventListener(&quot;load&quot;, initialize, { once: true });
+})();
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+"></iframe>
+</body>
+</html>
