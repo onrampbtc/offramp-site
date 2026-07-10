@@ -1,0 +1,812 @@
+- generic [active] [ref=f65e1]:
+  - generic [ref=f65e2]:
+    - link "ENDS SOON! Receive 1/4 Carat Lab Diamond Studs With Purchase Over $1,000. Use Code STUDS in Cart. >" [ref=f65e7] [cursor=pointer]
+    - generic [ref=f65e13]:
+      - button "Close" [ref=f65e14] [cursor=pointer]: 
+      - button "Have a question? We're happy to help":
+        - heading "Have a question?" [level=4]
+        - paragraph: We're happy to help
+    - generic [ref=f65e15]:
+      - text:            Back       Back       Back       Back       Back       Back       Back       Back      
+      - generic [ref=f65e18]:
+        - list [ref=f65e20]:
+          - listitem [ref=f65e21]:
+            - link "214.432.7099" [ref=f65e22] [cursor=pointer]:
+              - /url: /contact/
+          - listitem [ref=f65e23]:
+            - link [ref=f65e25] [cursor=pointer]:
+              - /url: /stores/dallas-tx-75204/
+              - generic [ref=f65e26]:
+                - generic [ref=f65e27]: 
+                - generic [ref=f65e28]: Dallas
+        - generic [ref=f65e31]:
+          - link [ref=f65e33] [cursor=pointer]:
+            - /url: /
+            - img "Brilliant earth Logo" [ref=f65e34]
+          - list [ref=f65e35]:
+            - listitem [ref=f65e36]:
+              - link "ENGAGEMENT RINGS" [ref=f65e37] [cursor=pointer]:
+                - /url: /engagement-rings/
+            - listitem [ref=f65e38]:
+              - link "WEDDING RINGS" [ref=f65e39] [cursor=pointer]:
+                - /url: /wedding-rings/
+            - listitem [ref=f65e40]:
+              - link "DIAMONDS" [ref=f65e41] [cursor=pointer]:
+                - /url: /diamond/
+            - listitem [ref=f65e42]:
+              - link "GEMSTONES" [ref=f65e43] [cursor=pointer]:
+                - /url: /gemstones/
+            - listitem [ref=f65e44]:
+              - link "JEWELRY" [ref=f65e45] [cursor=pointer]:
+                - /url: /jewelry/
+            - listitem [ref=f65e46]:
+              - link "GIFTS" [ref=f65e47] [cursor=pointer]:
+                - /url: /gifts/
+            - listitem [ref=f65e48]:
+              - link "ABOUT" [ref=f65e49] [cursor=pointer]:
+                - /url: /about/
+        - generic [ref=f65e50]:
+          - listitem "Change your shipping country and currency" [ref=f65e52] [cursor=pointer]:
+            - button "CountryFlag USD" [ref=f65e53]:
+              - img "CountryFlag" [ref=f65e54]
+              - generic [ref=f65e55]: USD
+          - list [ref=f65e56]:
+            - listitem [ref=f65e57]:
+              - generic [ref=f65e59]:
+                - textbox "Search" [ref=f65e60]
+                - button "Search" [ref=f65e61] [cursor=pointer]: 
+            - listitem [ref=f65e62]:
+              - link "Sign In" [ref=f65e64] [cursor=pointer]:
+                - /url: /accounts/login/
+                - generic [ref=f65e66]: 
+            - listitem [ref=f65e67]:
+              - link "Wish List" [ref=f65e69] [cursor=pointer]:
+                - /url: /shop/wishlist/
+                - generic [ref=f65e70]: 
+            - listitem [ref=f65e71]:
+              - link "My Bag" [ref=f65e73] [cursor=pointer]:
+                - /url: /shop/cart/
+                - generic [ref=f65e74]: 
+      - generic [ref=f65e78]:
+        - generic [ref=f65e81]:
+          - generic [ref=f65e82]:
+            - link "Model wearing a diamond engagement ring and diamond drop earrings.":
+              - /url: /engagement-rings/shop-all/
+              - img "Model wearing a diamond engagement ring and diamond drop earrings." [ref=f65e83] [cursor=pointer]
+            - generic:
+              - generic:
+                - heading "Your Perfect Yes" [level=1]
+                - link "Shop Engagement Rings in /engagement-rings/shop-all/" [ref=f65e85] [cursor=pointer]:
+                  - /url: /engagement-rings/shop-all/
+                  - text: Shop Engagement Rings
+          - generic [ref=f65e86]:
+            - link "Assortment of gemstone fine jewelry perfect for summer.":
+              - /url: /jewelry/gemstone/?sortprod=BE4MGT3-14KY,BE3LCPS15-14KY,BE5LCBS01-14KY,BE2TSB21-14KY,BE2LCBSOMB9-18KY
+              - img "Assortment of gemstone fine jewelry perfect for summer." [ref=f65e87] [cursor=pointer]
+            - generic:
+              - generic:
+                - heading "Summer In Color" [level=2]
+                - link "Shop Gemstone Jewelry in /jewelry/gemstone/?sortprod=BE4MGT3-14KY,BE3LCPS15-14KY,BE5LCBS01-14KY,BE2TSB21-14KY,BE2LCBSOMB9-18KY" [ref=f65e89] [cursor=pointer]:
+                  - /url: /jewelry/gemstone/?sortprod=BE4MGT3-14KY,BE3LCPS15-14KY,BE5LCBS01-14KY,BE2TSB21-14KY,BE2LCBSOMB9-18KY
+                  - text: Shop Gemstone Jewelry
+        - generic [ref=f65e92]:
+          - heading "Shop Jewelry by Category" [level=2] [ref=f65e94]
+          - paragraph [ref=f65e97]: Thoughtfully designed collections for the big day and every day.
+          - group "Slider" [ref=f65e99]:
+            - generic [ref=f65e100]: Slide 1 of 8
+            - generic: 
+            - button "Next" [ref=f65e101] [cursor=pointer]:
+              - generic [ref=f65e102]: 
+            - generic [ref=f65e104]:
+              - tabpanel [ref=f65e105]:
+                - link "Engagement Rings" [ref=f65e107] [cursor=pointer]:
+                  - /url: /engagement-rings/shop-all/
+                  - img "Gold diamond engagement ring and wedding band." [ref=f65e111]
+                  - heading "Engagement Rings" [level=4] [ref=f65e112]
+              - tabpanel [ref=f65e113]:
+                - link "Women's Wedding Rings" [ref=f65e115] [cursor=pointer]:
+                  - /url: /wedding-rings/womens/
+                  - img "Stack of women's diamond wedding rings." [ref=f65e119]
+                  - heading "Women's Wedding Rings" [level=4] [ref=f65e120]
+              - tabpanel [ref=f65e121]:
+                - link "Men's Wedding Rings" [ref=f65e123] [cursor=pointer]:
+                  - /url: /wedding-rings/mens/
+                  - img "Variety of men's wedding rings." [ref=f65e127]
+                  - heading "Men's Wedding Rings" [level=4] [ref=f65e128]
+              - tabpanel [ref=f65e129]:
+                - link "Gemstone Rings" [ref=f65e131] [cursor=pointer]:
+                  - /url: /gemstones/shop-all/
+                  - img "Two gemstone engagement rings." [ref=f65e135]
+                  - heading "Gemstone Rings" [level=4] [ref=f65e136]
+              - tabpanel [ref=f65e137]:
+                - link "Earrings" [ref=f65e139] [cursor=pointer]:
+                  - /url: /jewelry/earrings/shop-all/
+                  - img "Gold diamond drop earrings and silver hoop earrings." [ref=f65e143]
+                  - heading "Earrings" [level=4] [ref=f65e144]
+              - tabpanel [ref=f65e145]:
+                - link "Necklaces" [ref=f65e147] [cursor=pointer]:
+                  - /url: /jewelry/necklace/shop-all/
+                  - img "Assortment of gold chains and solitaire necklaces." [ref=f65e151]
+                  - heading "Necklaces" [level=4] [ref=f65e152]
+              - tabpanel [ref=f65e153]:
+                - link "Bracelets" [ref=f65e155] [cursor=pointer]:
+                  - /url: /jewelry/bracelet/shop-all/
+                  - img "Assortment of bangle bracelets." [ref=f65e159]
+                  - heading "Bracelets" [level=4] [ref=f65e160]
+              - tabpanel [ref=f65e161]:
+                - link "Rings" [ref=f65e163] [cursor=pointer]:
+                  - /url: /jewelry/rings/shop-all/
+                  - img "A gemstone engagement ring and two gemstone fashion rings." [ref=f65e167]
+                  - heading "Rings" [level=4] [ref=f65e168]
+        - generic [ref=f65e172]:
+          - generic [ref=f65e173]:
+            - heading "Shop Diamonds by Shape" [level=2] [ref=f65e174]
+            - link [ref=f65e176] [cursor=pointer]:
+              - /url: "#"
+              - img "Oval diamond ring" [ref=f65e177]
+          - generic [ref=f65e179]:
+            - generic [ref=f65e180]:
+              - button [ref=f65e181] [cursor=pointer]:
+                - img "loose oval diamond" [ref=f65e183]
+                - paragraph [ref=f65e184]: Oval
+              - button [ref=f65e185] [cursor=pointer]:
+                - img "loose round diamond" [ref=f65e187]
+                - paragraph [ref=f65e188]: Round
+              - button [ref=f65e189] [cursor=pointer]:
+                - img "loose emerald diamond" [ref=f65e191]
+                - paragraph [ref=f65e192]: Emerald
+              - button [ref=f65e193] [cursor=pointer]:
+                - img "loose marquise diamond" [ref=f65e195]
+                - paragraph [ref=f65e196]: Marquise
+              - button [ref=f65e197] [cursor=pointer]:
+                - img "loose radiant diamond" [ref=f65e199]
+                - paragraph [ref=f65e200]: Radiant
+            - generic [ref=f65e201]:
+              - button [ref=f65e202] [cursor=pointer]:
+                - img "pear shaped diamond" [ref=f65e204]
+                - paragraph [ref=f65e205]: Pear
+              - button [ref=f65e206] [cursor=pointer]:
+                - img "elongated cushion loose diamond" [ref=f65e208]
+                - paragraph [ref=f65e209]: Elongated Cushion
+              - button [ref=f65e210] [cursor=pointer]:
+                - img "cushion diamond" [ref=f65e212]
+                - paragraph [ref=f65e213]: Cushion
+              - button [ref=f65e214] [cursor=pointer]:
+                - img "princess cut diamond" [ref=f65e216]
+                - paragraph [ref=f65e217]: Princess
+              - button [ref=f65e218] [cursor=pointer]:
+                - img "loose asscher diamond" [ref=f65e220]
+                - paragraph [ref=f65e221]: Asscher
+        - generic [ref=f65e225]:
+          - link "Lab Diamond Stud Earrings ENDS SOON! RECEIVE 1/4 CARAT LAB DIAMOND STUDS WITH PURCHASE OVER $1,000. A $200 VALUE. USE CODE STUDS IN CART.*" [ref=f65e226] [cursor=pointer]:
+            - /url: /promo-codes-and-offers/
+            - img "Lab Diamond Stud Earrings" [ref=f65e227]
+            - generic [ref=f65e228]:
+              - generic [ref=f65e229]: ENDS SOON!
+              - generic [ref=f65e230]: RECEIVE 1/4 CARAT LAB DIAMOND STUDS WITH PURCHASE OVER $1,000. A $200 VALUE. USE CODE STUDS IN CART.*
+          - button "*Studs are 1/4 ct. tw. See Terms." [ref=f65e232] [cursor=pointer]
+        - generic [ref=f65e235]:
+          - heading "Obsession-Worthy Engagement Rings" [level=2] [ref=f65e237]
+          - paragraph [ref=f65e240]: Artistry and craftsmanship in every detail.
+          - generic [ref=f65e241]:
+            - link "Nature Inspired Rings" [ref=f65e243] [cursor=pointer]:
+              - /url: /engagement-rings/nature-inspired/
+              - img "Model Wearing Nature Inspired Diamond Engagement Ring" [ref=f65e247]
+              - heading "Nature Inspired Rings" [level=4] [ref=f65e248]
+            - link "Antique & Vintage Rings" [ref=f65e250] [cursor=pointer]:
+              - /url: /engagement-rings/vintage/
+              - img "Model wearing an antique inspired diamond engagement ring." [ref=f65e254]
+              - heading "Antique & Vintage Rings" [level=4] [ref=f65e255]
+            - link "Three Stone Rings" [ref=f65e257] [cursor=pointer]:
+              - /url: /engagement-rings/three-stone/
+              - img "Model Wearing Three Stone Diamond Engagement Ring" [ref=f65e261]
+              - heading "Three Stone Rings" [level=4] [ref=f65e262]
+            - link "Solitaire Rings" [ref=f65e264] [cursor=pointer]:
+              - /url: /engagement-rings/solitaire/
+              - img "Model Wearing Solitaire Diamond Engagement Ring" [ref=f65e268]
+              - heading "Solitaire Rings" [level=4] [ref=f65e269]
+            - link "Bridal Sets" [ref=f65e271] [cursor=pointer]:
+              - /url: /engagement-rings/sets/
+              - img "Model Wearing Diamond Bridal Set" [ref=f65e275]
+              - heading "Bridal Sets" [level=4] [ref=f65e276]
+            - link "Bezel Rings" [ref=f65e278] [cursor=pointer]:
+              - /url: /engagement-rings/bezel/
+              - img "Model wearing diamond bezel engagement ring and wedding ring." [ref=f65e282]
+              - heading "Bezel Rings" [level=4] [ref=f65e283]
+        - link [ref=f65e284] [cursor=pointer]:
+          - /url: /jewelry/watches/
+          - img "Two stainless steal watches from The Solstice Collection." [ref=f65e285]
+        - link [ref=f65e286] [cursor=pointer]:
+          - /url: /search/?tag=the-summer-edit
+          - img "Assortment of trending fine jewelry pieces for Summer." [ref=f65e287]
+        - link [ref=f65e288] [cursor=pointer]:
+          - /url: /jewelry/charms/
+          - img "Camille Kostek wearing a gold charm bracelet perfect for Summer." [ref=f65e289]
+        - generic [ref=f65e292]:
+          - generic [ref=f65e293]:
+            - heading "We're Here for You, In Person and Online" [level=2] [ref=f65e294]
+            - paragraph [ref=f65e297]: Whether it’s at a store near you or online, we curate your appointment just for you.
+            - generic [ref=f65e298]:
+              - link "Visit a Showroom in /stores/" [ref=f65e299] [cursor=pointer]:
+                - /url: /stores/
+                - text: Visit a Showroom
+              - link "Book a Virtual Appointment in /stores/virtual-appointment/" [ref=f65e300] [cursor=pointer]:
+                - /url: /stores/virtual-appointment/
+                - text: Book a Virtual Appointment
+          - link [ref=f65e302] [cursor=pointer]:
+            - /url: /stores/
+            - img "Brilliant Earth Showroom" [ref=f65e304]
+        - generic [ref=f65e308]:
+          - heading "We've Got You Covered" [level=2] [ref=f65e312]
+          - generic [ref=f65e313]:
+            - link [ref=f65e317] [cursor=pointer]:
+              - /url: /30-Day-Returns/
+              - paragraph [ref=f65e318]: FREE SHIPPING & RETURNS
+            - link [ref=f65e322] [cursor=pointer]:
+              - /url: /shop-online/#manufacturing_warranty
+              - paragraph [ref=f65e323]: FREE LIFETIME WARRANTY
+            - link [ref=f65e327] [cursor=pointer]:
+              - /url: /contact/
+              - paragraph [ref=f65e328]: 24/7 CUSTOMER SUPPORT
+            - link [ref=f65e332] [cursor=pointer]:
+              - /url: /shop-online/#diamond_upgrade
+              - paragraph [ref=f65e333]: LIFETIME DIAMOND UPGRADE
+            - link [ref=f65e337] [cursor=pointer]:
+              - /url: /30-Day-Returns/
+              - paragraph [ref=f65e338]: FREE 1-YEAR RESIZING
+        - generic [ref=f65e341]:
+          - generic [ref=f65e342]:
+            - link [ref=f65e343] [cursor=pointer]:
+              - /url: /about/
+              - img "Model wearing gold and diamond fine jewelry from the Jane Goodall collection." [ref=f65e344]
+            - generic:
+              - generic:
+                - 'heading "VOTED #1 MOST SUSTAINABLE JEWELRY BRAND BY THE AIDI" [level=4]'
+          - generic [ref=f65e345]:
+            - generic [ref=f65e346]:
+              - generic [ref=f65e347]:
+                - generic [ref=f65e348]: 20 YEARS OF OUR MISSION
+                - heading "From our pioneering diamond standards to our unmatched transparency, we're redefining what it means to design, craft, and experience jewelry that makes a real difference." [level=3] [ref=f65e349]
+              - link "Learn More in /about/" [ref=f65e351] [cursor=pointer]:
+                - /url: /about/
+                - text: Learn More
+            - group "Slider" [ref=f65e354]:
+              - generic [ref=f65e355]: Slide 1 of 3
+              - generic: 
+              - button "Next" [ref=f65e356] [cursor=pointer]:
+                - generic [ref=f65e357]: 
+              - generic [ref=f65e359]:
+                - tabpanel [ref=f65e360]:
+                  - link [ref=f65e361] [cursor=pointer]:
+                    - /url: /jewelry/collections/20th-anniversary/
+                    - generic [ref=f65e362]:
+                      - img "Diamond engagement ring and wedding ring from the 20th Anniversary collection." [ref=f65e364]
+                      - heading "20th Anniversary Collection" [level=4] [ref=f65e366]
+                - tabpanel [ref=f65e367]:
+                  - link [ref=f65e368] [cursor=pointer]:
+                    - /url: /jewelry/collections/jane-goodall/shop-all/
+                    - generic [ref=f65e369]:
+                      - img "Gold diamond fine jewelry from the Jane Goodall collection." [ref=f65e371]
+                      - heading "Jane Goodall Collection" [level=4] [ref=f65e373]
+                - tabpanel [ref=f65e374]:
+                  - link [ref=f65e375] [cursor=pointer]:
+                    - /url: /jewelry/collections/signature/
+                    - generic [ref=f65e376]:
+                      - img "Diamond engagement ring featured from one of Brilliant Earth's Signature collections." [ref=f65e378]
+                      - heading "Signature Collections" [level=4] [ref=f65e380]
+        - generic [ref=f65e383]:
+          - generic [ref=f65e384]:
+            - heading "Get Inspired" [level=2] [ref=f65e385]
+            - link "Shop Instagram in https://www.instagram.com/brilliantearth/" [ref=f65e386] [cursor=pointer]:
+              - /url: https://www.instagram.com/brilliantearth/
+              - text: Shop Instagram
+          - generic [ref=f65e392]:
+            - list [ref=f65e394]:
+              - listitem [ref=f65e395]:
+                - generic [ref=f65e397] [cursor=pointer]:
+                  - button "Learn More - Summer Solstice Watch" [ref=f65e398]: Shop Now
+                  - figure [ref=f65e399]:
+                    - 'img "We’ve been counting down to this moment. Introducing the Solstice Collection: Our first-ever limited-edition collection of watches. Two designs, the Summer Solstice and the Winter Solstice, shaped by decades of obsessing over detail. Developed in collaboration with pioneering Swiss watchmaker Louis Erard. 100 timepieces available now or available until they sell out." [ref=f65e400]'
+              - listitem [ref=f65e402]:
+                - generic [ref=f65e403]:
+                  - img "video available" [ref=f65e405]
+                  - generic [ref=f65e406] [cursor=pointer]:
+                    - link "Go to media" [ref=f65e407]:
+                      - /url: https://www.brilliantearth.com/lab-grown-diamonds/colored/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/reel/DaiHCR2xtNW
+                      - text: Shop Now
+                    - figure [ref=f65e408]:
+                      - 'img "Part 3: Unique Diamond Colors A fancy vivid pink oval lab diamond 🩷 with a step cut. What does this diamond remind you of?" [ref=f65e409]'
+              - listitem [ref=f65e410]:
+                - generic [ref=f65e412] [cursor=pointer]:
+                  - link "Go to media" [ref=f65e413]:
+                    - /url: https://www.brilliantearth.com/4mm-Mini-Perfect-Flat-Hoop-Earrings-14K-Gold-BE3PH0165/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/p/DagXbMrmLKu
+                    - text: Shop Now
+                  - 'figure "The ideal everyday earring, these hinged hoops are perfect on their own and easily added to a statement stack. Mini: 16.5mm tall, 4mm wide" [ref=f65e414]':
+                    - 'img "@alixearle summer essential: our mini gold hoops. Made for every outfit change. The details: 14K Yellow Gold 4mm Mini Perfect Flat Hoop Earrings" [ref=f65e415]'
+              - listitem [ref=f65e417]:
+                - generic [ref=f65e418]:
+                  - img "video available" [ref=f65e420]
+                  - generic [ref=f65e421] [cursor=pointer]:
+                    - link "Go to media" [ref=f65e422]:
+                      - /url: https://www.brilliantearth.com/lab-grown-diamonds/colored/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/reel/DaVRFuHRZzE
+                      - text: Shop Now
+                    - figure [ref=f65e423]:
+                      - img "This 10.39ct oval lab diamond just arrived. It’s exactly what a butterscotch candy would look like if it were a diamond. Do you agree?" [ref=f65e424]
+              - listitem [ref=f65e425]:
+                - generic [ref=f65e427] [cursor=pointer]:
+                  - link "Go to media" [ref=f65e428]:
+                    - /url: https://www.brilliantearth.com/search/?tag=antique-cut-diamonds&utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/p/DaTmIq_lIh2
+                    - text: Shop Now
+                  - figure [ref=f65e429]:
+                    - img "Taylor Swift’s (rumored) wedding weekend has us obsessing over antique diamond cuts. Which one’s your favorite?" [ref=f65e430]
+              - listitem [ref=f65e431]:
+                - generic [ref=f65e433] [cursor=pointer]:
+                  - link "Go to media" [ref=f65e434]:
+                    - /url: https://www.brilliantearth.com/Perfect-Fit-French-Pav%C3%A9-Diamond-Ring-14K-Gold-BE1D546-76785981/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/p/DaOad-WlBQ5
+                    - text: Shop Now
+                  - figure [ref=f65e435]:
+                    - 'img "Some trips change your life. Pack accordingly. Congrats to @webb.alyssa and @imzachdavis on your engagement. The details: 18K Yellow Gold Perfect Fit French Pavé Lab Diamond Ring set with an Oval Diamond" [ref=f65e436]'
+              - listitem [ref=f65e437]:
+                - generic [ref=f65e439] [cursor=pointer]:
+                  - link [ref=f65e440]:
+                    - /url: https://www.brilliantearth.com/stores/san-antonio-tx-78256/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/p/DaLyBFYmOiB
+                    - text: Shop Now
+                  - figure [ref=f65e441]
+              - listitem [ref=f65e443]:
+                - generic [ref=f65e447] [cursor=pointer]:
+                  - link [ref=f65e448]:
+                    - /url: https://www.brilliantearth.com/diamond/elongated-cushion/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/reel/DaJWQ5qhUX2
+                    - text: Shop Now
+                  - figure [ref=f65e449]
+              - listitem [ref=f65e451]:
+                - generic [ref=f65e453] [cursor=pointer]:
+                  - link [ref=f65e454]:
+                    - /url: https://www.brilliantearth.com/Nadia-Diamond-Ring-14K-Gold-BE1D6013-76819968/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/p/DaIhgBiRUqA
+                    - text: Shop Now
+                  - figure [ref=f65e455]:
+                    - generic [ref=f65e457]: <p>This nature-inspired engagement ring captures organic beauty through hand-engraved details and flowing motifs that organically frame the center stone.</p> <ul> <li>Claw prongs secure the center stone with refined definition and a hint of vintage-inspired detail that adds character.</li> <li>Marquise-cut diamond accents positioned strategically complement and enhance the center stone's brilliance.</li> <li>Low-profile setting positions the center stone close to the band for secure fit, comfort, and everyday practicality.</li> <li>Refined band craftsmanship ensures a polished, elegant appearance from every angle and in any lighting condition.</li> <li>Low-profile design suits active lifestyles and everyday wear with sophisticated appeal while maintaining refined sophistication throughout.</li> <li>Nature-inspired motifs celebrate the beauty of organic forms, natural patterns, and flowing, graceful design lines.</li> </ul> <p>This Most Loved ring displays the best and brightest in design and is beloved by Brilliant Earth designers and customers alike.</p>
+              - listitem [ref=f65e458]:
+                - generic [ref=f65e462] [cursor=pointer]:
+                  - link [ref=f65e463]:
+                    - /url: https://www.brilliantearth.com/Vintage-Secret-Garden-Diamond-Ring-(2/3-ct.-tw.)-14K-Gold-BE1D766-76783840/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/reel/DaF495qxH7A
+                    - text: Shop Now
+                  - figure [ref=f65e464]:
+                    - generic [ref=f65e466]: <p>This nature-inspired ring features precious metal leaves and diamonds celebrating natural beauty. </p> <ul> <li>The wider 3mm band creates substantial presence and added durability with a more commanding appearance.</li> <li>Claw prongs securely hold the center stone while maintaining an open profile that maximizes light and sparkle.</li> <li>Side stone accents feature 8 pear diamonds (3/8 carat total), 44 round diamonds (approx 1/4 carat total) that complement and enhance the center stone's beauty.</li> <li>Nature-inspired design elements with botanical details celebrate the organic elegance of the natural world.</li> <li>Gallery wire beneath the center stone provides additional support and enhanced durability for years of wear.</li> <li>Perfect for an engagement or milestone celebration, this ring delivers exceptional beauty and lasting value.</li> </ul>
+              - listitem [ref=f65e467]:
+                - generic [ref=f65e469] [cursor=pointer]:
+                  - link [ref=f65e470]:
+                    - /url: https://www.brilliantearth.com/diamond/elongated-cushion/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/p/DaAqr0Ikf6F
+                    - text: Shop Now
+                  - figure [ref=f65e471]
+              - listitem [ref=f65e473]:
+                - generic [ref=f65e475] [cursor=pointer]:
+                  - link [ref=f65e476]:
+                    - /url: https://www.brilliantearth.com/Vintage-Secret-Garden-Diamond-Ring-(2/3-ct.-tw.)-14K-Gold-BE1D766-76783840/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/p/DZ-2HJMGEtj
+                    - text: Shop Now
+                  - figure [ref=f65e477]:
+                    - generic [ref=f65e479]: <p>This nature-inspired ring features precious metal leaves and diamonds celebrating natural beauty. </p> <ul> <li>The wider 3mm band creates substantial presence and added durability with a more commanding appearance.</li> <li>Claw prongs securely hold the center stone while maintaining an open profile that maximizes light and sparkle.</li> <li>Side stone accents feature 8 pear diamonds (3/8 carat total), 44 round diamonds (approx 1/4 carat total) that complement and enhance the center stone's beauty.</li> <li>Nature-inspired design elements with botanical details celebrate the organic elegance of the natural world.</li> <li>Gallery wire beneath the center stone provides additional support and enhanced durability for years of wear.</li> <li>Perfect for an engagement or milestone celebration, this ring delivers exceptional beauty and lasting value.</li> </ul>
+              - listitem [ref=f65e480]:
+                - generic [ref=f65e484] [cursor=pointer]:
+                  - link [ref=f65e485]:
+                    - /url: https://www.brilliantearth.com/Vintage-Secret-Garden-Diamond-Ring-(2/3-ct.-tw.)-14K-Gold-BE1D766-76783840/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/reel/DZ-IE3WOBXx
+                    - text: Shop Now
+                  - figure [ref=f65e486]:
+                    - generic [ref=f65e488]: <p>This nature-inspired ring features precious metal leaves and diamonds celebrating natural beauty. </p> <ul> <li>The wider 3mm band creates substantial presence and added durability with a more commanding appearance.</li> <li>Claw prongs securely hold the center stone while maintaining an open profile that maximizes light and sparkle.</li> <li>Side stone accents feature 8 pear diamonds (3/8 carat total), 44 round diamonds (approx 1/4 carat total) that complement and enhance the center stone's beauty.</li> <li>Nature-inspired design elements with botanical details celebrate the organic elegance of the natural world.</li> <li>Gallery wire beneath the center stone provides additional support and enhanced durability for years of wear.</li> <li>Perfect for an engagement or milestone celebration, this ring delivers exceptional beauty and lasting value.</li> </ul>
+              - listitem [ref=f65e489]:
+                - generic [ref=f65e491] [cursor=pointer]:
+                  - link [ref=f65e492]:
+                    - /url: https://www.brilliantearth.com/Vintage-Secret-Garden-Diamond-Ring-(3/8-ct.-tw.)-14K-Gold-BE1D3588-76783844/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/p/DZ7frLykZ6G
+                    - text: Shop Now
+                  - figure [ref=f65e493]:
+                    - generic [ref=f65e495]: <p>This nature-inspired ring features precious metal leaves and diamonds celebrating natural beauty. </p> <ul> <li>The wider 3mm band creates substantial presence and added durability with a more commanding appearance.</li> <li>Claw prongs securely hold the center stone while maintaining an open profile that maximizes light and sparkle.</li> <li>Side stone accents feature 8 pear diamonds (3/8 carat total) that complement and enhance the center stone's beauty.</li> <li>Nature-inspired design elements with botanical details celebrate the organic elegance of the natural world.</li> <li>The timeless design ensures this engagement ring remains cherished, relevant, and beautiful for a lifetime.</li> <li>Perfect for an engagement or milestone celebration, this ring delivers exceptional beauty and lasting value.</li> </ul>
+              - listitem [ref=f65e496]:
+                - generic [ref=f65e500] [cursor=pointer]:
+                  - link [ref=f65e501]:
+                    - /url: https://www.brilliantearth.com/gemstones/alexandrite/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/reel/DZ5vh3xhZe-
+                    - text: Shop Now
+                  - figure [ref=f65e502]
+              - listitem [ref=f65e504]:
+                - generic [ref=f65e506] [cursor=pointer]:
+                  - link [ref=f65e507]:
+                    - /url: https://www.brilliantearth.com/Sydney-Perfect-Fit-Hidden-Halo-Diamond-Ring-14K-Gold-BE1D17651-76820282/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/p/DZ0MBFnEbQw
+                    - text: Shop Now
+                  - figure [ref=f65e508]:
+                    - generic [ref=f65e510]: <p>This halo engagement ring is accented by round diamonds.</p> <ul> <li>Claw prongs secure the center stone with refined strength and an open profile that maximizes the transmission of light through the diamond.</li> <li>Accent diamonds include 16 round diamonds (0.05 ct. tw.) set along the band for enhanced brilliance throughout the design.</li> <li>At 1.5 mm wide, the petite precious metal band creates a slender, delicate silhouette that flatters any hand and complements the center stone.</li> <li>The polished precious metal band finishes the ring with a smooth, luminous surface ideal for everyday wear and complementing wedding bands.</li> <li>This engagement ring combines timeless design with modern craftsmanship, creating a cherished piece that will endure for a lifetime of special moments.</li> </ul>
+              - listitem [ref=f65e511]:
+                - generic [ref=f65e515] [cursor=pointer]:
+                  - button [ref=f65e516]: Shop Now
+                  - figure [ref=f65e517]:
+                    - generic [ref=f65e519]: Consider yourself charmed. A finely detailed sand dollar charm captures the natural beauty of its namesake with remarkable artisan precision. The front is adorned with sparkling diamonds scattered across its surface, while the back presents the same intricate petal motif in clean, polished relief. Reversible and full of character, it's a chic coastal keepsake that feels equally at home on a chain or charm bracelet.
+              - listitem [ref=f65e520]:
+                - generic [ref=f65e522] [cursor=pointer]:
+                  - link [ref=f65e523]:
+                    - /url: https://www.brilliantearth.com/jewelry/charms/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/p/DZutjhTEeT6
+                    - text: Shop Now
+                  - figure [ref=f65e524]
+              - listitem [ref=f65e526]:
+                - generic [ref=f65e530] [cursor=pointer]:
+                  - link [ref=f65e531]:
+                    - /url: https://www.brilliantearth.com/gemstones/alexandrite/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/reel/DZpcTESRzlO
+                    - text: Shop Now
+                  - figure [ref=f65e532]
+              - listitem [ref=f65e534]:
+                - generic [ref=f65e538] [cursor=pointer]:
+                  - link [ref=f65e539]:
+                    - /url: https://www.brilliantearth.com/search/?tag=the-summer-edit&utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/p/DZnuxueFEWM
+                    - text: Shop Now
+                  - figure [ref=f65e540]
+              - listitem [ref=f65e542]:
+                - generic [ref=f65e546] [cursor=pointer]:
+                  - link [ref=f65e547]:
+                    - /url: https://www.brilliantearth.com/Nadia-Diamond-Ring-14K-Gold-BE1D6013-76819968/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/reel/DZa5anohS3z
+                    - text: Shop Now
+                  - figure [ref=f65e548]:
+                    - generic [ref=f65e550]: <p>This nature-inspired engagement ring captures organic beauty through hand-engraved details and flowing motifs that organically frame the center stone.</p> <ul> <li>Claw prongs secure the center stone with refined definition and a hint of vintage-inspired detail that adds character.</li> <li>Marquise-cut diamond accents positioned strategically complement and enhance the center stone's brilliance.</li> <li>Low-profile setting positions the center stone close to the band for secure fit, comfort, and everyday practicality.</li> <li>Refined band craftsmanship ensures a polished, elegant appearance from every angle and in any lighting condition.</li> <li>Low-profile design suits active lifestyles and everyday wear with sophisticated appeal while maintaining refined sophistication throughout.</li> <li>Nature-inspired motifs celebrate the beauty of organic forms, natural patterns, and flowing, graceful design lines.</li> </ul> <p>This Most Loved ring displays the best and brightest in design and is beloved by Brilliant Earth designers and customers alike.</p>
+              - listitem [ref=f65e551]:
+                - generic [ref=f65e553] [cursor=pointer]:
+                  - link [ref=f65e554]:
+                    - /url: https://www.brilliantearth.com/Luxe-Elodie-Diamond-Ring-(1/4-ct.-tw.)-14K-Gold-BE1D1561-76788521/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/p/DZS2ucslJL4
+                    - text: Shop Now
+                  - figure [ref=f65e555]:
+                    - generic [ref=f65e557]: <p>This engagement ring merges refined proportions with sophisticated contemporary design sensibility. </p> <ul> <li>Band measures 1.8mm wide.</li> <li>Features a claw-prong setting that secures the center stone.</li> <li>20 round diamond accents (1/4 total carat weight)</li> <li>Low profile setting offers a contemporary silhouette with refined visual presence that moves comfortably through daily wear.</li> </ul> <p>This engagement ring combines distinctive design elements with refined craftsmanship for a piece you'll treasure throughout your life. The thoughtful proportions and careful detailing create a ring that celebrates both beauty and durability. Whether you're drawn to its aesthetic, symbolic elements, or construction quality, this is an investment in lasting elegance and personal meaning.</p>
+              - listitem [ref=f65e558]:
+                - generic [ref=f65e562] [cursor=pointer]:
+                  - button [ref=f65e563]: Shop Now
+                  - figure [ref=f65e564]:
+                    - generic [ref=f65e566]: This striking solitaire engagement ring features a Georgian-inspired design and a center stone within a button-back setting. The mixed metal finish pairs a warm yellow or rose gold with a white gold face, creating an heirloom feel.
+              - listitem [ref=f65e567]:
+                - generic [ref=f65e571] [cursor=pointer]:
+                  - link [ref=f65e572]:
+                    - /url: https://www.brilliantearth.com/diamond/colored/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/reel/DZDo-NlhqYF
+                    - text: Shop Now
+                  - figure [ref=f65e573]
+              - listitem [ref=f65e575]:
+                - generic [ref=f65e579] [cursor=pointer]:
+                  - link [ref=f65e580]:
+                    - /url: https://www.brilliantearth.com/engagement-rings/shop-all/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/reel/DY-VfN2hLbo
+                    - text: Shop Now
+                  - figure [ref=f65e581]
+              - listitem [ref=f65e583]:
+                - generic [ref=f65e585] [cursor=pointer]:
+                  - link [ref=f65e586]:
+                    - /url: https://www.brilliantearth.com/Harper-Mixed-Metal-Solitaire-Ring-Gold-BE1727-77043845/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/p/DY5ZKS_mLC0
+                    - text: Shop Now
+                  - figure [ref=f65e587]:
+                    - generic [ref=f65e589]: This striking solitaire engagement ring features a Georgian-inspired design and a center stone within a button-back setting. The mixed metal finish pairs a warm yellow or rose gold with a white gold face, creating an heirloom feel.
+              - listitem [ref=f65e590]:
+                - generic [ref=f65e594] [cursor=pointer]:
+                  - link [ref=f65e595]:
+                    - /url: https://www.brilliantearth.com/Harper-Mixed-Metal-Solitaire-Ring-Gold-BE1727-77043845/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=bridal
+                    - text: Shop Now
+                  - figure [ref=f65e596]
+              - listitem [ref=f65e598]:
+                - generic [ref=f65e600] [cursor=pointer]:
+                  - link [ref=f65e601]:
+                    - /url: https://www.brilliantearth.com/engagement-rings/oval/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/p/DYkylQFlIse
+                    - text: Shop Now
+                  - figure [ref=f65e602]
+              - listitem [ref=f65e604]:
+                - generic [ref=f65e608] [cursor=pointer]:
+                  - link [ref=f65e609]:
+                    - /url: https://www.brilliantearth.com/Secret-Garden-Diamond-Ring-(1/2-ct.-tw.)-14K-Gold-BE1D6351-76788497/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=bridal
+                    - text: Shop Now
+                  - figure [ref=f65e610]
+              - listitem [ref=f65e612]:
+                - generic [ref=f65e616] [cursor=pointer]:
+                  - button [ref=f65e617]: Shop Now
+                  - figure [ref=f65e618]
+              - listitem [ref=f65e620]:
+                - generic [ref=f65e622] [cursor=pointer]:
+                  - link [ref=f65e623]:
+                    - /url: https://www.brilliantearth.com/jewelry/charms/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/p/DYUiBCSFSSA
+                    - text: Shop Now
+                  - figure [ref=f65e624]
+              - listitem [ref=f65e626]:
+                - generic [ref=f65e630] [cursor=pointer]:
+                  - link [ref=f65e631]:
+                    - /url: https://www.brilliantearth.com/gemstones/emerald/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/reel/DYSw_Z2ByFY
+                    - text: Shop Now
+                  - figure [ref=f65e632]
+              - listitem [ref=f65e634]:
+                - generic [ref=f65e638] [cursor=pointer]:
+                  - link [ref=f65e639]:
+                    - /url: https://www.brilliantearth.com/gemstones/emerald/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/reel/DYNoPobhxme
+                    - text: Shop Now
+                  - figure [ref=f65e640]
+              - listitem [ref=f65e642]:
+                - generic [ref=f65e644] [cursor=pointer]:
+                  - link [ref=f65e645]:
+                    - /url: https://www.brilliantearth.com/Luxe-Nadia-Diamond-Ring-14K-Gold-BE1D4333-76788916/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/p/DYFC7gzEduu
+                    - text: Shop Now
+                  - figure [ref=f65e646]:
+                    - generic [ref=f65e648]: <p>This solitaire engagement ring combines refined proportions with thoughtful design details that beautifully showcase the center stone. </p> <ul> <li>The 1.8mm band width delivers a balanced, comfortable silhouette that showcases the center stone without overwhelming the hand.</li> <li>Four elegant claw prongs secure the center stone with a timeless setting that maximizes light entry and brilliant sparkle from every angle.</li> <li>4 round diamond stones are prong-set as accents, adding (1/5 total carat weight) of luminous sparkle.</li> <li>The low-profile design ensures the ring sits comfortably on the hand while remaining secure and practical for everyday wear and stacking.</li> <li>Careful proportions and refined craftsmanship combine to create a ring that feels both timelessly elegant and distinctly personal.</li> </ul>
+              - listitem [ref=f65e649]:
+                - generic [ref=f65e651] [cursor=pointer]:
+                  - link [ref=f65e652]:
+                    - /url: https://www.brilliantearth.com/Perfect-4-Prong-Certified-Lab-Diamond-Stud-Earrings-(2-ct.-tw.)-White-Gold-BE304RD0200LC/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/p/DYA15DdlNe0
+                    - text: Shop Now
+                  - figure [ref=f65e653]
+              - listitem [ref=f65e655]:
+                - generic [ref=f65e657] [cursor=pointer]:
+                  - link [ref=f65e658]:
+                    - /url: https://www.brilliantearth.com/Petite-Luna-1.5mm-Bezel-Ring-14K-Gold-BE12430-76820256/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/p/DX7ibbgmdTD
+                    - text: Shop Now
+                  - figure [ref=f65e659]:
+                    - generic [ref=f65e661]: <p>This cathedral engagement ring showcases the center stone with an elevated setting that commands attention through architectural presence, refined proportions, and distinctive visual impact. Cathedral-style galleries have been treasured in fine jewelry for centuries.</p> <ul> <li>Metal bezel frames the center stone with a protective border that defines its shape, provides structural integrity, and offers lasting security.</li> <li>Designed to stack flush with a wedding band for a seamless bridal set appearance, creating an integrated, polished look without visible gaps.</li> <li>Band details and refined proportions complete the design with understated beauty and visual balance.</li> <li>Refined craftsmanship and meticulous attention to detail ensure lasting beauty and enduring appeal.</li> </ul>
+              - listitem [ref=f65e662]:
+                - generic [ref=f65e664] [cursor=pointer]:
+                  - button [ref=f65e665]: Shop Now
+                  - figure [ref=f65e666]
+              - listitem [ref=f65e668]:
+                - generic [ref=f65e670] [cursor=pointer]:
+                  - link [ref=f65e671]:
+                    - /url: https://www.brilliantearth.com/gifts/mothers-day/?sortprod=BE4D2158LC-14KY%2CBE4D3519-14KY%2CBE304RD0200LC-18KW%2CBE4D2519-14KY%2CBE4LBT111-SLV%2CBE4DMULTI2519LC-14KY%2CBE3ASL50-14KY%2CBE5D44-14KY%2CBE4D828LC-14KY%2CBE5DREV15TB65LC-14KY%2CBE4DMULTI4519LC-14KY%2CBE4D5656-14KY&utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/p/DXpCECTEWxO
+                    - text: Shop Now
+                  - figure [ref=f65e672]
+              - listitem [ref=f65e674]:
+                - generic [ref=f65e676] [cursor=pointer]:
+                  - link [ref=f65e677]:
+                    - /url: https://www.brilliantearth.com/engagement-rings/marquise/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/p/DXmNZREEXmY
+                    - text: Shop Now
+                  - figure [ref=f65e678]
+              - listitem [ref=f65e680]:
+                - generic [ref=f65e682] [cursor=pointer]:
+                  - link [ref=f65e683]:
+                    - /url: https://www.brilliantearth.com/Adorned-Mixed-Metal-Diamond-Ring-Gold-BE1D20200-21490788/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/p/DXhSX55kQqB
+                    - text: Shop Now
+                  - figure [ref=f65e684]:
+                    - generic [ref=f65e686]: <p>This engagement ring combines refined proportions with thoughtful design details that beautifully showcase the center stone. </p> <ul> <li>The 1.5mm band width provides an understated, delicate silhouette that is perfectly suited for everyday wear and compatible with most wedding bands.</li> <li>Four elegant claw prongs secure the center stone with a classic, open setting that permits maximum light entry and brilliant sparkle.</li> <li>16 round diamond stones are pavé-set as accent elements, contributing (1/10 total carat weight) of luminous additional sparkle.</li> <li>Careful proportions and refined craftsmanship combine to create a ring that feels both timelessly elegant and distinctly personal to the wearer.</li> <li>This ring combines timeless elegance with modern design sensibilities to create a piece that feels both sophisticated and distinctly personal.</li> </ul> <p>Our perfect fit engagement rings are carefully designed to sit flush against a variety of wedding rings for a seamless look with no gaps.</p>
+              - listitem [ref=f65e687]:
+                - generic [ref=f65e689] [cursor=pointer]:
+                  - link [ref=f65e690]:
+                    - /url: https://www.brilliantearth.com/Perfect-Fit-Three-Quarter-Diamond-Ring-(1/4-ct.-tw.)-14K-White-Gold-BE1D1230-76823233/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/p/DXaHxralFwL
+                    - text: Shop Now
+                  - figure [ref=f65e691]:
+                    - generic [ref=f65e693]: <p>This engagement ring features scalloped pav&eacute;-set diamonds creating continuous texture and sparkle around the band, delivering radiant brilliance with refined sophisticated appeal.</p> <ul> <li>Four prongs hold the center stone secure with balanced proportion and refined appearance, complementing the gem without competing for attention.</li> <li>An open-gallery design allows light to travel freely through from below, maximizing brilliance and emphasizing the gem's luminosity and multidimensional sparkle.</li> <li>Scalloped pav&eacute;-set diamond accents create continuous sparkle around the band, adding multidimensional brilliance (0.26 ct. tw.).</li> <li>The 1.4mm band width creates balanced proportions that complement the center stone while maintaining a refined elegant silhouette for daily wear.</li> <li>This ring is designed to sit perfectly flush against wedding bands, creating a seamless gap-free look that transitions through life's important moments.</li> </ul>
+              - listitem [ref=f65e694]:
+                - generic [ref=f65e698] [cursor=pointer]:
+                  - link [ref=f65e699]:
+                    - /url: https://www.brilliantearth.com/Daphne-Art-Deco-Ring-(1/8-ct.-tw.)-14K-Gold-BE1DTB150-76820216/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/reel/DXXcpWihWsj
+                    - text: Shop Now
+                  - figure [ref=f65e700]:
+                    - generic [ref=f65e702]: <p>This classic engagement ring presents the center stone with timeless design, refined simplicity, understated sophistication, and proportions that transcend passing trends. Classic designs have remained popular for generations, proving their lasting value and versatility.</p> <ul> <li>Diamond-adorned claw prongs securely hold the center stone while adding visual interest, refined detail, and additional sparkle to the overall setting design.</li> <li>Low-profile design positions the center stone close to the hand for maximum comfort, security, and everyday wearability without catching on items.</li> <li>6 round-shaped diamonds in shared prong contribute 0.04 carats and amplify the center stone's radiance with sparkle.</li> <li>Additional 6 baguette-shaped diamonds in shared prong add 0.1 carats and layer visual interest.</li> </ul>
+              - listitem [ref=f65e703]:
+                - generic [ref=f65e707] [cursor=pointer]:
+                  - link [ref=f65e708]:
+                    - /url: https://www.brilliantearth.com/lab-grown-diamonds/colored/pacific-green/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/reel/DXVGHnbhn4w
+                    - text: Shop Now
+                  - figure [ref=f65e709]
+              - listitem [ref=f65e711]:
+                - generic [ref=f65e715] [cursor=pointer]:
+                  - button [ref=f65e716]: Shop Now
+                  - figure [ref=f65e717]
+              - listitem [ref=f65e719]:
+                - generic [ref=f65e721] [cursor=pointer]:
+                  - link [ref=f65e722]:
+                    - /url: https://www.brilliantearth.com/search/?tag=the-spring-edit&utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/p/DW_1W8Vkeuq
+                    - text: Shop Now
+                  - figure [ref=f65e723]
+              - listitem [ref=f65e725]:
+                - generic [ref=f65e729] [cursor=pointer]:
+                  - link [ref=f65e730]:
+                    - /url: https://www.brilliantearth.com/gifts/mothers-day/?sortprod=BE4D2158LC-14KY%2CBE4D3519-14KY%2CBE304RD0200LC-18KW%2CBE4D2519-14KY%2CBE4LBT111-SLV%2CBE4DMULTI2519LC-14KY%2CBE3ASL50-14KY%2CBE5D44-14KY%2CBE4D828LC-14KY%2CBE5DREV15TB65LC-14KY%2CBE4D826LC-14KY%2CBE4D5656-14KY&utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/reel/DW6kRX8RkD9
+                    - text: Shop Now
+                  - figure [ref=f65e731]
+              - listitem [ref=f65e733]:
+                - generic [ref=f65e735] [cursor=pointer]:
+                  - link [ref=f65e736]:
+                    - /url: https://www.brilliantearth.com/engagement-rings/nature-inspired/?first=setting&utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/p/DWzft-ZFBax
+                    - text: Shop Now
+                  - figure [ref=f65e737]
+              - listitem [ref=f65e739]:
+                - generic [ref=f65e741] [cursor=pointer]:
+                  - link [ref=f65e742]:
+                    - /url: https://www.brilliantearth.com/jewelry/collections/jane-goodall/shop-all/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/p/DWq6vUoEduh
+                    - text: Shop Now
+                  - figure [ref=f65e743]
+              - listitem [ref=f65e745]:
+                - generic [ref=f65e749] [cursor=pointer]:
+                  - link [ref=f65e750]:
+                    - /url: https://www.brilliantearth.com/diamond/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/p/DWpM2HeFHth
+                    - text: Shop Now
+                  - figure [ref=f65e751]
+              - listitem [ref=f65e753]:
+                - generic [ref=f65e757] [cursor=pointer]:
+                  - link [ref=f65e758]:
+                    - /url: https://www.brilliantearth.com/lab-grown-diamonds/colored/?utm_source=instagram.com&utm_medium=dashhudson&utm_campaign=likeshopme&utm_content=www.instagram.com/reel/DWT1O7MRGXS
+                    - text: Shop Now
+                  - figure [ref=f65e759]
+            - button "Next" [ref=f65e761] [cursor=pointer]
+    - text:          
+    - generic [ref=f65e763]:
+      - generic [ref=f65e765]:
+        - navigation "ABOUT" [ref=f65e767]:
+          - link "ABOUT" [ref=f65e769] [cursor=pointer]:
+            - /url: /about/
+          - list [ref=f65e770]:
+            - listitem [ref=f65e771]:
+              - link "Our Story" [ref=f65e772] [cursor=pointer]:
+                - /url: /about/
+            - listitem [ref=f65e773]:
+              - link "Our Mission" [ref=f65e774] [cursor=pointer]:
+                - /url: /about/mission/
+            - listitem [ref=f65e775]:
+              - link "Responsible Sourcing" [ref=f65e776] [cursor=pointer]:
+                - /url: /about/mission/transparency/
+            - listitem [ref=f65e777]:
+              - link "Sustainability Goals" [ref=f65e778] [cursor=pointer]:
+                - /url: /about/mission/sustainability/
+            - listitem [ref=f65e779]:
+              - link "How We Give Back" [ref=f65e780] [cursor=pointer]:
+                - /url: /about/mission/compassion/
+            - listitem [ref=f65e781]:
+              - link "Our People" [ref=f65e782] [cursor=pointer]:
+                - /url: /about/mission/inclusion/
+            - listitem [ref=f65e783]:
+              - link "Brilliant Earth Reviews" [ref=f65e784] [cursor=pointer]:
+                - /url: /brilliant-earth-reviews/
+        - navigation "ORDERS" [ref=f65e786]:
+          - link "ORDERS" [ref=f65e788] [cursor=pointer]:
+            - /url: /shop-online/
+          - list [ref=f65e789]:
+            - listitem [ref=f65e790]:
+              - link "Track Your Order" [ref=f65e791] [cursor=pointer]:
+                - /url: /track-order/
+            - listitem [ref=f65e792]:
+              - link "Free 30 Day Returns" [ref=f65e793] [cursor=pointer]:
+                - /url: /30-Day-Returns/
+            - listitem [ref=f65e794]:
+              - link "Free Shipping Both Ways" [ref=f65e795] [cursor=pointer]:
+                - /url: /shipping/
+            - listitem [ref=f65e796]:
+              - link "Free Lifetime Warranty" [ref=f65e797] [cursor=pointer]:
+                - /url: /shop-online/#manufacturing_warranty
+        - navigation "CONTACT US" [ref=f65e799]:
+          - link "CONTACT US" [ref=f65e801] [cursor=pointer]:
+            - /url: /contact/
+          - list [ref=f65e802]:
+            - listitem [ref=f65e803]:
+              - button "Live Chat" [ref=f65e804] [cursor=pointer]
+            - listitem [ref=f65e805]:
+              - link "Book Appointment" [ref=f65e806] [cursor=pointer]:
+                - /url: /stores/
+            - listitem [ref=f65e807]:
+              - link "Stores" [ref=f65e808] [cursor=pointer]:
+                - /url: /stores/
+            - listitem [ref=f65e809]:
+              - button "Email Us" [ref=f65e810] [cursor=pointer]
+            - listitem [ref=f65e811]:
+              - link "214.432.7099" [ref=f65e812] [cursor=pointer]:
+                - /url: /contact/
+            - listitem [ref=f65e813]:
+              - link "Affiliates" [ref=f65e814] [cursor=pointer]:
+                - /url: /affiliates/
+        - navigation "EDUCATION" [ref=f65e816]:
+          - link "EDUCATION" [ref=f65e818] [cursor=pointer]:
+            - /url: /about/
+          - list [ref=f65e819]:
+            - listitem [ref=f65e820]:
+              - link "Blog" [ref=f65e821] [cursor=pointer]:
+                - /url: /news/
+            - listitem [ref=f65e822]:
+              - link "4 C's of Diamond Guide" [ref=f65e823] [cursor=pointer]:
+                - /url: /diamond/buying-guide/
+            - listitem [ref=f65e824]:
+              - link "Lab Grown vs. Natural Diamond" [ref=f65e825] [cursor=pointer]:
+                - /url: /news/lab-grown-vs-natural-diamond/
+            - listitem [ref=f65e826]:
+              - link "Moissanite vs. Diamond Guide" [ref=f65e827] [cursor=pointer]:
+                - /url: /gemstones/buying-guide/moissanite/
+            - listitem [ref=f65e828]:
+              - link "Free Ring Sizer + Ring Size Chart" [ref=f65e829] [cursor=pointer]:
+                - /url: /jewelry/buying-guide/ring-size/
+            - listitem [ref=f65e830]:
+              - link "Careers" [ref=f65e831] [cursor=pointer]:
+                - /url: /careers/
+            - listitem [ref=f65e832]:
+              - link "Investor Relations" [ref=f65e833] [cursor=pointer]:
+                - /url: https://investors.brilliantearth.com/?auth_token=411348ef-8829-40cb-969f-d0f2c4698019
+        - navigation "CUSTOMER SERVICE" [ref=f65e835]:
+          - link "CUSTOMER SERVICE" [ref=f65e837] [cursor=pointer]:
+            - /url: /customer-care/
+          - list [ref=f65e838]:
+            - listitem [ref=f65e839]:
+              - link "We’ve Got You Covered" [ref=f65e840] [cursor=pointer]:
+                - /url: /weve-got-you-covered/
+            - listitem [ref=f65e841]:
+              - link "FAQs" [ref=f65e842] [cursor=pointer]:
+                - /url: /frequently-asked-questions/
+            - listitem [ref=f65e843]:
+              - link "Jewelry Financing" [ref=f65e844] [cursor=pointer]:
+                - /url: /flexible-payment-options/
+            - listitem [ref=f65e845]:
+              - link "Lifetime Diamond Upgrade" [ref=f65e846] [cursor=pointer]:
+                - /url: /shop-online/#diamond_upgrade
+            - listitem [ref=f65e847]:
+              - link "Promo Codes & Offers" [ref=f65e848] [cursor=pointer]:
+                - /url: /promo-codes-and-offers/
+            - listitem [ref=f65e849]:
+              - link "Refer a Friend" [ref=f65e850] [cursor=pointer]:
+                - /url: /refer/?traffic_source=site_footer
+            - listitem [ref=f65e851]:
+              - button "Accessibility" [ref=f65e852] [cursor=pointer]
+            - listitem [ref=f65e853]:
+              - link "Accessibility Info" [ref=f65e854] [cursor=pointer]:
+                - /url: /accessibility/
+        - generic [ref=f65e855]:
+          - generic [ref=f65e856]: Sign Up
+          - list [ref=f65e857]:
+            - listitem [ref=f65e858]:
+              - link [ref=f65e859] [cursor=pointer]:
+                - /url: https://brilliantearth.attn.tv/p/OiJ/1000giftcard
+                - paragraph [ref=f65e865]: Text me updates and offers
+            - listitem [ref=f65e866]:
+              - link [ref=f65e867] [cursor=pointer]:
+                - /url: ""
+                - paragraph [ref=f65e870]: Email me updates and offers
+          - navigation "Footer Menu":
+            - list [ref=f65e871]:
+              - listitem [ref=f65e872]:
+                - link "YouTube" [ref=f65e873] [cursor=pointer]:
+                  - /url: https://www.youtube.com/@BrilliantEarthInc
+                  - text: 
+                  - generic [ref=f65e874]: YouTube YouTube New Window
+              - listitem [ref=f65e875]:
+                - link "Instagram" [ref=f65e876] [cursor=pointer]:
+                  - /url: https://www.instagram.com/brilliantearth/
+                  - text: 
+                  - generic [ref=f65e877]: Instagram Instagram New Window
+              - listitem [ref=f65e878]:
+                - button [ref=f65e879] [cursor=pointer]:
+                  - text: 
+                  - generic [ref=f65e880]: Facebook
+              - listitem [ref=f65e881]:
+                - link " Pinterest Pinterest New Window" [ref=f65e882] [cursor=pointer]:
+                  - /url: https://www.pinterest.com/brilliantearth/
+                  - text: 
+                  - generic [ref=f65e883]: Pinterest Pinterest New Window
+              - listitem [ref=f65e884]:
+                - link " Twitter" [ref=f65e885] [cursor=pointer]:
+                  - /url: https://twitter.com/BrilliantEarth
+                  - text: 
+                  - generic [ref=f65e886]: Twitter
+              - listitem [ref=f65e887]:
+                - link " Linkedin LinkedIn New Window" [ref=f65e888] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/brilliantearth
+                  - text: 
+                  - generic [ref=f65e889]: Linkedin LinkedIn New Window
+      - generic [ref=f65e890]:
+        - list [ref=f65e892]:
+          - listitem [ref=f65e893]:
+            - generic [ref=f65e894]: ©2026 Brilliant Earth, LLC
+          - listitem [ref=f65e895]:
+            - link "Terms & Conditions" [ref=f65e897] [cursor=pointer]:
+              - /url: /terms-and-conditions/
+          - listitem [ref=f65e898]:
+            - link "Privacy Policy" [ref=f65e900] [cursor=pointer]:
+              - /url: /security-and-privacy-policies/#privacy
+          - listitem [ref=f65e901]:
+            - link "Interest-Based Ads" [ref=f65e903] [cursor=pointer]:
+              - /url: /security-and-privacy-policies/#interest_based_ads
+          - listitem [ref=f65e904]:
+            - button "Do Not Sell or Share My Personal Information" [ref=f65e906] [cursor=pointer]
+          - listitem [ref=f65e907]:
+            - link "CA Transparency Act" [ref=f65e909] [cursor=pointer]:
+              - /url: /ca-transparency-act/
+          - listitem [ref=f65e910]:
+            - link "CPRA" [ref=f65e912] [cursor=pointer]:
+              - /url: /security-and-privacy-policies/#CPRA
+          - listitem [ref=f65e913]:
+            - link "Site Map" [ref=f65e915] [cursor=pointer]:
+              - /url: /sitemap/
+        - list [ref=f65e917]:
+          - listitem [ref=f65e918]:
+            - button "AUD" [ref=f65e919] [cursor=pointer]
+          - listitem [ref=f65e920]:
+            - button "| CAD" [ref=f65e921] [cursor=pointer]
+          - listitem [ref=f65e922]:
+            - button "| GBP" [ref=f65e923] [cursor=pointer]
+          - listitem [ref=f65e924]:
+            - button "| USD" [ref=f65e925] [cursor=pointer]
+  - alert [ref=f65e926]
+  - button "Hello, have a question? Let’s chat." [ref=f65e927] [cursor=pointer]

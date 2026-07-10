@@ -1,0 +1,18 @@
+[    2721ms] [LOG] 💬 Chat widget:  no @ :0
+[    2721ms] [LOG] 💬 Chat widget env filtered:  Production @ :0
+[    2829ms] [LOG] 🌐 Loading config from API... @ https://www.worthy.com/_next/static/chunks/4459-209219b78e72f9c9.js:2
+[    2829ms] [LOG] 🌐 Loading config from API: https://ai-chat-manager.worthy.com/widget/worthy/get-config @ https://www.worthy.com/_next/static/chunks/4459-209219b78e72f9c9.js:2
+[    3226ms] [LOG] cid --  316927770.1783658834 @ :0
+[    3319ms] [LOG] 🔍 Config API response: {status: success, config: Object} @ https://www.worthy.com/_next/static/chunks/4459-209219b78e72f9c9.js:2
+[    3320ms] [LOG] ✅ Config loaded from API successfully @ https://www.worthy.com/_next/static/chunks/4459-209219b78e72f9c9.js:2
+[    3320ms] [LOG] ✅ API config loaded and merged successfully @ https://www.worthy.com/_next/static/chunks/4459-209219b78e72f9c9.js:2
+[    3320ms] [LOG] ✅ ShadowChatWidget config loaded: {position: bottom-right, welcomeMessage: Hi there, what brings you to the chat?, apiBaseUrl: https://chats.worthy.com/api/message?graph=worthy, cdnBase: https://chat-widget.worthy.com, version: 1783658833664} @ https://www.worthy.com/_next/static/chunks/4459-209219b78e72f9c9.js:52
+[    3320ms] [LOG] 🔍 createWidgetContainer @ https://www.worthy.com/_next/static/chunks/4459-209219b78e72f9c9.js:2
+[    3320ms] [LOG] 🔍 createWidgetContainer: else @ https://www.worthy.com/_next/static/chunks/4459-209219b78e72f9c9.js:2
+[    3320ms] [LOG] Attempting to load CSS from: https://chat-widget.worthy.com/assets/style.css?v=1783658833664 @ https://www.worthy.com/_next/static/chunks/4459-209219b78e72f9c9.js:52
+[    3335ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://collect.worthy.com/_/service_worker/66u0/sw_iframe.html?origin=https%3A%2F%2Fwww.worthy.com&1p=1:0
+[    3354ms] [INFO] web-vitals @ :1
+[    3545ms] [LOG] Successfully loaded CSS: 22281 characters @ https://s33k.worthy.com/itw/itw-browser.js:959
+[    3546ms] [LOG] 📦 Shadow DOM CSS Summary: {compiledStylesSize: 22281, widgetStylesSize: 40, totalStylesSize: 22594, cdnLoadSuccess: true, status: ✅ CDN CSS loaded} @ https://s33k.worthy.com/itw/itw-browser.js:959
+[    3546ms] [LOG] ✅ Successfully injected styles into shadow DOM via adoptedStyleSheets @ https://s33k.worthy.com/itw/itw-browser.js:959
+[    3965ms] [INFO] [p33k] recording started {sessionKey: 441d00d3-379c-4018-a40a-ad79c755af49, pageViewKey: 06a71fac-d928-4349-af0a-912da356063c} @ https://edge.fullstory.com/s/fs.js:1

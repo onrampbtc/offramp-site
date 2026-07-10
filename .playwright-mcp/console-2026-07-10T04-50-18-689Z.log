@@ -1,0 +1,7 @@
+[    2048ms] [ERROR] Failed to find a valid digest in the 'integrity' attribute for resource 'https://cdn.adjust.com/adjust-latest.min.js' with computed SHA-384 integrity 'C3jnA2YNemhZWFeyLLHi9G5UvzFllULUHLESXXdhxTcwdLmURgVihXwgNHSkVaFu'. The resource has been blocked. @ https://glintpay.com/us:0
+[    2587ms] [WARNING] GSAP target .body not found. https://gsap.com @ https://glintpay.com/_app/immutable/chunks/Dt3Zxm-x.js:5
+[    2588ms] [WARNING] GSAP target  not found. https://gsap.com @ https://glintpay.com/_app/immutable/chunks/Dt3Zxm-x.js:5
+[    2873ms] [LOG] runPoptinNow @ https://cdn.popt.in/pixel.js?id=55a4651c50f56:14
+[    2873ms] [LOG] poptinInit loading @ https://cdn.popt.in/pixel.js?id=55a4651c50f56:3
+[    3114ms] [LOG] initiatePullPoptinsRequest() @ https://cdn.popt.in/pixel.js?id=55a4651c50f56:3
+[    3525ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://glintpay.com/us:0

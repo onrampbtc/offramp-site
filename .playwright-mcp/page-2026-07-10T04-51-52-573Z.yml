@@ -1,0 +1,1359 @@
+- generic [active] [ref=f84e1]:
+  - banner [ref=f84e3]:
+    - link "Skip to main content" [ref=f84e4] [cursor=pointer]:
+      - /url: "#mainContent"
+    - generic [ref=f84e5]:
+      - generic [ref=f84e10]:
+        - text: Enjoy Free Shipping on Art, Fashion & Decor over $1,000 with code FREESHIP.
+        - link "Terms apply. Details" [ref=f84e11] [cursor=pointer]:
+          - /url: /promotions/terms/?promo=FREESHIP
+      - generic [ref=f84e13]:
+        - link "1stDibs" [ref=f84e15] [cursor=pointer]:
+          - /url: /
+          - img "1stDibs" [ref=f84e16]
+        - search [ref=f84e20]:
+          - generic [ref=f84e24]:
+            - textbox "Search" [ref=f84e27]:
+              - /placeholder: Search 1stDibs
+            - generic [ref=f84e28]:
+              - generic:
+                - button "Clear search terms"
+              - button [ref=f84e32] [cursor=pointer]
+              - generic [ref=f84e36]:
+                - button "Search"
+        - generic [ref=f84e37]:
+          - generic [ref=f84e39]:
+            - button "Log In" [ref=f84e40] [cursor=pointer]
+            - button "Sign Up" [ref=f84e41] [cursor=pointer]
+          - link "Favorites" [ref=f84e44] [cursor=pointer]:
+            - /url: /favorites/items/
+          - link "Cart" [ref=f84e49] [cursor=pointer]:
+            - /url: /my/cart/
+      - navigation [ref=f84e57]:
+        - list [ref=f84e58]:
+          - listitem [ref=f84e59]:
+            - link "New Arrivals" [ref=f84e60] [cursor=pointer]:
+              - /url: /new-arrivals/
+          - listitem [ref=f84e61]:
+            - link "Furniture" [ref=f84e62] [cursor=pointer]:
+              - /url: /furniture/
+          - listitem [ref=f84e63]:
+            - link "Lighting" [ref=f84e64] [cursor=pointer]:
+              - /url: /furniture/lighting/
+          - listitem [ref=f84e65]:
+            - link "Art" [ref=f84e66] [cursor=pointer]:
+              - /url: /art/
+          - listitem [ref=f84e67]:
+            - link "Jewelry" [ref=f84e68] [cursor=pointer]:
+              - /url: /jewelry/
+          - listitem [ref=f84e69]:
+            - link "Watches" [ref=f84e70] [cursor=pointer]:
+              - /url: /jewelry/watches/
+          - listitem [ref=f84e71]:
+            - link "Fashion" [ref=f84e72] [cursor=pointer]:
+              - /url: /fashion/
+          - listitem [ref=f84e73]:
+            - link "World of 1stDibs" [ref=f84e74] [cursor=pointer]:
+              - /url: /about/
+          - listitem [ref=f84e75]:
+            - link "Sale" [ref=f84e76] [cursor=pointer]:
+              - /url: /sale/saturday-sale/
+  - main [ref=f84e79]:
+    - generic [ref=f84e80]:
+      - generic [ref=f84e82]:
+        - generic [ref=f84e83]:
+          - heading "See What's New" [level=2] [ref=f84e84]
+          - text: All New Arrivals
+        - generic [ref=f84e86]:
+          - button [ref=f84e87] [cursor=pointer]
+          - generic [ref=f84e91]:
+            - article [ref=f84e93]:
+              - img "Blue Egg-shaped Stoneware Table Lamp by Katarina Gustafsson, Sweden, 1990s." [ref=f84e96] [cursor=pointer]
+              - button "Save to favorites" [ref=f84e98] [cursor=pointer]
+            - article [ref=f84e104]:
+              - img "Yves Saint Laurent necklace 'shell' by Yves Saint Laurent Summer 1994" [ref=f84e107] [cursor=pointer]
+              - button "Save to favorites" [ref=f84e109] [cursor=pointer]
+            - article [ref=f84e115]:
+              - img "Jaeger-LeCoultre Rue de la Paix Street Lamp Clock" [ref=f84e118] [cursor=pointer]
+              - button "Save to favorites" [ref=f84e120] [cursor=pointer]
+            - article [ref=f84e126]:
+              - img "Pair of Natural Sea Shells on Mid-Century Swedish Skultuna Brass Candlesticks" [ref=f84e129] [cursor=pointer]
+              - button "Save to favorites" [ref=f84e131] [cursor=pointer]
+            - article [ref=f84e137]:
+              - img "OLD STOCK LiBERTY LONDON STYLE OMERSA BROWN LEATHER FOOTSTOOL RHINOCEROS RHINO" [ref=f84e140] [cursor=pointer]
+              - button "Save to favorites" [ref=f84e142] [cursor=pointer]
+            - article [ref=f84e148]:
+              - img "1927 René Lalique Vase Oleron Fishes Cased Opalescent Glass with Blue Patina" [ref=f84e151] [cursor=pointer]
+              - button "Save to favorites" [ref=f84e153] [cursor=pointer]
+            - article [ref=f84e159]:
+              - img "Muelle de pescadores (Alcudia) - Óleo sobre tela" [ref=f84e162] [cursor=pointer]
+              - button "Save to favorites" [ref=f84e164] [cursor=pointer]
+            - article [ref=f84e170]:
+              - img "Antique Lead Pigs Garden Ornaments Circa 1890-1930" [ref=f84e173] [cursor=pointer]
+              - button "Save to favorites" [ref=f84e175] [cursor=pointer]
+            - article [ref=f84e181]:
+              - img "Japanese Meiji Boxwood Okimono of Perched Hawk, Signed, circa 1910" [ref=f84e184] [cursor=pointer]
+              - button "Save to favorites" [ref=f84e186] [cursor=pointer]
+            - article [ref=f84e192]:
+              - img "Hermès Birkin 30 3 in 1 in Gold Togo Leather with Gold hardware." [ref=f84e195] [cursor=pointer]
+              - button "Save to favorites" [ref=f84e197] [cursor=pointer]
+            - article [ref=f84e203]:
+              - img "Henning Kjærnulf vintage set Razorblade Dining Chairs High Back, Denmark 1960s" [ref=f84e206] [cursor=pointer]
+              - button "Save to favorites" [ref=f84e208] [cursor=pointer]
+            - article [ref=f84e214]:
+              - img "Art Deco Astra Wall Light, Brass, Mid-Century Modern, Norway, 1950s" [ref=f84e217] [cursor=pointer]
+              - button "Save to favorites" [ref=f84e219] [cursor=pointer]
+            - article [ref=f84e225]:
+              - img "Blue Egg-shaped Stoneware Table Lamp by Katarina Gustafsson, Sweden, 1990s." [ref=f84e228] [cursor=pointer]
+              - button "Save to favorites" [ref=f84e230] [cursor=pointer]
+            - article [ref=f84e236]:
+              - img "Yves Saint Laurent necklace 'shell' by Yves Saint Laurent Summer 1994" [ref=f84e239] [cursor=pointer]
+              - button "Save to favorites" [ref=f84e241] [cursor=pointer]
+            - article [ref=f84e247]:
+              - img "Jaeger-LeCoultre Rue de la Paix Street Lamp Clock" [ref=f84e250] [cursor=pointer]
+              - button "Save to favorites" [ref=f84e252] [cursor=pointer]
+            - article [ref=f84e258]:
+              - img "Pair of Natural Sea Shells on Mid-Century Swedish Skultuna Brass Candlesticks" [ref=f84e261] [cursor=pointer]
+              - button "Save to favorites" [ref=f84e263] [cursor=pointer]
+            - article [ref=f84e269]:
+              - img "OLD STOCK LiBERTY LONDON STYLE OMERSA BROWN LEATHER FOOTSTOOL RHINOCEROS RHINO" [ref=f84e272] [cursor=pointer]
+              - button "Save to favorites" [ref=f84e274] [cursor=pointer]
+            - article [ref=f84e280]:
+              - img "1927 René Lalique Vase Oleron Fishes Cased Opalescent Glass with Blue Patina" [ref=f84e283] [cursor=pointer]
+              - button "Save to favorites" [ref=f84e285] [cursor=pointer]
+            - article [ref=f84e291]:
+              - img "Muelle de pescadores (Alcudia) - Óleo sobre tela" [ref=f84e294] [cursor=pointer]
+              - button "Save to favorites" [ref=f84e296] [cursor=pointer]
+            - article [ref=f84e302]:
+              - img "Antique Lead Pigs Garden Ornaments Circa 1890-1930" [ref=f84e305] [cursor=pointer]
+              - button "Save to favorites" [ref=f84e307] [cursor=pointer]
+            - article [ref=f84e313]:
+              - img "Japanese Meiji Boxwood Okimono of Perched Hawk, Signed, circa 1910" [ref=f84e316] [cursor=pointer]
+              - button "Save to favorites" [ref=f84e318] [cursor=pointer]
+            - article [ref=f84e324]:
+              - img "Hermès Birkin 30 3 in 1 in Gold Togo Leather with Gold hardware." [ref=f84e327] [cursor=pointer]
+              - button "Save to favorites" [ref=f84e329] [cursor=pointer]
+            - article [ref=f84e335]:
+              - img "Henning Kjærnulf vintage set Razorblade Dining Chairs High Back, Denmark 1960s" [ref=f84e338] [cursor=pointer]
+              - button "Save to favorites" [ref=f84e340] [cursor=pointer]
+            - article [ref=f84e346]:
+              - img "Art Deco Astra Wall Light, Brass, Mid-Century Modern, Norway, 1950s" [ref=f84e349] [cursor=pointer]
+              - button "Save to favorites" [ref=f84e351] [cursor=pointer]
+          - button [ref=f84e356] [cursor=pointer]
+      - iframe [ref=f84e361]:
+        - link [ref=f90e2] [cursor=pointer]:
+          - /url: https://googleads.g.doubleclick.net/pcs/click?xai=AKAOjsvA8q3TqltKaK1txY0EcbsYojk3ROQmjbq6LGjvcW-9SX56CI5DP_B-eV6twfh_5vGJXrNZW1kuOX_EvBOFHA-BfgxxTYwRJfVZwZfpPQX6KRlzoRanoPPj4xAYqW2tGyaUox0z3nJCPPoO6J_i0oxrFayuVrRwOBQh2PO231q-rikXfHDL6AoxHSf8wVpMrSu6GlbR0NZ1zPvvzdIgd76KrzZwykwrJQWO5o9RdmfozCVrDivHsKurG2PhnBtaggF2UJTMInc7RO7aQ_sRB4IK0ejVNQFys5RMjk5dA3EPk7XaqKeXYw7OrRfPLn1GUoIGdb7wYzezcVOK8rJhIQ2P8ry5XuMVEF1qPDUAMr54PKiTl2s0qepffmorhmjnYgNVoYPZvyQeRMA4imsm80AISPilStT-&sai=AMfl-YR4qKsztt5wBThEmvRWD9pOSjdZARbXTsxXEQAiqyFaSx6j-qpUpm-8reNB9ONq3pT5mE1ST1RIGApduld3qyRbOH2RI_h81j7z-b2IKNS6jFIrD8j85WRL0NekEVVMd5M3JEF6sDygSo-bnAcus0z6ZExzVlWmHmnXxX4v5eOFyd0VTITzlBeCBZW_rSfiqYOoift4yXtfP52xEjmOEgWuXs48pAUE9EhWGrqvF5Gpj5cG84EKlqiiInfU6HXlDjjFPJFaGG0OcBs407rMBUdjipHI2u4fEo5PafFTo25F3tYB5kVmxalg_IZ-LxLHIbtKdZuAN7uuWrGFctG-jOOSEuWuqw4Gp3581So_aohVfFeAiEiulZYkZCj5EgkvG0D4mGeimWl7d4d3e0kzR7U&sig=Cg0ArKJSzO5rpqAAx8P9&fbs_aeid=%5Bgw_fbsaeid%5D&adurl=https://www.1stdibs.com/introspective-magazine/house-of-rohl/
+      - generic [ref=f84e362]:
+        - generic [ref=f84e363]: Now Trending
+        - generic [ref=f84e365]:
+          - generic [ref=f84e367]:
+            - link "Garden Party Garden Party Shop the Collection" [ref=f84e370] [cursor=pointer]:
+              - /url: /collections/garden-party/
+              - img "Garden Party" [ref=f84e371]
+              - generic [ref=f84e372]: Garden Party
+              - generic [ref=f84e373]: Shop the Collection
+            - link "Wonderfully Weird Wonderfully Weird Shop the Collection" [ref=f84e376] [cursor=pointer]:
+              - /url: /collections/wonderfully-weird/
+              - img "Wonderfully Weird" [ref=f84e377]
+              - generic [ref=f84e378]: Wonderfully Weird
+              - generic [ref=f84e379]: Shop the Collection
+            - link "Statement Jewelry Statement Jewelry Shop the Collection" [ref=f84e382] [cursor=pointer]:
+              - /url: /collections/statement-jewelry/
+              - img "Statement Jewelry" [ref=f84e383]
+              - generic [ref=f84e384]: Statement Jewelry
+              - generic [ref=f84e385]: Shop the Collection
+            - link "Analog Spaces Analog Spaces Shop the Collection" [ref=f84e388] [cursor=pointer]:
+              - /url: /collections/analog-spaces/
+              - img "Analog Spaces" [ref=f84e389]
+              - generic [ref=f84e390]: Analog Spaces
+              - generic [ref=f84e391]: Shop the Collection
+          - button [ref=f84e392] [cursor=pointer]
+      - generic [ref=f84e398]:
+        - generic [ref=f84e399]:
+          - generic [ref=f84e400]:
+            - generic [ref=f84e401]: Collection Just For You
+            - generic [ref=f84e402]: Get Inspired by this collection of items picked just for you
+          - link "View Full Collection" [ref=f84e403] [cursor=pointer]:
+            - /url: /collections/personalized/10326/
+        - generic [ref=f84e404]:
+          - article [ref=f84e407]:
+            - img "Tiffany & Co. Inside-Out Diamond Hoop Earrings 4.50ct in Platinum" [ref=f84e410] [cursor=pointer]
+            - generic [ref=f84e411]:
+              - link [ref=f84e413] [cursor=pointer]:
+                - /url: /jewelry/earrings/hoop-earrings/tiffany-co-inside-out-diamond-hoop-earrings-450ct-platinum/id-j_23135092/
+                - heading "Tiffany & Co. Inside-Out Diamond Hoop Earrings 4.50ct in Platinum" [level=2] [ref=f84e414]
+              - paragraph [ref=f84e415]:
+                - strong [ref=f84e416]: $42,000
+            - button "Save to favorites" [ref=f84e419] [cursor=pointer]
+          - article [ref=f84e426]:
+            - img "Tiffany & Co. Diamond Inside-Out Hoop Platinum Earrings" [ref=f84e429] [cursor=pointer]
+            - generic [ref=f84e430]:
+              - link [ref=f84e432] [cursor=pointer]:
+                - /url: /jewelry/earrings/hoop-earrings/tiffany-co-diamond-inside-out-hoop-platinum-earrings/id-j_29316542/
+                - heading "Tiffany & Co. Diamond Inside-Out Hoop Platinum Earrings" [level=2] [ref=f84e433]
+              - paragraph [ref=f84e434]:
+                - strong [ref=f84e435]: $31,200
+                - text: Sale Price|20% Off
+            - button "Save to favorites" [ref=f84e438] [cursor=pointer]
+          - article [ref=f84e445]:
+            - img "Tiffany & Co. Diamond-set Hoops" [ref=f84e448] [cursor=pointer]
+            - generic [ref=f84e449]:
+              - link [ref=f84e451] [cursor=pointer]:
+                - /url: /jewelry/earrings/hoop-earrings/tiffany-co-diamond-set-hoops/id-j_21339392/
+                - heading "Tiffany & Co. Diamond-set Hoops" [level=2] [ref=f84e452]
+              - paragraph [ref=f84e453]:
+                - strong [ref=f84e454]: $13,800
+            - button "Save to favorites" [ref=f84e457] [cursor=pointer]
+          - article [ref=f84e464]:
+            - img "Tiffany & Co. Metro Diamond Hoops" [ref=f84e467] [cursor=pointer]
+            - generic [ref=f84e468]:
+              - heading "Tiffany & Co. Metro Diamond Hoops" [level=2] [ref=f84e471] [cursor=pointer]
+              - paragraph [ref=f84e472]:
+                - generic [ref=f84e473]: Sold
+                - generic [ref=f84e474]: "|"
+                - deletion [ref=f84e476]: $4,250
+            - button "Save to favorites" [ref=f84e479] [cursor=pointer]
+          - article [ref=f84e486]:
+            - img "Tiffany & Co. 1.38 CTW Diamond 18K Gold 30.0 MM Inside Outside Hoop Earrings" [ref=f84e489] [cursor=pointer]
+            - generic [ref=f84e490]:
+              - link [ref=f84e492] [cursor=pointer]:
+                - /url: /jewelry/earrings/hoop-earrings/tiffany-co-138-ctw-diamond-18k-gold-300-mm-inside-outside-hoop-earrings/id-j_27160242/
+                - heading "Tiffany & Co. 1.38 CTW Diamond 18K Gold 30.0 MM Inside Outside Hoop Earrings" [level=2] [ref=f84e493]
+              - paragraph [ref=f84e494]:
+                - strong [ref=f84e495]: $7,425
+            - button "Save to favorites" [ref=f84e498] [cursor=pointer]
+      - generic [ref=f84e504]:
+        - generic [ref=f84e505]:
+          - heading "Trending Searches:" [level=2] [ref=f84e506]
+          - generic [ref=f84e507]:
+            - button "Hermes Birkin" [ref=f84e508] [cursor=pointer]
+            - button "Coffee Table" [ref=f84e510] [cursor=pointer]
+            - button "Cartier Tank Française" [ref=f84e512] [cursor=pointer]
+            - button "Borisenko" [ref=f84e514] [cursor=pointer]
+            - button "Mirror" [ref=f84e516] [cursor=pointer]
+            - button "Chanel" [ref=f84e518] [cursor=pointer]
+        - generic [ref=f84e520]:
+          - generic [ref=f84e521]:
+            - generic [ref=f84e522]: Recommended items based on your trending searches
+            - generic [ref=f84e523] [cursor=pointer]: View More
+          - generic [ref=f84e524]:
+            - article [ref=f84e527]:
+              - img "Hermes Birkin 35 RED SILVER HARDWARE" [ref=f84e530] [cursor=pointer]
+              - generic [ref=f84e531]:
+                - link [ref=f84e533] [cursor=pointer]:
+                  - /url: /fashion/handbags-purses-bags/top-handle-bags/hermes-birkin-35-red-silver-hardware/id-v_29733952/
+                  - heading "Hermes Birkin 35 RED SILVER HARDWARE" [level=2] [ref=f84e534]
+                - paragraph [ref=f84e535]:
+                  - strong [ref=f84e536]: $12,600
+              - button "Save to favorites" [ref=f84e538] [cursor=pointer]
+            - article [ref=f84e545]:
+              - img "Hermes Birkin 25 bag lime" [ref=f84e548] [cursor=pointer]
+              - generic [ref=f84e549]:
+                - link [ref=f84e551] [cursor=pointer]:
+                  - /url: /fashion/handbags-purses-bags/top-handle-bags/hermes-birkin-25-bag-lime/id-v_21602482/
+                  - heading "Hermes Birkin 25 bag lime" [level=2] [ref=f84e552]
+                - paragraph [ref=f84e553]:
+                  - strong [ref=f84e554]: $29,377
+              - button "Save to favorites" [ref=f84e556] [cursor=pointer]
+            - article [ref=f84e563]:
+              - img "Hermes Birkin 25 Bag Aubergine Crocodile Gold Hardware" [ref=f84e566] [cursor=pointer]
+              - generic [ref=f84e567]:
+                - link [ref=f84e569] [cursor=pointer]:
+                  - /url: /fashion/handbags-purses-bags/tote-bags/hermes-birkin-25-bag-aubergine-crocodile-gold-hardware/id-v_8054351/
+                  - heading "Hermes Birkin 25 Bag Aubergine Crocodile Gold Hardware" [level=2] [ref=f84e570]
+                - paragraph [ref=f84e571]:
+                  - strong [ref=f84e572]: $125,750
+              - button "Save to favorites" [ref=f84e574] [cursor=pointer]
+            - article [ref=f84e581]:
+              - img "Hermès Birkin 25 Brique Lizard Palladium" [ref=f84e584] [cursor=pointer]
+              - generic [ref=f84e585]:
+                - link [ref=f84e587] [cursor=pointer]:
+                  - /url: /fashion/handbags-purses-bags/top-handle-bags/hermes-birkin-25-brique-lizard-palladium/id-v_22483992/
+                  - heading "Hermès Birkin 25 Brique Lizard Palladium" [level=2] [ref=f84e588]
+                - paragraph [ref=f84e589]:
+                  - strong [ref=f84e590]: $29,999
+              - button "Save to favorites" [ref=f84e592] [cursor=pointer]
+            - article [ref=f84e599]:
+              - img "Hermès Birkin 30 Rose Pourpre Togo" [ref=f84e602] [cursor=pointer]
+              - generic [ref=f84e603]:
+                - link [ref=f84e605] [cursor=pointer]:
+                  - /url: /fashion/handbags-purses-bags/top-handle-bags/hermes-birkin-30-rose-pourpre-togo/id-v_26306872/
+                  - heading "Hermès Birkin 30 Rose Pourpre Togo" [level=2] [ref=f84e606]
+                - paragraph [ref=f84e607]:
+                  - strong [ref=f84e608]: $16,999
+              - button "Save to favorites" [ref=f84e610] [cursor=pointer]
+      - generic [ref=f84e615]:
+        - generic [ref=f84e617]:
+          - generic [ref=f84e618]: Editor's Picks
+          - link "View More" [ref=f84e619] [cursor=pointer]:
+            - /url: /collections/editors-picks/
+        - generic [ref=f84e620]:
+          - button [ref=f84e621] [cursor=pointer]
+          - generic [ref=f84e625]:
+            - article [ref=f84e628]:
+              - img "Tiffany Studios Poppy Lamp" [ref=f84e631] [cursor=pointer]
+              - generic [ref=f84e632]:
+                - link [ref=f84e634] [cursor=pointer]:
+                  - /url: /furniture/lighting/table-lamps/tiffany-studios-poppy-lamp/id-f_50838802/
+                  - heading "Tiffany Studios Poppy Lamp" [level=2] [ref=f84e635]
+                - paragraph [ref=f84e636]:
+                  - strong [ref=f84e637]: $298,500
+              - button "Save to favorites" [ref=f84e640] [cursor=pointer]
+            - article [ref=f84e671]:
+              - img "Ricardo Bolliger, Italy, Estate Edition, Mid-Century Modern Photograph" [ref=f84e674] [cursor=pointer]
+              - generic [ref=f84e675]:
+                - link [ref=f84e677] [cursor=pointer]:
+                  - /url: /art/photography/portrait-photography/slim-aarons-ricardo-bolliger-italy-estate-edition-mid-century-modern-photograph/id-a_18262272/
+                  - heading "Slim Aarons Ricardo Bolliger, Italy, Estate Edition, Mid-Century Modern Photograph , 1989 - Printed Later" [level=2] [ref=f84e678]:
+                    - generic [ref=f84e679]: Slim Aarons
+                    - generic [ref=f84e681]:
+                      - generic [ref=f84e682]: Ricardo Bolliger, Italy, Estate Edition, Mid-Century Modern Photograph
+                      - text: ", 1989 - Printed Later"
+                - paragraph [ref=f84e683]:
+                  - strong [ref=f84e684]: $1,800
+                - paragraph [ref=f84e685]: Free Shipping
+              - button "Save to favorites" [ref=f84e688] [cursor=pointer]
+            - article [ref=f84e695]:
+              - img "Scandinavian Modern Ceiling Lamp in Brass & Silk by Hans-Agne Jakobsson, 1960s" [ref=f84e698] [cursor=pointer]
+              - generic [ref=f84e699]:
+                - link [ref=f84e701] [cursor=pointer]:
+                  - /url: /furniture/lighting/chandeliers-pendant-lights/scandinavian-modern-ceiling-lamp-brass-silk-hans-agne-jakobsson-1960s/id-f_50477512/
+                  - heading "Scandinavian Modern Ceiling Lamp in Brass & Silk by Hans-Agne Jakobsson, 1960s" [level=2] [ref=f84e702]
+                - paragraph [ref=f84e703]:
+                  - strong [ref=f84e704]: $5,138
+              - button "Save to favorites" [ref=f84e707] [cursor=pointer]
+            - article [ref=f84e714]:
+              - img "HERMES blue silk ISOLA DI PRIMAVERA Scarf Marine Brun Blanc" [ref=f84e717] [cursor=pointer]
+              - generic [ref=f84e718]:
+                - link [ref=f84e720] [cursor=pointer]:
+                  - /url: /fashion/accessories/scarves/hermes-blue-silk-isola-di-primavera-scarf-marine-brun-blanc/id-v_29813372/
+                  - heading "HERMES blue silk ISOLA DI PRIMAVERA Scarf Marine Brun Blanc" [level=2] [ref=f84e721]
+                - paragraph [ref=f84e722]:
+                  - strong [ref=f84e723]: $950
+                - paragraph [ref=f84e724]: Free Shipping
+              - button "Save to favorites" [ref=f84e727] [cursor=pointer]
+            - article [ref=f84e734]:
+              - img "Chanel Vintage Tennis Racket and Case" [ref=f84e737] [cursor=pointer]
+              - generic [ref=f84e738]:
+                - link [ref=f84e740] [cursor=pointer]:
+                  - /url: /fashion/ephemera/curiosities/chanel-vintage-tennis-racket-case/id-v_29860662/
+                  - heading "Chanel Vintage Tennis Racket and Case" [level=2] [ref=f84e741]
+                - paragraph [ref=f84e742]:
+                  - strong [ref=f84e743]: $6,800
+              - button "Save to favorites" [ref=f84e746] [cursor=pointer]
+            - article [ref=f84e753]:
+              - img "Folk Art Primitive Eglomise Reverse Painting on Glass of a Federal House" [ref=f84e756] [cursor=pointer]
+              - generic [ref=f84e757]:
+                - link [ref=f84e759] [cursor=pointer]:
+                  - /url: /furniture/wall-decorations/paintings/folk-art-primitive-eglomise-reverse-painting-on-glass-federal-house/id-f_50871012/
+                  - heading "Folk Art Primitive Eglomise Reverse Painting on Glass of a Federal House" [level=2] [ref=f84e760]
+                - paragraph [ref=f84e761]:
+                  - strong [ref=f84e762]: $1,985
+              - button "Save to favorites" [ref=f84e765] [cursor=pointer]
+            - article [ref=f84e772]:
+              - img "Tiffany Studios Poppy Lamp" [ref=f84e775] [cursor=pointer]
+              - generic [ref=f84e776]:
+                - link [ref=f84e778] [cursor=pointer]:
+                  - /url: /furniture/lighting/table-lamps/tiffany-studios-poppy-lamp/id-f_50838802/
+                  - heading "Tiffany Studios Poppy Lamp" [level=2] [ref=f84e779]
+                - paragraph [ref=f84e780]:
+                  - strong [ref=f84e781]: $298,500
+              - button "Save to favorites" [ref=f84e784] [cursor=pointer]
+            - article [ref=f84e815]:
+              - img "Ricardo Bolliger, Italy, Estate Edition, Mid-Century Modern Photograph" [ref=f84e818] [cursor=pointer]
+              - generic [ref=f84e819]:
+                - link [ref=f84e821] [cursor=pointer]:
+                  - /url: /art/photography/portrait-photography/slim-aarons-ricardo-bolliger-italy-estate-edition-mid-century-modern-photograph/id-a_18262272/
+                  - heading "Slim Aarons Ricardo Bolliger, Italy, Estate Edition, Mid-Century Modern Photograph , 1989 - Printed Later" [level=2] [ref=f84e822]:
+                    - generic [ref=f84e823]: Slim Aarons
+                    - generic [ref=f84e825]:
+                      - generic [ref=f84e826]: Ricardo Bolliger, Italy, Estate Edition, Mid-Century Modern Photograph
+                      - text: ", 1989 - Printed Later"
+                - paragraph [ref=f84e827]:
+                  - strong [ref=f84e828]: $1,800
+                - paragraph [ref=f84e829]: Free Shipping
+              - button "Save to favorites" [ref=f84e832] [cursor=pointer]
+            - article [ref=f84e839]:
+              - img "Scandinavian Modern Ceiling Lamp in Brass & Silk by Hans-Agne Jakobsson, 1960s" [ref=f84e842] [cursor=pointer]
+              - generic [ref=f84e843]:
+                - link [ref=f84e845] [cursor=pointer]:
+                  - /url: /furniture/lighting/chandeliers-pendant-lights/scandinavian-modern-ceiling-lamp-brass-silk-hans-agne-jakobsson-1960s/id-f_50477512/
+                  - heading "Scandinavian Modern Ceiling Lamp in Brass & Silk by Hans-Agne Jakobsson, 1960s" [level=2] [ref=f84e846]
+                - paragraph [ref=f84e847]:
+                  - strong [ref=f84e848]: $5,138
+              - button "Save to favorites" [ref=f84e851] [cursor=pointer]
+            - article [ref=f84e858]:
+              - img "HERMES blue silk ISOLA DI PRIMAVERA Scarf Marine Brun Blanc" [ref=f84e861] [cursor=pointer]
+              - generic [ref=f84e862]:
+                - link [ref=f84e864] [cursor=pointer]:
+                  - /url: /fashion/accessories/scarves/hermes-blue-silk-isola-di-primavera-scarf-marine-brun-blanc/id-v_29813372/
+                  - heading "HERMES blue silk ISOLA DI PRIMAVERA Scarf Marine Brun Blanc" [level=2] [ref=f84e865]
+                - paragraph [ref=f84e866]:
+                  - strong [ref=f84e867]: $950
+                - paragraph [ref=f84e868]: Free Shipping
+              - button "Save to favorites" [ref=f84e871] [cursor=pointer]
+            - article [ref=f84e878]:
+              - img "Chanel Vintage Tennis Racket and Case" [ref=f84e881] [cursor=pointer]
+              - generic [ref=f84e882]:
+                - link [ref=f84e884] [cursor=pointer]:
+                  - /url: /fashion/ephemera/curiosities/chanel-vintage-tennis-racket-case/id-v_29860662/
+                  - heading "Chanel Vintage Tennis Racket and Case" [level=2] [ref=f84e885]
+                - paragraph [ref=f84e886]:
+                  - strong [ref=f84e887]: $6,800
+              - button "Save to favorites" [ref=f84e890] [cursor=pointer]
+            - article [ref=f84e897]:
+              - img "Folk Art Primitive Eglomise Reverse Painting on Glass of a Federal House" [ref=f84e900] [cursor=pointer]
+              - generic [ref=f84e901]:
+                - link [ref=f84e903] [cursor=pointer]:
+                  - /url: /furniture/wall-decorations/paintings/folk-art-primitive-eglomise-reverse-painting-on-glass-federal-house/id-f_50871012/
+                  - heading "Folk Art Primitive Eglomise Reverse Painting on Glass of a Federal House" [level=2] [ref=f84e904]
+                - paragraph [ref=f84e905]:
+                  - strong [ref=f84e906]: $1,985
+              - button "Save to favorites" [ref=f84e909] [cursor=pointer]
+          - button [ref=f84e914] [cursor=pointer]
+      - generic [ref=f84e919]:
+        - generic [ref=f84e920]:
+          - generic [ref=f84e921]:
+            - generic [ref=f84e922]: Collection Just For You
+            - generic [ref=f84e923]: Get Inspired by this collection of items picked just for you
+          - link "View Full Collection" [ref=f84e924] [cursor=pointer]:
+            - /url: /collections/personalized/7254/
+        - generic [ref=f84e925]:
+          - article [ref=f84e928]:
+            - img "Early 19th Century mahogany bureau bookcase" [ref=f84e931] [cursor=pointer]
+            - generic [ref=f84e932]:
+              - link [ref=f84e934] [cursor=pointer]:
+                - /url: /furniture/storage-case-pieces/bookcases/early-19th-century-mahogany-bureau-bookcase/id-f_37910652/
+                - heading "Early 19th Century mahogany bureau bookcase" [level=2] [ref=f84e935]
+              - paragraph [ref=f84e936]:
+                - strong [ref=f84e937]: $3,484
+            - button "Save to favorites" [ref=f84e940] [cursor=pointer]
+          - article [ref=f84e947]:
+            - img "English Mahogany Bureau Bookcase, 19th Century" [ref=f84e950] [cursor=pointer]
+            - generic [ref=f84e951]:
+              - link [ref=f84e953] [cursor=pointer]:
+                - /url: /furniture/storage-case-pieces/secretaires/english-mahogany-bureau-bookcase-19th-century/id-f_45045682/
+                - heading "English Mahogany Bureau Bookcase, 19th Century" [level=2] [ref=f84e954]
+              - paragraph [ref=f84e955]:
+                - strong [ref=f84e956]: $7,900
+            - button "Save to favorites" [ref=f84e959] [cursor=pointer]
+          - article [ref=f84e966]:
+            - img "George III Mahogany Secretaire Bookcase" [ref=f84e969] [cursor=pointer]
+            - generic [ref=f84e970]:
+              - link [ref=f84e972] [cursor=pointer]:
+                - /url: /furniture/storage-case-pieces/bookcases/george-iii-mahogany-secretaire-bookcase/id-f_47694712/
+                - heading "George III Mahogany Secretaire Bookcase" [level=2] [ref=f84e973]
+              - paragraph [ref=f84e974]:
+                - strong [ref=f84e975]: $2,391
+            - button "Save to favorites" [ref=f84e978] [cursor=pointer]
+          - article [ref=f84e985]:
+            - img "18th Century George III Secretary Bookcase" [ref=f84e988] [cursor=pointer]
+            - generic [ref=f84e989]:
+              - link [ref=f84e991] [cursor=pointer]:
+                - /url: /furniture/storage-case-pieces/secretaires/18th-century-george-iii-secretary-bookcase/id-f_48507902/
+                - heading "18th Century George III Secretary Bookcase" [level=2] [ref=f84e992]
+              - paragraph [ref=f84e993]:
+                - strong [ref=f84e994]: $3,299
+            - button "Save to favorites" [ref=f84e997] [cursor=pointer]
+          - article [ref=f84e1004]:
+            - img "18th Century English Mahogany Secretary Bookcase" [ref=f84e1007] [cursor=pointer]
+            - generic [ref=f84e1008]:
+              - link [ref=f84e1010] [cursor=pointer]:
+                - /url: /furniture/storage-case-pieces/bookcases/18th-century-english-mahogany-secretary-bookcase/id-f_49736872/
+                - heading "18th Century English Mahogany Secretary Bookcase" [level=2] [ref=f84e1011]
+              - paragraph [ref=f84e1012]:
+                - strong [ref=f84e1013]: $3,800
+            - button "Save to favorites" [ref=f84e1016] [cursor=pointer]
+      - generic [ref=f84e1021]:
+        - generic [ref=f84e1023]:
+          - generic [ref=f84e1024]: Most-Saved Items
+          - link "View More" [ref=f84e1025] [cursor=pointer]:
+            - /url: /collections/most-saved-items/?sort=newest
+        - generic [ref=f84e1026]:
+          - button [ref=f84e1027] [cursor=pointer]
+          - generic [ref=f84e1031]:
+            - article [ref=f84e1034]:
+              - img "Rare circa 1900 Sterling Silver Diamond and Enamel Powder Compact with Lipstick" [ref=f84e1037] [cursor=pointer]
+              - generic [ref=f84e1038]:
+                - link [ref=f84e1040] [cursor=pointer]:
+                  - /url: /jewelry/objets-dart-vertu/vanity-items/rare-circa-1900-sterling-silver-diamond-enamel-powder-compact-lipstick/id-j_8679722/
+                  - heading "Rare circa 1900 Sterling Silver Diamond and Enamel Powder Compact with Lipstick" [level=2] [ref=f84e1041]
+                - paragraph [ref=f84e1042]:
+                  - strong [ref=f84e1043]: $2,732
+                  - text: Sale Price|20% Off
+                - paragraph [ref=f84e1044]: Free Shipping
+              - button "Save to favorites" [ref=f84e1047] [cursor=pointer]
+            - article [ref=f84e1078]:
+              - img "Stunning 9.54Ct Natural Blue Sapphire Triple Row Wide Band Ring 14K Yellow Gold" [ref=f84e1081] [cursor=pointer]
+              - generic [ref=f84e1082]:
+                - link [ref=f84e1084] [cursor=pointer]:
+                  - /url: /jewelry/rings/band-rings/stunning-954ct-natural-blue-sapphire-triple-row-wide-band-ring-14k-yellow-gold/id-j_27268232/
+                  - heading "Stunning 9.54Ct Natural Blue Sapphire Triple Row Wide Band Ring 14K Yellow Gold" [level=2] [ref=f84e1085]
+                - paragraph [ref=f84e1086]:
+                  - strong [ref=f84e1087]: $1,176
+                  - text: Sale Price / item|20% Off
+                - paragraph [ref=f84e1088]: Free Shipping
+              - button "Save to favorites" [ref=f84e1091] [cursor=pointer]
+            - article [ref=f84e1098]:
+              - img "Arms Door Handles by Quintana Partners, Solid Brass & Chrome, Spain" [ref=f84e1101] [cursor=pointer]
+              - generic [ref=f84e1102]:
+                - link [ref=f84e1104] [cursor=pointer]:
+                  - /url: /furniture/asian-art-furniture/metalwork/arms-door-handles-quintana-partners-solid-brass-chrome-spain/id-f_42313512/
+                  - heading "Arms Door Handles by Quintana Partners, Solid Brass & Chrome, Spain" [level=2] [ref=f84e1105]
+                - paragraph [ref=f84e1106]:
+                  - strong [ref=f84e1107]: $722
+                  - text: / set
+              - button "Save to favorites" [ref=f84e1110] [cursor=pointer]
+            - article [ref=f84e1117]:
+              - img "CHANEL Karl Lagerfeld 14P Runway Patent Sock Boots – EU 39" [ref=f84e1120] [cursor=pointer]
+              - generic [ref=f84e1121]:
+                - link [ref=f84e1123] [cursor=pointer]:
+                  - /url: /fashion/accessories/shoes/chanel-karl-lagerfeld-14p-runway-patent-sock-boots-eu-39/id-v_27084542/
+                  - heading "CHANEL Karl Lagerfeld 14P Runway Patent Sock Boots – EU 39" [level=2] [ref=f84e1124]
+                - paragraph [ref=f84e1125]:
+                  - strong [ref=f84e1126]: $815
+              - button "Save to favorites" [ref=f84e1129] [cursor=pointer]
+            - article [ref=f84e1136]:
+              - img "Antique French Oak Apothecary Cabinet, Early 20th Century" [ref=f84e1139] [cursor=pointer]
+              - generic [ref=f84e1140]:
+                - link [ref=f84e1142] [cursor=pointer]:
+                  - /url: /furniture/storage-case-pieces/apothecary-cabinets/antique-french-oak-apothecary-cabinet-early-20th-century/id-f_26672692/
+                  - heading "Antique French Oak Apothecary Cabinet, Early 20th Century" [level=2] [ref=f84e1143]
+                - paragraph [ref=f84e1144]:
+                  - strong [ref=f84e1145]: $2,622
+                  - text: Sale Price|24% Off
+              - button "Save to favorites" [ref=f84e1148] [cursor=pointer]
+            - article [ref=f84e1155]:
+              - img "Fondation Maeght (Red, Yellow, Blue) /// Abstract Geometric Ellsworth Kelly" [ref=f84e1158] [cursor=pointer]
+              - generic [ref=f84e1159]:
+                - link [ref=f84e1161] [cursor=pointer]:
+                  - /url: /art/prints-works-on-paper/abstract-prints-works-on-paper/ellsworth-kelly-fondation-maeght-red-yellow-blue-abstract-geometric-ellsworth-kelly/id-a_1637123/
+                  - heading "Ellsworth Kelly Fondation Maeght (Red, Yellow, Blue) /// Abstract Geometric Ellsworth Kelly , 2005" [level=2] [ref=f84e1162]:
+                    - generic [ref=f84e1163]: Ellsworth Kelly
+                    - generic [ref=f84e1165]:
+                      - generic [ref=f84e1166]: Fondation Maeght (Red, Yellow, Blue) /// Abstract Geometric Ellsworth Kelly
+                      - text: ", 2005"
+                - paragraph [ref=f84e1167]:
+                  - strong [ref=f84e1168]: $450
+                - paragraph [ref=f84e1169]: Free Shipping
+              - button "Save to favorites" [ref=f84e1172] [cursor=pointer]
+            - article [ref=f84e1179]:
+              - img "Rare circa 1900 Sterling Silver Diamond and Enamel Powder Compact with Lipstick" [ref=f84e1182] [cursor=pointer]
+              - generic [ref=f84e1183]:
+                - link [ref=f84e1185] [cursor=pointer]:
+                  - /url: /jewelry/objets-dart-vertu/vanity-items/rare-circa-1900-sterling-silver-diamond-enamel-powder-compact-lipstick/id-j_8679722/
+                  - heading "Rare circa 1900 Sterling Silver Diamond and Enamel Powder Compact with Lipstick" [level=2] [ref=f84e1186]
+                - paragraph [ref=f84e1187]:
+                  - strong [ref=f84e1188]: $2,732
+                  - text: Sale Price|20% Off
+                - paragraph [ref=f84e1189]: Free Shipping
+              - button "Save to favorites" [ref=f84e1192] [cursor=pointer]
+            - article [ref=f84e1223]:
+              - img "Stunning 9.54Ct Natural Blue Sapphire Triple Row Wide Band Ring 14K Yellow Gold" [ref=f84e1226] [cursor=pointer]
+              - generic [ref=f84e1227]:
+                - link [ref=f84e1229] [cursor=pointer]:
+                  - /url: /jewelry/rings/band-rings/stunning-954ct-natural-blue-sapphire-triple-row-wide-band-ring-14k-yellow-gold/id-j_27268232/
+                  - heading "Stunning 9.54Ct Natural Blue Sapphire Triple Row Wide Band Ring 14K Yellow Gold" [level=2] [ref=f84e1230]
+                - paragraph [ref=f84e1231]:
+                  - strong [ref=f84e1232]: $1,176
+                  - text: Sale Price / item|20% Off
+                - paragraph [ref=f84e1233]: Free Shipping
+              - button "Save to favorites" [ref=f84e1236] [cursor=pointer]
+            - article [ref=f84e1243]:
+              - img "Arms Door Handles by Quintana Partners, Solid Brass & Chrome, Spain" [ref=f84e1246] [cursor=pointer]
+              - generic [ref=f84e1247]:
+                - link [ref=f84e1249] [cursor=pointer]:
+                  - /url: /furniture/asian-art-furniture/metalwork/arms-door-handles-quintana-partners-solid-brass-chrome-spain/id-f_42313512/
+                  - heading "Arms Door Handles by Quintana Partners, Solid Brass & Chrome, Spain" [level=2] [ref=f84e1250]
+                - paragraph [ref=f84e1251]:
+                  - strong [ref=f84e1252]: $722
+                  - text: / set
+              - button "Save to favorites" [ref=f84e1255] [cursor=pointer]
+            - article [ref=f84e1262]:
+              - img "CHANEL Karl Lagerfeld 14P Runway Patent Sock Boots – EU 39" [ref=f84e1265] [cursor=pointer]
+              - generic [ref=f84e1266]:
+                - link [ref=f84e1268] [cursor=pointer]:
+                  - /url: /fashion/accessories/shoes/chanel-karl-lagerfeld-14p-runway-patent-sock-boots-eu-39/id-v_27084542/
+                  - heading "CHANEL Karl Lagerfeld 14P Runway Patent Sock Boots – EU 39" [level=2] [ref=f84e1269]
+                - paragraph [ref=f84e1270]:
+                  - strong [ref=f84e1271]: $815
+              - button "Save to favorites" [ref=f84e1274] [cursor=pointer]
+            - article [ref=f84e1281]:
+              - img "Antique French Oak Apothecary Cabinet, Early 20th Century" [ref=f84e1284] [cursor=pointer]
+              - generic [ref=f84e1285]:
+                - link [ref=f84e1287] [cursor=pointer]:
+                  - /url: /furniture/storage-case-pieces/apothecary-cabinets/antique-french-oak-apothecary-cabinet-early-20th-century/id-f_26672692/
+                  - heading "Antique French Oak Apothecary Cabinet, Early 20th Century" [level=2] [ref=f84e1288]
+                - paragraph [ref=f84e1289]:
+                  - strong [ref=f84e1290]: $2,622
+                  - text: Sale Price|24% Off
+              - button "Save to favorites" [ref=f84e1293] [cursor=pointer]
+            - article [ref=f84e1300]:
+              - img "Fondation Maeght (Red, Yellow, Blue) /// Abstract Geometric Ellsworth Kelly" [ref=f84e1303] [cursor=pointer]
+              - generic [ref=f84e1304]:
+                - link [ref=f84e1306] [cursor=pointer]:
+                  - /url: /art/prints-works-on-paper/abstract-prints-works-on-paper/ellsworth-kelly-fondation-maeght-red-yellow-blue-abstract-geometric-ellsworth-kelly/id-a_1637123/
+                  - heading "Ellsworth Kelly Fondation Maeght (Red, Yellow, Blue) /// Abstract Geometric Ellsworth Kelly , 2005" [level=2] [ref=f84e1307]:
+                    - generic [ref=f84e1308]: Ellsworth Kelly
+                    - generic [ref=f84e1310]:
+                      - generic [ref=f84e1311]: Fondation Maeght (Red, Yellow, Blue) /// Abstract Geometric Ellsworth Kelly
+                      - text: ", 2005"
+                - paragraph [ref=f84e1312]:
+                  - strong [ref=f84e1313]: $450
+                - paragraph [ref=f84e1314]: Free Shipping
+              - button "Save to favorites" [ref=f84e1317] [cursor=pointer]
+          - button [ref=f84e1322] [cursor=pointer]
+      - generic [ref=f84e1325]:
+        - generic [ref=f84e1327]:
+          - generic [ref=f84e1328]: Excellent Values
+          - link "View More" [ref=f84e1329] [cursor=pointer]:
+            - /url: /collections/excellent-values/?sort=newest
+        - generic [ref=f84e1330]:
+          - button [ref=f84e1331] [cursor=pointer]
+          - generic [ref=f84e1335]:
+            - article [ref=f84e1338]:
+              - img "David Yurman Diamond Cable Bangle" [ref=f84e1341] [cursor=pointer]
+              - generic [ref=f84e1342]:
+                - link [ref=f84e1344] [cursor=pointer]:
+                  - /url: /jewelry/bracelets/bangles/david-yurman-diamond-cable-bangle/id-j_27090532/
+                  - heading "David Yurman Diamond Cable Bangle" [level=2] [ref=f84e1345]
+                - paragraph [ref=f84e1346]:
+                  - strong [ref=f84e1347]: $1,632
+                - paragraph [ref=f84e1348]: Free Shipping
+              - button "Save to favorites" [ref=f84e1351] [cursor=pointer]
+            - article [ref=f84e1382]:
+              - img "19th Century Glazed Specimen Box Containing Wheat Agricultural Scientific Curio" [ref=f84e1385] [cursor=pointer]
+              - generic [ref=f84e1386]:
+                - link [ref=f84e1388] [cursor=pointer]:
+                  - /url: /furniture/more-furniture-collectibles/collectibles-curiosities/scientific-instruments/19th-century-glazed-specimen-box-containing-wheat-agricultural-scientific-curio/id-f_42986152/
+                  - heading "19th Century Glazed Specimen Box Containing Wheat Agricultural Scientific Curio" [level=2] [ref=f84e1389]
+                - paragraph [ref=f84e1390]:
+                  - strong [ref=f84e1391]: $813
+              - button "Save to favorites" [ref=f84e1394] [cursor=pointer]
+            - article [ref=f84e1401]:
+              - img "Vintage Cartier 18k Yellow Gold Electroplated Tank Manual Wind Watch" [ref=f84e1404] [cursor=pointer]
+              - generic [ref=f84e1405]:
+                - link [ref=f84e1407] [cursor=pointer]:
+                  - /url: /jewelry/watches/wrist-watches/vintage-cartier-18k-yellow-gold-electroplated-tank-manual-wind-watch/id-j_29773952/
+                  - heading "Vintage Cartier 18k Yellow Gold Electroplated Tank Manual Wind Watch" [level=2] [ref=f84e1408]
+                - paragraph [ref=f84e1409]:
+                  - strong [ref=f84e1410]: $2,495
+                - paragraph [ref=f84e1411]: Free Shipping
+              - button "Save to favorites" [ref=f84e1414] [cursor=pointer]
+            - article [ref=f84e1421]:
+              - img "Fendi Mamma Baguette Vintage Black Cloth Silver Hardware Shoulder Bag" [ref=f84e1424] [cursor=pointer]
+              - generic [ref=f84e1425]:
+                - link [ref=f84e1427] [cursor=pointer]:
+                  - /url: /fashion/handbags-purses-bags/shoulder-bags/fendi-mamma-baguette-vintage-black-cloth-silver-hardware-shoulder-bag/id-v_28268872/
+                  - heading "Fendi Mamma Baguette Vintage Black Cloth Silver Hardware Shoulder Bag" [level=2] [ref=f84e1428]
+                - paragraph [ref=f84e1429]:
+                  - strong [ref=f84e1430]: $628
+              - button "Save to favorites" [ref=f84e1433] [cursor=pointer]
+            - article [ref=f84e1440]:
+              - img "Dutch Delft Blue Ceramic Tulip Vase Set in Matte Pink" [ref=f84e1443] [cursor=pointer]
+              - generic [ref=f84e1444]:
+                - link [ref=f84e1446] [cursor=pointer]:
+                  - /url: /furniture/decorative-objects/vases-vessels/vases/dutch-delft-blue-ceramic-tulip-vase-set-matte-pink/id-f_49908462/
+                  - heading "Dutch Delft Blue Ceramic Tulip Vase Set in Matte Pink" [level=2] [ref=f84e1447]
+                - paragraph [ref=f84e1448]:
+                  - strong [ref=f84e1449]: $279
+                  - text: / set
+              - button "Save to favorites" [ref=f84e1452] [cursor=pointer]
+            - article [ref=f84e1459]:
+              - img "Ceramic greyhound sculpture, 1960s" [ref=f84e1462] [cursor=pointer]
+              - generic [ref=f84e1463]:
+                - link [ref=f84e1465] [cursor=pointer]:
+                  - /url: /furniture/decorative-objects/sculptures/animal-sculptures/ceramic-greyhound-sculpture-1960s/id-f_39290422/
+                  - heading "Ceramic greyhound sculpture, 1960s" [level=2] [ref=f84e1466]
+                - paragraph [ref=f84e1467]:
+                  - strong [ref=f84e1468]: $874
+              - button "Save to favorites" [ref=f84e1471] [cursor=pointer]
+            - article [ref=f84e1478]:
+              - img "David Yurman Diamond Cable Bangle" [ref=f84e1481] [cursor=pointer]
+              - generic [ref=f84e1482]:
+                - link [ref=f84e1484] [cursor=pointer]:
+                  - /url: /jewelry/bracelets/bangles/david-yurman-diamond-cable-bangle/id-j_27090532/
+                  - heading "David Yurman Diamond Cable Bangle" [level=2] [ref=f84e1485]
+                - paragraph [ref=f84e1486]:
+                  - strong [ref=f84e1487]: $1,632
+                - paragraph [ref=f84e1488]: Free Shipping
+              - button "Save to favorites" [ref=f84e1491] [cursor=pointer]
+            - article [ref=f84e1522]:
+              - img "19th Century Glazed Specimen Box Containing Wheat Agricultural Scientific Curio" [ref=f84e1525] [cursor=pointer]
+              - generic [ref=f84e1526]:
+                - link [ref=f84e1528] [cursor=pointer]:
+                  - /url: /furniture/more-furniture-collectibles/collectibles-curiosities/scientific-instruments/19th-century-glazed-specimen-box-containing-wheat-agricultural-scientific-curio/id-f_42986152/
+                  - heading "19th Century Glazed Specimen Box Containing Wheat Agricultural Scientific Curio" [level=2] [ref=f84e1529]
+                - paragraph [ref=f84e1530]:
+                  - strong [ref=f84e1531]: $813
+              - button "Save to favorites" [ref=f84e1534] [cursor=pointer]
+            - article [ref=f84e1541]:
+              - img "Vintage Cartier 18k Yellow Gold Electroplated Tank Manual Wind Watch" [ref=f84e1544] [cursor=pointer]
+              - generic [ref=f84e1545]:
+                - link [ref=f84e1547] [cursor=pointer]:
+                  - /url: /jewelry/watches/wrist-watches/vintage-cartier-18k-yellow-gold-electroplated-tank-manual-wind-watch/id-j_29773952/
+                  - heading "Vintage Cartier 18k Yellow Gold Electroplated Tank Manual Wind Watch" [level=2] [ref=f84e1548]
+                - paragraph [ref=f84e1549]:
+                  - strong [ref=f84e1550]: $2,495
+                - paragraph [ref=f84e1551]: Free Shipping
+              - button "Save to favorites" [ref=f84e1554] [cursor=pointer]
+            - article [ref=f84e1561]:
+              - img "Fendi Mamma Baguette Vintage Black Cloth Silver Hardware Shoulder Bag" [ref=f84e1564] [cursor=pointer]
+              - generic [ref=f84e1565]:
+                - link [ref=f84e1567] [cursor=pointer]:
+                  - /url: /fashion/handbags-purses-bags/shoulder-bags/fendi-mamma-baguette-vintage-black-cloth-silver-hardware-shoulder-bag/id-v_28268872/
+                  - heading "Fendi Mamma Baguette Vintage Black Cloth Silver Hardware Shoulder Bag" [level=2] [ref=f84e1568]
+                - paragraph [ref=f84e1569]:
+                  - strong [ref=f84e1570]: $628
+              - button "Save to favorites" [ref=f84e1573] [cursor=pointer]
+            - article [ref=f84e1580]:
+              - img "Dutch Delft Blue Ceramic Tulip Vase Set in Matte Pink" [ref=f84e1583] [cursor=pointer]
+              - generic [ref=f84e1584]:
+                - link [ref=f84e1586] [cursor=pointer]:
+                  - /url: /furniture/decorative-objects/vases-vessels/vases/dutch-delft-blue-ceramic-tulip-vase-set-matte-pink/id-f_49908462/
+                  - heading "Dutch Delft Blue Ceramic Tulip Vase Set in Matte Pink" [level=2] [ref=f84e1587]
+                - paragraph [ref=f84e1588]:
+                  - strong [ref=f84e1589]: $279
+                  - text: / set
+              - button "Save to favorites" [ref=f84e1592] [cursor=pointer]
+            - article [ref=f84e1599]:
+              - img "Ceramic greyhound sculpture, 1960s" [ref=f84e1602] [cursor=pointer]
+              - generic [ref=f84e1603]:
+                - link [ref=f84e1605] [cursor=pointer]:
+                  - /url: /furniture/decorative-objects/sculptures/animal-sculptures/ceramic-greyhound-sculpture-1960s/id-f_39290422/
+                  - heading "Ceramic greyhound sculpture, 1960s" [level=2] [ref=f84e1606]
+                - paragraph [ref=f84e1607]:
+                  - strong [ref=f84e1608]: $874
+              - button "Save to favorites" [ref=f84e1611] [cursor=pointer]
+          - button [ref=f84e1616] [cursor=pointer]
+      - generic [ref=f84e1619]:
+        - generic [ref=f84e1621]:
+          - generic [ref=f84e1622]: Bestselling Designs
+          - link "View More" [ref=f84e1623] [cursor=pointer]:
+            - /url: /collections/best-sellers/?sort=newest
+        - generic [ref=f84e1624]:
+          - button [ref=f84e1625] [cursor=pointer]
+          - generic [ref=f84e1629]:
+            - article [ref=f84e1632]:
+              - img "Testa Di Fauno Statue" [ref=f84e1635] [cursor=pointer]
+              - generic [ref=f84e1636]:
+                - link [ref=f84e1638] [cursor=pointer]:
+                  - /url: /furniture/building-garden/statues/testa-di-fauno-statue/id-f_23713642/
+                  - heading "Testa Di Fauno Statue" [level=2] [ref=f84e1639]
+                - paragraph [ref=f84e1640]:
+                  - strong [ref=f84e1641]: $2,770
+                  - text: / item
+              - button "Save to favorites" [ref=f84e1644] [cursor=pointer]
+            - article [ref=f84e1675]:
+              - img "Set of 6 Handmade Unique Goto Murano Drinking Glasses" [ref=f84e1678] [cursor=pointer]
+              - generic [ref=f84e1679]:
+                - link [ref=f84e1681] [cursor=pointer]:
+                  - /url: /furniture/decorative-objects/sculptures/figurative-sculptures/set-of-6-handmade-unique-goto-murano-drinking-glasses/id-f_13404271/
+                  - heading "Set of 6 Handmade Unique Goto Murano Drinking Glasses" [level=2] [ref=f84e1682]
+                - paragraph [ref=f84e1683]:
+                  - strong [ref=f84e1684]: $279
+                  - text: Sale Price / set|20% Off
+              - button "Save to favorites" [ref=f84e1687] [cursor=pointer]
+            - article [ref=f84e1694]:
+              - img "1970s Industrial Polished Aluminium Brass & Glass Edison Flameproof Strip Light" [ref=f84e1697] [cursor=pointer]
+              - generic [ref=f84e1698]:
+                - link [ref=f84e1700] [cursor=pointer]:
+                  - /url: /furniture/lighting/chandeliers-pendant-lights/1970s-industrial-polished-aluminium-brass-glass-edison-flameproof-strip-light/id-f_23012302/
+                  - heading "1970s Industrial Polished Aluminium Brass & Glass Edison Flameproof Strip Light" [level=2] [ref=f84e1701]
+                - paragraph [ref=f84e1702]:
+                  - strong [ref=f84e1703]: $1,229
+                  - text: / item
+              - button "Save to favorites" [ref=f84e1706] [cursor=pointer]
+            - article [ref=f84e1713]:
+              - img "Ascending Opal Moonface ring" [ref=f84e1716] [cursor=pointer]
+              - generic [ref=f84e1717]:
+                - link [ref=f84e1719] [cursor=pointer]:
+                  - /url: /jewelry/rings/cocktail-rings/ascending-opal-moonface-ring/id-v_28027692/
+                  - heading "Ascending Opal Moonface ring" [level=2] [ref=f84e1720]
+                - paragraph [ref=f84e1721]:
+                  - strong [ref=f84e1722]: $420
+                  - text: Sale Price / item|50% Off
+                - paragraph [ref=f84e1723]: Free Shipping
+              - button "Save to favorites" [ref=f84e1726] [cursor=pointer]
+            - article [ref=f84e1733]:
+              - img "Moss Deep Green Soft Linen Silk Classic Modern Artisanal Handwoven Scarf" [ref=f84e1736] [cursor=pointer]
+              - generic [ref=f84e1737]:
+                - link [ref=f84e1739] [cursor=pointer]:
+                  - /url: /fashion/accessories/scarves/moss-deep-green-soft-linen-silk-classic-modern-artisanal-handwoven-scarf/id-v_9728982/
+                  - heading "Moss Deep Green Soft Linen Silk Classic Modern Artisanal Handwoven Scarf" [level=2] [ref=f84e1740]
+                - paragraph [ref=f84e1741]:
+                  - strong [ref=f84e1742]: $119
+              - button "Save to favorites" [ref=f84e1745] [cursor=pointer]
+            - article [ref=f84e1752]:
+              - img "Untitled (One Cent Life) /// Joan Mitchell Female Artist Abstract Expressionism" [ref=f84e1755] [cursor=pointer]
+              - generic [ref=f84e1756]:
+                - link [ref=f84e1758] [cursor=pointer]:
+                  - /url: /art/prints-works-on-paper/abstract-prints-works-on-paper/joan-mitchell-untitled-one-cent-life-joan-mitchell-female-artist-abstract-expressionism/id-a_3181733/
+                  - heading "Joan Mitchell Untitled (One Cent Life) /// Joan Mitchell Female Artist Abstract Expressionism , 1964" [level=2] [ref=f84e1759]:
+                    - generic [ref=f84e1760]: Joan Mitchell
+                    - generic [ref=f84e1762]:
+                      - generic [ref=f84e1763]: Untitled (One Cent Life) /// Joan Mitchell Female Artist Abstract Expressionism
+                      - text: ", 1964"
+                - paragraph [ref=f84e1764]:
+                  - strong [ref=f84e1765]: $1,600
+                - paragraph [ref=f84e1766]: Free Shipping
+              - button "Save to favorites" [ref=f84e1769] [cursor=pointer]
+            - article [ref=f84e1776]:
+              - img "Testa Di Fauno Statue" [ref=f84e1779] [cursor=pointer]
+              - generic [ref=f84e1780]:
+                - link [ref=f84e1782] [cursor=pointer]:
+                  - /url: /furniture/building-garden/statues/testa-di-fauno-statue/id-f_23713642/
+                  - heading "Testa Di Fauno Statue" [level=2] [ref=f84e1783]
+                - paragraph [ref=f84e1784]:
+                  - strong [ref=f84e1785]: $2,770
+                  - text: / item
+              - button "Save to favorites" [ref=f84e1788] [cursor=pointer]
+            - article [ref=f84e1819]:
+              - img "Set of 6 Handmade Unique Goto Murano Drinking Glasses" [ref=f84e1822] [cursor=pointer]
+              - generic [ref=f84e1823]:
+                - link [ref=f84e1825] [cursor=pointer]:
+                  - /url: /furniture/decorative-objects/sculptures/figurative-sculptures/set-of-6-handmade-unique-goto-murano-drinking-glasses/id-f_13404271/
+                  - heading "Set of 6 Handmade Unique Goto Murano Drinking Glasses" [level=2] [ref=f84e1826]
+                - paragraph [ref=f84e1827]:
+                  - strong [ref=f84e1828]: $279
+                  - text: Sale Price / set|20% Off
+              - button "Save to favorites" [ref=f84e1831] [cursor=pointer]
+            - article [ref=f84e1838]:
+              - img "1970s Industrial Polished Aluminium Brass & Glass Edison Flameproof Strip Light" [ref=f84e1841] [cursor=pointer]
+              - generic [ref=f84e1842]:
+                - link [ref=f84e1844] [cursor=pointer]:
+                  - /url: /furniture/lighting/chandeliers-pendant-lights/1970s-industrial-polished-aluminium-brass-glass-edison-flameproof-strip-light/id-f_23012302/
+                  - heading "1970s Industrial Polished Aluminium Brass & Glass Edison Flameproof Strip Light" [level=2] [ref=f84e1845]
+                - paragraph [ref=f84e1846]:
+                  - strong [ref=f84e1847]: $1,229
+                  - text: / item
+              - button "Save to favorites" [ref=f84e1850] [cursor=pointer]
+            - article [ref=f84e1857]:
+              - img "Ascending Opal Moonface ring" [ref=f84e1860] [cursor=pointer]
+              - generic [ref=f84e1861]:
+                - link [ref=f84e1863] [cursor=pointer]:
+                  - /url: /jewelry/rings/cocktail-rings/ascending-opal-moonface-ring/id-v_28027692/
+                  - heading "Ascending Opal Moonface ring" [level=2] [ref=f84e1864]
+                - paragraph [ref=f84e1865]:
+                  - strong [ref=f84e1866]: $420
+                  - text: Sale Price / item|50% Off
+                - paragraph [ref=f84e1867]: Free Shipping
+              - button "Save to favorites" [ref=f84e1870] [cursor=pointer]
+            - article [ref=f84e1877]:
+              - img "Moss Deep Green Soft Linen Silk Classic Modern Artisanal Handwoven Scarf" [ref=f84e1880] [cursor=pointer]
+              - generic [ref=f84e1881]:
+                - link [ref=f84e1883] [cursor=pointer]:
+                  - /url: /fashion/accessories/scarves/moss-deep-green-soft-linen-silk-classic-modern-artisanal-handwoven-scarf/id-v_9728982/
+                  - heading "Moss Deep Green Soft Linen Silk Classic Modern Artisanal Handwoven Scarf" [level=2] [ref=f84e1884]
+                - paragraph [ref=f84e1885]:
+                  - strong [ref=f84e1886]: $119
+              - button "Save to favorites" [ref=f84e1889] [cursor=pointer]
+            - article [ref=f84e1896]:
+              - img "Untitled (One Cent Life) /// Joan Mitchell Female Artist Abstract Expressionism" [ref=f84e1899] [cursor=pointer]
+              - generic [ref=f84e1900]:
+                - link [ref=f84e1902] [cursor=pointer]:
+                  - /url: /art/prints-works-on-paper/abstract-prints-works-on-paper/joan-mitchell-untitled-one-cent-life-joan-mitchell-female-artist-abstract-expressionism/id-a_3181733/
+                  - heading "Joan Mitchell Untitled (One Cent Life) /// Joan Mitchell Female Artist Abstract Expressionism , 1964" [level=2] [ref=f84e1903]:
+                    - generic [ref=f84e1904]: Joan Mitchell
+                    - generic [ref=f84e1906]:
+                      - generic [ref=f84e1907]: Untitled (One Cent Life) /// Joan Mitchell Female Artist Abstract Expressionism
+                      - text: ", 1964"
+                - paragraph [ref=f84e1908]:
+                  - strong [ref=f84e1909]: $1,600
+                - paragraph [ref=f84e1910]: Free Shipping
+              - button "Save to favorites" [ref=f84e1913] [cursor=pointer]
+          - button [ref=f84e1918] [cursor=pointer]
+      - 'link "The Under $1,000 Edit Luxury without the splurge: furniture, jewelry, art, and fashion finds—all under $1,000, all impeccably curated. Shop the Collection" [ref=f84e1921] [cursor=pointer]':
+        - /url: /collections/under-1000-edit/
+        - generic [ref=f84e1924]:
+          - generic [ref=f84e1925]: The Under $1,000 Edit
+          - generic [ref=f84e1926]: "Luxury without the splurge: furniture, jewelry, art, and fashion finds—all under $1,000, all impeccably curated."
+          - button "Shop the Collection" [ref=f84e1928]
+      - generic [ref=f84e1968]:
+        - generic [ref=f84e1969]:
+          - generic [ref=f84e1970]:
+            - generic [ref=f84e1971]: Collection Just For You
+            - generic [ref=f84e1972]: Get Inspired by this collection of items picked just for you
+          - link "View Full Collection" [ref=f84e1973] [cursor=pointer]:
+            - /url: /collections/personalized/9022/
+        - generic [ref=f84e1974]:
+          - article [ref=f84e1977]:
+            - img "Seductive Woman - Drawing by Mino Maccari - 1960s" [ref=f84e1980] [cursor=pointer]
+            - generic [ref=f84e1981]:
+              - link [ref=f84e1983] [cursor=pointer]:
+                - /url: /art/drawings-watercolor-paintings/figurative-drawings-watercolors/mino-maccari-seductive-woman-drawing-mino-maccari-1960s/id-a_12612082/
+                - heading "Mino Maccari Seductive Woman - Drawing by Mino Maccari - 1960s , 1960s" [level=2] [ref=f84e1984]:
+                  - generic [ref=f84e1985]: Mino Maccari
+                  - generic [ref=f84e1987]:
+                    - generic [ref=f84e1988]: Seductive Woman - Drawing by Mino Maccari - 1960s
+                    - text: ", 1960s"
+              - paragraph [ref=f84e1989]:
+                - strong [ref=f84e1990]: $700
+            - button "Save to favorites" [ref=f84e1993] [cursor=pointer]
+          - article [ref=f84e2000]:
+            - img "Seductive Woman - Drawing by Mino Maccari - 1960s" [ref=f84e2003] [cursor=pointer]
+            - generic [ref=f84e2004]:
+              - link [ref=f84e2006] [cursor=pointer]:
+                - /url: /art/drawings-watercolor-paintings/portrait-drawings-watercolors/mino-maccari-seductive-woman-drawing-mino-maccari-1960s/id-a_12612052/
+                - heading "Mino Maccari Seductive Woman - Drawing by Mino Maccari - 1960s , 1960s" [level=2] [ref=f84e2007]:
+                  - generic [ref=f84e2008]: Mino Maccari
+                  - generic [ref=f84e2010]:
+                    - generic [ref=f84e2011]: Seductive Woman - Drawing by Mino Maccari - 1960s
+                    - text: ", 1960s"
+              - paragraph [ref=f84e2012]:
+                - strong [ref=f84e2013]: $676
+            - button "Save to favorites" [ref=f84e2016] [cursor=pointer]
+          - article [ref=f84e2023]:
+            - img "Seductive Woman - Drawing by Mino Maccari - 1970s" [ref=f84e2026] [cursor=pointer]
+            - generic [ref=f84e2027]:
+              - link [ref=f84e2029] [cursor=pointer]:
+                - /url: /art/drawings-watercolor-paintings/portrait-drawings-watercolors/mino-maccari-seductive-woman-drawing-mino-maccari-1970s/id-a_12610532/
+                - heading "Mino Maccari Seductive Woman - Drawing by Mino Maccari - 1970s , 1975" [level=2] [ref=f84e2030]:
+                  - generic [ref=f84e2031]: Mino Maccari
+                  - generic [ref=f84e2033]:
+                    - generic [ref=f84e2034]: Seductive Woman - Drawing by Mino Maccari - 1970s
+                    - text: ", 1975"
+              - paragraph [ref=f84e2035]:
+                - strong [ref=f84e2036]: $652
+            - button "Save to favorites" [ref=f84e2039] [cursor=pointer]
+          - article [ref=f84e2046]:
+            - img "Seductive Woman - Drawing by Mino Maccari - 1960s" [ref=f84e2049] [cursor=pointer]
+            - generic [ref=f84e2050]:
+              - link [ref=f84e2052] [cursor=pointer]:
+                - /url: /art/drawings-watercolor-paintings/figurative-drawings-watercolors/mino-maccari-seductive-woman-drawing-mino-maccari-1960s/id-a_12613292/
+                - heading "Mino Maccari Seductive Woman - Drawing by Mino Maccari - 1960s , 1960s" [level=2] [ref=f84e2053]:
+                  - generic [ref=f84e2054]: Mino Maccari
+                  - generic [ref=f84e2056]:
+                    - generic [ref=f84e2057]: Seductive Woman - Drawing by Mino Maccari - 1960s
+                    - text: ", 1960s"
+              - paragraph [ref=f84e2058]:
+                - strong [ref=f84e2059]: $676
+            - button "Save to favorites" [ref=f84e2062] [cursor=pointer]
+          - article [ref=f84e2069]:
+            - img "Seductive - Drawing by Mino Maccari - 1940s" [ref=f84e2072] [cursor=pointer]
+            - generic [ref=f84e2073]:
+              - link [ref=f84e2075] [cursor=pointer]:
+                - /url: /art/drawings-watercolor-paintings/figurative-drawings-watercolors/mino-maccari-seductive-drawing-mino-maccari-1940s/id-a_12672212/
+                - heading "Mino Maccari Seductive - Drawing by Mino Maccari - 1940s , 1940s" [level=2] [ref=f84e2076]:
+                  - generic [ref=f84e2077]: Mino Maccari
+                  - generic [ref=f84e2079]:
+                    - generic [ref=f84e2080]: Seductive - Drawing by Mino Maccari - 1940s
+                    - text: ", 1940s"
+              - paragraph [ref=f84e2081]:
+                - strong [ref=f84e2082]: $571
+            - button "Save to favorites" [ref=f84e2085] [cursor=pointer]
+      - generic [ref=f84e2090]:
+        - generic [ref=f84e2091]: "Today's Top Deals: Jewelry Sale"
+        - generic [ref=f84e2094]:
+          - tablist [ref=f84e2097]:
+            - button "Jewelry Sale" [ref=f84e2099] [cursor=pointer]
+            - button "Furniture Sale" [ref=f84e2101] [cursor=pointer]
+            - button "Art Sale" [ref=f84e2103] [cursor=pointer]
+            - button "Fashion Sale" [ref=f84e2105] [cursor=pointer]
+          - generic [ref=f84e2106]:
+            - tabpanel [ref=f84e2107]:
+              - generic [ref=f84e2108]:
+                - button [ref=f84e2109] [cursor=pointer]
+                - generic [ref=f84e2113]:
+                  - article [ref=f84e2146]:
+                    - img "Dainty Diamond Emerald Stud Earrings Made in Solid 14k Yellow Gold" [ref=f84e2149] [cursor=pointer]
+                    - generic [ref=f84e2150]:
+                      - link [ref=f84e2152] [cursor=pointer]:
+                        - /url: /jewelry/earrings/stud-earrings/dainty-diamond-emerald-stud-earrings-made-solid-14k-yellow-gold/id-j_25119752/
+                        - heading "Dainty Diamond Emerald Stud Earrings Made in Solid 14k Yellow Gold" [level=2] [ref=f84e2153]
+                      - paragraph [ref=f84e2154]:
+                        - strong [ref=f84e2155]: $960
+                        - text: Sale Price / set|20% Off
+                      - paragraph [ref=f84e2156]: Free Shipping
+                    - button "Save to favorites" [ref=f84e2159] [cursor=pointer]
+                  - article [ref=f84e2166]:
+                    - img "Vintage Cartier Trinity 18K Tri-Color Gold Money Clip or Tie Pin Signed 728222" [ref=f84e2169] [cursor=pointer]
+                    - generic [ref=f84e2170]:
+                      - link [ref=f84e2172] [cursor=pointer]:
+                        - /url: /jewelry/brooches/brooches/vintage-cartier-trinity-18k-tri-color-gold-money-clip-tie-pin-signed-728222/id-j_24848232/
+                        - heading "Vintage Cartier Trinity 18K Tri-Color Gold Money Clip or Tie Pin Signed 728222" [level=2] [ref=f84e2173]
+                      - paragraph [ref=f84e2174]:
+                        - strong [ref=f84e2175]: $1,852
+                        - text: Sale Price|25% Off
+                      - paragraph [ref=f84e2176]: Free Shipping
+                    - button "Save to favorites" [ref=f84e2179] [cursor=pointer]
+                  - article [ref=f84e2186]:
+                    - img "14k Solid Yellow Gold Natural 14.35 Carat Turquoise Tennis Bracelet" [ref=f84e2189] [cursor=pointer]
+                    - generic [ref=f84e2190]:
+                      - link [ref=f84e2192] [cursor=pointer]:
+                        - /url: /jewelry/bracelets/tennis-bracelets/14k-solid-yellow-gold-natural-1435-carat-turquoise-tennis-bracelet/id-j_19172032/
+                        - heading "14k Solid Yellow Gold Natural 14.35 Carat Turquoise Tennis Bracelet" [level=2] [ref=f84e2193]
+                      - paragraph [ref=f84e2194]:
+                        - strong [ref=f84e2195]: $4,550
+                        - text: Sale Price / item|20% Off
+                      - paragraph [ref=f84e2196]: Free Shipping
+                    - button "Save to favorites" [ref=f84e2199] [cursor=pointer]
+                  - article [ref=f84e2206]:
+                    - img "Cartier d’Amour 18K Rose Gold Diamond Bracelet, ~0.10ct, 7.25in Long" [ref=f84e2209] [cursor=pointer]
+                    - generic [ref=f84e2210]:
+                      - link [ref=f84e2212] [cursor=pointer]:
+                        - /url: /jewelry/bracelets/link-bracelets/cartier-damour-18k-rose-gold-diamond-bracelet-010ct-725in-long/id-j_25778112/
+                        - heading "Cartier d’Amour 18K Rose Gold Diamond Bracelet, ~0.10ct, 7.25in Long" [level=2] [ref=f84e2213]
+                      - paragraph [ref=f84e2214]:
+                        - strong [ref=f84e2215]: $1,920
+                        - text: Sale Price|25% Off
+                      - paragraph [ref=f84e2216]: Free Shipping
+                    - button "Save to favorites" [ref=f84e2219] [cursor=pointer]
+                  - article [ref=f84e2226]:
+                    - img "Stunning 9.54Ct Natural Blue Sapphire Triple Row Wide Band Ring 14K Yellow Gold" [ref=f84e2229] [cursor=pointer]
+                    - generic [ref=f84e2230]:
+                      - link [ref=f84e2232] [cursor=pointer]:
+                        - /url: /jewelry/rings/band-rings/stunning-954ct-natural-blue-sapphire-triple-row-wide-band-ring-14k-yellow-gold/id-j_27268232/
+                        - heading "Stunning 9.54Ct Natural Blue Sapphire Triple Row Wide Band Ring 14K Yellow Gold" [level=2] [ref=f84e2233]
+                      - paragraph [ref=f84e2234]:
+                        - strong [ref=f84e2235]: $1,176
+                        - text: Sale Price / item|20% Off
+                      - paragraph [ref=f84e2236]: Free Shipping
+                    - button "Save to favorites" [ref=f84e2239] [cursor=pointer]
+                  - article [ref=f84e2276]:
+                    - img "Dainty Diamond Emerald Stud Earrings Made in Solid 14k Yellow Gold" [ref=f84e2279] [cursor=pointer]
+                    - generic [ref=f84e2280]:
+                      - link [ref=f84e2282] [cursor=pointer]:
+                        - /url: /jewelry/earrings/stud-earrings/dainty-diamond-emerald-stud-earrings-made-solid-14k-yellow-gold/id-j_25119752/
+                        - heading "Dainty Diamond Emerald Stud Earrings Made in Solid 14k Yellow Gold" [level=2] [ref=f84e2283]
+                      - paragraph [ref=f84e2284]:
+                        - strong [ref=f84e2285]: $960
+                        - text: Sale Price / set|20% Off
+                      - paragraph [ref=f84e2286]: Free Shipping
+                    - button "Save to favorites" [ref=f84e2289] [cursor=pointer]
+                  - article [ref=f84e2296]:
+                    - img "Vintage Cartier Trinity 18K Tri-Color Gold Money Clip or Tie Pin Signed 728222" [ref=f84e2299] [cursor=pointer]
+                    - generic [ref=f84e2300]:
+                      - link [ref=f84e2302] [cursor=pointer]:
+                        - /url: /jewelry/brooches/brooches/vintage-cartier-trinity-18k-tri-color-gold-money-clip-tie-pin-signed-728222/id-j_24848232/
+                        - heading "Vintage Cartier Trinity 18K Tri-Color Gold Money Clip or Tie Pin Signed 728222" [level=2] [ref=f84e2303]
+                      - paragraph [ref=f84e2304]:
+                        - strong [ref=f84e2305]: $1,852
+                        - text: Sale Price|25% Off
+                      - paragraph [ref=f84e2306]: Free Shipping
+                    - button "Save to favorites" [ref=f84e2309] [cursor=pointer]
+                  - article [ref=f84e2316]:
+                    - img "14k Solid Yellow Gold Natural 14.35 Carat Turquoise Tennis Bracelet" [ref=f84e2319] [cursor=pointer]
+                    - generic [ref=f84e2320]:
+                      - link [ref=f84e2322] [cursor=pointer]:
+                        - /url: /jewelry/bracelets/tennis-bracelets/14k-solid-yellow-gold-natural-1435-carat-turquoise-tennis-bracelet/id-j_19172032/
+                        - heading "14k Solid Yellow Gold Natural 14.35 Carat Turquoise Tennis Bracelet" [level=2] [ref=f84e2323]
+                      - paragraph [ref=f84e2324]:
+                        - strong [ref=f84e2325]: $4,550
+                        - text: Sale Price / item|20% Off
+                      - paragraph [ref=f84e2326]: Free Shipping
+                    - button "Save to favorites" [ref=f84e2329] [cursor=pointer]
+                  - article [ref=f84e2336]:
+                    - img "Cartier d’Amour 18K Rose Gold Diamond Bracelet, ~0.10ct, 7.25in Long" [ref=f84e2339] [cursor=pointer]
+                    - generic [ref=f84e2340]:
+                      - link [ref=f84e2342] [cursor=pointer]:
+                        - /url: /jewelry/bracelets/link-bracelets/cartier-damour-18k-rose-gold-diamond-bracelet-010ct-725in-long/id-j_25778112/
+                        - heading "Cartier d’Amour 18K Rose Gold Diamond Bracelet, ~0.10ct, 7.25in Long" [level=2] [ref=f84e2343]
+                      - paragraph [ref=f84e2344]:
+                        - strong [ref=f84e2345]: $1,920
+                        - text: Sale Price|25% Off
+                      - paragraph [ref=f84e2346]: Free Shipping
+                    - button "Save to favorites" [ref=f84e2349] [cursor=pointer]
+                  - article [ref=f84e2356]:
+                    - img "Stunning 9.54Ct Natural Blue Sapphire Triple Row Wide Band Ring 14K Yellow Gold" [ref=f84e2359] [cursor=pointer]
+                    - generic [ref=f84e2360]:
+                      - link [ref=f84e2362] [cursor=pointer]:
+                        - /url: /jewelry/rings/band-rings/stunning-954ct-natural-blue-sapphire-triple-row-wide-band-ring-14k-yellow-gold/id-j_27268232/
+                        - heading "Stunning 9.54Ct Natural Blue Sapphire Triple Row Wide Band Ring 14K Yellow Gold" [level=2] [ref=f84e2363]
+                      - paragraph [ref=f84e2364]:
+                        - strong [ref=f84e2365]: $1,176
+                        - text: Sale Price / item|20% Off
+                      - paragraph [ref=f84e2366]: Free Shipping
+                    - button "Save to favorites" [ref=f84e2369] [cursor=pointer]
+                - button [ref=f84e2374] [cursor=pointer]
+            - link "View More" [ref=f84e2378] [cursor=pointer]:
+              - /url: /sale/saturday-sale/jewelry/?sort=newest
+      - generic [ref=f84e2381]:
+        - region "video player" [ref=f84e2384]:
+          - generic [ref=f84e2388]:
+            - generic:
+              - button "play" [ref=f84e2389] [cursor=pointer]:
+                - generic [ref=f84e2394]: Play
+              - generic [ref=f84e2396] [cursor=pointer]:
+                - slider "seek" [ref=f84e2402]: "0"
+                - generic: en 0:00
+              - button "playback time" [ref=f84e2403]: 0:00 / 0:58
+              - button "unmute" [ref=f84e2404] [cursor=pointer]:
+                - generic [ref=f84e2409]: Unmute
+              - slider "volume" [ref=f84e2417] [cursor=pointer]: "0"
+              - button "enter fullscreen mode" [ref=f84e2418] [cursor=pointer]:
+                - generic [ref=f84e2423]: Enter fullscreen mode
+        - generic [ref=f84e2424]:
+          - generic [ref=f84e2425]: Introducing Objects of Desire
+          - generic [ref=f84e2426]: 1stDibs has launched our biweekly podcast in which we sit down with tastemakers and creative talents of all stripes to dish on that one special thing and why it matters most to them. Listen to Episode 7 and subscribe below.
+      - generic [ref=f84e2427]:
+        - generic [ref=f84e2429]:
+          - text: Introspective
+          - generic [ref=f84e2430]: Magazine
+        - generic [ref=f84e2431]:
+          - generic [ref=f84e2432]:
+            - generic [ref=f84e2433]: Impressive Contemporary Architecture Inspired Nicole Hollis’s Creative Interiors in This Beverly Hills Home
+            - link "Impressive Contemporary Architecture Inspired Nicole Hollis’s Creative Interiors in This Beverly Hills Home Read More" [ref=f84e2435] [cursor=pointer]:
+              - /url: /introspective-magazine/nicole-hollis-beverly-hills/
+              - generic [ref=f84e2439]:
+                - generic [ref=f84e2440]: Impressive Contemporary Architecture Inspired Nicole Hollis’s Creative Interiors in This Beverly Hills Home
+                - generic [ref=f84e2441]: Read More
+          - generic [ref=f84e2442]:
+            - generic [ref=f84e2443]: Presenting the 1stDibs Podcast
+            - 'link "The 1stDibs Podcast: Special Guest Elizabeth Gilbert Listen Now" [ref=f84e2445] [cursor=pointer]':
+              - /url: /introspective-magazine/objects-of-desire-podcast/
+              - generic [ref=f84e2449]:
+                - generic [ref=f84e2450]: "The 1stDibs Podcast: Special Guest Elizabeth Gilbert"
+                - generic [ref=f84e2451]: Listen Now
+      - generic [ref=f84e2452]:
+        - generic [ref=f84e2453]: Interior Designers
+        - generic [ref=f84e2456]:
+          - link "Indigo and Ochre Design" [ref=f84e2458] [cursor=pointer]:
+            - /url: /design-firms/cameron-design-group/
+          - link "The Archers" [ref=f84e2464] [cursor=pointer]:
+            - /url: /design-firms/the-archers/
+          - link "Stephen Sills Associates" [ref=f84e2470] [cursor=pointer]:
+            - /url: /design-firms/stephen-sills-associates/
+          - link "Katie Martinez Design" [ref=f84e2476] [cursor=pointer]:
+            - /url: /design-firms/katie-martinez-design/
+          - link "Connect with Interior Designers" [ref=f84e2482] [cursor=pointer]:
+            - /url: /design-firms/
+      - generic [ref=f84e2487]:
+        - generic [ref=f84e2488]:
+          - generic [ref=f84e2489]: 1stDibs Purchase Protection
+          - generic [ref=f84e2490]: Shop with confidence. We’ve got you.
+          - generic [ref=f84e2491]:
+            - generic [ref=f84e2492]: Authenticity Guaranteed
+            - generic [ref=f84e2497]: Money Back Guarantee
+            - generic [ref=f84e2502]: Price Matching
+            - generic [ref=f84e2507]: Sellers We Know and Trust
+            - generic [ref=f84e2512]: 24-Hour Cancellation
+            - generic [ref=f84e2517]: Protected Global Delivery
+        - link "Learn More" [ref=f84e2522] [cursor=pointer]:
+          - /url: /about/promise/
+      - generic [ref=f84e2523]:
+        - generic [ref=f84e2524]: In the Spotlight
+        - generic [ref=f84e2526]:
+          - generic [ref=f84e2528]:
+            - link "Most-Saved Items Most-Saved Items Shop the Collection" [ref=f84e2531] [cursor=pointer]:
+              - /url: /collections/most-saved-items/
+              - img "Most-Saved Items" [ref=f84e2532]
+              - generic [ref=f84e2533]: Most-Saved Items
+              - generic [ref=f84e2534]: Shop the Collection
+            - 'link "USA 250: A Living History USA 250: A Living History Shop the Collection" [ref=f84e2537] [cursor=pointer]':
+              - /url: /collections/usa-250/
+              - 'img "USA 250: A Living History" [ref=f84e2538]'
+              - generic [ref=f84e2539]: "USA 250: A Living History"
+              - generic [ref=f84e2540]: Shop the Collection
+            - link "Coastal Style Coastal Style Shop the Collection" [ref=f84e2543] [cursor=pointer]:
+              - /url: /collections/coastal-style/
+              - img "Coastal Style" [ref=f84e2544]
+              - generic [ref=f84e2545]: Coastal Style
+              - generic [ref=f84e2546]: Shop the Collection
+            - link "Tennis, Anyone? Tennis, Anyone? Shop the Collection" [ref=f84e2549] [cursor=pointer]:
+              - /url: /collections/tennis/
+              - img "Tennis, Anyone?" [ref=f84e2550]
+              - generic [ref=f84e2551]: Tennis, Anyone?
+              - generic [ref=f84e2552]: Shop the Collection
+            - link "The Zodiac Edit The Zodiac Edit Shop the Collection" [ref=f84e2555] [cursor=pointer]:
+              - /url: /collections/zodiac/
+              - img "The Zodiac Edit" [ref=f84e2556]
+              - generic [ref=f84e2557]: The Zodiac Edit
+              - generic [ref=f84e2558]: Shop the Collection
+          - button [ref=f84e2559] [cursor=pointer]
+      - generic [ref=f84e2565]:
+        - generic [ref=f84e2566]: Shop By
+        - generic [ref=f84e2569]:
+          - link "Time Periods" [ref=f84e2572] [cursor=pointer]:
+            - /url: /shop/periods/
+          - link "Furniture Creators" [ref=f84e2580] [cursor=pointer]:
+            - /url: /creators/furniture/
+          - link "Artists" [ref=f84e2588] [cursor=pointer]:
+            - /url: /creators/art/
+          - link "Jewelry Creators" [ref=f84e2596] [cursor=pointer]:
+            - /url: /creators/jewelry/
+          - link "Styles" [ref=f84e2604] [cursor=pointer]:
+            - /url: /shop/styles/
+          - link "Origins" [ref=f84e2612] [cursor=pointer]:
+            - /url: /shop/origins/
+          - link "Fashion Designers" [ref=f84e2620] [cursor=pointer]:
+            - /url: /creators/fashion/
+          - link "Materials" [ref=f84e2628] [cursor=pointer]:
+            - /url: /shop/materials/
+  - contentinfo [ref=f84e2635]:
+    - generic [ref=f84e2637]:
+      - generic [ref=f84e2639]:
+        - generic [ref=f84e2640]: Categories
+        - list "Categories" [ref=f84e2641]:
+          - listitem [ref=f84e2642]:
+            - link "Furniture" [ref=f84e2643] [cursor=pointer]:
+              - /url: /sitemap/furniture/
+          - listitem [ref=f84e2644]:
+            - link "Jewelry" [ref=f84e2645] [cursor=pointer]:
+              - /url: /sitemap/jewelry/
+          - listitem [ref=f84e2646]:
+            - link "Fine Art" [ref=f84e2647] [cursor=pointer]:
+              - /url: /sitemap/art/
+          - listitem [ref=f84e2648]:
+            - link "Fashion" [ref=f84e2649] [cursor=pointer]:
+              - /url: /sitemap/fashion/
+          - listitem [ref=f84e2650]:
+            - link "Creators" [ref=f84e2651] [cursor=pointer]:
+              - /url: /creators/furniture/
+          - listitem [ref=f84e2652]:
+            - link "Questions & Answers" [ref=f84e2653] [cursor=pointer]:
+              - /url: /answers/
+      - generic [ref=f84e2654]:
+        - generic [ref=f84e2655]:
+          - generic [ref=f84e2656]: Trade
+          - list "Trade" [ref=f84e2657]:
+            - listitem [ref=f84e2658]:
+              - link "Trade Program" [ref=f84e2659] [cursor=pointer]:
+                - /url: /trade/apply/
+        - generic [ref=f84e2661]:
+          - generic [ref=f84e2662]: Sellers
+          - list "Sellers" [ref=f84e2663]:
+            - listitem [ref=f84e2664]:
+              - link "Seller Application" [ref=f84e2665] [cursor=pointer]:
+                - /url: /dealer/application-form/
+            - listitem [ref=f84e2666]:
+              - link "Seller Login" [ref=f84e2667] [cursor=pointer]:
+                - /url: https://adminv2.1stdibs.com/login/dealer/
+            - listitem [ref=f84e2668]:
+              - link "Seller Directory" [ref=f84e2669] [cursor=pointer]:
+                - /url: /seller-directory/
+      - generic [ref=f84e2671]:
+        - generic [ref=f84e2672]: Our Company
+        - list "Our Company" [ref=f84e2673]:
+          - listitem [ref=f84e2674]:
+            - link "About Us" [ref=f84e2675] [cursor=pointer]:
+              - /url: /about/
+          - listitem [ref=f84e2676]:
+            - link "Press" [ref=f84e2677] [cursor=pointer]:
+              - /url: /about/press/
+          - listitem [ref=f84e2678]:
+            - link "Careers" [ref=f84e2679] [cursor=pointer]:
+              - /url: /about/careers/
+          - listitem [ref=f84e2680]:
+            - link "Investors" [ref=f84e2681] [cursor=pointer]:
+              - /url: https://investors.1stdibs.com/
+          - listitem [ref=f84e2682]:
+            - link "Reviews" [ref=f84e2683] [cursor=pointer]:
+              - /url: /about/1stdibs-reviews/
+      - generic [ref=f84e2685]:
+        - generic [ref=f84e2686]: Customer Support
+        - list "Customer Support" [ref=f84e2687]:
+          - listitem [ref=f84e2688]:
+            - button "Get Help" [ref=f84e2689] [cursor=pointer]
+          - listitem [ref=f84e2690]:
+            - link "Visit Support Center" [ref=f84e2691] [cursor=pointer]:
+              - /url: https://support.1stdibs.com/hc/en-us/
+          - listitem [ref=f84e2692]:
+            - link "1stDibs Promise" [ref=f84e2693] [cursor=pointer]:
+              - /url: /about/promise/
+      - generic [ref=f84e2695]:
+        - generic [ref=f84e2696]: Connect With Us
+        - list "Connect With Us" [ref=f84e2697]:
+          - generic [ref=f84e2698]:
+            - generic [ref=f84e2699]:
+              - paragraph [ref=f84e2700]: Sign up for weekly emails with new listings, sales and more!
+              - textbox "Yes, here's my email" [ref=f84e2706]
+              - button [ref=f84e2707] [cursor=pointer]
+            - generic [ref=f84e2710]:
+              - text: By entering your email, you agree to our
+              - link "User Agreement" [ref=f84e2711] [cursor=pointer]:
+                - /url: /about/user-agreement/
+              - text: and
+              - link "Privacy Policy" [ref=f84e2712] [cursor=pointer]:
+                - /url: /about/privacy-policy/
+          - listitem [ref=f84e2713]:
+            - list [ref=f84e2714]:
+              - listitem [ref=f84e2715]:
+                - link "Introspective Magazine" [ref=f84e2716] [cursor=pointer]:
+                  - /url: /introspective-magazine/
+              - listitem [ref=f84e2717]:
+                - link "The Study" [ref=f84e2718] [cursor=pointer]:
+                  - /url: /blogs/the-study/
+            - list [ref=f84e2719]:
+              - listitem [ref=f84e2720]:
+                - link "instagram" [ref=f84e2722] [cursor=pointer]:
+                  - /url: https://instagram.com/1stdibs/
+              - listitem [ref=f84e2727]:
+                - link "facebook" [ref=f84e2729] [cursor=pointer]:
+                  - /url: https://www.facebook.com/1stdibs
+              - listitem [ref=f84e2732]:
+                - link "pinterest" [ref=f84e2734] [cursor=pointer]:
+                  - /url: https://www.pinterest.com/1stdibs/
+              - listitem [ref=f84e2737]:
+                - link "Download on the App Store" [ref=f84e2738] [cursor=pointer]:
+                  - /url: https://1stdibs.onelink.me/w9Bb/cdd071e9
+    - generic [ref=f84e2744]:
+      - generic [ref=f84e2745]:
+        - generic [ref=f84e2746]:
+          - list [ref=f84e2747]:
+            - listitem [ref=f84e2748]: © 1stDibs.com, Inc. 2026
+            - listitem [ref=f84e2749]:
+              - link "User Agreement" [ref=f84e2750] [cursor=pointer]:
+                - /url: /about/user-agreement/
+            - listitem [ref=f84e2751]:
+              - link "Privacy Policy" [ref=f84e2752] [cursor=pointer]:
+                - /url: /about/privacy-policy/
+            - listitem [ref=f84e2753]: Do Not Sell or Share My Personal Information
+            - listitem [ref=f84e2754]:
+              - button "Cookie Preferences" [ref=f84e2755] [cursor=pointer]
+            - listitem [ref=f84e2756]:
+              - link "Site Map" [ref=f84e2757] [cursor=pointer]:
+                - /url: /sitemap/
+          - generic [ref=f84e2758]:
+            - generic [ref=f84e2759]: "Shop 1stDibs:"
+            - list [ref=f84e2760]:
+              - listitem [ref=f84e2761]:
+                - link "France" [ref=f84e2762] [cursor=pointer]:
+                  - /url: https://www.1stdibs.com/fr/
+                - text: "|"
+              - listitem [ref=f84e2763]:
+                - link "Germany" [ref=f84e2764] [cursor=pointer]:
+                  - /url: https://www.1stdibs.com/de/
+                - text: "|"
+              - listitem [ref=f84e2765]:
+                - link "Italy" [ref=f84e2766] [cursor=pointer]:
+                  - /url: https://www.1stdibs.com/it/
+                - text: "|"
+              - listitem [ref=f84e2767]:
+                - link "Spain" [ref=f84e2768] [cursor=pointer]:
+                  - /url: https://www.1stdibs.com/es/
+                - text: "|"
+              - listitem [ref=f84e2769]:
+                - link "United States" [ref=f84e2770] [cursor=pointer]:
+                  - /url: https://www.1stdibs.com
+          - generic [ref=f84e2771]:
+            - text: This site is protected by reCAPTCHA and the Google
+            - link "Privacy Policy" [ref=f84e2772] [cursor=pointer]:
+              - /url: https://policies.google.com/privacy
+            - text: and
+            - link "Terms of Service" [ref=f84e2773] [cursor=pointer]:
+              - /url: https://policies.google.com/terms
+            - text: apply.
+        - button "Display Settings" [ref=f84e2778] [cursor=pointer]:
+          - generic [ref=f84e2779]:
+            - generic [ref=f84e2782]: United States |
+            - generic [ref=f84e2783]: English (US) |
+            - generic [ref=f84e2784]: $ USD
+      - img "1stDibs" [ref=f84e2789]
+  - region "Cookie banner" [ref=f84e2791]:
+    - dialog "1stDibs Privacy Settings" [ref=f84e2792]:
+      - generic [ref=f84e2793]:
+        - generic [ref=f84e2795]:
+          - heading "1stDibs Privacy Settings" [level=2] [ref=f84e2796]
+          - generic [ref=f84e2797]:
+            - text: If you stay on this site, we and our vendors will process your information, including through cookies, pixels, and similar technologies, for the purposes in our
+            - link "Privacy Policy" [ref=f84e2798] [cursor=pointer]:
+              - /url: https://www.1stdibs.com/about/privacy-policy/
+            - text: and
+            - link "Cookie Policy" [ref=f84e2799] [cursor=pointer]:
+              - /url: https://support.1stdibs.com/hc/en-us/articles/14542897774875-Cookie-Policy?_ga=2.216992150.1280791421.1770839608-85446801.1744035297
+            - text: ", including to provide, analyze, and improve our services and personalize your experience and ads."
+        - generic [ref=f84e2801]:
+          - button "Manage Cookies" [ref=f84e2802] [cursor=pointer]
+          - button "Okay" [ref=f84e2804] [cursor=pointer]
+        - button [ref=f84e2806] [cursor=pointer]

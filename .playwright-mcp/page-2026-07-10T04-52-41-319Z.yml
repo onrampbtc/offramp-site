@@ -1,0 +1,346 @@
+- generic [ref=f140e2]:
+  - banner [ref=f140e4]:
+    - generic [ref=f140e6]:
+      - link "home" [ref=f140e7] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=f140e8]:
+        - link "Sell Coins & Bullion" [ref=f140e9] [cursor=pointer]:
+          - /url: /sell-gold/sell-coins-bullion-for-cash-lp
+        - link "How Selling Gold Works" [ref=f140e10] [cursor=pointer]:
+          - /url: /how-does-it-work
+        - link "Sell Luxury Watches" [ref=f140e11] [cursor=pointer]:
+          - /url: /watch-buyers
+        - link "Get Started" [ref=f140e12] [cursor=pointer]:
+          - /url: /free-appraisal
+  - generic [ref=f140e13]:
+    - generic [ref=f140e16]:
+      - generic [ref=f140e17]:
+        - generic [ref=f140e18]:
+          - heading "Sell Gold, Silver, Diamonds & Bullion" [level=1] [ref=f140e19]
+          - paragraph [ref=f140e20]: Request free shipping and get paid within 24 hours! A private transaction that’s safe, risk-free and easy to do.
+        - generic [ref=f140e22]:
+          - form "FormNewLead" [ref=f140e24]:
+            - generic [ref=f140e25]:
+              - paragraph [ref=f140e26]:
+                - text: How do you want to ship your items? >
+                - link "Learn More" [ref=f140e27] [cursor=pointer]:
+                  - /url: "#"
+              - generic [ref=f140e28]:
+                - generic [ref=f140e29] [cursor=pointer]:
+                  - radio "Fedex Mailer (Faster)" [checked] [ref=f140e31]
+                  - generic [ref=f140e32]: Fedex Mailer (Faster)
+                - generic [ref=f140e33] [cursor=pointer]:
+                  - radio "USPS Mailer (Fast)" [ref=f140e35]
+                  - generic [ref=f140e36]: USPS Mailer (Fast)
+                - generic [ref=f140e37] [cursor=pointer]:
+                  - radio "Fedex Label (Instant)" [ref=f140e39]
+                  - generic [ref=f140e40]: Fedex Label (Instant)
+            - generic [ref=f140e41]:
+              - paragraph [ref=f140e42]: Contact Information
+              - generic [ref=f140e43]:
+                - generic [ref=f140e44]:
+                  - generic [ref=f140e45]: First name *
+                  - textbox "First name *" [ref=f140e46]:
+                    - /placeholder: ""
+                - generic [ref=f140e47]:
+                  - generic [ref=f140e48]: Last name *
+                  - textbox "Last name *" [ref=f140e49]:
+                    - /placeholder: ""
+              - generic [ref=f140e50]:
+                - generic [ref=f140e51]:
+                  - generic [ref=f140e52]: Your email address *
+                  - textbox "Your email address *" [ref=f140e53]:
+                    - /placeholder: ""
+                - generic [ref=f140e54]:
+                  - generic [ref=f140e55]: Your phone number *
+                  - textbox "Your phone number *" [ref=f140e56]:
+                    - /placeholder: ""
+            - button "Get paid today" [ref=f140e57] [cursor=pointer]
+          - generic [ref=f140e58]:
+            - img "Free Appraisal Kit form" [ref=f140e59]
+            - paragraph [ref=f140e60]:
+              - strong [ref=f140e61]: Sign up now to receive a 10% Bonus !
+      - generic [ref=f140e62]:
+        - img "Cash for Gold USA" [ref=f140e63]
+        - generic [ref=f140e64]:
+          - paragraph [ref=f140e66]: Insured Shipments
+          - paragraph [ref=f140e68]: Free Overnight Shipping
+          - paragraph [ref=f140e70]: 3000+ 5-star reviews
+    - generic [ref=f140e72]:
+      - heading "We make selling gold, silver and diamonds simple." [level=2] [ref=f140e73]
+      - generic [ref=f140e74]:
+        - generic [ref=f140e75]:
+          - generic [ref=f140e76]:
+            - generic [ref=f140e77]: "01"
+            - heading "Submit Your Info" [level=3] [ref=f140e78]
+            - paragraph [ref=f140e79]: Enter your shipping details to receive a free, insured Appraisal Kit. This will ensure you get an offer quickly.
+          - img "Person using a computer" [ref=f140e81]
+        - generic [ref=f140e82]:
+          - generic [ref=f140e83]:
+            - generic [ref=f140e84]: "02"
+            - heading "Get a Certified Offer" [level=3] [ref=f140e85]
+            - paragraph [ref=f140e86]: Within 24 hours, our certified experts will appraise your valuables using the latest technology and send you an offer.
+          - img "Smiling woman in a suit jacket" [ref=f140e88]
+        - generic [ref=f140e89]:
+          - generic [ref=f140e90]:
+            - generic [ref=f140e91]: "03"
+            - heading "Get Paid" [level=3] [ref=f140e92]
+            - paragraph [ref=f140e93]: "Choose from instant payment options: PayPal, virtual credit card, print-at-home check, or check via USPS or FedEx."
+          - img "Woman throwing cash in the air" [ref=f140e95]
+      - iframe [ref=f140e97]:
+        - generic [ref=f141e1]:
+          - generic "YouTube Video Player" [ref=f141e3]
+          - generic [ref=f141e5]:
+            - generic:
+              - generic:
+                - button "Play video" [ref=f141e10] [cursor=pointer]
+                - button "Hide player controls" [ref=f141e12] [cursor=pointer]
+                - generic [ref=f141e14]:
+                  - generic [ref=f141e19]:
+                    - generic [ref=f141e20]:
+                      - link "Sell Gold, Get Cash Fast | Cash for Gold USA, Best Online Gold Buyer" [ref=f141e21] [cursor=pointer]:
+                        - /url: https://www.youtube.com/watch?v=YXNB7mB48EU
+                      - link "CashforGoldUSA" [ref=f141e22] [cursor=pointer]:
+                        - /url: /channel/UC9S6bkyiuUr_A8HJdqjzDIA
+                    - generic [ref=f141e24]:
+                      - button [ref=f141e25] [cursor=pointer]
+                      - generic [ref=f141e27]:
+                        - generic: CashforGoldUSA
+                        - generic: 1.07K subscribers
+                  - generic [ref=f141e28]:
+                    - button "Share" [ref=f141e31] [cursor=pointer]
+                    - link "Watch on YouTube" [ref=f141e42] [cursor=pointer]:
+                      - /url: https://www.youtube.com/watch?v=YXNB7mB48EU
+                      - generic [ref=f141e43]: Watch on
+    - generic [ref=f140e99]:
+      - heading "Your Trusted Partner" [level=2] [ref=f140e100]
+      - generic:
+        - img "Jewelers Mutual logo"
+        - img "Inc 500 logo"
+        - img "A+ BBB logo"
+        - img "Shopper Approved logo"
+        - img "Trustpilot logo"
+    - generic [ref=f140e102]:
+      - heading "Elevate Your Expectations" [level=2] [ref=f140e103]
+      - generic [ref=f140e104]:
+        - generic [ref=f140e105]:
+          - heading "A+ Rating BBB" [level=4] [ref=f140e106]
+          - paragraph [ref=f140e107]: Over 1,000 5-star reviews show Cash for Gold USA’s commitment to excellence.
+        - generic [ref=f140e108]:
+          - heading "Fully Insured" [level=4] [ref=f140e109]
+          - paragraph [ref=f140e110]: Receive up to $150,000 insurance on every shipment. See terms and conditions.
+        - generic [ref=f140e111]:
+          - heading "Accurate Appraisal" [level=4] [ref=f140e112]
+          - paragraph [ref=f140e113]: Our team of expert appraisers will carefully evaluate your items to ensure you receive the highest possible payout.
+    - heading "A Simple Way to Sell Gold, Silver, Diamonds & Luxury Watches" [level=2] [ref=f140e117]
+    - generic [ref=f140e119]:
+      - generic [ref=f140e120]:
+        - heading "Gold Calculator for Informational Purposes" [level=2] [ref=f140e121]
+        - paragraph [ref=f140e122]: This calculation is for informational purposes only and is not the amount you should expect to receive. It provides the highest melt value of the gold today and is not an estimate of what we will pay. Your offer will depend on your appraisal.
+      - generic [ref=f140e123]:
+        - tablist [ref=f140e124]:
+          - tab "Gold" [selected] [ref=f140e125] [cursor=pointer]
+          - tab "Silver" [ref=f140e127] [cursor=pointer]
+          - tab "Diamonds" [ref=f140e129] [cursor=pointer]
+        - tabpanel "Gold" [ref=f140e132]:
+          - generic [ref=f140e134]:
+            - form "Email Form" [ref=f140e135]:
+              - generic [ref=f140e136]:
+                - generic [ref=f140e137]:
+                  - radio "Troy Ounces" [checked] [ref=f140e139]
+                  - generic [ref=f140e140] [cursor=pointer]: Troy Ounces
+                - generic [ref=f140e142]:
+                  - radio "Grams" [ref=f140e144]
+                  - generic [ref=f140e145] [cursor=pointer]: Grams
+              - generic [ref=f140e146]:
+                - generic [ref=f140e147]:
+                  - generic [ref=f140e148]: Select the weight
+                  - generic [ref=f140e149]:
+                    - paragraph [ref=f140e150]: "25"
+                    - paragraph [ref=f140e151]: oz
+                - slider [ref=f140e152]: "1"
+                - generic [ref=f140e153]:
+                  - generic [ref=f140e154]:
+                    - paragraph [ref=f140e155]: "0.1"
+                    - paragraph [ref=f140e156]: oz
+                  - generic [ref=f140e157]:
+                    - paragraph [ref=f140e158]: "50"
+                    - paragraph [ref=f140e159]: oz
+              - generic [ref=f140e160]:
+                - generic [ref=f140e161]:
+                  - generic [ref=f140e162]: Select the karat
+                  - generic [ref=f140e163]:
+                    - paragraph [ref=f140e164]: "16"
+                    - paragraph [ref=f140e165]: K
+                - slider [ref=f140e166]: "14"
+                - generic [ref=f140e167]:
+                  - generic [ref=f140e168]:
+                    - paragraph [ref=f140e169]: "8"
+                    - paragraph [ref=f140e170]: K
+                  - generic [ref=f140e171]:
+                    - paragraph [ref=f140e172]: "24"
+                    - paragraph [ref=f140e173]: K
+              - link "Calculate" [ref=f140e174] [cursor=pointer]:
+                - /url: "#"
+            - generic [ref=f140e175]:
+              - generic [ref=f140e176]:
+                - paragraph [ref=f140e177]: Your gold melt value is
+                - paragraph [ref=f140e178]: $0.00
+              - generic [ref=f140e179]:
+                - paragraph [ref=f140e180]: Today’s price
+                - paragraph [ref=f140e181]: $0.00
+    - generic [ref=f140e183]:
+      - generic [ref=f140e184]:
+        - heading "Recently Purchased Pieces" [level=2] [ref=f140e185]
+        - paragraph [ref=f140e186]: Our guarantee is that if you are not satisfied with our offer for any reason, simply decline the offer and your items will be returned free of charge. No questions asked.
+      - list [ref=f140e188]:
+        - listitem [ref=f140e189]:
+          - paragraph [ref=f140e190]: 18k Gold Cuban
+          - paragraph [ref=f140e191]: $ 8,500.00
+        - listitem [ref=f140e192]:
+          - paragraph [ref=f140e193]: 14k Charm
+          - paragraph [ref=f140e194]: $ 467.88
+        - listitem [ref=f140e195]:
+          - paragraph [ref=f140e196]: 14k Charm
+          - paragraph [ref=f140e197]: $ 623.84
+    - region "carousel" [ref=f140e200]:
+      - group "1 of 4" [ref=f140e202]:
+        - generic [ref=f140e203]:
+          - paragraph [ref=f140e204]: Tiffani, West Orange, New Jersey
+          - heading "“Impressive! Professional! Contactless!! The Amazon Prime of the industry!”" [level=5] [ref=f140e205]
+          - link:
+            - /url: https://www.youtube.com/watch?v=X0y8Slj72qs&ab_channel=CashforGoldUSA
+          - link "open lightbox" [ref=f140e206] [cursor=pointer]:
+            - /url: "#"
+      - button "previous slide" [ref=f140e208] [cursor=pointer]
+      - button "next slide" [ref=f140e210] [cursor=pointer]
+      - generic [ref=f140e212]:
+        - button "Show slide 1 of 4" [pressed] [ref=f140e213] [cursor=pointer]
+        - button "Show slide 2 of 4" [ref=f140e214] [cursor=pointer]
+        - button "Show slide 3 of 4" [ref=f140e215] [cursor=pointer]
+        - button "Show slide 4 of 4" [ref=f140e216] [cursor=pointer]
+    - generic [ref=f140e220]:
+      - heading "A Letter from Our Founder" [level=2] [ref=f140e221]
+      - paragraph [ref=f140e222]: "We don't just deal in diamonds and precious metals; we uphold values of honor, trust, and respect. Our commitment is simple: we aim to provide a fair offer that truly reflects the value of your cherished items. We understand our offer might not always meet your expectations.Our promise is straightforward: if you're ever dissatisfied with our offer, no need for explanations or fine print. Just decline, and we'll return your items to you, no cost to you. We respect the sentimental value your items hold and want you to feel entirely at ease with your choices. Thank you for considering us as your trusted partner on this journey."
+    - heading "More Than 1 Million Customers" [level=2] [ref=f140e225]
+    - generic [ref=f140e228]:
+      - heading "Selling Gold FAQs" [level=2] [ref=f140e229]
+      - list [ref=f140e232]:
+        - listitem [ref=f140e233]:
+          - button [ref=f140e235] [cursor=pointer]:
+            - heading "How much does the appraisal cost?" [level=4] [ref=f140e236]
+        - listitem [ref=f140e237]:
+          - button [ref=f140e239] [cursor=pointer]:
+            - heading "Can I back out of this if I want to?" [level=4] [ref=f140e240]
+        - listitem [ref=f140e241]:
+          - button [ref=f140e243] [cursor=pointer]:
+            - heading "Are my items insured during transit?" [level=4] [ref=f140e244]
+        - listitem [ref=f140e245]:
+          - button [ref=f140e247] [cursor=pointer]:
+            - heading "If I decline my offer, will it cost me anything to get my items back?" [level=4] [ref=f140e248]
+        - listitem [ref=f140e249]:
+          - button [ref=f140e251] [cursor=pointer]:
+            - heading "Do you buy dental scrap? And is it safe to ship?" [level=4] [ref=f140e252]
+        - listitem [ref=f140e253]:
+          - button [ref=f140e255] [cursor=pointer]:
+            - heading "Do you buy silver or sterling silver?" [level=4] [ref=f140e256]
+        - listitem [ref=f140e257]:
+          - button [ref=f140e259] [cursor=pointer]:
+            - heading "Do you buy gold coins or silver coins?" [level=4] [ref=f140e260]
+        - listitem [ref=f140e261]:
+          - button [ref=f140e263] [cursor=pointer]:
+            - heading "Do you buy diamonds?" [level=4] [ref=f140e264]
+        - listitem [ref=f140e265]:
+          - button [ref=f140e267] [cursor=pointer]:
+            - heading "Is Cash for Gold USA legit?" [level=4] [ref=f140e268]
+        - listitem [ref=f140e269]:
+          - button [ref=f140e271] [cursor=pointer]:
+            - heading "What brands of luxury watches do you buy?" [level=4] [ref=f140e272]
+        - listitem [ref=f140e273]:
+          - button [ref=f140e275] [cursor=pointer]:
+            - heading "How long does it take to get paid?" [level=4] [ref=f140e276]
+        - listitem [ref=f140e277]:
+          - button [ref=f140e279] [cursor=pointer]:
+            - heading "What happens after I accept your offer?" [level=4] [ref=f140e280]
+        - listitem [ref=f140e281]:
+          - button [ref=f140e283] [cursor=pointer]:
+            - heading "How do payments work?" [level=4] [ref=f140e284]
+        - listitem [ref=f140e285]:
+          - button [ref=f140e287] [cursor=pointer]:
+            - heading "How do I know my material is safe and secure? What about when it gets to your facility?" [level=4] [ref=f140e288]
+        - listitem [ref=f140e289]:
+          - button [ref=f140e291] [cursor=pointer]:
+            - heading "What if I am not happy with my offer?" [level=4] [ref=f140e292]
+        - listitem [ref=f140e293]:
+          - button [ref=f140e295] [cursor=pointer]:
+            - heading "Can I ship in my valuables using my own packaging?" [level=4] [ref=f140e296]
+        - listitem [ref=f140e297]:
+          - button [ref=f140e299] [cursor=pointer]:
+            - heading "What if my material will not fit in the Safepak or FedEx Envelope?" [level=4] [ref=f140e300]
+        - listitem [ref=f140e301]:
+          - button [ref=f140e303] [cursor=pointer]:
+            - heading "Do you buy broken gold jewelry or other broken jewelry pieces?" [level=4] [ref=f140e304]
+        - listitem [ref=f140e305]:
+          - button [ref=f140e307] [cursor=pointer]:
+            - heading "What can I send into Cash for Gold USA?" [level=4] [ref=f140e308]
+  - generic [ref=f140e312]:
+    - generic [ref=f140e313]:
+      - generic [ref=f140e314]:
+        - heading "Follow us" [level=5] [ref=f140e315]
+        - generic [ref=f140e316]:
+          - link [ref=f140e317] [cursor=pointer]:
+            - /url: https://www.facebook.com/officialcash4gold
+          - link [ref=f140e318] [cursor=pointer]:
+            - /url: https://twitter.com/cashforgoldusa
+          - link [ref=f140e319] [cursor=pointer]:
+            - /url: https://www.youtube.com/user/CashforGoldUSA
+      - paragraph [ref=f140e320]: Give us a ring at (866) 300-1430or email us at info@cashforgoldusa.com.We're here and ready to chat, so feel free to hit us up with any questions!
+    - generic [ref=f140e321]:
+      - generic [ref=f140e322]:
+        - heading "Service" [level=5] [ref=f140e323]
+        - link "Sell Gold Now" [ref=f140e324] [cursor=pointer]:
+          - /url: /free-appraisal
+        - link "How Selling Gold Works" [ref=f140e325] [cursor=pointer]:
+          - /url: /how-does-it-work
+        - link "Free Jewelry Appraisal" [ref=f140e326] [cursor=pointer]:
+          - /url: /jewelry-appraisal
+        - link "Tracking" [ref=f140e327] [cursor=pointer]:
+          - /url: /tracking
+      - generic [ref=f140e328]:
+        - heading "Explore" [level=5] [ref=f140e329]
+        - link "Sell Gold" [ref=f140e330] [cursor=pointer]:
+          - /url: /sell-gold
+        - link "Sell Silver" [ref=f140e331] [cursor=pointer]:
+          - /url: /sell-silver
+        - link "Sell Diamonds" [ref=f140e332] [cursor=pointer]:
+          - /url: /sell-diamonds
+        - link "Sell Jewelry" [ref=f140e333] [cursor=pointer]:
+          - /url: /sell-jewelry
+        - link "Sell Platinum" [ref=f140e334] [cursor=pointer]:
+          - /url: https://cashforgoldusa.com/sell-platinum
+        - link "Sell Gold Coins & Bullion" [ref=f140e335] [cursor=pointer]:
+          - /url: https://cashforgoldusa.com/sell-gold-coins
+      - generic [ref=f140e336]:
+        - heading "Support" [level=5] [ref=f140e337]
+        - link "Contact Us" [ref=f140e338] [cursor=pointer]:
+          - /url: /about/contact-us
+        - link "FAQs" [ref=f140e339] [cursor=pointer]:
+          - /url: /about/faq
+        - link "Terms & Conditions" [ref=f140e340] [cursor=pointer]:
+          - /url: /terms
+        - link "Privacy Policy" [ref=f140e341] [cursor=pointer]:
+          - /url: /privacy-policy
+        - link "Safety and Security" [ref=f140e342] [cursor=pointer]:
+          - /url: /about/safety-and-security
+      - generic [ref=f140e343]:
+        - heading "About" [level=5] [ref=f140e344]
+        - link "Survey" [ref=f140e345] [cursor=pointer]:
+          - /url: /survey
+        - link "Gold Price Today" [ref=f140e346] [cursor=pointer]:
+          - /url: /gold-price
+        - link "About Us" [ref=f140e347] [cursor=pointer]:
+          - /url: /about
+        - link "Reviews" [ref=f140e348] [cursor=pointer]:
+          - /url: /reviews
+        - link "Affiliate Program" [ref=f140e349] [cursor=pointer]:
+          - /url: /affiliate-registration

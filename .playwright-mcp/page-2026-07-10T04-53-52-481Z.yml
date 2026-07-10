@@ -1,0 +1,255 @@
+- generic [active] [ref=f145e1]:
+  - region "We value your privacy" [ref=f145e2]:
+    - generic [ref=f145e3]:
+      - button "Close" [ref=f145e4] [cursor=pointer]
+      - generic [ref=f145e6]:
+        - heading "We value your privacy" [level=2] [ref=f145e7]
+        - generic [ref=f145e8]:
+          - paragraph [ref=f145e10]:
+            - text: We use cookies to enhance your browsing experience on our website. By continuing to use Worthy website, you consent to our use of cookie on your device.
+            - link "Privacy Policy" [ref=f145e11] [cursor=pointer]:
+              - /url: https://www.worthy.com/about/privacy-policy
+          - button [ref=f145e13] [cursor=pointer]
+  - navigation [ref=f145e15]:
+    - generic [ref=f145e16]:
+      - generic [ref=f145e25]:
+        - button "How it works" [ref=f145e26] [cursor=pointer]
+        - button "Explore" [ref=f145e29] [cursor=pointer]
+      - button "Log in" [ref=f145e31] [cursor=pointer]
+      - navigation
+  - generic [ref=f145e32]:
+    - img "background-image" [ref=f145e33]
+    - heading "How It Works" [level=1] [ref=f145e34]
+    - heading "How we help get you the most for your jewelry." [level=5] [ref=f145e35]
+  - generic [ref=f145e36]:
+    - generic [ref=f145e38]:
+      - generic [ref=f145e39]:
+        - heading "Giving you leverage over your diamonds sale" [level=2] [ref=f145e40]
+        - generic [ref=f145e41]: We believe that you should get the most for your valuables in as little time as possible, with as little effort as possible. Whether you need financing to run your small business, to plan for the future, or to go on a vacation, we are here for you.
+      - iframe [ref=f145e45]:
+        - generic [ref=f164e2]:
+          - generic: Playing in picture-in-picture
+          - generic:
+            - generic:
+              - button "Play" [ref=f164e10] [cursor=pointer]
+              - generic [ref=f164e14]:
+                - generic [ref=f164e15]:
+                  - slider "Progress Bar" [ref=f164e16] [cursor=pointer]
+                  - generic: 00:00
+                  - generic [ref=f164e20] [cursor=pointer]: 00:30
+                - generic [ref=f164e23]:
+                  - generic [ref=f164e24]:
+                    - button "Mute" [ref=f164e26] [cursor=pointer]
+                    - slider "Volume (use up/down arrow keys to change)"
+                  - button "Fullscreen" [ref=f164e29] [cursor=pointer]
+    - generic [ref=f145e49]:
+      - button "1 Fill Out the Form" [ref=f145e50] [cursor=pointer]:
+        - generic [ref=f145e51]:
+          - heading "1" [level=2] [ref=f145e52]
+          - generic [ref=f145e53]: Fill Out the Form
+      - button "2 Schedule Shipping" [ref=f145e57] [cursor=pointer]:
+        - generic [ref=f145e58]:
+          - heading "2" [level=2] [ref=f145e59]
+          - generic [ref=f145e60]: Schedule Shipping
+      - button "3 Prep for Sale" [ref=f145e64] [cursor=pointer]:
+        - generic [ref=f145e65]:
+          - heading "3" [level=2] [ref=f145e66]
+          - generic [ref=f145e67]: Prep for Sale
+      - button "4 Online Auction" [ref=f145e71] [cursor=pointer]:
+        - generic [ref=f145e72]:
+          - heading "4" [level=2] [ref=f145e73]
+          - generic [ref=f145e74]: Online Auction
+      - button "5 Get Paid" [ref=f145e78] [cursor=pointer]:
+        - generic [ref=f145e79]:
+          - heading "5" [level=2] [ref=f145e80]
+          - generic [ref=f145e81]: Get Paid
+    - generic [ref=f145e82]:
+      - generic [ref=f145e83]:
+        - img "Background" [ref=f145e84]
+        - generic [ref=f145e86]:
+          - heading "Fill Out the Form" [level=2] [ref=f145e87]
+          - generic [ref=f145e88]: In the online form, we'll ask you some basic questions about your jewelry, and ask you to upload a photo for our experts to review.
+      - generic [ref=f145e89]:
+        - img "Background" [ref=f145e90]
+        - generic [ref=f145e92]:
+          - heading "Schedule Shipping" [level=2] [ref=f145e93]
+          - paragraph [ref=f145e95]: We can arrange either shipping or drop-off of your items to our offices. You can choose from FedEx pickup, FedEx drop-off, or office drop-off. Shipping is fully covered by Worthy and fully insured by insurers at Lloyd's of London.
+      - generic [ref=f145e96]:
+        - img "Background" [ref=f145e97]
+        - generic [ref=f145e99]:
+          - heading "Prep for Sale" [level=2] [ref=f145e100]
+          - generic [ref=f145e101]:
+            - text: Our team of gemologists and 3rd party, objective graders will prepare your jewelry for auction by cleaning, grading, and photographing it for you in a way that attracts the attention of potential buyers.
+            - generic [ref=f145e102]:
+              - generic [ref=f145e103]: Cleaning
+              - generic [ref=f145e104]: We carefully remove any dirt or tarnish to make it sparkle.
+            - generic [ref=f145e105]:
+              - generic [ref=f145e106]: External grading
+              - generic [ref=f145e107]: Jewelry is inspected by objective industry-leading labs like GIA, GHI, and IGI. Watches are inspected by Central Watch.
+            - generic [ref=f145e108]:
+              - generic [ref=f145e109]: Beauty shots
+              - generic [ref=f145e110]: Your piece is professionally photographed from every angle so that buyers can get a closer look.
+      - generic [ref=f145e111]:
+        - img "Background" [ref=f145e112]
+        - generic [ref=f145e114]:
+          - heading "Online Auction" [level=2] [ref=f145e115]
+          - generic [ref=f145e116]:
+            - text: Once you set a reserve price and start your online auction, youʼll be able to watch the offers roll in.
+            - generic [ref=f145e117]:
+              - generic [ref=f145e118]: Reserve price
+              - generic [ref=f145e119]: A reserve price is the lowest amount you're willing to sell for. We'll recommend one for you based on the grading report and cleaning we perform for you. But you're in control – you can accept ours, or set your own reserve price.
+            - generic [ref=f145e120]:
+              - generic [ref=f145e121]: Auction listing
+              - generic [ref=f145e122]: We'll list your item with a detailed description, beauty shots, and the third-party grading report.
+            - generic [ref=f145e123]:
+              - generic [ref=f145e124]: Live auction
+              - generic [ref=f145e125]: Push the button, and your auction will be live for 48 to 72 hours. You can view your item and watch as offers are made.
+            - generic [ref=f145e126]:
+              - generic [ref=f145e127]: Buyer network
+              - generic [ref=f145e128]: Once live, the 1K+ professional industry buyers on our platform can view and bid on your item.
+      - generic [ref=f145e129]:
+        - img "Background" [ref=f145e130]
+        - generic [ref=f145e132]:
+          - heading "Get Paid" [level=2] [ref=f145e133]
+          - generic [ref=f145e134]:
+            - text: Once your item is sold, you'll get the final sale amount minus Worthy's fee, which is a percentage of the sale price.
+            - generic [ref=f145e135]:
+              - generic [ref=f145e136]: Payment method
+              - generic [ref=f145e137]: You can receive your payment via a bank transfer, PayPal or check. The choice is yours.
+            - generic [ref=f145e138]:
+              - generic [ref=f145e139]: Payment timeline
+              - generic [ref=f145e140]: Once the sale is complete and payment details have been provided, we collect payment from the buyer for your valuables and start processing your payment. As these are professional buyers, this can typically take anywhere from 9-14 business days before we issue the payment to you. We will always work as hard as we can to ensure you are paid as quickly as possible.
+              - generic [ref=f145e141]: "*Please note that a mailed check can take up to 10 business days to arrive"
+            - generic [ref=f145e142]:
+              - generic [ref=f145e143]: Worthy's fees
+              - generic [ref=f145e144]:
+                - text: Your only cost is Worthy's success fees. The fee is a percentage of your final selling price, so you know we're on your side and will work to get you the most money possible. And if your item doesn't meet the reserve price you set, we'll return it to you free of charge.
+                - table [ref=f145e145]:
+                  - rowgroup [ref=f145e146]:
+                    - row [ref=f145e147]:
+                      - columnheader "Winning bid" [ref=f145e148]
+                      - columnheader "Your Payout" [ref=f145e149]
+                      - columnheader "Our Fee" [ref=f145e150]
+                  - rowgroup [ref=f145e151]:
+                    - row [ref=f145e152]:
+                      - cell "Up to $5,000" [ref=f145e153]
+                      - cell "Up to $4,100" [ref=f145e154]
+                      - cell "18%" [ref=f145e155]
+                    - row [ref=f145e156]:
+                      - cell "$5,001 - $15,000" [ref=f145e157]
+                      - cell "$4,301 - $12,900" [ref=f145e158]
+                      - cell "14%" [ref=f145e159]
+                    - row [ref=f145e160]:
+                      - cell "$15,001 - $30,000" [ref=f145e161]
+                      - cell "$13,201 - $26,400" [ref=f145e162]
+                      - cell "12%" [ref=f145e163]
+                    - row [ref=f145e164]:
+                      - cell "$30,001 - above" [ref=f145e165]
+                      - cell "$27,001 - Above" [ref=f145e166]
+                      - cell "10%" [ref=f145e167]
+              - generic [ref=f145e168]: "** For Jewelry Box (3 or more items), a flat fee of 18%* applies."
+    - generic [ref=f145e170]:
+      - img "background-image" [ref=f145e171]
+      - generic [ref=f145e172]:
+        - heading "Ready to shine?" [level=2] [ref=f145e173]
+        - button "Get Started" [ref=f145e174] [cursor=pointer]
+  - generic [ref=f145e177]:
+    - generic [ref=f145e186]:
+      - heading "Still unsure?" [level=3] [ref=f145e187]
+      - generic [ref=f145e188]:
+        - generic [ref=f145e189]:
+          - paragraph [ref=f145e190]: We’d love to hear from you and answer any questions you may have!
+          - generic [ref=f145e191]:
+            - generic [ref=f145e192]:
+              - paragraph [ref=f145e193]: Text us
+              - link [ref=f145e195] [cursor=pointer]:
+                - /url: sms:+19175403974
+                - paragraph [ref=f145e196]: 1 (917) 540-3974
+              - generic [ref=f145e197]: By texting us, you consent to receive textmessages from Worthy at the mobile number youused to text. Message & Data rates may apply.Reply STOP anytime to opt-out.
+            - generic [ref=f145e199]:
+              - paragraph [ref=f145e200]: Call us
+              - link [ref=f145e202] [cursor=pointer]:
+                - /url: tel:+18882220208
+                - paragraph [ref=f145e203]: 1 (888) 222-0208
+              - paragraph [ref=f145e205]: On Mon-Fri - 9:00 am to 6:00 pm EST
+            - generic [ref=f145e206]:
+              - paragraph [ref=f145e207]: Headquarters
+              - paragraph [ref=f145e208]: 25 West 45th St., 2nd Floor, New York, NY 10036.
+        - generic [ref=f145e210]:
+          - button "facebook icon" [ref=f145e211] [cursor=pointer]
+          - button "instagram icon" [ref=f145e215] [cursor=pointer]
+          - button "youtube icon" [ref=f145e221] [cursor=pointer]
+          - button "linkedin icon" [ref=f145e226] [cursor=pointer]
+    - generic [ref=f145e230]:
+      - heading "Our Service" [level=5] [ref=f145e231]
+      - generic [ref=f145e232]:
+        - link "How it works" [ref=f145e233] [cursor=pointer]:
+          - /url: /how-it-works/
+        - link "FAQs" [ref=f145e234] [cursor=pointer]:
+          - /url: /faqs/
+        - link "Accepted jewelry" [ref=f145e235] [cursor=pointer]:
+          - /url: https://www.worthy.com/about/what-we-accept
+        - link "Selling safely" [ref=f145e236] [cursor=pointer]:
+          - /url: https://app.worthy.com/about/selling-with-trust
+        - link "Start selling" [ref=f145e237] [cursor=pointer]:
+          - /url: https://submit.worthy.com
+    - generic [ref=f145e238]:
+      - heading "Explore" [level=5] [ref=f145e239]
+      - generic [ref=f145e240]:
+        - link "Diamond grading" [ref=f145e241] [cursor=pointer]:
+          - /url: https://www.worthy.com/about/how-it-works/our-experts-and-labs
+        - link "Sell jewelry" [ref=f145e242] [cursor=pointer]:
+          - /url: https://www.worthy.com/sell-jewelry
+        - link "Sell diamond ring" [ref=f145e243] [cursor=pointer]:
+          - /url: https://www.worthy.com/sell-diamond-ring
+        - link "Sell engagement ring" [ref=f145e244] [cursor=pointer]:
+          - /url: https://www.worthy.com/sell-engagement-ring
+        - link "Sell wedding ring" [ref=f145e245] [cursor=pointer]:
+          - /url: https://www.worthy.com/sell-jewelry/wedding-ring
+        - link "Sell diamonds" [ref=f145e246] [cursor=pointer]:
+          - /url: https://www.worthy.com/sell-diamonds
+        - link "Sell watches" [ref=f145e247] [cursor=pointer]:
+          - /url: https://www.worthy.com/sell-watches
+        - link "Diamond appraisal" [ref=f145e248] [cursor=pointer]:
+          - /url: https://www.worthy.com/appraisal/diamonds
+        - link "Blog" [ref=f145e249] [cursor=pointer]:
+          - /url: https://blog.worthy.com
+    - generic [ref=f145e250]:
+      - heading "Business" [level=5] [ref=f145e251]
+      - generic [ref=f145e252]:
+        - link "Become a business seller" [ref=f145e253] [cursor=pointer]:
+          - /url: https://www.worthy.com/jewelers
+        - link "Become a buyer" [ref=f145e254] [cursor=pointer]:
+          - /url: https://www.worthy.com/buyers/registration
+        - link "Buyer login" [ref=f145e255] [cursor=pointer]:
+          - /url: https://www.worthy.com/buyers/registration#buyerLogin
+    - generic [ref=f145e256]:
+      - heading "Company" [level=5] [ref=f145e257]
+      - generic [ref=f145e258]:
+        - link "Contact us" [ref=f145e259] [cursor=pointer]:
+          - /url: /about/contact
+        - link "Reviews" [ref=f145e260] [cursor=pointer]:
+          - /url: /reviews/
+        - link "About us" [ref=f145e261] [cursor=pointer]:
+          - /url: https://www.worthy.com/about
+        - link "Careers" [ref=f145e262] [cursor=pointer]:
+          - /url: https://www.worthy.com/about/careers
+        - link "Certifications and licenses" [ref=f145e263] [cursor=pointer]:
+          - /url: https://www.worthy.com/about/certifications-licenses
+        - link "Do Not Sell My Info" [ref=f145e264] [cursor=pointer]:
+          - /url: /california-consumer-privacy-act
+        - link "Our buyers" [ref=f145e265] [cursor=pointer]:
+          - /url: https://www.worthy.com/about/how-it-works/worthy-buyer-network
+        - link "Press" [ref=f145e266] [cursor=pointer]:
+          - /url: https://www.worthy.com/about/worthy-press
+        - link "Promotions" [ref=f145e267] [cursor=pointer]:
+          - /url: https://www.worthy.com/promotions
+        - link "Scholarship" [ref=f145e268] [cursor=pointer]:
+          - /url: https://www.worthy.com/about/scholarship
+        - link "Terms and conditions" [ref=f145e269] [cursor=pointer]:
+          - /url: https://www.worthy.com/about/terms-and-conditions
+        - link "Privacy policy" [ref=f145e270] [cursor=pointer]:
+          - /url: https://www.worthy.com/about/privacy-policy
+    - generic [ref=f145e271]: ©2011-2026 Worthy, Inc. All rights reserved.
+  - alert [ref=f145e273]
+  - button "Open chat" [ref=f145e278] [cursor=pointer]

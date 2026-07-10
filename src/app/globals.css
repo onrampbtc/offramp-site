@@ -12,23 +12,23 @@
 
 @theme inline {
   /* Paper & surfaces */
-  --color-bg: #F7F2E7;             /* page (estate paper) */
-  --color-paper: #F7F2E7;
+  --color-bg: #F6F2E9;             /* page (estate paper) */
+  --color-paper: #F6F2E9;
   --color-raise: #FFFFFF;          /* cards */
   --color-bg-card: #FFFFFF;
-  --color-bg-card-hover: #FCF8EF;
+  --color-bg-card-hover: #FBF8F1;
 
   /* Ink (text) */
-  --color-ink: #241F15;
+  --color-ink: #232019;
   --color-ink-2: #756C58;
   --color-ink-3: #98917D;
-  --color-cream: #241F15;                       /* legacy text color → ink */
-  --color-cream-60: rgba(36, 31, 21, 0.74);
-  --color-cream-45: rgba(36, 31, 21, 0.58);
-  --color-cream-35: rgba(36, 31, 21, 0.46);
-  --color-cream-25: rgba(36, 31, 21, 0.34);
-  --color-cream-15: rgba(36, 31, 21, 0.15);     /* hairline borders */
-  --color-cream-08: rgba(36, 31, 21, 0.07);     /* soft washes / dividers */
+  --color-cream: #232019;                       /* legacy text color → ink */
+  --color-cream-60: rgba(35, 32, 25, 0.74);
+  --color-cream-45: rgba(35, 32, 25, 0.58);
+  --color-cream-35: rgba(35, 32, 25, 0.46);
+  --color-cream-25: rgba(35, 32, 25, 0.34);
+  --color-cream-15: rgba(35, 32, 25, 0.15);     /* hairline borders */
+  --color-cream-08: rgba(35, 32, 25, 0.07);     /* soft washes / dividers */
 
   /* Hairlines */
   --color-line: #EAE2D0;
@@ -39,8 +39,8 @@
   --color-gold-100: #F0E6C8;
   --color-gold-200: #DDCB94;
   --color-gold-300: #C4A94F;
-  --color-gold-400: #8A6D1F;       /* accent text on light */
-  --color-gold-500: #8A6D1F;
+  --color-gold-400: #A98D4B;       /* accent text on light */
+  --color-gold-500: #A98D4B;
   --color-gold-600: #B8941F;       /* stars, small marks */
   --color-gold-700: #6E5719;
   --color-gold-800: #574513;
@@ -48,15 +48,15 @@
   --color-gold-mark: #B8941F;
 
   /* Data colors */
-  --color-teal: #2F6D5E;           /* value-up, positive */
-  --color-coral: #AC4E28;          /* warnings, pawn comparisons */
+  --color-teal: #3E6152;           /* value-up, positive */
+  --color-coral: #7A3B2E;          /* warnings, pawn comparisons */
 
   /* Instrument panel + dark room */
   --color-panel: #171410;
-  --color-panel-2: #0B0A08;        /* /gold-to-bitcoin page bg */
+  --color-panel-2: #16130E;        /* /gold-to-bitcoin page bg */
   --color-panel-ink: #EDE5CF;
   --color-panel-mut: #8D8674;
-  --color-gold-brt: #C9A84C;       /* gold on dark only */
+  --color-gold-brt: #D9BC82;       /* gold on dark only */
 
   /* Type */
   --font-display: var(--font-cormorant), Georgia, serif;
@@ -67,15 +67,15 @@
 html { scroll-behavior: smooth; }
 
 body {
-  background-color: #F7F2E7;
-  color: #241F15;
+  background-color: #F6F2E9;
+  color: #232019;
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
 }
 
 ::selection {
   background-color: rgba(184, 148, 31, 0.25);
-  color: #241F15;
+  color: #232019;
 }
 
 /* Every number on the site is tabular mono (spec §4) */
@@ -86,7 +86,7 @@ body {
   Class names kept as inert, estate-paper-sane fallbacks so existing pages
   keep compiling until each is rebuilt on the new templates.
 */
-.text-gold-shimmer { color: #8A6D1F; }         /* was animated gradient text */
+.text-gold-shimmer { color: #A98D4B; }         /* was animated gradient text */
 .glow-gold, .glow-gold-strong { box-shadow: none; }
 .border-gold-gradient {
   border: 1px solid #CFC5AD;
@@ -122,6 +122,6 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="number"] { -moz-appearance: textfield; }
 
 ::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: #F7F2E7; }
+::-webkit-scrollbar-track { background: #F6F2E9; }
 ::-webkit-scrollbar-thumb { background: #CFC5AD; border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: #B8941F; }

@@ -1,0 +1,249 @@
+- generic [ref=f56e2]:
+  - banner [ref=f56e3]:
+    - generic [ref=f56e4]:
+      - link [ref=f56e6] [cursor=pointer]:
+        - /url: https://vaulted.com/
+        - img "Vaulted" [ref=f56e7]
+      - navigation [ref=f56e8]:
+        - list [ref=f56e9]:
+          - listitem [ref=f56e10]:
+            - link "Why Vaulted?" [ref=f56e11] [cursor=pointer]:
+              - /url: https://vaulted.com/why-vaulted/
+          - listitem [ref=f56e12]:
+            - link "Why Gold?" [ref=f56e13] [cursor=pointer]:
+              - /url: https://vaulted.com/invest-in-gold/
+          - listitem [ref=f56e14]:
+            - link "Why Silver?" [ref=f56e15] [cursor=pointer]:
+              - /url: https://vaulted.com/why-silver/
+          - listitem [ref=f56e16]:
+            - link "VaultPlan" [ref=f56e17] [cursor=pointer]:
+              - /url: https://vaulted.com/vaultplan/
+          - listitem [ref=f56e18]:
+            - link "FAQ" [ref=f56e19] [cursor=pointer]:
+              - /url: https://vaulted.com/faq/
+          - listitem [ref=f56e20]:
+            - link "Insights" [ref=f56e21] [cursor=pointer]:
+              - /url: "#"
+            - list:
+              - listitem:
+                - link "Vaulted News":
+                  - /url: https://vaulted.com/news/
+              - listitem:
+                - link "Golden Nuggets":
+                  - /url: https://vaulted.com/golden-nuggets/
+      - generic [ref=f56e22]:
+        - link "Login" [ref=f56e23] [cursor=pointer]:
+          - /url: https://secure.vaulted.com/login
+        - link "Sign Up" [ref=f56e24] [cursor=pointer]:
+          - /url: https://secure.vaulted.com/signup
+  - main [ref=f56e25]:
+    - generic [ref=f56e26]:
+      - generic:
+        - generic:
+          - img "King Tut Hand"
+      - generic [ref=f56e29]:
+        - heading "The asset that built empires, now builds yours" [level=1] [ref=f56e30]:
+          - generic [ref=f56e31]: The
+          - generic [ref=f56e32]: asset
+          - generic [ref=f56e33]: that
+          - generic [ref=f56e34]: built
+          - generic [ref=f56e35]: empires,
+          - generic [ref=f56e36]: now
+          - generic [ref=f56e37]: builds
+          - generic [ref=f56e38]: yours
+        - paragraph [ref=f56e39]: Pharaohs stacked it. You can too. Real gold. Real ownership. Just a tap away.
+        - link "Buy Gold" [ref=f56e40] [cursor=pointer]:
+          - /url: https://auth.vaulted.com/login?state=hKFo2SBDaXdzRXZsTV8yYjZRbV9zOGxQZjRfbjA2S2czajRJZKFupWxvZ2luo3RpZNkgcmxFRV8wSzVsSjZsR0FzNURueS1NSzBhbm4zMmtPaTSjY2lk2SBDWmNyNVZBMlUzVTRrT003N0VjTzN4djFGVGxsbTB5Mw&client=CZcr5VA2U3U4kOM77EcO3xv1FTllm0y3&protocol=oauth2&prompt=login&scope=openid%20offline_access%20email%20profile&response_type=code&redirect_uri=https%3A%2F%2Fsecure.vaulted.com%2Fapi%2Fauth%2Fcallback&audience=https%3A%2F%2Fapi.vaulted.com%2Fv4%2F&action=signUp&ui_locales=en&clickId=&giftCardCode=&login_hint=&advisor=&nonce=Qr0337z8-0KXlyFAUol0zpZd1L8Cio5ozTUjayhmvBo&code_challenge=Et4UDWqlZu1kDTjQ0hIcY3BYaqr-80Q-4Mj_4GFRPiQ&code_challenge_method=S256
+        - generic [ref=f56e41]:
+          - link [ref=f56e42] [cursor=pointer]:
+            - /url: https://apps.apple.com/us/app/vaulted-buy-gold-silver/id1559580059
+            - img "Download on the App Store" [ref=f56e43]
+          - link [ref=f56e44] [cursor=pointer]:
+            - /url: https://play.google.com/store/apps/details?id=com.vaulted.vaulted
+            - img "Get it on Google Play" [ref=f56e45]
+    - generic [ref=f56e46]:
+      - generic [ref=f56e50]:
+        - generic [ref=f56e51]:
+          - img "Morningstar" [ref=f56e52]
+          - img "Bloomberg" [ref=f56e53]
+          - img "Business Insider" [ref=f56e54]
+          - img "The New York Times" [ref=f56e55]
+          - img "Yahoo Finance" [ref=f56e56]
+        - generic [ref=f56e57]:
+          - img "Morningstar" [ref=f56e58]
+          - img "Bloomberg" [ref=f56e59]
+          - img "Business Insider" [ref=f56e60]
+          - img "The New York Times" [ref=f56e61]
+          - img "Yahoo Finance" [ref=f56e62]
+      - generic [ref=f56e63]:
+        - img "Pirates Background" [ref=f56e65]
+        - generic [ref=f56e67]:
+          - heading "If you win gold, you should win gold" [level=2] [ref=f56e68]:
+            - generic [ref=f56e69]: If
+            - generic [ref=f56e70]: you
+            - generic [ref=f56e71]: win
+            - generic [ref=f56e72]: gold,
+            - generic [ref=f56e73]: you
+            - generic [ref=f56e74]: should
+            - generic [ref=f56e75]: win
+            - generic [ref=f56e76]: gold
+          - link "LEARN MORE" [ref=f56e77] [cursor=pointer]:
+            - /url: https://parade.com/entertainment/olympians-real-gold-1912-lauryn-williams-exclusive
+      - generic [ref=f56e79]:
+        - heading "Getting gold used to take an army. Now it's at your fingertips." [level=2] [ref=f56e80]:
+          - generic [ref=f56e81]:
+            - generic [ref=f56e82]: Getting
+            - generic [ref=f56e83]: gold
+            - generic [ref=f56e84]: used
+            - generic [ref=f56e85]: to
+            - generic [ref=f56e86]: take
+            - generic [ref=f56e87]: an
+            - generic [ref=f56e88]: army.
+          - generic [ref=f56e89]:
+            - generic [ref=f56e90]: Now
+            - generic [ref=f56e91]: it's
+            - generic [ref=f56e92]: at
+            - generic [ref=f56e93]: your
+            - generic [ref=f56e94]: fingertips.
+        - paragraph [ref=f56e95]: See how easy it is.
+        - button "Play video" [ref=f56e97] [cursor=pointer]:
+          - img "Getting gold video thumbnail" [ref=f56e98]
+          - img "Play" [ref=f56e100]
+      - generic [ref=f56e102]:
+        - generic [ref=f56e103]:
+          - generic [ref=f56e105]:
+            - heading "Ownership, down to the ounce." [level=3] [ref=f56e106]:
+              - generic [ref=f56e107]: Ownership,
+              - generic [ref=f56e108]: down
+              - generic [ref=f56e109]: to
+              - generic [ref=f56e110]: the
+              - generic [ref=f56e111]: ounce.
+            - paragraph [ref=f56e112]: Every bar is real, personal, and fully yours. Tracked by serial number, stored securely, you can take delivery of it at any time. If your microwave has a serial number, your wealth should too.
+          - generic [ref=f56e113]:
+            - button "Previous" [ref=f56e114] [cursor=pointer]
+            - button "Next" [ref=f56e117] [cursor=pointer]
+          - link "Get Gold" [ref=f56e120] [cursor=pointer]:
+            - /url: https://auth.vaulted.com/login?state=hKFo2SBDaXdzRXZsTV8yYjZRbV9zOGxQZjRfbjA2S2czajRJZKFupWxvZ2luo3RpZNkgcmxFRV8wSzVsSjZsR0FzNURueS1NSzBhbm4zMmtPaTSjY2lk2SBDWmNyNVZBMlUzVTRrT003N0VjTzN4djFGVGxsbTB5Mw&client=CZcr5VA2U3U4kOM77EcO3xv1FTllm0y3&protocol=oauth2&prompt=login&scope=openid%20offline_access%20email%20profile&response_type=code&redirect_uri=https%3A%2F%2Fsecure.vaulted.com%2Fapi%2Fauth%2Fcallback&audience=https%3A%2F%2Fapi.vaulted.com%2Fv4%2F&action=signUp&ui_locales=en&clickId=&giftCardCode=&login_hint=&advisor=&nonce=Qr0337z8-0KXlyFAUol0zpZd1L8Cio5ozTUjayhmvBo&code_challenge=Et4UDWqlZu1kDTjQ0hIcY3BYaqr-80Q-4Mj_4GFRPiQ&code_challenge_method=S256
+        - generic [ref=f56e121]:
+          - img "Vaulted App Screen" [ref=f56e131] [cursor=pointer]
+          - generic [ref=f56e135]:
+            - img "Vaulted App Screen" [ref=f56e141] [cursor=pointer]
+            - img "Vaulted App Screen" [ref=f56e144] [cursor=pointer]
+          - generic [ref=f56e148]:
+            - img "Vaulted App Screen" [ref=f56e154] [cursor=pointer]
+            - img "Vaulted App Screen" [ref=f56e157] [cursor=pointer]
+      - generic [ref=f56e162]:
+        - heading "Analyst Reviews" [level=2] [ref=f56e163]
+        - generic [ref=f56e165]:
+          - button "Previous review" [ref=f56e166] [cursor=pointer]
+          - generic [ref=f56e170]:
+            - img "Finty" [ref=f56e171]
+            - blockquote [ref=f56e172]: “If you want to save in gold, protect your wealth, and diversify your portfolio, Vaulted offers a unique method of investing in ‘the yellow metal.”
+            - generic [ref=f56e173]:
+              - img "Andrew Boyd" [ref=f56e174]
+              - paragraph [ref=f56e175]:
+                - strong [ref=f56e176]: Andrew Boyd
+                - text: / Managing Director
+          - button "Next review" [ref=f56e188] [cursor=pointer]
+      - generic [ref=f56e195]:
+        - heading "VaultPlan" [level=2] [ref=f56e196]
+        - paragraph [ref=f56e198]: Set it. Forget it. Stay golden.
+        - paragraph [ref=f56e199]: VaultPlan automates your gold and silver purchases so your portfolio grows on autopilot. You choose the amount and schedule. Vaulted takes care of the rest.
+        - link "Get Stacking" [ref=f56e200] [cursor=pointer]:
+          - /url: https://auth.vaulted.com/login?state=hKFo2SBDaXdzRXZsTV8yYjZRbV9zOGxQZjRfbjA2S2czajRJZKFupWxvZ2luo3RpZNkgcmxFRV8wSzVsSjZsR0FzNURueS1NSzBhbm4zMmtPaTSjY2lk2SBDWmNyNVZBMlUzVTRrT003N0VjTzN4djFGVGxsbTB5Mw&client=CZcr5VA2U3U4kOM77EcO3xv1FTllm0y3&protocol=oauth2&prompt=login&scope=openid%20offline_access%20email%20profile&response_type=code&redirect_uri=https%3A%2F%2Fsecure.vaulted.com%2Fapi%2Fauth%2Fcallback&audience=https%3A%2F%2Fapi.vaulted.com%2Fv4%2F&action=signUp&ui_locales=en&clickId=&giftCardCode=&login_hint=&advisor=&nonce=Qr0337z8-0KXlyFAUol0zpZd1L8Cio5ozTUjayhmvBo&code_challenge=Et4UDWqlZu1kDTjQ0hIcY3BYaqr-80Q-4Mj_4GFRPiQ&code_challenge_method=S256
+  - contentinfo [ref=f56e201]:
+    - generic [ref=f56e202]:
+      - generic [ref=f56e203]:
+        - heading "The only newsletter worth its weight" [level=2] [ref=f56e204]:
+          - generic [ref=f56e205]: The
+          - generic [ref=f56e206]: only
+          - generic [ref=f56e207]: newsletter
+          - generic [ref=f56e208]: worth
+          - generic [ref=f56e209]: its
+          - generic [ref=f56e210]: weight
+        - paragraph [ref=f56e211]: Ancient wisdom. Modern moves. Straight to your inbox.
+        - generic [ref=f56e213]:
+          - generic [ref=f56e215]:
+            - group [ref=f56e216]:
+              - textbox "First Name" [ref=f56e220]:
+                - /placeholder: First name
+            - group [ref=f56e221]:
+              - textbox "Last Name" [ref=f56e225]:
+                - /placeholder: Last name
+            - generic [ref=f56e226]:
+              - generic [ref=f56e227]: Email
+              - textbox "Email" [ref=f56e229]:
+                - /placeholder: Email Address
+          - button "Submit" [ref=f56e231] [cursor=pointer]
+      - img "King Tut"
+    - generic [ref=f56e234]:
+      - generic [ref=f56e235]:
+        - generic [ref=f56e236]:
+          - paragraph [ref=f56e237]:
+            - text: Vaulted LLC
+            - strong [ref=f56e238]: "Offices:"
+            - text: 166 Turner Drive Durango, CO 81303
+            - strong [ref=f56e239]: "Mailing Address:"
+            - text: "361 S Camino Del Rio #216 Durango, CO 81303-7997"
+          - paragraph [ref=f56e240]: Vaulted is backed by McAlvany Financial Group, one of the largest and longest continuously operating full-service gold brokerage firms in the United States.
+        - list [ref=f56e242]:
+          - listitem [ref=f56e243]:
+            - link "Why Silver?" [ref=f56e244] [cursor=pointer]:
+              - /url: https://vaulted.com/why-silver/
+          - listitem [ref=f56e245]:
+            - link "Current Silver Price" [ref=f56e246] [cursor=pointer]:
+              - /url: https://vaulted.com/current-silver-price/
+          - listitem [ref=f56e247]:
+            - link "Why Gold?" [ref=f56e248] [cursor=pointer]:
+              - /url: https://vaulted.com/why-gold/
+          - listitem [ref=f56e249]:
+            - link "Current Gold Price" [ref=f56e250] [cursor=pointer]:
+              - /url: https://vaulted.com/current-gold-price/
+          - listitem [ref=f56e251]:
+            - link "Why Vaulted?" [ref=f56e252] [cursor=pointer]:
+              - /url: https://vaulted.com/why-vaulted/
+          - listitem [ref=f56e253]:
+            - link "FAQ" [ref=f56e254] [cursor=pointer]:
+              - /url: https://vaulted.com/faq/
+          - listitem [ref=f56e255]:
+            - link "Audits" [ref=f56e256] [cursor=pointer]:
+              - /url: https://vaulted.com/audits/
+          - listitem [ref=f56e257]:
+            - link "VaultPlan" [ref=f56e258] [cursor=pointer]:
+              - /url: https://vaulted.com/vaultplan/
+        - generic [ref=f56e259]:
+          - paragraph [ref=f56e260]: "Phone: 844.288.8024"
+          - paragraph [ref=f56e261]: "Email: info@vaulted.com"
+          - paragraph [ref=f56e262]: "Follow the King to Wealth:"
+          - generic [ref=f56e263]:
+            - link "Facebook" [ref=f56e264] [cursor=pointer]:
+              - /url: https://www.facebook.com/vaultedapp
+            - link "Instagram" [ref=f56e267] [cursor=pointer]:
+              - /url: https://www.instagram.com/vaultedapp/
+            - link "X (Twitter)" [ref=f56e270] [cursor=pointer]:
+              - /url: https://twitter.com/VaultedGoldApp
+            - link "TikTok" [ref=f56e273] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@vaultedapp
+            - link "YouTube" [ref=f56e276] [cursor=pointer]:
+              - /url: https://www.youtube.com/@vaultedgold
+        - generic [ref=f56e279]:
+          - paragraph [ref=f56e280]: © 2026 Vaulted. All rights reserved.
+          - paragraph [ref=f56e281]: Vaulted is a McAlvany Financial Group company
+          - paragraph [ref=f56e282]:
+            - link "Privacy Policy" [ref=f56e283] [cursor=pointer]:
+              - /url: https://vaulted.com/privacy/
+          - paragraph [ref=f56e284]:
+            - link "Terms of Use" [ref=f56e285] [cursor=pointer]:
+              - /url: https://vaulted.com/terms/
+      - generic [ref=f56e286]:
+        - img "ICTA Member"
+        - img "BBB Accredited Business"
+      - generic [ref=f56e287]:
+        - img "Vaulted" [ref=f56e289]
+        - generic [ref=f56e290]:
+          - link "Download on the App Store" [ref=f56e291] [cursor=pointer]:
+            - /url: https://apps.apple.com/us/app/vaulted-buy-gold-silver/id1559580059
+            - img "Download on the App Store" [ref=f56e292]
+          - link "Get it on Google Play" [ref=f56e293] [cursor=pointer]:
+            - /url: https://play.google.com/store/apps/details?id=com.vaulted.vaulted
+            - img "Get it on Google Play" [ref=f56e294]

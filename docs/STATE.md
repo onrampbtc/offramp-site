@@ -50,6 +50,7 @@ Next milestones: M2 estimate flow → M3 money pages → M4 vault → M5 lane 2 
 ## Satellites
 - **gold-domains** repo (`~/Desktop/gold-domains`): ● **deploys healed + restructure LIVE (2026-07-10)** — goldtobtc.com 308→offrampgold.com/gold-to-bitcoin · goldbuyer.io/reviews 308→touchstonereport.com · goldbuyer /gold-price per-karat + Dataset JSON-LD serving · gold-buyer builds Ready in ~37s on push.
 - goldvsbitcoin.org repoint to /learn/ = wk 7–8 (M5). goldbuyer.io ranking site = Phase 2, month 4+.
+- GSC setup: DNS verification TXT records are live for `offrampgold.com`, `goldbuyer.io`, `goldvsbitcoin.org`, and `touchstonereport.com`; each `/sitemap.xml` returns 200. Next: confirm sitemap submission status inside Search Console and request indexing for priority pages.
 
 ## Shipped log
 - 2026-07-10 (night): **Glossary 581/581 COMPLETE** — every goldvsbitcoin term now has a full explanation (batches 1-9 + premium top-60 winning overlaps), zero mutation failures; 168 stranded drafts from the session-limit interruption found and cleaned. Live pages roll over as ISR revalidates (≤1h).

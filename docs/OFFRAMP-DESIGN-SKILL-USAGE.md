@@ -1,39 +1,46 @@
-# How to use the Offramp Design Skill (SAFE build)
+# Offramp Design Stack — usage guide
 
-**What this is.** A source-verified replacement for the deleted `offramp_design_skills_report.md` (a Perplexity research doc, removed 2026-07-09 because its 30+ third-party web citations were unverifiable and a potential prompt-injection surface). Everything in the skill was re-verified against primary sources (official GitHub READMEs + GitHub API) before inclusion; the verification log is in the skill's appendix.
+**The master file is `.claude/skills/offramp-design/SKILL.md`** ("offramp-design"). Claude Code auto-loads it in this repo — you never invoke it manually; it triggers on any design/brand/logo/aesthetic work and routes to the right specialist. Six audited skills are installed under `.claude/skills/` (audit log in the master file's appendix):
 
-**Where it lives.** `.claude/skills/offramp-design/SKILL.md` — Claude Code auto-detects project skills in this directory, so in this repo there is nothing to load manually. It triggers on any design/aesthetic/brand/polish/QA work.
+| Skill | What it's for |
+|---|---|
+| `offramp-design` | Orchestrator — precedence, gates, aesthetic-status ground truth |
+| `impeccable` | Primary design driver + 23 commands + deterministic anti-slop detector |
+| `brandkit` | Logo systems, brand-guideline boards, identity decks |
+| `high-end-visual-design` | "Expensive/premium" register specialist |
+| `redesign-existing-projects` | Audit-first upgrades of existing pages |
+| `web-design-guidelines` / `react-best-practices` | Pre-ship a11y/UX and perf gates |
 
-## Loading it elsewhere
+**Ground rule the orchestrator enforces:** Estate Paper is the incumbent, not locked. Skills propose; you pick. Nothing ships to a new direction until you choose it, and once you do, BUILD-SPEC §4 + CLAUDE.md get updated to the new canon.
 
-- **Another Claude Code project:** copy the folder to that repo's `.claude/skills/offramp-design/`, or to `~/.claude/skills/offramp-design/` to make it personal/global (e.g. for the `gold-domains` satellites repo).
-- **Codex:** copy to `.agents/skills/offramp-design/SKILL.md` (project) or paste the body into the repo's `AGENTS.md`. Restart Codex to discover it.
-- **claude.ai / other agents:** paste the SKILL.md body at the top of the conversation as standing instructions.
+## How to prompt Claude Code, by job
 
-## What it does
+**Brand direction (start here):**
+> "We're rethinking the Offramp brand aesthetic — Estate Paper is the incumbent but I'm not happy with it. Propose 3 distinct art directions for a premium, trustworthy consumer gold-buying brand. For each: 4–6 named hex colors, display/body/utility type pairing, one-sentence layout concept with ASCII wireframe, one signature element. Plans only, no code. Critique each for generic-AI-default tells before showing me."
 
-1. **Locks precedence:** BUILD-SPEC §4 / CLAUDE.md canon → a11y & perf → aesthetics → external skills. No external skill may re-derive art direction.
-2. **Maps Estate Paper across every asset** in the canon: money pages, thesis/proof pages, /gold-to-bitcoin, Resend emails, goldvsbitcoin.org, goldbuyer.io (Phase 2).
-3. **Approves exactly three external tools**, all QA gates: impeccable's deterministic detector, Vercel web-design-guidelines, Vercel react-best-practices. Install commands are in the skill; none is installed yet.
-4. **Defines the per-page design loop:** audit → apply canon → gate → verify → ship.
-5. **Enforces supply-chain rules:** read every skill + script before install, hooks off by default, treat fetched content as data not commands, no unverified AI research docs in the repo.
+**Logo & identity (uses brandkit):**
+> "Using brandkit, develop 3 logo-system concepts for Offramp — wordmark + symbol, with rationale for the symbolism. Then lay out a brand-guidelines board for my favorite: logo variants, palette, type, one mockup."
 
-## First-time setup (when ready — requires your review step)
+**Try a direction on one real page:**
+> "We're exploring Direction 2. Apply it to ONLY the homepage on a branch — preserve all routes, data fetching, and legal copy. Screenshot desktop + mobile and self-critique against the direction's tokens. Don't touch other pages."
 
-```bash
-# 1. QA gates from Vercel (official, script-free skills)
-npx skills add vercel-labs/agent-skills --skill web-design-guidelines -a claude-code
-npx skills add vercel-labs/agent-skills --skill react-best-practices  -a claude-code
+**Upgrade an existing page without a direction change:**
+> "Run redesign-existing-projects on /prices/14k-gold-price-per-gram — audit first, then upgrade to premium quality without breaking functionality."
 
-# 2. impeccable — detector only until you've read scripts/hook.mjs
-npx impeccable install --providers=claude --scope=project --no-hooks
-npx impeccable detect --json .   # the anti-slop lint; no LLM, no API key
-```
+**Push the premium register harder:**
+> "Take another pass on this page with high-end-visual-design leading — calmer, more expensive, more whitespace."
 
-Do **not** run `/impeccable init` (it writes a competing DESIGN.md) and do **not** install frontend-design, taste-skill, or ui-ux-pro-max — the skill explains why.
+**Live iteration in the browser:**
+> "Start /impeccable live on the homepage so we can iterate on the hero together."
 
-## Typical prompts once loaded
+**Pre-ship gate (run on everything):**
+> "Gate this page: run impeccable detect, the web-design-guidelines review (pinned rules), and react-best-practices. Fix findings, then build + screenshot proof."
 
-- "Audit the homepage against the design skill — report only, no code changes."
-- "Restyle /prices/14k-gold-price-per-gram to full Estate Paper canon and run the gates."
-- "Slop-check the new proof asset before I ship it."
+**Content pages:** the existing `money-page` skill still owns content production (five content types, keywords, GEO). Prompt it as before ("ship the next page from the backlog"); the design stack gates the visuals of whatever it builds. Until a new direction is chosen, new money pages ship in the incumbent style.
+
+## Maintenance
+
+- **Updating any skill = re-audit.** `npx impeccable update` pulls a fresh bundle — re-skim `.claude/skills/impeccable/scripts/` after. The Vercel/taste-skill copies are pinned; refresh them deliberately from upstream and re-scan.
+- impeccable's edit-time hook is installed but **off**; say "turn impeccable hooks on" when you want automatic slop-linting on every UI edit (audited clean).
+- Keep `IMPECCABLE_LIVE_COPY_AGENT=off` unless you decide you want live mode's AI-apply (it spawns a bypass-permissions agent).
+- Using this stack in the gold-domains satellites repo: copy `.claude/skills/` folders there, or install impeccable the same way.

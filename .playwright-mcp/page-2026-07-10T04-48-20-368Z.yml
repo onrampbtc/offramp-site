@@ -1,0 +1,558 @@
+- generic [active] [ref=f42e1]:
+  - region "We value your privacy" [ref=f42e2]:
+    - generic [ref=f42e3]:
+      - button "Close" [ref=f42e4] [cursor=pointer]
+      - generic [ref=f42e5]:
+        - heading "We value your privacy" [level=2] [ref=f42e6]
+        - generic [ref=f42e7]:
+          - paragraph [ref=f42e9]: This website or its third-party tools process personal data. You can opt out of the sale of your personal information by clicking on the “Do Not Sell or Share My Personal Information” link.
+          - button "Do Not Sell or Share My Personal Information" [ref=f42e11] [cursor=pointer]
+  - generic [ref=f42e12]:
+    - link "Skip to content" [ref=f42e13] [cursor=pointer]:
+      - /url: "#main-content"
+    - generic [ref=f42e15]:
+      - complementary [ref=f42e17]:
+        - generic [ref=f42e18]:
+          - button [ref=f42e19] [cursor=pointer]
+          - link [ref=f42e23] [cursor=pointer]:
+            - /url: /collections/new-arrivals-gold
+            - text: Shop New Arrivals.
+          - button [ref=f42e24] [cursor=pointer]
+      - complementary "Notice" [ref=f42e28]:
+        - generic [ref=f42e29]:
+          - button "Previous notice" [ref=f42e30] [cursor=pointer]
+          - link "Read World of Menē." [ref=f42e34] [cursor=pointer]:
+            - /url: /world-of-mene/
+          - button "Next notice" [ref=f42e35] [cursor=pointer]
+      - complementary [ref=f42e39]:
+        - generic [ref=f42e40]:
+          - button [ref=f42e41] [cursor=pointer]
+          - generic [ref=f42e44]: Free shipping within U.S. and Canada on orders over $500.
+          - button [ref=f42e45] [cursor=pointer]
+    - banner [ref=f42e48]:
+      - generic [ref=f42e49]:
+        - link "Homepage link" [ref=f42e52] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f42e57]:
+          - button "Search button" [ref=f42e59] [cursor=pointer]
+          - button "Account" [ref=f42e65] [cursor=pointer]
+          - button "Cart" [ref=f42e69] [cursor=pointer]
+      - generic [ref=f42e74]:
+        - button "Shop" [ref=f42e75] [cursor=pointer]
+        - link "Explore the World of Mene" [ref=f42e76] [cursor=pointer]:
+          - /url: /world-of-mene
+          - text: World of Menē
+        - button "About" [ref=f42e77] [cursor=pointer]
+    - main [ref=f42e78]:
+      - generic [ref=f42e80]:
+        - group "Featured" [ref=f42e81]:
+          - generic [ref=f42e82]:
+            - link "Responsive asset Luxury that lasts, value that grows. Crafted from 24k gold and pure platinum, Menē is designed to endure. Shop Essentials":
+              - /url: /collections/essentials-gold
+              - generic [ref=f42e83] [cursor=pointer]:
+                - img "Responsive asset" [ref=f42e85]
+                - generic [ref=f42e88]:
+                  - heading "Luxury that lasts, value that grows." [level=1] [ref=f42e89]
+                  - paragraph [ref=f42e90]: Crafted from 24k gold and pure platinum, Menē is designed to endure.
+                  - generic [ref=f42e91]: Shop Essentials
+          - generic [ref=f42e100] [cursor=pointer]:
+            - heading [level=2] [ref=f42e101]: Platinum Perfection.
+            - generic [ref=f42e102]: Pursue the cool.
+        - generic [ref=f42e105]:
+          - button "Go to slide 1" [ref=f42e106] [cursor=pointer]
+          - button "Go to slide 2" [ref=f42e107] [cursor=pointer]
+      - generic [ref=f42e108]:
+        - generic [ref=f42e110]:
+          - heading "Discover the world of Investment Jewelry." [level=2] [ref=f42e111]
+          - paragraph [ref=f42e112]: Innovative technology, timeless design, and radical transparency come together to restore the link between jewelry and savings.
+        - generic [ref=f42e113]:
+          - generic [ref=f42e115]:
+            - heading "Shop 24k gold and platinum." [level=3] [ref=f42e116]
+            - generic [ref=f42e117]:
+              - button "Previous" [ref=f42e118] [cursor=pointer]
+              - button "Next" [ref=f42e123] [cursor=pointer]
+          - group "Product categories" [ref=f42e130]:
+            - generic [ref=f42e131]:
+              - link "Bracelets" [ref=f42e133] [cursor=pointer]:
+                - /url: /bracelets/gold
+              - link "Medallions" [ref=f42e136] [cursor=pointer]:
+                - /url: /medallions/gold
+              - link "Pendants" [ref=f42e139] [cursor=pointer]:
+                - /url: /pendants/gold
+              - link "Precious Objects" [ref=f42e142] [cursor=pointer]:
+                - /url: /precious-objects/gold
+              - link "Tableware" [ref=f42e145] [cursor=pointer]:
+                - /url: /collections/tableware-gold
+              - link "Huntsman" [ref=f42e148] [cursor=pointer]:
+                - /url: /huntsman
+              - link "Accessories" [ref=f42e151] [cursor=pointer]:
+                - /url: /collections/accessories
+              - link "New Arrivals" [ref=f42e154] [cursor=pointer]:
+                - /url: /collections/new-arrivals-gold
+              - link "Nick Foulkes x Menē" [ref=f42e157] [cursor=pointer]:
+                - /url: /nick-foulkes
+              - link "Sets" [ref=f42e160] [cursor=pointer]:
+                - /url: /collections/sets-gold
+              - link "Bands" [ref=f42e163] [cursor=pointer]:
+                - /url: /bands/gold
+              - link "Earrings" [ref=f42e166] [cursor=pointer]:
+                - /url: /earrings/gold
+              - link "Rings" [ref=f42e169] [cursor=pointer]:
+                - /url: /rings/gold
+              - link "Chains" [ref=f42e172] [cursor=pointer]:
+                - /url: /chains/gold
+              - link "Bracelets" [ref=f42e175] [cursor=pointer]:
+                - /url: /bracelets/gold
+              - link "Medallions" [ref=f42e178] [cursor=pointer]:
+                - /url: /medallions/gold
+              - link "Pendants" [ref=f42e181] [cursor=pointer]:
+                - /url: /pendants/gold
+              - link "Precious Objects" [ref=f42e184] [cursor=pointer]:
+                - /url: /precious-objects/gold
+              - link "Tableware" [ref=f42e187] [cursor=pointer]:
+                - /url: /collections/tableware-gold
+              - link "Huntsman" [ref=f42e190] [cursor=pointer]:
+                - /url: /huntsman
+              - link "Accessories" [ref=f42e193] [cursor=pointer]:
+                - /url: /collections/accessories
+              - link "New Arrivals" [ref=f42e196] [cursor=pointer]:
+                - /url: /collections/new-arrivals-gold
+              - link "Nick Foulkes x Menē" [ref=f42e199] [cursor=pointer]:
+                - /url: /nick-foulkes
+              - link "Sets" [ref=f42e202] [cursor=pointer]:
+                - /url: /collections/sets-gold
+              - link "Bands" [ref=f42e205] [cursor=pointer]:
+                - /url: /bands/gold
+              - link "Earrings" [ref=f42e208] [cursor=pointer]:
+                - /url: /earrings/gold
+              - link "Rings" [ref=f42e211] [cursor=pointer]:
+                - /url: /rings/gold
+              - link "Chains" [ref=f42e214] [cursor=pointer]:
+                - /url: /chains/gold
+          - generic [ref=f42e216]:
+            - heading "The Menē difference." [level=3] [ref=f42e217]
+            - paragraph [ref=f42e218]: Redefining luxury.
+            - generic [ref=f42e219]:
+              - article [ref=f42e220]:
+                - heading "Commitment to purity." [level=4] [ref=f42e222]
+                - generic [ref=f42e223]: Menē jewelry is fundamentally different. Every piece is crafted from 24 karat gold or pure platinum, the same form that these precious metals are found in nature.
+              - article [ref=f42e224]:
+                - heading "Sold by weight." [level=4] [ref=f42e226]
+                - generic [ref=f42e227]: Know what your jewelry is worth. Each piece is sold by weight, plus a transparent design/manufacturing premium, which is ~30% of the total value of each item.
+              - article [ref=f42e228]:
+                - heading "Store of enduring value." [level=4] [ref=f42e230]
+                - generic [ref=f42e231]: We avoid gems and diamonds. Our pieces are solid gold or platinum, leaving no doubt as to their long-term precious metal value.
+            - link "Learn more about Menē." [ref=f42e233] [cursor=pointer]:
+              - /url: /about
+          - generic [ref=f42e236]:
+            - heading "When your jewelry is also an investment." [level=4] [ref=f42e238]
+            - generic [ref=f42e239]:
+              - article [ref=f42e240]:
+                - heading "Trackable performance." [level=4] [ref=f42e241]
+                - paragraph [ref=f42e242]: Keep track of your collection's real-time value using our intuitive dashboard. Our prices fluctuate based on the prevailing gold market price.
+              - article [ref=f42e243]:
+                - heading "Wearable wealth." [level=4] [ref=f42e244]
+                - paragraph [ref=f42e245]: Our jewelry holds its monetary value forever — an heirloom as important to family wealth and savings as property or works of fine art.
+              - article [ref=f42e246]:
+                - heading "Backed for life." [level=4] [ref=f42e247]
+                - paragraph [ref=f42e248]: Just like bullion, the value of Menē jewelry lies in its weight. At any time, you can exchange or sell it back to us for its precious metal value less a 10% fee.
+            - generic [ref=f42e250]:
+              - paragraph [ref=f42e251]: Narrow Octagon Ring
+              - paragraph [ref=f42e252]: 7.98 grams
+              - paragraph [ref=f42e253]: Current value
+              - paragraph [ref=f42e254]: 1,066.086USD
+              - paragraph [ref=f42e255]: Change
+              - paragraph [ref=f42e256]:
+                - text: +627.186USD
+                - generic [ref=f42e257]: (142.90%)
+              - paragraph [ref=f42e258]:
+                - generic [ref=f42e259]: BuyBack
+                - generic [ref=f42e261]: Transfer
+        - heading "New Arrivals" [level=4] [ref=f42e263]
+        - generic [ref=f42e264]:
+          - group "New arrivals" [ref=f42e266]:
+            - generic [ref=f42e267]:
+              - link "Nick Foulkes Small Lighter Holder" [ref=f42e269] [cursor=pointer]:
+                - /url: /products/nick-foulkes-small-lighter-holder-gold
+                - article [ref=f42e270]:
+                  - img "Nick Foulkes Small Lighter Holder image" [ref=f42e271]
+                  - generic [ref=f42e272]:
+                    - generic [ref=f42e273]: Nick Foulkes Small Lighter Holder
+                    - paragraph [ref=f42e274]: $16,300
+              - link "Nick Foulkes Large Lighter Holder" [ref=f42e276] [cursor=pointer]:
+                - /url: /products/nick-foulkes-large-lighter-holder-gold
+                - article [ref=f42e277]:
+                  - img "Nick Foulkes Large Lighter Holder image" [ref=f42e278]
+                  - generic [ref=f42e279]:
+                    - generic [ref=f42e280]: Nick Foulkes Large Lighter Holder
+                    - paragraph [ref=f42e281]: $36,846
+              - link "Nick Foulkes Chain Bracelet" [ref=f42e283] [cursor=pointer]:
+                - /url: /products/nick-foulkes-chain-bracelet-gold
+                - article [ref=f42e284]:
+                  - img "Nick Foulkes Chain Bracelet image" [ref=f42e285]
+                  - generic [ref=f42e286]:
+                    - generic [ref=f42e287]: Nick Foulkes Chain Bracelet
+                    - paragraph [ref=f42e288]: From $26,179
+              - link "Rectangular Link Drop Earrings" [ref=f42e290] [cursor=pointer]:
+                - /url: /products/rectangular-link-drop-earrings-gold
+                - article [ref=f42e291]:
+                  - img "Rectangular Link Drop Earrings image" [ref=f42e292]
+                  - generic [ref=f42e293]:
+                    - generic [ref=f42e294]: Rectangular Link Drop Earrings
+                    - paragraph [ref=f42e295]: $2,659
+              - link "Small Double Dove Chain" [ref=f42e297] [cursor=pointer]:
+                - /url: /products/small-double-dove-chain-gold
+                - article [ref=f42e298]:
+                  - img "Small Double Dove Chain image" [ref=f42e299]
+                  - generic [ref=f42e300]:
+                    - generic [ref=f42e301]: Small Double Dove Chain
+                    - paragraph [ref=f42e302]: From $15,329
+              - link "Mini Dove Necklace" [ref=f42e304] [cursor=pointer]:
+                - /url: /products/mini-dove-necklace-gold
+                - article [ref=f42e305]:
+                  - img "Mini Dove Necklace image" [ref=f42e306]
+                  - generic [ref=f42e307]:
+                    - generic [ref=f42e308]: Mini Dove Necklace
+                    - paragraph [ref=f42e309]: $2,701
+              - link "Nick Foulkes Shark Tooth Pendant" [ref=f42e311] [cursor=pointer]:
+                - /url: /products/nick-foulkes-shark-tooth-pendant-gold
+                - article [ref=f42e312]:
+                  - img "Nick Foulkes Shark Tooth Pendant image" [ref=f42e313]
+                  - generic [ref=f42e314]:
+                    - generic [ref=f42e315]: Nick Foulkes Shark Tooth Pendant
+                    - paragraph [ref=f42e316]: $1,447
+              - link "Nick Foulkes Striped Flat Chain Cufflinks" [ref=f42e318] [cursor=pointer]:
+                - /url: /products/nick-foulkes-striped-flat-chain-cufflinks-gold
+                - article [ref=f42e319]:
+                  - img "Nick Foulkes Striped Flat Chain Cufflinks image" [ref=f42e320]
+                  - generic [ref=f42e321]:
+                    - generic [ref=f42e322]: Nick Foulkes Striped Flat Chain Cufflinks
+                    - paragraph [ref=f42e323]: $3,529
+              - link "Nick Foulkes Shark Tooth Charm" [ref=f42e325] [cursor=pointer]:
+                - /url: /products/nick-foulkes-shark-tooth-charm-gold
+                - article [ref=f42e326]:
+                  - img "Nick Foulkes Shark Tooth Charm image" [ref=f42e327]
+                  - generic [ref=f42e328]:
+                    - generic [ref=f42e329]: Nick Foulkes Shark Tooth Charm
+                    - paragraph [ref=f42e330]: $1,071
+              - link "Nick Foulkes Smoking Dog Pendant" [ref=f42e332] [cursor=pointer]:
+                - /url: /products/nick-foulkes-smoking-dog-pendant-gold
+                - article [ref=f42e333]:
+                  - img "Nick Foulkes Smoking Dog Pendant image" [ref=f42e334]
+                  - generic [ref=f42e335]:
+                    - generic [ref=f42e336]: Nick Foulkes Smoking Dog Pendant
+                    - paragraph [ref=f42e337]: $1,283
+              - link "Nick Foulkes Striped Flat Chain Bracelet" [ref=f42e339] [cursor=pointer]:
+                - /url: /products/nick-foulkes-striped-flat-chain-bracelet-gold
+                - article [ref=f42e340]:
+                  - img "Nick Foulkes Striped Flat Chain Bracelet image" [ref=f42e341]
+                  - generic [ref=f42e342]:
+                    - generic [ref=f42e343]: Nick Foulkes Striped Flat Chain Bracelet
+                    - paragraph [ref=f42e344]: From $9,224
+              - link "Nick Foulkes Socrates Ring" [ref=f42e346] [cursor=pointer]:
+                - /url: /products/nick-foulkes-socrates-ring-gold
+                - article [ref=f42e347]:
+                  - img "Nick Foulkes Socrates Ring image" [ref=f42e348]
+                  - generic [ref=f42e349]:
+                    - generic [ref=f42e350]: Nick Foulkes Socrates Ring
+                    - paragraph [ref=f42e351]: From $4,395
+              - link "Nick Foulkes Small Lighter Holder" [ref=f42e353] [cursor=pointer]:
+                - /url: /products/nick-foulkes-small-lighter-holder-gold
+                - article [ref=f42e354]:
+                  - img "Nick Foulkes Small Lighter Holder image" [ref=f42e355]
+                  - generic [ref=f42e356]:
+                    - generic [ref=f42e357]: Nick Foulkes Small Lighter Holder
+                    - paragraph [ref=f42e358]: $16,300
+              - link "Nick Foulkes Large Lighter Holder" [ref=f42e360] [cursor=pointer]:
+                - /url: /products/nick-foulkes-large-lighter-holder-gold
+                - article [ref=f42e361]:
+                  - img "Nick Foulkes Large Lighter Holder image" [ref=f42e362]
+                  - generic [ref=f42e363]:
+                    - generic [ref=f42e364]: Nick Foulkes Large Lighter Holder
+                    - paragraph [ref=f42e365]: $36,846
+              - link "Nick Foulkes Chain Bracelet" [ref=f42e367] [cursor=pointer]:
+                - /url: /products/nick-foulkes-chain-bracelet-gold
+                - article [ref=f42e368]:
+                  - img "Nick Foulkes Chain Bracelet image" [ref=f42e369]
+                  - generic [ref=f42e370]:
+                    - generic [ref=f42e371]: Nick Foulkes Chain Bracelet
+                    - paragraph [ref=f42e372]: From $26,179
+              - link "Rectangular Link Drop Earrings" [ref=f42e374] [cursor=pointer]:
+                - /url: /products/rectangular-link-drop-earrings-gold
+                - article [ref=f42e375]:
+                  - img "Rectangular Link Drop Earrings image" [ref=f42e376]
+                  - generic [ref=f42e377]:
+                    - generic [ref=f42e378]: Rectangular Link Drop Earrings
+                    - paragraph [ref=f42e379]: $2,659
+              - link "Small Double Dove Chain" [ref=f42e381] [cursor=pointer]:
+                - /url: /products/small-double-dove-chain-gold
+                - article [ref=f42e382]:
+                  - img "Small Double Dove Chain image" [ref=f42e383]
+                  - generic [ref=f42e384]:
+                    - generic [ref=f42e385]: Small Double Dove Chain
+                    - paragraph [ref=f42e386]: From $15,329
+              - link "Mini Dove Necklace" [ref=f42e388] [cursor=pointer]:
+                - /url: /products/mini-dove-necklace-gold
+                - article [ref=f42e389]:
+                  - img "Mini Dove Necklace image" [ref=f42e390]
+                  - generic [ref=f42e391]:
+                    - generic [ref=f42e392]: Mini Dove Necklace
+                    - paragraph [ref=f42e393]: $2,701
+              - link "Nick Foulkes Shark Tooth Pendant" [ref=f42e395] [cursor=pointer]:
+                - /url: /products/nick-foulkes-shark-tooth-pendant-gold
+                - article [ref=f42e396]:
+                  - img "Nick Foulkes Shark Tooth Pendant image" [ref=f42e397]
+                  - generic [ref=f42e398]:
+                    - generic [ref=f42e399]: Nick Foulkes Shark Tooth Pendant
+                    - paragraph [ref=f42e400]: $1,447
+              - link "Nick Foulkes Striped Flat Chain Cufflinks" [ref=f42e402] [cursor=pointer]:
+                - /url: /products/nick-foulkes-striped-flat-chain-cufflinks-gold
+                - article [ref=f42e403]:
+                  - img "Nick Foulkes Striped Flat Chain Cufflinks image" [ref=f42e404]
+                  - generic [ref=f42e405]:
+                    - generic [ref=f42e406]: Nick Foulkes Striped Flat Chain Cufflinks
+                    - paragraph [ref=f42e407]: $3,529
+              - link "Nick Foulkes Shark Tooth Charm" [ref=f42e409] [cursor=pointer]:
+                - /url: /products/nick-foulkes-shark-tooth-charm-gold
+                - article [ref=f42e410]:
+                  - img "Nick Foulkes Shark Tooth Charm image" [ref=f42e411]
+                  - generic [ref=f42e412]:
+                    - generic [ref=f42e413]: Nick Foulkes Shark Tooth Charm
+                    - paragraph [ref=f42e414]: $1,071
+              - link "Nick Foulkes Smoking Dog Pendant" [ref=f42e416] [cursor=pointer]:
+                - /url: /products/nick-foulkes-smoking-dog-pendant-gold
+                - article [ref=f42e417]:
+                  - img "Nick Foulkes Smoking Dog Pendant image" [ref=f42e418]
+                  - generic [ref=f42e419]:
+                    - generic [ref=f42e420]: Nick Foulkes Smoking Dog Pendant
+                    - paragraph [ref=f42e421]: $1,283
+              - link "Nick Foulkes Striped Flat Chain Bracelet" [ref=f42e423] [cursor=pointer]:
+                - /url: /products/nick-foulkes-striped-flat-chain-bracelet-gold
+                - article [ref=f42e424]:
+                  - img "Nick Foulkes Striped Flat Chain Bracelet image" [ref=f42e425]
+                  - generic [ref=f42e426]:
+                    - generic [ref=f42e427]: Nick Foulkes Striped Flat Chain Bracelet
+                    - paragraph [ref=f42e428]: From $9,224
+              - link "Nick Foulkes Socrates Ring" [ref=f42e430] [cursor=pointer]:
+                - /url: /products/nick-foulkes-socrates-ring-gold
+                - article [ref=f42e431]:
+                  - img "Nick Foulkes Socrates Ring image" [ref=f42e432]
+                  - generic [ref=f42e433]:
+                    - generic [ref=f42e434]: Nick Foulkes Socrates Ring
+                    - paragraph [ref=f42e435]: From $4,395
+          - link "Shop now." [ref=f42e437] [cursor=pointer]:
+            - /url: /collections/new-arrivals-gold
+        - generic [ref=f42e438]:
+          - button "Exquisite Craftmanship Watch short film" [ref=f42e439] [cursor=pointer]:
+            - generic [ref=f42e440]: Exquisite Craftmanship
+            - generic [ref=f42e441]: Watch short film
+          - button "Play video" [ref=f42e442] [cursor=pointer]
+        - generic [ref=f42e444]:
+          - heading "More than just jewelry." [level=4] [ref=f42e445]
+          - paragraph [ref=f42e446]: Menē pieces will always have intrinsic value and can even appreciate over time with the price of precious metals.
+          - generic [ref=f42e447]:
+            - group [ref=f42e449]:
+              - generic [ref=f42e450]:
+                - text: Gold
+                - checkbox "Gold" [checked] [ref=f42e451] [cursor=pointer]
+              - generic [ref=f42e452]:
+                - text: Platinum
+                - checkbox "Platinum" [ref=f42e453] [cursor=pointer]
+            - paragraph [ref=f42e454]: +105.38%
+            - generic [ref=f42e455]:
+              - generic:
+                - alert [ref=f42e459]
+                - generic:
+                  - button
+        - article [ref=f42e461]:
+          - heading "Ethically sourced." [level=5] [ref=f42e462]
+          - paragraph [ref=f42e463]: Our gold carries the coveted London Bullion Market’s Responsible Sourcing Certification.
+        - generic [ref=f42e466]:
+          - heading "World of Menē" [level=5] [ref=f42e467]
+          - generic [ref=f42e468]:
+            - link [ref=f42e469] [cursor=pointer]:
+              - /url: /world-of-mene/inside-mene/most-popular-mene-earrings
+              - article [ref=f42e470]:
+                - paragraph [ref=f42e471]: July 7, 2026
+                - generic [ref=f42e473]: The most popular Menē earrings in 24k gold and pure platinum.
+            - link [ref=f42e474] [cursor=pointer]:
+              - /url: /world-of-mene/inside-mene/platinum-jewelry-for-men
+              - article [ref=f42e475]:
+                - paragraph [ref=f42e476]: July 5, 2026
+                - generic [ref=f42e478]: "Platinum jewelry for men: a guide to styling and selection."
+            - link [ref=f42e479] [cursor=pointer]:
+              - /url: /world-of-mene/inside-mene/layering-24k-gold-and-platinum-chains-a-complete-guide
+              - article [ref=f42e480]:
+                - paragraph [ref=f42e481]: July 3, 2026
+                - generic [ref=f42e483]: "Layering 24k gold and platinum chains: a complete guide."
+          - link "Read more about World of Menē" [ref=f42e485] [cursor=pointer]:
+            - /url: /world-of-mene
+            - text: More on World of Menē
+        - generic [ref=f42e487]:
+          - generic [ref=f42e488]:
+            - paragraph [ref=f42e489]: Customers love Menē
+            - paragraph [ref=f42e490]: From passion in design, to craftmanship in production, and attentive care from our customer care team, every step of the Menē experience is about our customers.
+            - link "Read More Reviews" [ref=f42e491] [cursor=pointer]:
+              - /url: /reviews
+          - generic [ref=f42e493]:
+            - generic [ref=f42e494]:
+              - generic [ref=f42e495]:
+                - generic [ref=f42e496]:
+                  - generic [ref=f42e497]: Steven
+                  - generic [ref=f42e498]: Jul 8, 2026
+                - generic [ref=f42e499]: Verified
+              - heading "Absolute Classic" [level=6] [ref=f42e518]
+              - paragraph [ref=f42e519]: This piece provides the right mix of style and beauty. A simple look with a gorgeous bit of Gold to enhance the feel. Pairs well with almost any Menē bracelet.
+            - generic [ref=f42e520]:
+              - generic [ref=f42e521]:
+                - generic [ref=f42e522]:
+                  - generic [ref=f42e523]: Steven
+                  - generic [ref=f42e524]: Jul 8, 2026
+                - generic [ref=f42e525]: Verified
+              - heading "A Durable Classic" [level=6] [ref=f42e544]
+              - paragraph [ref=f42e545]: The Narrow Flat Curb Chain feels soft on the neck. Thickness is the right balance between humble and flashy. Holds many Menē pendants and medallions perfectly well. It's a staple in my collection.
+            - generic [ref=f42e546]:
+              - generic [ref=f42e547]:
+                - generic [ref=f42e548]:
+                  - generic [ref=f42e549]: Steven
+                  - generic [ref=f42e550]: Jul 8, 2026
+                - generic [ref=f42e551]: Verified
+              - heading "Mini Showstopper" [level=6] [ref=f42e570]
+              - paragraph [ref=f42e571]: The beauty of this dainty bracelet is unmatched. The Figaro style is recognized globally, and in 24k Gold it feels like it got an upgrade. The quality of this piece is incredible.
+        - generic [ref=f42e574]:
+          - blockquote [ref=f42e575]: “These days people treat jewelry as disposable items. I want Menē to restore that sense of tradition and attachment to jewelry as something that lasts forever.”
+          - paragraph [ref=f42e576]: Diana W. Picasso
+      - link "Responsive asset A gift as rare as he is. Discover the collection" [ref=f42e577] [cursor=pointer]:
+        - /url: /nick-foulkes
+        - generic [ref=f42e579]:
+          - img "Responsive asset" [ref=f42e581]
+          - generic [ref=f42e585]:
+            - generic [ref=f42e586]: A gift as rare as he is.
+            - generic [ref=f42e587]: Discover the collection
+    - contentinfo [ref=f42e589]:
+      - generic [ref=f42e590]:
+        - generic [ref=f42e591]:
+          - navigation [ref=f42e592]:
+            - generic [ref=f42e593]:
+              - generic [ref=f42e594]: Shop
+              - generic [ref=f42e595]:
+                - generic [ref=f42e596]:
+                  - link "Chains" [ref=f42e597] [cursor=pointer]:
+                    - /url: /collections/chains-gold
+                  - link "Bracelets" [ref=f42e598] [cursor=pointer]:
+                    - /url: /collections/bracelets-gold
+                  - link "Rings" [ref=f42e599] [cursor=pointer]:
+                    - /url: /collections/rings-gold
+                  - link "Pendants" [ref=f42e600] [cursor=pointer]:
+                    - /url: /collections/pendants-gold
+                  - link "Charms" [ref=f42e601] [cursor=pointer]:
+                    - /url: /collections/charms-gold
+                  - link "Earrings" [ref=f42e602] [cursor=pointer]:
+                    - /url: /collections/earrings-gold
+                  - link "Bands" [ref=f42e603] [cursor=pointer]:
+                    - /url: /collections/bands-gold
+                - generic [ref=f42e604]:
+                  - link "Precious Objects" [ref=f42e605] [cursor=pointer]:
+                    - /url: /collections/precious-objects-gold
+                  - link "Medallions" [ref=f42e606] [cursor=pointer]:
+                    - /url: /collections/medallions-gold
+                  - link "Tableware" [ref=f42e607] [cursor=pointer]:
+                    - /url: /collections/tableware-gold
+                  - link "Accessories" [ref=f42e608] [cursor=pointer]:
+                    - /url: /collections/accessories
+                  - link "Gift Cards" [ref=f42e609] [cursor=pointer]:
+                    - /url: /products/mene-gift-card
+            - generic [ref=f42e610]:
+              - generic [ref=f42e611]: Customer Care
+              - generic [ref=f42e613]:
+                - link "1-833-MENE-24K" [ref=f42e614] [cursor=pointer]:
+                  - /url: tel:1-833-MENE-24K
+                - link "service@mene.com" [ref=f42e615] [cursor=pointer]:
+                  - /url: mailto:service@mene.com
+                - link "Help Center" [ref=f42e616] [cursor=pointer]:
+                  - /url: /customer-care
+                - link "Product Care" [ref=f42e617] [cursor=pointer]:
+                  - /url: /care
+                - link "Reviews" [ref=f42e618] [cursor=pointer]:
+                  - /url: /reviews
+            - generic [ref=f42e619]:
+              - generic [ref=f42e620]: About
+              - generic [ref=f42e622]:
+                - link "About Menē" [ref=f42e623] [cursor=pointer]:
+                  - /url: /about
+                - link "World of Menē" [ref=f42e624] [cursor=pointer]:
+                  - /url: /world-of-mene
+                - link "Investors" [ref=f42e625] [cursor=pointer]:
+                  - /url: /investors
+                - link "Stats" [ref=f42e626] [cursor=pointer]:
+                  - /url: /about/stats
+                - link "Careers" [ref=f42e627] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/25017541/
+                - link "Press" [ref=f42e628] [cursor=pointer]:
+                  - /url: /investors/press-room
+          - generic [ref=f42e629]:
+            - generic [ref=f42e630]: Subscribe to our newsletter
+            - generic [ref=f42e631]:
+              - textbox "Subscribe to our newsletter" [ref=f42e632]:
+                - /placeholder: Your email address
+              - button "Subscribe" [ref=f42e633] [cursor=pointer]
+            - paragraph [ref=f42e634]: You may unsubscribe at any time. By providing Menē with your email address, you acknowledge that your personal information will be treated in accordance with our Privacy Policy.
+        - generic [ref=f42e636]:
+          - generic [ref=f42e637]:
+            - img "Menē logo" [ref=f42e638]
+            - generic [ref=f42e641]:
+              - link "Link to Menē's Instagram social account" [ref=f42e642] [cursor=pointer]:
+                - /url: https://www.instagram.com/mene/
+                - img "Instagram icon" [ref=f42e643]
+              - link "Link to Menē's X social account" [ref=f42e645] [cursor=pointer]:
+                - /url: https://x.com/mene
+                - img "X icon" [ref=f42e646]
+              - link "Link to Menē's Facebook social account" [ref=f42e648] [cursor=pointer]:
+                - /url: https://www.facebook.com/Mene24k
+                - img "Facebook icon" [ref=f42e649]
+              - link "Link to Menē's YouTube social account" [ref=f42e651] [cursor=pointer]:
+                - /url: https://www.youtube.com/c/Men%C4%93OfficialAccount
+                - img "Youtube icon" [ref=f42e652]
+          - generic [ref=f42e654]:
+            - generic [ref=f42e655]:
+              - link "Terms of Service" [ref=f42e656] [cursor=pointer]:
+                - /url: /terms-of-service
+              - link "Privacy" [ref=f42e657] [cursor=pointer]:
+                - /url: /privacy-policy
+              - link "Accessibility" [ref=f42e658] [cursor=pointer]:
+                - /url: /accessibility
+              - button "Do Not Sell or Share My Personal Information" [ref=f42e660] [cursor=pointer]
+            - generic [ref=f42e661]: ·
+            - generic [ref=f42e662]: © 2026 Menē Inc. All Rights Reserved.
+    - dialog [ref=f42e665]:
+      - paragraph [ref=f42e667]:
+        - text: Your bag.
+        - button [ref=f42e668] [cursor=pointer]
+    - dialog "Newsletter signup":
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - heading "Get the latest from Menē." [level=6]
+              - paragraph: Be the first to discover new collections, news, and more.
+            - generic: Sign up for SMS marketing to receive exclusive offers and news sent only by text.
+            - generic:
+              - group:
+                - generic: Email
+                - textbox "Your email address"
+              - group:
+                - generic: Mobile phone (optional)
+                - generic:
+                  - button "US +1":
+                    - button "US +1":
+                      - img "US"
+                      - text: "+1"
+                  - textbox "Your mobile number"
+              - button "Subscribe"
+            - paragraph: By providing your email and/or phone number, you agree to receive marketing communications from Menē. You may unsubscribe at any time (reply STOP for SMS or use the unsubscribe link). Consent is not a condition of purchase. Your personal information is handled in accordance with our Privacy Policy and Terms of Service.
+            - button "Close"
+  - iframe [ref=f42e671]:
+    - button "Gorgias live chat" [ref=f44e4] [cursor=pointer]:
+      - heading "Chat with us" [level=2] [ref=f44e14]
+  - dialog "Security check":
+    - generic: Complete this quick check to proceed.

@@ -1,0 +1,120 @@
+- generic [ref=f64e2]:
+  - generic [ref=f64e4]:
+    - generic [ref=f64e5]: 🇺🇸
+    - generic [ref=f64e6]:
+      - text: This is the
+      - button "United States" [ref=f64e7] [cursor=pointer]
+      - text: site. Choose another country to view content specific to that region.
+    - button "dismiss country selector" [ref=f64e8] [cursor=pointer]
+  - banner [ref=f64e12]:
+    - generic [ref=f64e13]:
+      - link "Home" [ref=f64e14] [cursor=pointer]:
+        - /url: /us/
+      - generic [ref=f64e17]:
+        - navigation [ref=f64e18]:
+          - link "Gold" [ref=f64e19] [cursor=pointer]:
+            - /url: /us/gold/
+          - link "About" [ref=f64e20] [cursor=pointer]:
+            - /url: /us/about/
+          - link "Articles" [ref=f64e21] [cursor=pointer]:
+            - /url: /us/blog/
+          - link "Support" [ref=f64e22] [cursor=pointer]:
+            - /url: https://help.glintpay.com/hc/en-us
+        - link "Get the App" [ref=f64e23] [cursor=pointer]:
+          - /url: "#download"
+  - main [ref=f64e24]:
+    - generic [ref=f64e25]:
+      - heading "Gold as Money" [level=1] [ref=f64e28]
+      - heading "Buy, save & spend real gold instantly with Glint" [level=2] [ref=f64e29]
+    - generic [ref=f64e40]:
+      - paragraph [ref=f64e42]: Glint believes in financial fairness for all. Glint was invented to liberate everyone from our current monetary system.For millennia, gold has been the trusted store of wealth. In today’s world, it’s a secure hedge against inflation and a stable currency when stock markets fluctuate.Glint offers an alternative to fiat currencies enabling our clients to buy, save and spend allocated gold with the flexibility of Mastercard®.
+      - button [ref=f64e43] [cursor=pointer]
+    - generic [ref=f64e58]:
+      - generic [ref=f64e59]: Glint in Numbers
+      - generic [ref=f64e60]: Countries and territories where the Glint Mastercard is accepted.
+      - generic [ref=f64e62]:
+        - separator
+        - generic [ref=f64e63]: Glint clients using the app today.
+      - generic [ref=f64e64]:
+        - separator
+        - generic [ref=f64e65]: Now registered with Glint.
+      - generic [ref=f64e66]:
+        - separator
+        - generic [ref=f64e67]: Value of our clients gold and silver held in Brink’s vaults.
+    - generic [ref=f64e84]:
+      - img "Dots" [ref=f64e86]
+      - figure [ref=f64e88]
+  - contentinfo [ref=f64e89]:
+    - generic [ref=f64e90]:
+      - generic [ref=f64e94]:
+        - link "Twitter" [ref=f64e95] [cursor=pointer]:
+          - /url: https://twitter.com/glintpay
+        - link "Youtube" [ref=f64e99] [cursor=pointer]:
+          - /url: https://www.youtube.com/@Glint
+        - link "Instagram" [ref=f64e103] [cursor=pointer]:
+          - /url: https://www.instagram.com/glintpay/
+        - link "Facebook" [ref=f64e107] [cursor=pointer]:
+          - /url: https://www.facebook.com/glintpay/
+        - link "Linkedin" [ref=f64e111] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/glint-pay/
+      - separator [ref=f64e115]
+      - generic [ref=f64e116]:
+        - paragraph [ref=f64e117]: Glint PayPO Box 18899BoulderCO 80308
+        - link "support_usa@glintpay.com" [ref=f64e118] [cursor=pointer]:
+          - /url: mailto:support_usa@glintpay.com
+        - link "+1 (877) 258 0181" [ref=f64e119] [cursor=pointer]:
+          - /url: tel:+1 (877) 258 0181
+      - generic [ref=f64e120]:
+        - navigation [ref=f64e121]:
+          - link "Home" [ref=f64e122] [cursor=pointer]:
+            - /url: /us/
+          - link "Gold" [ref=f64e123] [cursor=pointer]:
+            - /url: /us/gold/
+          - link "About" [ref=f64e124] [cursor=pointer]:
+            - /url: /us/about/
+          - link "Blog" [ref=f64e125] [cursor=pointer]:
+            - /url: /us/blog/
+        - navigation [ref=f64e126]:
+          - link "Money" [ref=f64e127] [cursor=pointer]:
+            - /url: /us/gold/#paper-money-vs-gold
+          - link "Crypto" [ref=f64e128] [cursor=pointer]:
+            - /url: /us/gold/#glint-is-not-a-cryptocurrency
+          - link "FX" [ref=f64e129] [cursor=pointer]:
+            - /url: /us/gold/#fx-and-currency-exchange
+        - navigation [ref=f64e130]:
+          - link "FAQs" [ref=f64e131] [cursor=pointer]:
+            - /url: https://help.glintpay.com/hc/en-us
+          - link "Videos" [ref=f64e132] [cursor=pointer]:
+            - /url: /us/blog/?filter=Videos
+          - link "Podcasts" [ref=f64e133] [cursor=pointer]:
+            - /url: /us/blog/?filter=Podcasts
+          - link "In the press" [ref=f64e134] [cursor=pointer]:
+            - /url: /us/blog/?filter=Press
+          - link "Candidate privacy notice" [ref=f64e135] [cursor=pointer]:
+            - /url: /us/candidate-privacy-notice/
+      - separator [ref=f64e136]
+      - generic [ref=f64e137]:
+        - generic [ref=f64e138]: Our mission
+        - link [ref=f64e139] [cursor=pointer]:
+          - /url: /us/about/
+      - generic [ref=f64e144]:
+        - generic [ref=f64e145]:
+          - text: US Support
+          - generic [ref=f64e146]: Offline
+        - generic [ref=f64e147]: Email & Chat | 09:00 to 16:00 MT | Monday - Friday Telephone | 09:00 to 12:00 MT | Monday - Friday
+      - separator [ref=f64e148]
+      - link "Terms & Privacy" [ref=f64e150] [cursor=pointer]:
+        - /url: /us/terms/
+      - button "🇺🇸 United States" [ref=f64e153] [cursor=pointer]:
+        - generic [ref=f64e154]: 🇺🇸
+        - generic [ref=f64e155]: United States
+      - generic [ref=f64e159]: © 2026 Glint Pay
+      - separator [ref=f64e160]
+      - link [ref=f64e162] [cursor=pointer]:
+        - /url: https://registry.blockmarktech.com/certificates/178fa0ee-5513-4fd7-8810-f9529f1721ce/
+        - img "Cyber Essentials Certificate" [ref=f64e163]
+  - generic [ref=f64e164]:
+    - generic [ref=f64e165]: This site uses cookies to measure and improve your experience.
+    - button "Opt-out" [ref=f64e166] [cursor=pointer]
+    - button "Details" [ref=f64e167] [cursor=pointer]
+    - button "Accept" [ref=f64e169] [cursor=pointer]

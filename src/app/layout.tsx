@@ -1,26 +1,27 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Sora, DM_Mono } from "next/font/google";
+import { Source_Serif_4, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Navigation } from "@/components/Navigation";
+import { AssayLine } from "@/components/AssayLine";
 import { Footer } from "@/components/Footer";
 import { OrganizationJsonLd, WebSiteJsonLd, ServiceJsonLd } from "@/components/JsonLd";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 
-const cormorant = Cormorant_Garamond({
+const cormorant = Source_Serif_4({
   variable: "--font-cormorant",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
-const sora = Sora({
+const sora = Geist({
   variable: "--font-sora",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 });
 
-const dmMono = DM_Mono({
+const dmMono = Geist_Mono({
   variable: "--font-dm-mono",
   subsets: ["latin"],
   weight: ["300", "400", "500"],
@@ -101,6 +102,7 @@ export default function RootLayout({
         <OrganizationJsonLd />
         <WebSiteJsonLd />
         <ServiceJsonLd />
+        <AssayLine />
         <Navigation />
         <main className="min-h-screen">{children}</main>
         <Footer />
