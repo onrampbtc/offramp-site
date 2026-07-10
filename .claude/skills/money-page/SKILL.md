@@ -60,6 +60,10 @@ album. Do not invent a new direction per page; the craft is precision within it:
   no timid evenly-spread palettes): if the page could belong to any gold site, add
   the Offramp specifics — real numbers, dated readings, honesty tables — until it
   couldn't.
+- **Read `CRAFT-AUDIT.md` (same folder) and obey its hard rules**: hero discipline
+  (≤2-line headline, ≤20-word sub, ≤4 text elements), eyebrow cap, zigzag cap,
+  section-layout variety, decoration bans, no em-dashes in new copy, finish states.
+  Its ⚖ section lists conflicts already resolved in the spec's favor — don't "fix" those.
 
 ## Step 4 — GEO layer (why AI engines will cite us)
 - **Direct answer first**: 40–80 words under the H1/question H2 answering the query
@@ -75,6 +79,7 @@ album. Do not invent a new direction per page; the craft is precision within it:
   "unlock the value" / "turn clutter into cash" / urgency theater.
 
 ## Step 5 — Verify (nothing ships unverified)
+0. Run the CRAFT-AUDIT.md pre-flight checklist — it's mechanical, not vibes.
 1. `npm run build` clean.
 2. Preview: page renders, calculator math correct at current spot, dated sentence
    shows today, all internal links resolve.
