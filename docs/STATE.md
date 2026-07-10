@@ -30,7 +30,7 @@ Next milestones: M2 estimate flow → M3 money pages → M4 vault → M5 lane 2 
 - ▢ Trademark knockout search "Offramp" in financial services (pre-M1, spec §18)
 - ▢ Onramp written referral + name-peace agreement
 - ▢ Grab @offrampgold on X / YouTube / LinkedIn
-- ▢ hello@offrampgold.com created + warming
+- ◐ Business email — Workspace Business Starter flexible monthly selected at $8.40/user/month; signup started in the visible Codex in-app browser. Business name `Offramp`, one employee, United States entered. Paused at Google's contact-info screen for Michael to enter his current contact email and legal name directly. No account, charge, mailbox, or DNS change yet. Planned user: `michael@offrampgold.com`; planned alias: `hello@offrampgold.com`. Keep Namecheap forwarding live until the mailbox is ready for a tested cutover.
 - ● Confirm 512-983-5997 is the OpenPhone line (confirmed 2026-07-10)
 - ◐ Supabase project created ✓ — REMAINING: paste URL + anon + service_role keys into Vercel env, then run supabase/migrations/0001_init.sql in the SQL editor
 - ▢ Resend account + API key
@@ -40,8 +40,9 @@ Next milestones: M2 estimate flow → M3 money pages → M4 vault → M5 lane 2 
 ## Workstream: goldbuyer.io ranking site (Phase 2 — PULLED FORWARD 2026-07-10, owner decision)
 - Spec §3.3 authority play accelerated from month 4. Justification: SpyFu shows CFGUSA paying for third-party-ranking keywords; Alloy's converting ad angle is geo "Biggest Payouts In [State]".
 - ● Methodology v1.0 written (`apps/goldbuyer/src/data/methodology.ts`): payout 30 · proof 25 · tracking 15 · service 10 · tech 10 · reputation 10; tier grades; FTC disclosure text; honesty rules (Offramp scored by same rubric, real weaknesses shown).
-- ◐ Research agents running: 8 competitor evidence files + 12-state law files → `apps/goldbuyer/research/` (gitignored).
-- ▢ Next: buyers.ts scored data (evidence-cited) → rankings homepage → /methodology page → /reviews/[buyer] pages → /states/[state] ×12→50 → FTC disclosure footer sitewide.
+- ● Research complete: 8 competitor evidence files + 12 state-law files (real statutes: AZ cash-payout ban, NC hotel-buy ban, FL felony rule) in `apps/goldbuyer/research/`.
+- ● buyers.ts scored: **Offramp 70.5 B- #1** (wins payout 90 + proof 70; reputation 20 shown honestly) · Worthy 67.8 · GoldFellow 60 · EGC 59 · SYG 57.8 · **Alloy 56 (#6 — publishes no rate)** · Abe Mor 36.5 · **CFGUSA 29 (biggest ad spender, least disclosure)** · Luriya 29. No buyer above B- = the editorial headline.
+- ▢ Next: rankings homepage → /methodology → /reviews/[buyer] ×9 → /states/[state] ×12 → FTC disclosure footer sitewide → deploy.
 - Targets: "best place to sell gold" 3,600/mo · "+near me" 2,400/mo · 50× "sell gold [state]" long-tail.
 
 ## Satellites
