@@ -45,7 +45,7 @@ Next milestones: M2 estimate flow → M3 money pages → M4 vault → M5 lane 2 
 - Targets: "best place to sell gold" 3,600/mo · "+near me" 2,400/mo · 50× "sell gold [state]" long-tail.
 
 ## Satellites
-- **gold-domains** repo (`~/Desktop/gold-domains`, onrampbtc/gold-domains @ d4213c5): goldtobtc 301→Offramp committed ✓ · goldbuyer /reviews stripped ✓ · goldvsbitcoin glossary build-crash fixed ✓. ⊘ **Vercel deploys unproven since the git-author fix** — next push tests it; if UNKNOWN again, inspect project build settings in dashboard.
+- **gold-domains** repo (`~/Desktop/gold-domains`): ● **deploys healed + restructure LIVE (2026-07-10)** — goldtobtc.com 308→offrampgold.com/gold-to-bitcoin · goldbuyer.io/reviews 308→touchstonereport.com · goldbuyer /gold-price per-karat + Dataset JSON-LD serving · gold-buyer builds Ready in ~37s on push.
 - goldvsbitcoin.org repoint to /learn/ = wk 7–8 (M5). goldbuyer.io ranking site = Phase 2, month 4+.
 
 ## Shipped log
