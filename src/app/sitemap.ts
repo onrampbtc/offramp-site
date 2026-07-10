@@ -47,6 +47,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/blog/best-place-to-sell-gold", changeFrequency: "monthly" as const, priority: 0.8 },
     { url: "/widget", changeFrequency: "monthly" as const, priority: 0.7 },
     { url: "/calculators", changeFrequency: "weekly" as const, priority: 0.8 },
+    { url: "/prices/14k-gold-price-per-gram", changeFrequency: "daily" as const, priority: 0.9 },
     { url: "/family-vault", changeFrequency: "monthly" as const, priority: 0.7 },
     { url: "/austin", changeFrequency: "monthly" as const, priority: 0.8 },
   ];

@@ -23,6 +23,7 @@ const REVALIDATE_PATHS = [
   "/calculators/dental",
   "/calculators/scrap",
   "/calculators/pawn-comparison",
+  "/prices/14k-gold-price-per-gram",
 ];
 
 export async function GET(request: Request) {
