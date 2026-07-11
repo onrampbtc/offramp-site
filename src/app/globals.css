@@ -11,12 +11,12 @@
 */
 
 @theme inline {
-  /* Paper & surfaces */
-  --color-bg: #FAF7F1;             /* page (estate paper) */
-  --color-paper: #FAF7F1;
-  --color-raise: #FFFFFF;          /* cards */
-  --color-bg-card: #FFFFFF;
-  --color-bg-card-hover: #FBF8F1;
+  /* Surfaces — inverted 2026-07-11: white world, paper reserved for cards */
+  --color-bg: #FFFFFF;             /* page */
+  --color-paper: #FFFFFF;
+  --color-raise: #FAF7F1;          /* cards (estate paper) */
+  --color-bg-card: #FAF7F1;
+  --color-bg-card-hover: #F5F0E6;
 
   /* Ink (text) — green-cast charcoal; the "black" is now a deep green */
   --color-ink: #1D2721;
@@ -53,9 +53,9 @@
   --color-ember: #A0490A;          /* live-market cognac on light — 5.7:1 on paper */
   --color-ember-brt: #F39F41;      /* terminal amber on dark green — 5.7:1 on vault */
 
-  /* Instrument panel + dark room — Rolex --dark-green, not black */
-  --color-panel: #0B3E27;
-  --color-panel-2: #0A3220;        /* /gold-to-bitcoin page bg */
+  /* Instrument panel + dark room — darkest hunter (Harrods #122717 class) */
+  --color-panel: #122717;
+  --color-panel-2: #0E2015;        /* /gold-to-bitcoin page bg */
   --color-panel-ink: #EDE8D8;
   --color-panel-mut: #7E9A8C;
   --color-gold-brt: #D9BC82;       /* gold on dark only */
@@ -69,7 +69,7 @@
 html { scroll-behavior: smooth; }
 
 body {
-  background-color: #FAF7F1;
+  background-color: #FFFFFF;
   color: #1D2721;
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
@@ -107,7 +107,7 @@ h2.font-display, h3.font-display { font-weight: 480; }
   background:
     radial-gradient(120% 90% at 20% 10%, rgba(217,188,130,0.10), transparent 55%),
     radial-gradient(90% 120% at 85% 90%, rgba(243,159,65,0.05), transparent 50%),
-    #0A3220;
+    #0E2015;
   position: relative;
 }
 .vault-atmosphere::after {
@@ -160,6 +160,6 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="number"] { -moz-appearance: textfield; }
 
 ::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: #FAF7F1; }
+::-webkit-scrollbar-track { background: #FFFFFF; }
 ::-webkit-scrollbar-thumb { background: #CFC5AD; border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: #B8941F; }
