@@ -23,7 +23,7 @@ export function AssayLine() {
         </span>
         <span className="font-mono text-[11px] tracking-wide text-ink-2">
           XAU{" "}
-          <span className="text-gold-400">
+          <span className={isLive ? "text-ember" : "text-gold-400"}>
             ${goldPerOz.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
           </span>
           /oz

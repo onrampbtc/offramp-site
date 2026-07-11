@@ -18,17 +18,17 @@
   --color-bg-card: #FFFFFF;
   --color-bg-card-hover: #FBF8F1;
 
-  /* Ink (text) */
-  --color-ink: #232019;
-  --color-ink-2: #756C58;
-  --color-ink-3: #98917D;
-  --color-cream: #232019;                       /* legacy text color → ink */
-  --color-cream-60: rgba(35, 32, 25, 0.74);
-  --color-cream-45: rgba(35, 32, 25, 0.58);
-  --color-cream-35: rgba(35, 32, 25, 0.46);
-  --color-cream-25: rgba(35, 32, 25, 0.34);
-  --color-cream-15: rgba(35, 32, 25, 0.15);     /* hairline borders */
-  --color-cream-08: rgba(35, 32, 25, 0.07);     /* soft washes / dividers */
+  /* Ink (text) — green-cast charcoal; the "black" is now a deep green */
+  --color-ink: #1D2721;
+  --color-ink-2: #5F6E63;
+  --color-ink-3: #8A968B;
+  --color-cream: #1D2721;                       /* legacy text color → ink */
+  --color-cream-60: rgba(29, 39, 33, 0.74);
+  --color-cream-45: rgba(29, 39, 33, 0.58);
+  --color-cream-35: rgba(29, 39, 33, 0.46);
+  --color-cream-25: rgba(29, 39, 33, 0.34);
+  --color-cream-15: rgba(29, 39, 33, 0.15);     /* hairline borders */
+  --color-cream-08: rgba(29, 39, 33, 0.07);     /* soft washes / dividers */
 
   /* Hairlines */
   --color-line: #EAE2D0;
@@ -50,12 +50,14 @@
   /* Data colors */
   --color-teal: #3E6152;           /* value-up, positive */
   --color-coral: #7A3B2E;          /* warnings, pawn comparisons */
+  --color-ember: #A85623;          /* live-market accent on light (AA small text) */
+  --color-ember-brt: #E8964B;      /* live-market accent on dark green */
 
-  /* Instrument panel + dark room */
-  --color-panel: #171410;
-  --color-panel-2: #16130E;        /* /gold-to-bitcoin page bg */
-  --color-panel-ink: #EDE5CF;
-  --color-panel-mut: #8D8674;
+  /* Instrument panel + dark room — hunter green, not black */
+  --color-panel: #0F2B21;
+  --color-panel-2: #0C241C;        /* /gold-to-bitcoin page bg */
+  --color-panel-ink: #EDE8D8;
+  --color-panel-mut: #7E9A8C;
   --color-gold-brt: #D9BC82;       /* gold on dark only */
 
   /* Type */
@@ -68,14 +70,14 @@ html { scroll-behavior: smooth; }
 
 body {
   background-color: #FAF7F1;
-  color: #232019;
+  color: #1D2721;
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
 }
 
 ::selection {
   background-color: rgba(184, 148, 31, 0.25);
-  color: #232019;
+  color: #1D2721;
 }
 
 /* Every number on the site is tabular mono (spec §4) */
@@ -104,8 +106,8 @@ h2.font-display, h3.font-display { font-weight: 480; }
 .vault-atmosphere {
   background:
     radial-gradient(120% 90% at 20% 10%, rgba(217,188,130,0.10), transparent 55%),
-    radial-gradient(90% 120% at 85% 90%, rgba(217,188,130,0.06), transparent 50%),
-    #16130E;
+    radial-gradient(90% 120% at 85% 90%, rgba(232,150,75,0.05), transparent 50%),
+    #0C241C;
   position: relative;
 }
 .vault-atmosphere::after {

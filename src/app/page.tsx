@@ -195,7 +195,7 @@ export default function HomePage() {
       </section>
 
       {/* ============ DARK THESIS BAND ============ */}
-      <section className="bg-panel-2">
+      <section className="vault-atmosphere">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
             <p className="max-w-2xl font-display text-2xl font-medium leading-snug text-panel-ink sm:text-3xl">

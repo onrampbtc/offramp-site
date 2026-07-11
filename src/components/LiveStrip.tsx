@@ -19,10 +19,10 @@ export function LiveStrip() {
         <div className="flex flex-col items-start justify-between gap-3 font-mono text-sm sm:flex-row sm:items-center">
           <div className="flex items-center gap-2">
             <span
-              className={`inline-block h-1.5 w-1.5 rounded-full ${isLive ? "bg-teal" : "bg-panel-mut"}`}
+              className={`inline-block h-1.5 w-1.5 rounded-full ${isLive ? "bg-ember-brt" : "bg-panel-mut"}`}
               aria-hidden="true"
             />
-            <span className="text-panel-mut">
+            <span className={isLive ? "text-ember-brt" : "text-panel-mut"}>
               {isLive ? `Live · ${lastUpdated}` : "Indicative"}
             </span>
           </div>
@@ -30,7 +30,7 @@ export function LiveStrip() {
             <div className="flex items-baseline gap-2">
               <dt className="text-panel-mut">XAU</dt>
               <dd className="text-panel-ink">
-                <span className="text-gold-brt">${usd(goldPerOz)}</span>
+                <span className="text-ember-brt">${usd(goldPerOz)}</span>
                 <span className="text-panel-mut">/oz</span>
               </dd>
             </div>
