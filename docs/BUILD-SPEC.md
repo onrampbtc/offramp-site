@@ -484,6 +484,8 @@ Weekly (~4h): Mon ship 2 backlog pages (worth→guides order per §2 volumes) ·
 **Pre-M1 checklist:** trademark knockout search on "Offramp" in financial services · Onramp written referral + name-peace agreement · grab @offrampgold on X/YouTube/LinkedIn · hello@offrampgold.com created and warming.
 
 ## Changelog
+
+- **2026-07-11 — §4 palette superseded by "Verdant" (v1.3, MERGED TO PRODUCTION):** white page ground #FFFFFF; estate paper demoted to card surfaces (#FAF7F1, hover #F5F0E6); ink green-cast #1D2721; dark moments darkest hunter #122717 (panels) / #0E2015 (dark rooms, vault band) — never black; NEW ember tokens for live-market data only: #A0490A on light, #F39F41 (terminal amber) on dark; champagne family, type system, logo, Assay Line, and all §4 usage laws unchanged. Canonical token source: src/app/globals.css; evidence: docs/design-research/green-amber-precedent.md. Homepage funnel restructured (sell-intent hero, consult CTA in nav, /learn hub, family vault → "The Gold Ledger" beta, tracker-first). Chosen by Michael 2026-07-11 after rounds: Assay Ledger → chique-v2 (rejected) → verdant round 3 → round-4 inversion (accepted, "merge to start").
 - v1.2 (2026-07-10): Assay Ledger design system chosen (research-driven; see docs/design-research/DIRECTIONS.md). Estate Paper superseded.
 - v1.1 (2026-07-09): Name locked (Offramp); three-property architecture (goldvsbitcoin editorial, goldbuyer.io Phase 2 ranking site w/ FTC disclosure, goldtobtc 301); "Cash out" adopted as decision-moment product verb with usage rule.
 - v1.0 (2026-07-09): Initial complete build spec consolidating master plan v2.0 + all research.
