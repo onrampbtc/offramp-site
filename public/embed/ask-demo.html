@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ask Offramp widget — demo (both modes)</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      max-width: 720px; margin: 0 auto; padding: 48px 24px 120px;
+      color: #1D2721; line-height: 1.6;
+    }
+    h1 { font-size: 28px; }
+    h2 { margin-top: 40px; font-size: 20px; }
+    code { background: #FAF7F1; border: 1px solid #EAE2D0; border-radius: 4px; padding: 2px 6px; font-size: 13px; }
+    pre { background: #FAF7F1; border: 1px solid #EAE2D0; border-radius: 8px; padding: 16px; overflow-x: auto; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <h1>Ask Offramp — embed demo</h1>
+  <p>
+    This page demonstrates both widget modes. On localhost the iframe loads
+    from this origin (the dev server); in production it loads
+    <code>offrampgold.com/ask?embed=1</code>.
+  </p>
+
+  <h2>1. Launcher mode</h2>
+  <p>
+    A floating button sits bottom-right (look down-right now). One line
+    anywhere in the page:
+  </p>
+  <pre>&lt;script src="https://offrampgold.com/embed/ask.js"
+        data-cta="What's your gold worth?"
+        data-brand="goldbuyer"
+        data-mode="launcher"
+        data-accent="#B45309" async&gt;&lt;/script&gt;</pre>
+
+  <h2>2. Inline mode</h2>
+  <p>The button renders exactly where the script tag sits:</p>
+  <script src="/embed/ask.js"
+          data-cta="Get a provisional range"
+          data-brand="goldvsbitcoin"
+          data-mode="inline"
+          data-accent="#0B3E27" async></script>
+  <p style="margin-top:24px;color:#5F6E63;font-size:14px;">
+    Both open the same modal (dark scrim, ESC or scrim-click closes,
+    focus stays in the dialog). The close control inside the flow posts
+    <code>{type:'ask-offramp:close'}</code> back to this page.
+  </p>
+
+  <!-- Launcher instance -->
+  <script src="/embed/ask.js"
+          data-cta="What's your gold worth?"
+          data-brand="goldbuyer"
+          data-mode="launcher"
+          data-accent="#B45309" async></script>
+</body>
+</html>

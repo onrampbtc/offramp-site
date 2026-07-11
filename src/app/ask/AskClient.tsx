@@ -206,6 +206,17 @@ export function AskClient({ embed = false, brand = "offramp" }: { embed?: boolea
     window.parent?.postMessage({ type: "ask-offramp:close" }, "*");
   }, []);
 
+  // In the widget iframe, keystrokes land here rather than on the host
+  // page — forward Escape so the modal closes from inside too.
+  useEffect(() => {
+    if (!embed) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") closeEmbed();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [embed, closeEmbed]);
+
   const ctaTarget = embed ? "_blank" : undefined;
 
   return (
