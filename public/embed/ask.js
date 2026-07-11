@@ -19,7 +19,7 @@
 
   var CTA = script.getAttribute("data-cta") || "What's your gold worth?";
   var BRAND = script.getAttribute("data-brand") || "offramp";
-  var MODE = script.getAttribute("data-mode") === "inline" ? "inline" : "launcher";
+  var MODE = script.getAttribute("data-mode") || "launcher"; // launcher | inline | manual
   var ACCENT = script.getAttribute("data-accent") || "#B45309";
 
   // Local dev: serve the flow from the same origin so the demo works
@@ -162,7 +162,9 @@
   }
 
   function mount() {
-    if (MODE === "launcher") {
+    if (MODE === "manual") {
+      // no button — the host page calls window.AskOfframp.open()
+    } else if (MODE === "launcher") {
       var holder = document.createElement("div");
       holder.className = PREFIX + "-launcher";
       holder.appendChild(makeButton());
@@ -172,6 +174,10 @@
       script.parentNode.insertBefore(makeButton(), script);
     }
   }
+
+  // Public API for host pages (e.g. the flagship hero CTA).
+  window.AskOfframp = window.AskOfframp || {};
+  window.AskOfframp.open = openModal;
 
   if (document.body) {
     mount();

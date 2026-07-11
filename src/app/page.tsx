@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { LiveStrip } from "@/components/LiveStrip";
+import { AskLaunch } from "@/components/AskLaunch";
 
 export const metadata: Metadata = {
   alternates: { canonical: "https://offrampgold.com" },
@@ -23,8 +24,8 @@ const STEPS = [
   {
     n: "01",
     title: "Photograph your gold",
-    body: "We read the hallmark and give you an honest range in about a minute. No account needed.",
-    href: "/gold-calculator",
+    body: "Our AI reads the hallmark and gives you an honest range in about a minute. No account needed.",
+    href: "/ask",
     link: "See what it's worth",
   },
   {
@@ -70,19 +71,8 @@ export default function HomePage() {
               insured kit or an Austin appointment, an assay you can watch, and
               payment by wire or bitcoin — with no obligation at any step.
             </p>
-            <div className="mt-8 flex flex-wrap items-center gap-3">
-              <Link
-                href="/gold-calculator"
-                className="rounded-full bg-ink px-7 py-3.5 font-body text-sm font-semibold text-paper transition-transform hover:opacity-90 active:scale-[0.98]"
-              >
-                See what it&rsquo;s worth
-              </Link>
-              <Link
-                href="/sell"
-                className="rounded-full border border-line-2 px-7 py-3.5 font-body text-sm font-semibold text-ink transition-colors hover:border-ink active:scale-[0.98]"
-              >
-                Sell gold for cash
-              </Link>
+            <div className="mt-8">
+              <AskLaunch />
             </div>
             <p className="mt-5 font-body text-sm text-ink-3">
               New — <Link href="/family-vault" className="font-medium text-gold-400 underline decoration-line-2 underline-offset-4 hover:text-ink">the gold ledger</Link>
