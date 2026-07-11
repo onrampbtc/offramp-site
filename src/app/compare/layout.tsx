@@ -21,14 +21,13 @@ export const metadata: Metadata = {
     locale: "en_US",
     siteName: "Offramp",
     url: "https://offrampgold.com/compare",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Compare Gold Buyers" }],
+    images: [{ url: "/api/og?t=Compare%20Gold%20Buyers%20%E2%80%94%20Offramp%20vs%20Pawn%20Shops%20vs%20Jewelers", width: 1200, height: 630, alt: "Compare Gold Buyers — Offramp vs Pawn Shops vs Jewelers — Offramp" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Compare Gold Buyers — Offramp vs Pawn Shops vs Jewelers",
     description:
       "Live price comparison shows you exactly how much more you earn selling gold with Offramp.",
-    images: ["/og-image.png"],
   },
   alternates: { canonical: "https://offrampgold.com/compare" },
 };

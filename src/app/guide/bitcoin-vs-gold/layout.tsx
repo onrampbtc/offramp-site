@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "digital gold",
   ],
   openGraph: {
+    images: [{ url: "/api/og?t=Bitcoin%20vs%20Gold%3A%20The%20Complete%20Comparison", width: 1200, height: 630, alt: "Bitcoin vs Gold: The Complete Comparison — Offramp" }],
     title: "Bitcoin vs Gold: The Complete Comparison | Offramp",
     description:
       "Bitcoin and gold compared across scarcity, portability, divisibility, durability, and censorship resistance.",

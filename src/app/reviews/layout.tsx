@@ -21,13 +21,12 @@ export const metadata: Metadata = {
     locale: "en_US",
     siteName: "Offramp",
     url: "https://offrampgold.com/reviews",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Offramp Reviews" }],
+    images: [{ url: "/api/og?t=Customer%20Reviews%20%26%20Testimonials", width: 1200, height: 630, alt: "Customer Reviews & Testimonials — Offramp" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Customer Reviews & Testimonials | Offramp",
     description: "Read reviews from real customers who sold their gold with Offramp.",
-    images: ["/og-image.png"],
   },
   alternates: { canonical: "https://offrampgold.com/reviews" },
 };

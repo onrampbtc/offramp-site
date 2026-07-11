@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "gold to bitcoin",
   ],
   openGraph: {
+    images: [{ url: "/api/og?t=Hard%20Money%3A%20From%20Gold%20to%20Bitcoin", width: 1200, height: 630, alt: "Hard Money: From Gold to Bitcoin — Offramp" }],
     title: "Hard Money: From Gold to Bitcoin | Offramp",
     description:
       "The evolution of hard money from the gold standard to the Bitcoin standard.",

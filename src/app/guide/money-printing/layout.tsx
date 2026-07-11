@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "currency debasement",
   ],
   openGraph: {
+    images: [{ url: "/api/og?t=Money%20Printing%3A%20Why%20Gold%20and%20Bitcoin%20Exist", width: 1200, height: 630, alt: "Money Printing: Why Gold and Bitcoin Exist — Offramp" }],
     title: "Money Printing: Why Gold and Bitcoin Exist | Offramp",
     description:
       "How money printing reduces purchasing power and why hard assets protect your wealth.",

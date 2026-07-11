@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "bitcoin gold standard",
   ],
   openGraph: {
+    images: [{ url: "/api/og?t=The%20Gold%20Standard%3A%20History%20and%20Lessons", width: 1200, height: 630, alt: "The Gold Standard: History and Lessons — Offramp" }],
     title: "The Gold Standard: History and Lessons | Offramp",
     description:
       "The history of the gold standard and what comes next for sound money.",

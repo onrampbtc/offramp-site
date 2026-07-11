@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "physical gold to BTC",
   ],
   openGraph: {
+    images: [{ url: "/api/og?t=The%20Best%20Way%20to%20Convert%20Gold%20to%20Bitcoin%20in%202026", width: 1200, height: 630, alt: "The Best Way to Convert Gold to Bitcoin in 2026 — Offramp" }],
     title: "The Best Way to Convert Gold to Bitcoin in 2026",
     description:
       "Compare every method to convert physical gold to Bitcoin. Find the cheapest, fastest, safest option.",

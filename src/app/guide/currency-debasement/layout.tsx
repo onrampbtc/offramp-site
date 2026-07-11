@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "bitcoin hard money",
   ],
   openGraph: {
+    images: [{ url: "/api/og?t=Currency%20Debasement%3A%20A%205%2C000%20Year%20History", width: 1200, height: 630, alt: "Currency Debasement: A 5,000 Year History — Offramp" }],
     title: "Currency Debasement: A 5,000 Year History | Offramp",
     description:
       "From Roman denarii to modern fiat, governments have debased currencies throughout history.",

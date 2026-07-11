@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "best gold buyer",
   ],
   openGraph: {
+    images: [{ url: "/api/og?t=Best%20Place%20to%20Sell%20Gold%20in%202026%3A%207%20Options%20Compared", width: 1200, height: 630, alt: "Best Place to Sell Gold in 2026: 7 Options Compared — Offramp" }],
     title: "Best Place to Sell Gold in 2026: 7 Options Compared",
     description: "Compare 7 places to sell gold with real payout data: online buyers, pawn shops, jewelers, and more.",
     url: "https://offrampgold.com/blog/best-place-to-sell-gold",

@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "sell family gold",
   ],
   openGraph: {
+    images: [{ url: "/api/og?t=How%20to%20Sell%20Inherited%20Gold%20and%20Jewelry", width: 1200, height: 630, alt: "How to Sell Inherited Gold and Jewelry — Offramp" }],
     title: "How to Sell Inherited Gold and Jewelry | Offramp",
     description:
       "A sensitive guide to selling inherited gold and jewelry. Inventory, appraise, and sell while respecting sentimental value.",

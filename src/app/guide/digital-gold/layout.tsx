@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "bitcoin gold comparison",
   ],
   openGraph: {
+    images: [{ url: "/api/og?t=Bitcoin%3A%20The%20Digital%20Gold", width: 1200, height: 630, alt: "Bitcoin: The Digital Gold — Offramp" }],
     title: "Bitcoin: The Digital Gold | Offramp",
     description:
       "Why Bitcoin earned the title of digital gold. Deep comparison of core monetary properties.",

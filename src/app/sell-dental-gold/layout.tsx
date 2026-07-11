@@ -7,6 +7,7 @@ export const metadata: Metadata = {
     "Find out what your dental gold is worth and sell it for cash. Free dental gold value calculator for crowns, bridges, and dental scrap. professional assay, insured shipping, fair payouts.",
   alternates: { canonical: "https://offrampgold.com/sell-dental-gold" },
   openGraph: {
+    images: [{ url: "/api/og?t=Sell%20Dental%20Gold%20%E2%80%94%20Dental%20Gold%20Value%20Calculator", width: 1200, height: 630, alt: "Sell Dental Gold — Dental Gold Value Calculator — Offramp" }],
     title: "Sell Dental Gold — Dental Gold Value Calculator | Offramp",
     description:
       "Find out what your dental gold is worth and sell it for cash. Free dental gold value calculator for crowns, bridges, and dental scrap.",

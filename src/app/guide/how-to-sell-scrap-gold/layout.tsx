@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "sell gold scrap online",
   ],
   openGraph: {
+    images: [{ url: "/api/og?t=How%20to%20Sell%20Scrap%20Gold%3A%20Complete%20Guide", width: 1200, height: 630, alt: "How to Sell Scrap Gold: Complete Guide — Offramp" }],
     title: "How to Sell Scrap Gold: Complete Guide | Offramp",
     description:
       "Learn how to sell scrap gold for the best price. Sort, weigh, and find the best buyer.",

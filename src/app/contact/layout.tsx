@@ -19,13 +19,12 @@ export const metadata: Metadata = {
     locale: "en_US",
     siteName: "Offramp",
     url: "https://offrampgold.com/contact",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Contact Offramp" }],
+    images: [{ url: "/api/og?t=Contact%20Us", width: 1200, height: 630, alt: "Contact Us — Offramp" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Contact Us | Offramp",
     description: "Get in touch with the Offramp team for questions about selling your gold.",
-    images: ["/og-image.png"],
   },
   alternates: { canonical: "https://offrampgold.com/contact" },
 };

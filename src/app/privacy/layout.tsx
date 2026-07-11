@@ -13,13 +13,12 @@ export const metadata: Metadata = {
     locale: "en_US",
     siteName: "Offramp",
     url: "https://offrampgold.com/privacy",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Offramp Privacy Policy" }],
+    images: [{ url: "/api/og?t=Privacy%20Policy", width: 1200, height: 630, alt: "Privacy Policy — Offramp" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Privacy Policy | Offramp",
     description: "How Offramp collects, uses, and protects your personal information.",
-    images: ["/og-image.png"],
   },
   alternates: { canonical: "https://offrampgold.com/privacy" },
 };

@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   description:
     "Offramp is the bridge from physical gold to Bitcoin. Sell your jewelry, coins, or scrap gold for USD wired to your bank, then convert to BTC through Onramp custody. Gold is old hard money. Bitcoin is new hard money.",
   openGraph: {
+    images: [{ url: "/api/og?t=Sell%20Gold%20for%20Bitcoin%20%E2%80%94%20Gold%20to%20BTC", width: 1200, height: 630, alt: "Sell Gold for Bitcoin — Gold to BTC — Offramp" }],
     title: "Sell Gold for Bitcoin | Gold to BTC | Offramp by Onramp",
     description:
       "Sell your gold for Bitcoin through Offramp. Free insured shipping, professional assay, wire payment converted to BTC through Onramp custody.",

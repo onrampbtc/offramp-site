@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     "sell gold from home",
   ],
   openGraph: {
+    images: [{ url: "/api/og?t=How%20It%20Works%3A%20Mail%20In%20Gold%20for%20Cash", width: 1200, height: 630, alt: "How It Works: Mail In Gold for Cash — Offramp" }],
     title: "How It Works: Mail In Gold for Cash | Offramp",
     description:
       "Three simple steps to sell your gold: request a free insured kit, ship your gold, get paid by wire in 48 hours. Free returns if you decline.",

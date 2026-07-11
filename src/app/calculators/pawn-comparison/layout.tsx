@@ -7,6 +7,7 @@ export const metadata: Metadata = {
     "Pawn shops typically pay 20-55% of gold's melt value due to overhead costs and profit margins. Compare pawn shop, jeweler, and Offramp payouts side by side.",
   alternates: { canonical: "https://offrampgold.com/calculators/pawn-comparison" },
   openGraph: {
+    images: [{ url: "/api/og?t=Pawn%20Shop%20Gold%20Calculator%20%E2%80%94%20Compare%20Offers", width: 1200, height: 630, alt: "Pawn Shop Gold Calculator — Compare Offers — Offramp" }],
     title: "Pawn Shop Gold Calculator | Compare Offers | Offramp",
     description:
       "Pawn shops typically pay 20-55% of gold's melt value due to overhead costs and profit margins. Compare offers side by side.",

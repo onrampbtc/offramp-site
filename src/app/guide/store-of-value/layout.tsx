@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "inflation protection",
   ],
   openGraph: {
+    images: [{ url: "/api/og?t=Store%20of%20Value%3A%20Gold%2C%20Bitcoin%2C%20and%20Preserving%20Wealth", width: 1200, height: 630, alt: "Store of Value: Gold, Bitcoin, and Preserving Wealth — Offramp" }],
     title: "Store of Value: Gold, Bitcoin, and Preserving Wealth | Offramp",
     description:
       "What makes an asset a reliable store of value? Gold, Bitcoin, and the properties of sound money.",

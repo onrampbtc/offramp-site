@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "convert gold to bitcoin",
   ],
   openGraph: {
+    images: [{ url: "/api/og?t=Should%20I%20Sell%20My%20Gold%20for%20Bitcoin%3F%20A%202026%20Decision%20Framework", width: 1200, height: 630, alt: "Should I Sell My Gold for Bitcoin? A 2026 Decision Framework — Offramp" }],
     title: "Should I Sell My Gold for Bitcoin? A 2026 Decision Framework",
     description:
       "Data-driven framework for deciding whether converting gold to BTC makes sense for your situation.",

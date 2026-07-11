@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "sell gold krugerrands",
   ],
   openGraph: {
+    images: [{ url: "/api/og?t=How%20to%20Sell%20Gold%20Coins%20Online%3A%20Complete%20Guide%20for%202026", width: 1200, height: 630, alt: "How to Sell Gold Coins Online: Complete Guide for 2026 — Offramp" }],
     title: "How to Sell Gold Coins Online: Complete Guide for 2026",
     description: "Find the best buyers, understand coin values, and get the highest price for your gold coins.",
     url: "https://offrampgold.com/blog/how-to-sell-gold-coins-online",

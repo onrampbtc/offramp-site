@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "sell gold timing",
   ],
   openGraph: {
+    images: [{ url: "/api/og?t=Is%20Now%20a%20Good%20Time%20to%20Sell%20Gold%3F%20(March%202026)", width: 1200, height: 630, alt: "Is Now a Good Time to Sell Gold? (March 2026) — Offramp" }],
     title: "Is Now a Good Time to Sell Gold? (March 2026) | Offramp",
     description:
       "Gold prices are near all-time highs. Analysis of current conditions and when selling makes sense.",

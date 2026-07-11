@@ -25,14 +25,13 @@ export const metadata: Metadata = {
     locale: "en_US",
     siteName: "Offramp",
     url: "https://offrampgold.com/sell",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Sell Gold Online — Offramp" }],
+    images: [{ url: "/api/og?t=Sell%20Gold%20Online%20for%20Cash", width: 1200, height: 630, alt: "Sell Gold Online for Cash — Offramp" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Sell Gold Online for Cash | Offramp by Onramp",
     description:
       "Sell your gold jewelry, coins, bullion, and scrap gold online. Free insured shipping, professional assay, wire payment in 48 hours.",
-    images: ["/og-image.png"],
   },
   alternates: {
     canonical: "https://offrampgold.com/sell",

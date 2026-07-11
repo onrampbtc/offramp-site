@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "hard asset investing",
   ],
   openGraph: {
+    images: [{ url: "/api/og?t=Gold%20vs%20Bitcoin%20as%20an%20Investment%20(2026)", width: 1200, height: 630, alt: "Gold vs Bitcoin as an Investment (2026) — Offramp" }],
     title: "Gold vs Bitcoin as an Investment (2026) | Offramp",
     description:
       "Investment comparison: returns, volatility, risk profile, and portfolio allocation for gold and Bitcoin.",

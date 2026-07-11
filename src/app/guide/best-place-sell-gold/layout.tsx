@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     "sell gold 2026",
   ],
   openGraph: {
+    images: [{ url: "/api/og?t=Best%20Place%20to%20Sell%20Gold%20in%202026", width: 1200, height: 630, alt: "Best Place to Sell Gold in 2026 — Offramp" }],
     title: "Best Place to Sell Gold in 2026 | Offramp",
     description:
       "Find the best place to sell gold for maximum cash. Decision framework comparing all options.",

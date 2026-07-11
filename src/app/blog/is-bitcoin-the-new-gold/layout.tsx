@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "digital gold narrative",
   ],
   openGraph: {
+    images: [{ url: "/api/og?t=Is%20Bitcoin%20the%20New%20Gold%3F%20What%20the%20Data%20Says%20in%202026", width: 1200, height: 630, alt: "Is Bitcoin the New Gold? What the Data Says in 2026 — Offramp" }],
     title: "Is Bitcoin the New Gold? What the Data Says in 2026",
     description: "Analyze the 'digital gold' narrative with data from scarcity to institutional adoption.",
     url: "https://offrampgold.com/blog/is-bitcoin-the-new-gold",

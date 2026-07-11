@@ -7,6 +7,7 @@ export const metadata: Metadata = {
     "The current 18K gold price per gram is updated live. 18K gold contains 75% pure gold. Calculate your 18K gold value instantly with the Offramp calculator.",
   alternates: { canonical: "https://offrampgold.com/calculators/18k" },
   openGraph: {
+    images: [{ url: "/api/og?t=18K%20Gold%20Price%20Per%20Gram%20Today%20%E2%80%94%20Live%20Calculator", width: 1200, height: 630, alt: "18K Gold Price Per Gram Today — Live Calculator — Offramp" }],
     title: "18K Gold Price Per Gram Today | Live Calculator | Offramp",
     description:
       "The current 18K gold price per gram is updated live. 18K gold contains 75% pure gold. Calculate your 18K gold value instantly.",

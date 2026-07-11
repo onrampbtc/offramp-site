@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "pawn shop gold percentage",
   ],
   openGraph: {
+    images: [{ url: "/api/og?t=How%20Much%20Do%20Pawn%20Shops%20Pay%20for%20Gold%3F%20(2026)", width: 1200, height: 630, alt: "How Much Do Pawn Shops Pay for Gold? (2026) — Offramp" }],
     title: "How Much Do Pawn Shops Pay for Gold? (2026) | Offramp",
     description:
       "Pawn shops pay 20-55% of gold's melt value. Learn why and discover better alternatives.",

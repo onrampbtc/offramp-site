@@ -13,13 +13,12 @@ export const metadata: Metadata = {
     locale: "en_US",
     siteName: "Offramp",
     url: "https://offrampgold.com/terms",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Offramp Terms of Service" }],
+    images: [{ url: "/api/og?t=Terms%20of%20Service", width: 1200, height: 630, alt: "Terms of Service — Offramp" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Terms of Service | Offramp",
     description: "Terms and conditions for using the Offramp gold-selling platform.",
-    images: ["/og-image.png"],
   },
   alternates: { canonical: "https://offrampgold.com/terms" },
 };

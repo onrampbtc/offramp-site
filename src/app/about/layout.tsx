@@ -20,14 +20,13 @@ export const metadata: Metadata = {
     locale: "en_US",
     siteName: "Offramp",
     url: "https://offrampgold.com/about",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "About Offramp" }],
+    images: [{ url: "/api/og?t=About%20Offramp%20%E2%80%94%20Who%20We%20Are", width: 1200, height: 630, alt: "About Offramp — Who We Are — Offramp" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "About Offramp — Who We Are",
     description:
       "Learn about Offramp by Onramp — the trusted online gold buyer paying 80%+ of melt value.",
-    images: ["/og-image.png"],
   },
   alternates: { canonical: "https://offrampgold.com/about" },
 };

@@ -10,14 +10,13 @@ export const metadata: Metadata = {
     title: "Gold Calculator: What Is Your Gold Worth? | Offramp",
     description:
       "Calculate the value of your gold in USD and Bitcoin. Live spot prices updated every 60 seconds. Enter weight and karat for instant value.",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Gold Calculator — Offramp" }],
+    // no images here — ./opengraph-image.tsx supplies the branded card
   },
   twitter: {
     card: "summary_large_image",
     title: "Gold Calculator: What Is Your Gold Worth? | Offramp",
     description:
       "Calculate the value of your gold in USD and Bitcoin. Live spot prices updated every 60 seconds.",
-    images: ["/og-image.png"],
   },
 };
 

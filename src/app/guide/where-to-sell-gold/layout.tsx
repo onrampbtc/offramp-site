@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "pawn shop vs online gold buyer",
   ],
   openGraph: {
+    images: [{ url: "/api/og?t=Where%20to%20Sell%20Gold%3A%20Best%20Places%20Compared%20(2026)", width: 1200, height: 630, alt: "Where to Sell Gold: Best Places Compared (2026) — Offramp" }],
     title: "Where to Sell Gold: Best Places Compared (2026) | Offramp",
     description:
       "Compare pawn shops, jewelers, online gold buyers, and refineries. See payout percentages and find the best option.",

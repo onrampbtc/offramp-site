@@ -21,13 +21,12 @@ export const metadata: Metadata = {
     locale: "en_US",
     siteName: "Offramp",
     url: "https://offrampgold.com/faq",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Offramp FAQ" }],
+    images: [{ url: "/api/og?t=Frequently%20Asked%20Questions", width: 1200, height: 630, alt: "Frequently Asked Questions — Offramp" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Frequently Asked Questions | Offramp",
     description: "Get answers to common questions about selling gold with Offramp.",
-    images: ["/og-image.png"],
   },
   alternates: { canonical: "https://offrampgold.com/faq" },
 };

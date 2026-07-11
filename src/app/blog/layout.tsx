@@ -7,6 +7,7 @@ export const metadata: Metadata = {
     "Expert insights on selling gold, converting precious metals to Bitcoin, market analysis, and guides to getting the best value for your gold.",
   alternates: { canonical: "https://offrampgold.com/blog" },
   openGraph: {
+    images: [{ url: "/api/og?t=Offramp%20Blog%20%E2%80%94%20Gold%2C%20Bitcoin%20%26%20Precious%20Metals%20Insights", width: 1200, height: 630, alt: "Offramp Blog — Gold, Bitcoin & Precious Metals Insights — Offramp" }],
     title: "Offramp Blog — Gold, Bitcoin & Precious Metals Insights",
     description:
       "Expert insights on selling gold, converting precious metals to Bitcoin, and getting the best value.",

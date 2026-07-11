@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "gold jewelry worth",
   ],
   openGraph: {
+    images: [{ url: "/api/og?t=How%20to%20Sell%20Gold%20Jewelry%3A%20Step-by-Step%20Guide", width: 1200, height: 630, alt: "How to Sell Gold Jewelry: Step-by-Step Guide — Offramp" }],
     title: "How to Sell Gold Jewelry: Step-by-Step Guide | Offramp",
     description:
       "Learn how to sell gold jewelry for the most money. Step-by-step guide covering karat identification, weighing, and finding the best buyer.",

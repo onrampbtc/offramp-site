@@ -7,6 +7,7 @@ export const metadata: Metadata = {
     "Dental gold is typically 16K-20K purity and ranges from 1-10 grams per piece. Calculate the value of your dental gold crowns, bridges, and fillings with the Offramp calculator.",
   alternates: { canonical: "https://offrampgold.com/calculators/dental" },
   openGraph: {
+    images: [{ url: "/api/og?t=Dental%20Gold%20Value%20Calculator", width: 1200, height: 630, alt: "Dental Gold Value Calculator — Offramp" }],
     title: "Dental Gold Value Calculator | Offramp",
     description:
       "Dental gold is typically 16K-20K purity and ranges from 1-10 grams per piece. Calculate your dental gold value instantly.",
