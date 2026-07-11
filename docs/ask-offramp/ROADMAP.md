@@ -14,7 +14,14 @@ Companion to CONCEPT.md (thesis, skills, guardrails). This file is the build seq
 - ● /api/ask/estimate (live spot, 80–90% band, session bookkeeping) · /api/ask/lead (consent + items + spot_at_estimate) · /api/ask/vision (501 env-gated stub — needs ANTHROPIC_API_KEY).
 - ● /ask flagship page: pieces UI (kind/karat/weight+oz/not-sure typical bands), photo = client-side preview only (no upload yet), live ranges + dark-panel total, email completion → ledger/kit/consult CTAs, ?embed=1 minimal chrome.
 - ● /embed/ask.js widget (launcher + inline, config-driven brand/accent) + ask-demo.html.
-- ▢ Remaining for full Phase A acceptance: vision call itself (photo→prefill, blocked on Anthropic key) · Resend send of the breakdown email (blocked on Resend key) · photo persistence (private storage).
+- ▢ Remaining for full Phase A acceptance: ● vision call (LIVE 2026-07-11, ASK_LLM_* env) · Resend send of the breakdown email (blocked on Resend key) · ● photo persistence (LIVE 2026-07-11: post-save upload to private ask-photos bucket, signed-URL display — see Gold Ledger below).
+
+### Gold Ledger V1 (● SHIPPED 2026-07-11, chique-v3-verdant) — the retention loop
+/ask → save → magic-link sign-in → /ledger: pieces w/ photo thumbnails (signed URLs, 10-min expiry), live re-valued provisional ranges at current spot, dark-hunter total, sell/consult/add CTAs.
+- ● Migration 0004: auth.users→leads/lead_items linkage (0001 vault tables reserved for M4 — reconciliation in migration header), own-rows RLS, private ask-photos bucket, ledger event types.
+- ● /api/ledger/claim (verified-email claim, JWT-only identity) · /api/ledger/items (live re-valuation + signed photo URLs + ledger_viewed) · /api/ask/photo (post-save-only, session-must-match-lead).
+- ● Events: ledger_created · pieces_claimed · ledger_viewed (meta w/ counts) — verified rows in ask_events.
+- KNOWN LIMIT: built-in Supabase SMTP ≈2 auth emails/hr + free tier blocks template edits → V1 is magic-LINK only (no visible 6-digit code). Resend SMTP (Authentication → Emails → SMTP Settings → smtp.resend.com) unblocks volume + the {{ .Token }} code UI. Google one-tap = V2 (OAuth creds from Michael).
 - Acceptance: photo→range in <60s; provisional labels everywhere ✓; email consent recorded with source property ✓; lead row visible in Supabase ✓.
 
 ## Phase B — Learn (chat + RAG) (● SHIPPED 2026-07-11, on chique-v3-verdant)
