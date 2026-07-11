@@ -67,7 +67,7 @@ const PROCESS_STEPS = [
   {
     step: "02",
     title: "Verified & Assayed",
-    desc: "Every coin and bar is weighed, photographed, and tested with our XRF spectrometer under video documentation.",
+    desc: "Every coin and bar is weighed, photographed, and tested with our precision assay equipment under video documentation.",
   },
   {
     step: "03",

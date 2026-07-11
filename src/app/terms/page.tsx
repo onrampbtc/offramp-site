@@ -45,7 +45,7 @@ export default function TermsPage() {
               Offramp provides a platform for individuals to sell their gold
               items (jewelry, coins, bars, dental gold, and scrap gold) in
               exchange for payment via bank wire or Bitcoin. Our services include
-              providing free insured shipping kits, XRF spectrometer testing, and
+              providing free insured shipping kits, precision assay equipment testing, and
               payment processing.
             </p>
           </TermsSection>
@@ -68,7 +68,7 @@ export default function TermsPage() {
               </li>
               <li>
                 <strong className="text-cream">Testing:</strong> Upon receipt, we
-                test your gold using an XRF spectrometer under video. Test results
+                test your gold using an precision assay equipment under video. Test results
                 determine the purity and weight of your items.
               </li>
               <li>

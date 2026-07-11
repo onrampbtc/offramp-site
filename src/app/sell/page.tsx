@@ -93,7 +93,7 @@ export default function SellPage() {
 
           <p className="mt-6 max-w-2xl mx-auto text-lg sm:text-xl text-cream-60 font-body leading-relaxed">
             Turn your unwanted jewelry, coins, dental gold, and scrap into
-            cash. Free insured shipping, transparent XRF assay, and wire
+            cash. Free insured shipping, transparent professional assay, and wire
             payment within 48 hours.
           </p>
 
@@ -136,7 +136,7 @@ export default function SellPage() {
                 </p>
                 <p className="font-body text-base sm:text-lg text-cream-60 leading-relaxed">
                   Offramp buys gold jewelry, coins, bars, and scrap gold via a
-                  free insured mail-in service. We assay with XRF spectrometry
+                  free insured mail-in service. We assay with professional assay testing
                   and wire USD directly to your bank account within 48 hours of
                   acceptance.
                 </p>
@@ -303,7 +303,7 @@ export default function SellPage() {
               {
                 step: "03",
                 title: "Get Paid",
-                desc: "We assay with XRF, send your quote, and wire payment within 48 hours of acceptance.",
+                desc: "We assay with assay, send your quote, and wire payment within 48 hours of acceptance.",
               },
             ].map((item) => (
               <div

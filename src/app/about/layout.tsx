@@ -4,7 +4,7 @@ import { BreadcrumbJsonLd, FAQJsonLd } from "@/components/JsonLd";
 export const metadata: Metadata = {
   title: "About Offramp — Who We Are",
   description:
-    "Learn about Offramp by Onramp — the trusted online gold buyer paying 80%+ of melt value. Free insured shipping, XRF assay under video, fast payment.",
+    "Learn about Offramp by Onramp — the trusted online gold buyer paying 80%+ of melt value. Free insured shipping, assay on camera, fast payment.",
   keywords: [
     "about offramp",
     "online gold buyer",
@@ -36,7 +36,7 @@ const FAQ_ITEMS = [
   {
     question: "Is Offramp a legitimate gold buyer?",
     answer:
-      "Yes. Offramp is operated by Onramp, a registered business. We use XRF spectrometer testing under video for full transparency, provide free insured shipping, and pay via bank wire or Bitcoin.",
+      "Yes. Offramp is operated by Onramp, a registered business. We use precision assay equipment testing under video for full transparency, provide free insured shipping, and pay via bank wire or Bitcoin.",
   },
   {
     question: "How long has Offramp been in business?",

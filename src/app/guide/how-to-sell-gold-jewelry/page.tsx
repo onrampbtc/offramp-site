@@ -121,7 +121,7 @@ export default function HowToSellGoldJewelryPage() {
             </div>
             <p className="text-cream-45 font-body text-sm mt-4">
               If you cannot find a stamp, the item may be gold-plated rather
-              than solid gold. A professional assay with an XRF spectrometer
+              than solid gold. A professional assay with an precision assay equipment
               can determine exact purity.
             </p>
           </section>
@@ -200,7 +200,7 @@ export default function HowToSellGoldJewelryPage() {
               package online.
             </p>
             <p className="text-cream-60 font-body leading-relaxed">
-              When your gold arrives, we test every piece with an XRF
+              When your gold arrives, we test every piece with an assay
               spectrometer and record the entire process on video. You receive
               your payout &mdash; by wire transfer or Bitcoin &mdash; within
               48 hours.
@@ -248,7 +248,7 @@ export default function HowToSellGoldJewelryPage() {
                 Sell Gold Jewelry with Offramp &rarr;
               </p>
               <p className="text-cream-45 text-sm mt-1">
-                Free insured shipping and professional XRF assay.
+                Free insured shipping and professional professional assay.
               </p>
             </Link>
             <Link
@@ -288,7 +288,7 @@ export default function HowToSellGoldJewelryPage() {
             </h2>
             <p className="text-cream-45 font-body mb-8 max-w-lg mx-auto">
               Offramp pays 80%+ of melt value for gold jewelry. Free insured
-              shipping, XRF assay on video, payment in 48 hours.
+              shipping, an assay you can watch, payment in 48 hours.
             </p>
             <Link
               href="/sell-jewelry"

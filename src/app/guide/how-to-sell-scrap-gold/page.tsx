@@ -117,7 +117,7 @@ export default function HowToSellScrapGoldPage() {
             </p>
             <p className="text-cream-60 font-body leading-relaxed">
               Unmarked pieces should go in their own pile. These will need
-              professional testing with an XRF spectrometer or acid test to
+              professional testing with an precision assay equipment or acid test to
               determine purity. Do not assume they are worthless &mdash; many
               older pieces were not stamped but contain genuine gold.
             </p>
@@ -153,7 +153,7 @@ export default function HowToSellScrapGoldPage() {
             <p className="text-cream-60 font-body leading-relaxed">
               If you have dental gold &mdash; from a relative&apos;s estate or
               your own dental work &mdash; include it with your scrap gold
-              shipment. Offramp tests dental gold with the same XRF
+              shipment. Offramp tests dental gold with the same assay
               spectrometer used for jewelry, ensuring you get paid for the
               exact purity.
             </p>
@@ -207,7 +207,7 @@ export default function HowToSellScrapGoldPage() {
                 Sell Scrap Gold with Offramp &rarr;
               </p>
               <p className="text-cream-45 text-sm mt-1">
-                Free insured shipping, professional XRF assay, 80%+ payout.
+                Free insured shipping, professional professional assay, 80%+ payout.
               </p>
             </Link>
             <Link

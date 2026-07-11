@@ -45,7 +45,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           {
             question: "What is the best place to sell gold for the most money?",
             answer:
-              "Online mail-in gold buyers consistently pay the highest percentage of spot price (85-95%) because they have lower overhead than physical stores and use XRF testing for accurate valuations. Services like Offramp also offer free insured shipping and transparent pricing tied to live spot rates.",
+              "Online mail-in gold buyers consistently pay the highest percentage of spot price (85-95%) because they have lower overhead than physical stores and use professional testing for accurate valuations. Services like Offramp also offer free insured shipping and transparent pricing tied to live spot rates.",
           },
           {
             question: "Should I sell my gold to a pawn shop?",

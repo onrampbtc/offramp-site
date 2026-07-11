@@ -38,15 +38,15 @@ const BUYERS = [
 const FAQS = [
   {
     q: "How accurate is this calculator?",
-    a: "Our calculator uses live gold spot prices updated every 60 seconds directly from global commodity exchanges. The \u201CMelt Value\u201D represents the theoretical value of the pure gold content in your item. The \u201COfframp Pays\u201D figure reflects our actual payout rate of 80%+ of melt value, which is significantly higher than most competitors. Final payout after assay may vary slightly based on the exact purity determined by our XRF spectrometer analysis.",
+    a: "Our calculator uses live gold spot prices updated every 60 seconds directly from global commodity exchanges. The \u201CMelt Value\u201D represents the theoretical value of the pure gold content in your item. The \u201COfframp Pays\u201D figure reflects our actual payout rate of 80%+ of melt value, which is significantly higher than most competitors. Final payout after assay may vary slightly based on the exact purity determined by our precision assay equipment analysis.",
   },
   {
     q: "What karat is my gold?",
-    a: "Most gold jewelry sold in the US is 10K or 14K. European jewelry is often 18K. Look for a small stamp on the inside of rings, on clasps of necklaces, or on the back of pendants. Common stamps include \u201C10K\u201D, \u201C14K\u201D, \u201C585\u201D (14K), \u201C750\u201D (18K), \u201C916\u201D (22K), or \u201C999\u201D (24K). If you cannot find a stamp, select 10K as a conservative estimate \u2014 our XRF assay will determine the exact purity.",
+    a: "Most gold jewelry sold in the US is 10K or 14K. European jewelry is often 18K. Look for a small stamp on the inside of rings, on clasps of necklaces, or on the back of pendants. Common stamps include \u201C10K\u201D, \u201C14K\u201D, \u201C585\u201D (14K), \u201C750\u201D (18K), \u201C916\u201D (22K), or \u201C999\u201D (24K). If you cannot find a stamp, select 10K as a conservative estimate \u2014 our professional assay will determine the exact purity.",
   },
   {
     q: "How does Offramp determine the final price?",
-    a: "When we receive your gold, we test every piece with an XRF spectrometer \u2014 the same technology used by refineries and the US Mint. This gives an exact purity reading to 0.01%. We record the entire assay process on video so you can verify the results. Your payout is calculated using the spot price at the time of assay multiplied by the verified purity and weight, at our published payout rate of 80%+.",
+    a: "When we receive your gold, we test every piece with an precision assay equipment \u2014 the same technology used by refineries and the US Mint. This gives an exact purity reading to 0.01%. We record the entire assay process on video so you can verify the results. Your payout is calculated using the spot price at the time of assay multiplied by the verified purity and weight, at our published payout rate of 80%+.",
   },
   {
     q: "Can I get paid in Bitcoin instead of cash?",
@@ -54,7 +54,7 @@ const FAQS = [
   },
   {
     q: "What is the minimum amount of gold I can sell?",
-    a: "There is no strict minimum. However, because we provide free insured shipping and a professional XRF assay for every order, we recommend sending at least 5 grams of gold (roughly one small ring or pendant) to make the process worthwhile. For items under 2 grams, the shipping and insurance costs may exceed the payout value.",
+    a: "There is no strict minimum. However, because we provide free insured shipping and a professional professional assay for every order, we recommend sending at least 5 grams of gold (roughly one small ring or pendant) to make the process worthwhile. For items under 2 grams, the shipping and insurance costs may exceed the payout value.",
   },
 ];
 

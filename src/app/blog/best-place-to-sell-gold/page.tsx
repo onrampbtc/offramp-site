@@ -29,7 +29,7 @@ export default function BestPlaceToSellGoldPage() {
               Online mail-in gold buyers (85-95% of spot) consistently pay
               significantly more than pawn shops (40-60%) or local cash-for-gold
               stores. The trade-off is 3-5 days of shipping time vs. immediate
-              cash. For maximum payout, use a reputable online buyer with XRF
+              cash. For maximum payout, use a reputable online buyer with assay
               testing, free insured shipping, and a transparent return policy.
             </p>
           </div>
@@ -126,7 +126,7 @@ export default function BestPlaceToSellGoldPage() {
             <p className="text-cream-45 leading-relaxed mb-4">
               Online gold buyers like Offramp consistently pay the highest
               percentage of spot price because they operate without the overhead
-              of retail storefronts. They use XRF spectrometers (the same
+              of retail storefronts. They use precision assay equipments (the same
               technology refineries use) to determine exact gold content, then
               pay 85-95% of melt value based on live spot prices.
             </p>
@@ -136,7 +136,7 @@ export default function BestPlaceToSellGoldPage() {
                 <ul className="text-cream-60 text-sm space-y-1.5">
                   <li>• Highest payout (85-95% of spot)</li>
                   <li>• Free insured shipping (~$5,000 coverage)</li>
-                  <li>• XRF testing = accurate valuations</li>
+                  <li>• professional testing = accurate valuations</li>
                   <li>• Transparent pricing tied to live spot</li>
                   <li>• Free return if you decline offer</li>
                 </ul>
@@ -262,7 +262,7 @@ export default function BestPlaceToSellGoldPage() {
               <li>
                 <strong className="text-cream">Identify the karat.</strong> Look
                 for stamps (10K, 14K, 18K, 22K, 24K). If unstamped, ask for an
-                acid or XRF test.
+                acid or assay test.
               </li>
               <li>
                 <strong className="text-cream">Check the live spot price</strong>{" "}
@@ -332,7 +332,7 @@ export default function BestPlaceToSellGoldPage() {
               {[
                 {
                   q: "What is the best place to sell gold for the most money?",
-                  a: "Online mail-in gold buyers consistently pay the highest percentage of spot price (85-95%) because they have lower overhead and use XRF testing. Services like Offramp also offer free insured shipping and transparent pricing tied to live spot rates.",
+                  a: "Online mail-in gold buyers consistently pay the highest percentage of spot price (85-95%) because they have lower overhead and use professional testing. Services like Offramp also offer free insured shipping and transparent pricing tied to live spot rates.",
                 },
                 {
                   q: "Should I sell my gold to a pawn shop?",
@@ -390,7 +390,7 @@ export default function BestPlaceToSellGoldPage() {
               Ready to sell?
             </h2>
             <p className="text-cream-45 mb-6 max-w-md mx-auto">
-              Get 85-95% of spot price with insured shipping, XRF testing, and
+              Get 85-95% of spot price with insured shipping, professional testing, and
               payment in cash or Bitcoin within 48 hours.
             </p>
             <Link

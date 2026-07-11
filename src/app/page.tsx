@@ -31,7 +31,7 @@ const STEPS = [
   {
     n: "03",
     title: "Watch the assay, get paid your way",
-    body: "Every final price comes from an XRF reading on video. Wire to your bank, or bitcoin via Onramp.",
+    body: "Every final price comes from a recorded assay. Wire to your bank, or bitcoin via Onramp.",
     href: "/how-it-works",
     link: "How it works",
   },
@@ -39,7 +39,7 @@ const STEPS = [
 
 const COMPARISON_ROWS = [
   { label: "Typical payout", pawn: "20–55% of melt", offramp: "80–90% of melt" },
-  { label: "Price basis", pawn: "Verbal estimate", offramp: "XRF assay on video" },
+  { label: "Price basis", pawn: "Verbal estimate", offramp: "an assay you can watch" },
   { label: "Pressure", pawn: "Decide on the spot", offramp: "48h price lock, decide at home" },
   { label: "Shipping", pawn: "You drive there", offramp: "Free insured kit, $25k coverage" },
   { label: "If you decline", pawn: "Awkward walk out", offramp: "Free return shipping" },

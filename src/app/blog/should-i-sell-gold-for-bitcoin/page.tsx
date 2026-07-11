@@ -302,8 +302,8 @@ export default function ShouldISellGoldForBitcoinPage() {
                 },
                 {
                   step: "3",
-                  title: "XRF assay on video",
-                  desc: "We test every item with an XRF spectrometer and record the entire process on video so you can verify.",
+                  title: "an assay you can watch",
+                  desc: "We test every item with an precision assay equipment and record the entire process on video so you can verify.",
                 },
                 {
                   step: "4",
@@ -383,7 +383,7 @@ export default function ShouldISellGoldForBitcoinPage() {
                 Sell Gold for Bitcoin with Offramp &rarr;
               </p>
               <p className="text-cream-45 text-sm mt-1">
-                Free insured shipping. XRF assay on video. BTC to your wallet.
+                Free insured shipping. an assay you can watch. BTC to your wallet.
               </p>
             </Link>
             <Link

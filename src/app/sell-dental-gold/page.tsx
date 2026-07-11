@@ -43,7 +43,7 @@ const DENTAL_ITEMS = [
   },
 ];
 
-const XRF_STEPS = [
+const assay_STEPS = [
   {
     step: "01",
     title: "Send It In",
@@ -51,8 +51,8 @@ const XRF_STEPS = [
   },
   {
     step: "02",
-    title: "XRF Analysis",
-    desc: "Our XRF spectrometer measures the exact gold, platinum, palladium, and silver content to 0.01% precision, all recorded on video.",
+    title: "assay Analysis",
+    desc: "Our precision assay equipment measures the exact gold, platinum, palladium, and silver content to 0.01% precision, all recorded on video.",
   },
   {
     step: "03",
@@ -116,7 +116,7 @@ export default function SellDentalGoldPage() {
           </h1>
           <p className="mt-8 max-w-2xl mx-auto text-lg sm:text-xl text-cream-60 font-body leading-relaxed">
             Offramp buys dental gold including crowns, bridges, inlays, and
-            dental scrap. We accept both clean and unclean pieces. XRF analysis
+            dental scrap. We accept both clean and unclean pieces. professional assay
             determines exact gold content for a fair payout based on current
             market prices.
           </p>
@@ -138,7 +138,7 @@ export default function SellDentalGoldPage() {
           </div>
 
           <div className="mt-16 flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-sm text-cream-45 font-body">
-            {["Clean or Unclean", "XRF Tested", "All Dental Work Accepted"].map(
+            {["Clean or Unclean", "assay Tested", "All Dental Work Accepted"].map(
               (item, i) => (
                 <div key={item} className="flex items-center gap-2">
                   {i > 0 && (
@@ -211,7 +211,7 @@ export default function SellDentalGoldPage() {
                 <p className="text-cream-60 font-body leading-relaxed">
                   You do not need to clean or prepare your dental gold in any
                   way. Send it exactly as you received it from your dentist. Our
-                  team handles all preparation and cleaning before the XRF
+                  team handles all preparation and cleaning before the assay
                   analysis.
                 </p>
               </div>
@@ -244,7 +244,7 @@ export default function SellDentalGoldPage() {
                 </p>
                 <p>
                   Many dental gold alloys also contain platinum and palladium,
-                  which are valuable precious metals in their own right. Our XRF
+                  which are valuable precious metals in their own right. Our assay
                   spectrometer detects all precious metals present, so you get
                   paid for everything &mdash; not just the gold.
                 </p>
@@ -310,7 +310,7 @@ export default function SellDentalGoldPage() {
                   <span className="text-gold-400 font-medium">
                     Most dental gold is 16K&ndash;20K
                   </span>{" "}
-                  &mdash; often purer than jewelry gold. Our XRF spectrometer
+                  &mdash; often purer than jewelry gold. Our precision assay equipment
                   determines the exact composition.
                 </p>
               </div>
@@ -332,13 +332,13 @@ export default function SellDentalGoldPage() {
               How We Test Dental Gold
             </h2>
             <p className="mt-4 max-w-xl mx-auto text-cream-45 font-body">
-              XRF spectrometry is non-destructive, precise, and fast. The same
+              professional assay testing is non-destructive, precise, and fast. The same
               technology used by refineries worldwide.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {XRF_STEPS.map((item) => (
+            {assay_STEPS.map((item) => (
               <div
                 key={item.step}
                 className="group relative bg-bg-card rounded-2xl p-8 sm:p-10 border border-cream-08 transition-all duration-500 hover:border-gold-500/20 hover:shadow-[0_0_40px_rgba(201,168,76,0.06)]"
@@ -358,14 +358,14 @@ export default function SellDentalGoldPage() {
             ))}
           </div>
 
-          {/* XRF accuracy callout */}
+          {/* assay accuracy callout */}
           <div className="mt-12 bg-bg-card rounded-2xl p-8 sm:p-10 border border-cream-08">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
               {[
                 {
                   stat: "0.01%",
                   label: "Purity Precision",
-                  sub: "XRF accuracy",
+                  sub: "assay accuracy",
                 },
                 {
                   stat: "Au, Pt, Pd, Ag",

@@ -288,7 +288,7 @@ export default function HowToSellGoldCoinsOnlinePage() {
                 },
                 {
                   q: "Can I sell gold coins for Bitcoin?",
-                  a: "Yes. Offramp accepts gold coins and pays in Bitcoin or cash — your choice. You ship with a free insured kit, receive an XRF-verified valuation, and get paid in BTC to your wallet within 48 hours.",
+                  a: "Yes. Offramp accepts gold coins and pays in Bitcoin or cash — your choice. You ship with a free insured kit, receive an assay-verified valuation, and get paid in BTC to your wallet within 48 hours.",
                 },
               ].map((faq) => (
                 <details
@@ -350,7 +350,7 @@ export default function HowToSellGoldCoinsOnlinePage() {
               </h2>
               <p className="text-cream-45 max-w-lg mx-auto mb-6">
                 Get a free insured shipping kit delivered to your door.
-                Professional XRF testing, transparent pricing, and payment in
+                Professional professional testing, transparent pricing, and payment in
                 cash or Bitcoin.
               </p>
               <Link

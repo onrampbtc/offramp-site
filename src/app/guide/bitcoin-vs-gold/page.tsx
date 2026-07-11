@@ -221,7 +221,7 @@ export default function BitcoinVsGoldPage() {
                     ["Censorship Resistance", "If self-custodied", "Native to protocol"],
                     ["Track Record", "5,000+ years", "16 years"],
                     ["Counterparty Risk", "None (physical)", "None (self-custody)"],
-                    ["Verifiability", "Requires XRF assay", "Instant on-chain"],
+                    ["Verifiability", "Requires professional assay", "Instant on-chain"],
                   ].map(([prop, gold, btc]) => (
                     <tr key={prop} className="border-b border-cream-08 last:border-0">
                       <td className="px-6 py-4 text-cream font-medium">
@@ -300,7 +300,7 @@ export default function BitcoinVsGoldPage() {
             </h2>
             <p className="text-cream-45 font-body mb-8 max-w-lg mx-auto">
               Whether you want cash or Bitcoin, Offramp pays 80%+ of spot
-              value with free insured shipping and XRF assay.
+              value with free insured shipping and professional assay.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

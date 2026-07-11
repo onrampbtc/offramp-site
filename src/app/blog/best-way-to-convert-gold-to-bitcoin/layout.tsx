@@ -50,7 +50,7 @@ export default function BestWayToConvertLayout({
           {
             question: "What is the best way to convert gold to Bitcoin?",
             answer:
-              "The best way for most people is a direct mail-in gold-to-Bitcoin service like Offramp. You ship your gold with free insured FedEx, it's tested with an XRF spectrometer on video, and Bitcoin is sent directly to your wallet. This eliminates the middlemen, multiple fees, and counterparty risk of other methods.",
+              "The best way for most people is a direct mail-in gold-to-Bitcoin service like Offramp. You ship your gold with free insured FedEx, it's tested with an precision assay equipment on video, and Bitcoin is sent directly to your wallet. This eliminates the middlemen, multiple fees, and counterparty risk of other methods.",
           },
           {
             question: "Can I trade physical gold for Bitcoin on an exchange?",

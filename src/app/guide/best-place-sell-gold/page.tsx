@@ -129,7 +129,7 @@ export default function BestPlaceSellGoldPage() {
             </p>
             <p className="text-cream-60 font-body leading-relaxed">
               The best online buyers &mdash; like Offramp &mdash; also invest
-              in technology that builds trust: XRF spectrometer assays recorded
+              in technology that builds trust: recorded professional assays recorded
               on video, live spot price calculators, insured shipping both
               ways, and transparent payout rates published on the website.
             </p>
@@ -187,7 +187,7 @@ export default function BestPlaceSellGoldPage() {
             <p className="text-cream-60 font-body leading-relaxed mb-4">
               Offramp was built specifically for this use case. We pay 80%+ of
               spot value &mdash; more than double what most pawn shops offer
-              &mdash; with free insured FedEx shipping and XRF spectrometer
+              &mdash; with free insured FedEx shipping and precision assay equipment
               assay recorded on video.
             </p>
             <p className="text-cream-60 font-body leading-relaxed">
@@ -210,7 +210,7 @@ export default function BestPlaceSellGoldPage() {
                 Sell Your Gold with Offramp &rarr;
               </p>
               <p className="text-cream-45 text-sm mt-1">
-                Free shipping, XRF assay, 80%+ of spot value.
+                Free shipping, professional assay, 80%+ of spot value.
               </p>
             </Link>
             <Link

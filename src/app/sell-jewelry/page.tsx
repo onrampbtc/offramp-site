@@ -117,7 +117,7 @@ export default function SellJewelryPage() {
           <p className="mt-8 max-w-2xl mx-auto text-lg sm:text-xl text-cream-60 font-body leading-relaxed">
             Offramp buys gold jewelry in any condition, including broken,
             damaged, or outdated pieces. We evaluate based on gold content using
-            XRF spectrometry, not resale value. All karats accepted: 10K, 14K,
+            professional assay testing, not resale value. All karats accepted: 10K, 14K,
             18K, 22K, 24K.
           </p>
 
@@ -231,7 +231,7 @@ export default function SellJewelryPage() {
               <div className="space-y-6 text-cream-60 font-body leading-relaxed">
                 <p>
                   Unlike jewelers or pawn shops who estimate value by eye,
-                  Offramp uses an XRF spectrometer to measure the exact gold
+                  Offramp uses an precision assay equipment to measure the exact gold
                   content of every piece down to 0.01% purity. This is the same
                   technology used by refineries and the U.S. Mint.
                 </p>

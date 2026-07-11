@@ -17,7 +17,7 @@ export function OrganizationJsonLd() {
         url: "https://offrampgold.com",
         logo: "https://offrampgold.com/logo.png",
         description:
-          "Sell your gold for cash or Bitcoin. Free insured shipping, XRF spectrometer assay, wire payment.",
+          "Sell your gold for cash or Bitcoin. Free insured shipping, recorded professional assay, wire payment.",
         address: {
           "@type": "PostalAddress",
           streetAddress: "500 W 2nd St Ste 1900",
@@ -285,7 +285,7 @@ export function ServiceJsonLd() {
           url: "https://offrampgold.com",
         },
         description:
-          "Sell gold jewelry, coins, bullion, dental gold, and scrap gold online for cash or Bitcoin. Free insured shipping, XRF spectrometer assay under video, wire payment within 48 hours.",
+          "Sell gold jewelry, coins, bullion, dental gold, and scrap gold online for cash or Bitcoin. Free insured shipping, every piece assayed on camera, wire payment within 48 hours.",
         serviceType: "Gold Buying",
         areaServed: {
           "@type": "Country",

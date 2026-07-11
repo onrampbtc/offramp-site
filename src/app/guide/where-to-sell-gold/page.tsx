@@ -89,7 +89,7 @@ export default function WhereToSellGoldPage() {
               insurance, and profit on every transaction. They also need margin
               because they often cannot verify exact purity without expensive
               equipment. Many rely on acid tests, which are less accurate than
-              modern XRF technology.
+              modern precision assay equipment.
             </p>
             <div className="bg-bg-card rounded-xl p-6 border border-cream-08">
               <p className="text-cream font-body font-medium mb-2">
@@ -158,7 +158,7 @@ export default function WhereToSellGoldPage() {
             </p>
             <p className="text-cream-60 font-body leading-relaxed mb-4">
               The best online buyers provide free insured shipping, professional
-              assays using XRF spectrometers, transparent pricing, and fast
+              assays using precision assay equipments, transparent pricing, and fast
               payment by wire transfer or Bitcoin. Offramp records every assay
               on video so you can verify the process yourself.
             </p>
@@ -281,7 +281,7 @@ export default function WhereToSellGoldPage() {
                 Sell Your Gold Online with Offramp &rarr;
               </p>
               <p className="text-cream-45 text-sm mt-1">
-                Free insured shipping, XRF assay, 80%+ of spot value.
+                Free insured shipping, professional assay, 80%+ of spot value.
               </p>
             </Link>
             <Link
@@ -322,7 +322,7 @@ export default function WhereToSellGoldPage() {
             </h2>
             <p className="text-cream-45 font-body mb-8 max-w-lg mx-auto">
               Stop leaving money on the table. Offramp pays 80%+ of spot with
-              free insured shipping and professional XRF assay.
+              free insured shipping and professional professional assay.
             </p>
             <Link
               href="/sell"

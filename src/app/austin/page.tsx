@@ -5,7 +5,7 @@ import { BreadcrumbJsonLd, JsonLd } from "@/components/JsonLd";
 export const metadata: Metadata = {
   title: "Sell Gold in Austin, TX | By-Appointment Drop-Off",
   description:
-    "Sell gold in Austin with a by-appointment drop-off downtown: XRF assay while you watch, paid by wire or bitcoin. Or use a free insured mail-in kit from anywhere in Texas.",
+    "Sell gold in Austin with a by-appointment drop-off downtown: testing you can watch, paid by wire or bitcoin. Or use a free insured mail-in kit from anywhere in Texas.",
   alternates: { canonical: "https://offrampgold.com/austin" },
 };
 
@@ -44,7 +44,7 @@ export default function AustinPage() {
             closes: "17:00",
           },
           description:
-            "By-appointment gold buying in downtown Austin: XRF assay while you watch, payment by wire or bitcoin. Free insured mail-in kits available nationwide.",
+            "By-appointment gold buying in downtown Austin: testing you can watch, payment by wire or bitcoin. Free insured mail-in kits available nationwide.",
         }}
       />
 
@@ -54,7 +54,7 @@ export default function AustinPage() {
           Sell gold in Austin, by appointment
         </h1>
         <p className="mt-4 font-body text-lg leading-relaxed text-ink-2">
-          Bring your gold downtown and watch the XRF assay yourself. Honest range up
+          Bring your gold downtown and watch the professional assay yourself. Honest range up
           front, final price from the reading, paid by wire or bitcoin. Appointment
           only — call or request a time and we&rsquo;ll confirm same day.
         </p>

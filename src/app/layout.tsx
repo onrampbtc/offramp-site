@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     template: "%s | Offramp",
   },
   description:
-    "Sell your gold for cash or Bitcoin. Free insured shipping, XRF spectrometer assay under video, wire payment to your bank. The bridge between physical gold and the digital economy.",
+    "Sell your gold for cash or Bitcoin. Free insured shipping, every piece assayed on camera, wire payment to your bank. The bridge between physical gold and the digital economy.",
   keywords: [
     "sell gold online",
     "sell gold for cash",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     siteName: "Offramp",
     title: "Offramp | Sell Gold for Cash or Bitcoin",
     description:
-      "Sell your gold for cash or Bitcoin. Free insured shipping, XRF assay, wire payment. The bridge between gold and the digital economy.",
+      "Sell your gold for cash or Bitcoin. Free insured shipping, professional assay, wire payment. The bridge between gold and the digital economy.",
     images: [
       {
         url: "/og-image.png",
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Offramp | Sell Gold for Cash or Bitcoin",
     description:
-      "Sell your gold for cash or Bitcoin. Free insured shipping, XRF assay, wire payment.",
+      "Sell your gold for cash or Bitcoin. Free insured shipping, professional assay, wire payment.",
     images: ["/og-image.png"],
   },
   verification: {

@@ -12,7 +12,7 @@ const FAQ_ITEMS = [
   {
     question: "How does the selling process work?",
     answer:
-      "It's simple: 1) Request a free insured shipping kit, 2) Pack your gold and ship it to us for free, 3) We test your gold with an XRF spectrometer under video and send you an offer, 4) Accept the offer and get paid via bank wire or Bitcoin within 24-48 hours.",
+      "It's simple: 1) Request a free insured shipping kit, 2) Pack your gold and ship it to us for free, 3) We test your gold with an precision assay equipment under video and send you an offer, 4) Accept the offer and get paid via bank wire or Bitcoin within 24-48 hours.",
   },
   {
     question: "How much does Offramp pay for gold?",
@@ -27,7 +27,7 @@ const FAQ_ITEMS = [
   {
     question: "How do you test my gold?",
     answer:
-      "We use a Thermo Scientific Niton XRF spectrometer — the same technology used by refineries and assay offices. Every test is performed under video so you can see the exact purity and weight readings for your items.",
+      "We use a Thermo Scientific Niton precision assay equipment — the same technology used by refineries and assay offices. Every test is performed under video so you can see the exact purity and weight readings for your items.",
   },
   {
     question: "Can I get paid in Bitcoin?",
@@ -47,7 +47,7 @@ const FAQ_ITEMS = [
   {
     question: "Do I need to know the karat of my gold?",
     answer:
-      "No. Our XRF spectrometer precisely determines the purity of your gold regardless of markings. Many items are unmarked or incorrectly stamped — our testing gives you an accurate reading.",
+      "No. Our precision assay equipment precisely determines the purity of your gold regardless of markings. Many items are unmarked or incorrectly stamped — our testing gives you an accurate reading.",
   },
   {
     question: "Is there a minimum amount of gold I can sell?",

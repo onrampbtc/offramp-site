@@ -144,7 +144,7 @@ export default function GoldToBitcoinPage() {
                 },
                 {
                   label: "Offramp",
-                  desc: "XRF assay, verified purity",
+                  desc: "professional assay, verified purity",
                   icon: (
                     <svg
                       className="h-7 w-7"
@@ -452,7 +452,7 @@ export default function GoldToBitcoinPage() {
               {
                 step: "02",
                 title: "Verified Assay",
-                desc: "We test every item with an XRF spectrometer on video. You see the exact purity and weight. Accept or decline our offer with zero obligation.",
+                desc: "We test every item with an precision assay equipment on video. You see the exact purity and weight. Accept or decline our offer with zero obligation.",
               },
               {
                 step: "03",

@@ -7,7 +7,7 @@ const FAQ_ITEMS = [
   {
     question: "Is Offramp a legitimate company?",
     answer:
-      "Yes. Offramp is a registered business that operates as a dedicated online gold buyer. We use professional-grade XRF spectrometer testing, provide fully insured shipping, and process payments via bank wire or Bitcoin within 24-48 hours.",
+      "Yes. Offramp is a registered business that operates as a dedicated online gold buyer. We use professional-grade precision assay equipment testing, provide fully insured shipping, and process payments via bank wire or Bitcoin within 24-48 hours.",
   },
   {
     question: "How long has Offramp been in business?",
@@ -17,7 +17,7 @@ const FAQ_ITEMS = [
   {
     question: "Where is Offramp located?",
     answer:
-      "Offramp operates as an online gold buyer serving customers across the United States. Our testing facility uses a Thermo Scientific Niton XRF spectrometer — the same technology used by refineries and assay offices.",
+      "Offramp operates as an online gold buyer serving customers across the United States. Our testing facility uses a Thermo Scientific Niton precision assay equipment — the same technology used by refineries and assay offices.",
   },
 ];
 
@@ -36,9 +36,9 @@ const PROCESS_STEPS = [
   },
   {
     step: "03",
-    title: "XRF Testing on Video",
+    title: "assay Testing on Video",
     description:
-      "We test every item with a Thermo Scientific Niton XRF spectrometer under video so you can see exact purity and weight readings.",
+      "We test every item with a Thermo Scientific Niton precision assay equipment under video so you can see exact purity and weight readings.",
   },
   {
     step: "04",
@@ -121,7 +121,7 @@ export default function AboutPage() {
             </p>
             <p>
               Offramp was built to change that. By operating online with lower
-              overhead, using professional-grade XRF testing, and connecting
+              overhead, using professional-grade professional testing, and connecting
               directly to real-time market data, we pay{" "}
               <span className="text-cream font-semibold">
                 80% or more of melt value

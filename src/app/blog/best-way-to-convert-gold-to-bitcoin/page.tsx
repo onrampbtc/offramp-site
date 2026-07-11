@@ -301,7 +301,7 @@ export default function BestWayToConvertGoldToBitcoinPage() {
                 A newer category of service that eliminates the middlemen
                 entirely. You mail your physical gold using a free insured
                 shipping kit. The service tests your gold with professional
-                equipment (XRF spectrometer), values it based on current spot
+                equipment (precision assay equipment), values it based on current spot
                 prices, and sends Bitcoin directly to your wallet.
               </p>
               <p>
@@ -326,7 +326,7 @@ export default function BestWayToConvertGoldToBitcoinPage() {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-400 mt-0.5">+</span>
-                      Professional XRF assay (more accurate than acid tests)
+                      Professional professional assay (more accurate than acid tests)
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-400 mt-0.5">+</span>
@@ -439,7 +439,7 @@ export default function BestWayToConvertGoldToBitcoinPage() {
                     <td className="py-3 px-3 text-center">No</td>
                     <td className="py-3 px-3 text-center">N/A</td>
                     <td className="py-3 pl-3 text-center text-gold-400 font-semibold">
-                      Yes (XRF)
+                      Yes
                     </td>
                   </tr>
                   <tr>
@@ -492,7 +492,7 @@ export default function BestWayToConvertGoldToBitcoinPage() {
                 {
                   step: "3",
                   title: "Professional Assay",
-                  desc: "Your gold is tested with an XRF spectrometer on video. You get a detailed report of weight, purity, and value based on live spot prices.",
+                  desc: "Your gold is tested with an precision assay equipment on video. You get a detailed report of weight, purity, and value based on live spot prices.",
                 },
                 {
                   step: "4",
@@ -598,7 +598,7 @@ export default function BestWayToConvertGoldToBitcoinPage() {
               {[
                 {
                   q: "What is the best way to convert gold to Bitcoin?",
-                  a: "For most people, a direct mail-in gold-to-Bitcoin service like Offramp offers the best combination of value, simplicity, and safety. You ship your gold with free insured FedEx, it's tested with an XRF spectrometer on video, and Bitcoin is sent directly to your wallet.",
+                  a: "For most people, a direct mail-in gold-to-Bitcoin service like Offramp offers the best combination of value, simplicity, and safety. You ship your gold with free insured FedEx, it's tested with an precision assay equipment on video, and Bitcoin is sent directly to your wallet.",
                 },
                 {
                   q: "Can I trade physical gold for Bitcoin on an exchange?",

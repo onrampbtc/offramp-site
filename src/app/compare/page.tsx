@@ -19,7 +19,7 @@ const BUYERS = [
 
 const FEATURES = [
   { feature: "Payout (% of melt)", offramp: "80%+", jeweler: "40-60%", pawn: "20-35%" },
-  { feature: "XRF Testing", offramp: "Yes, on video", jeweler: "Rarely", pawn: "No" },
+  { feature: "assay Testing", offramp: "Yes, on video", jeweler: "Rarely", pawn: "No" },
   { feature: "Free Shipping", offramp: "Yes, insured", jeweler: "No (in person)", pawn: "No (in person)" },
   { feature: "Bitcoin Payment", offramp: "Yes", jeweler: "No", pawn: "No" },
   { feature: "No Obligation", offramp: "Yes — free returns", jeweler: "Varies", pawn: "Yes" },

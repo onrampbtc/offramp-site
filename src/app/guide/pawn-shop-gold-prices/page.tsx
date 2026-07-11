@@ -87,7 +87,7 @@ export default function PawnShopGoldPricesPage() {
             </p>
             <p className="text-cream-60 font-body leading-relaxed">
               Additionally, many pawn shops lack sophisticated testing
-              equipment. Without an XRF spectrometer, they rely on acid tests
+              equipment. Without an precision assay equipment, they rely on acid tests
               or visual inspection, which means they build in a margin of
               safety by offering less.
             </p>
@@ -238,7 +238,7 @@ export default function PawnShopGoldPricesPage() {
               Get 2&ndash;4x More Than a Pawn Shop
             </h2>
             <p className="text-cream-45 font-body mb-8 max-w-lg mx-auto">
-              Offramp pays 80%+ of spot value. Free insured shipping. XRF assay
+              Offramp pays 80%+ of spot value. Free insured shipping. professional assay
               on video. Payment in 48 hours.
             </p>
             <Link

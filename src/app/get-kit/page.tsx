@@ -29,7 +29,7 @@ const KIT_INCLUDES = [
       </svg>
     ),
     title: "Itemization Form",
-    description: "Simple form to describe your gold. Helps us prepare for your XRF assay and get you paid faster.",
+    description: "Simple form to describe your gold. Helps us prepare for your professional assay and get you paid faster.",
   },
   {
     icon: (

@@ -11,7 +11,7 @@ const HOW_TO_SCHEMA = {
   "@type": "HowTo",
   name: "How to Sell Gold to Offramp",
   description:
-    "Sell gold to Offramp in three steps: request a free insured FedEx kit, mail your gold, and receive a transparent quote based on XRF assay and live spot price.",
+    "Sell gold to Offramp in three steps: request a free insured FedEx kit, mail your gold, and receive a transparent quote based on professional assay and live spot price.",
   totalTime: "P3D",
   estimatedCost: {
     "@type": "MonetaryAmount",
@@ -35,7 +35,7 @@ const HOW_TO_SCHEMA = {
       "@type": "HowToStep",
       position: 3,
       name: "Get Paid",
-      text: "We assay your gold using an XRF spectrometer under video documentation. Accept our offer and receive wire payment within 48 hours. Decline and we ship your gold back for free.",
+      text: "We assay your gold using an precision assay equipment under video documentation. Accept our offer and receive wire payment within 48 hours. Decline and we ship your gold back for free.",
     },
   ],
 };
@@ -65,9 +65,9 @@ const FAQ_ITEMS = [
       "No problem at all. If you decline our offer, we ship your gold back to you via insured FedEx at no cost. There are never any fees or obligations. You can also request a second assay if you have questions about the results.",
   },
   {
-    question: "What is XRF spectrometry and how does it work?",
+    question: "What is professional assay testing and how does it work?",
     answer:
-      "XRF (X-ray fluorescence) spectrometry is the same laboratory-grade technology used by refineries, the U.S. Mint, and major gold dealers worldwide. It analyzes the elemental composition of your gold non-destructively by directing X-rays at the item and measuring the fluorescent response. This gives us exact purity readings to 0.01% accuracy.",
+      "assay (X-ray fluorescence) spectrometry is the same laboratory-grade technology used by refineries, the U.S. Mint, and major gold dealers worldwide. It analyzes the elemental composition of your gold non-destructively by directing X-rays at the item and measuring the fluorescent response. This gives us exact purity readings to 0.01% accuracy.",
   },
   {
     question: "Can I convert my payout to Bitcoin instead of cash?",
@@ -205,7 +205,7 @@ export default function HowItWorksPage() {
                 <p className="font-body text-base sm:text-lg text-cream-60 leading-relaxed">
                   Selling gold to Offramp takes three steps: request a free
                   insured FedEx kit, mail your gold, and receive a transparent
-                  quote based on XRF assay and live spot price. Accept and get
+                  quote based on professional assay and live spot price. Accept and get
                   paid by wire. Decline and get free returns.
                 </p>
               </div>
@@ -318,13 +318,13 @@ export default function HowItWorksPage() {
                     Get Paid
                   </h3>
                   <p className="text-cream-60 font-body text-base sm:text-lg leading-relaxed mb-6">
-                    We test your gold with an XRF spectrometer under video
+                    We test your gold with an precision assay equipment under video
                     documentation. You get a transparent offer based on exact
                     purity and live spot price. Accept and get paid your way.
                   </p>
                   <ul className="space-y-3">
                     {[
-                      "XRF spectrometer assay under video documentation",
+                      "every piece assayed on camera documentation",
                       "Offer based on exact purity and live spot price",
                       "Wire transfer to your bank within 48 hours",
                       "Option to convert payout to Bitcoin via Onramp",
@@ -379,7 +379,7 @@ export default function HowItWorksPage() {
                   </svg>
                 ),
                 title: "Video Assay",
-                desc: "Every XRF spectrometer test is recorded on video. You see exactly what we see. Full transparency with no guessing.",
+                desc: "Every precision assay equipment test is recorded on video. You see exactly what we see. Full transparency with no guessing.",
               },
               {
                 icon: (

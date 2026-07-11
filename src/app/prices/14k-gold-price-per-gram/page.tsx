@@ -109,7 +109,7 @@ export default async function Price14kPage() {
     {
       question: "Why do buyers pay less than the melt value?",
       answer:
-        "Refining costs, shipping, insurance, and margin come out of the spread. The honest question is how much less: reputable mail-in buyers pay 70 to 90% of melt, while pawn shops average 20 to 55%. Offramp publishes its rate: 80 to 90% of melt, priced by an XRF assay on video.",
+        "Refining costs, shipping, insurance, and margin come out of the spread. The honest question is how much less: reputable mail-in buyers pay 70 to 90% of melt, while pawn shops average 20 to 55%. Offramp publishes its rate: 80 to 90% of melt, priced by an assay you can watch.",
     },
     {
       question: "How many grams of 14k gold make an ounce of value?",
@@ -226,7 +226,7 @@ export default async function Price14kPage() {
               <td className="px-5 py-4 text-right font-mono text-sm text-ink-2">${usd(mailLow)} – ${usd(mailHigh)}</td>
             </tr>
             <tr>
-              <td className="px-5 py-4 font-body text-sm font-medium text-teal">Offramp, priced by XRF assay on video</td>
+              <td className="px-5 py-4 font-body text-sm font-medium text-teal">Offramp, priced by an assay you can watch</td>
               <td className="px-5 py-4 text-right font-mono text-sm text-teal">80–90%</td>
               <td className="px-5 py-4 text-right font-mono text-sm text-teal">${usd(fairLow)} – ${usd(fairHigh)}</td>
             </tr>

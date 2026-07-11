@@ -4,7 +4,7 @@ import { BreadcrumbJsonLd } from "@/components/JsonLd";
 export const metadata: Metadata = {
   title: "Customer Reviews & Testimonials",
   description:
-    "Read reviews from real customers who sold their gold with Offramp. See why sellers trust us for the best payouts, fast payment, and transparent XRF testing.",
+    "Read reviews from real customers who sold their gold with Offramp. See why sellers trust us for the best payouts, fast payment, and transparent professional testing.",
   keywords: [
     "offramp reviews",
     "gold buyer reviews",

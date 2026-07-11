@@ -9,7 +9,7 @@ const REVIEWS = [
     location: "Austin, TX",
     rating: 5,
     title: "Way more than the pawn shop offered",
-    body: "I almost took my gold chain to a pawn shop but decided to try Offramp first. They paid me more than double what the pawn shop quoted. The XRF testing video was a nice touch — I could see exactly what my chain was worth.",
+    body: "I almost took my gold chain to a pawn shop but decided to try Offramp first. They paid me more than double what the pawn shop quoted. The professional testing video was a nice touch — I could see exactly what my chain was worth.",
     item: "14K Gold Chain",
   },
   {
@@ -33,7 +33,7 @@ const REVIEWS = [
     location: "Seattle, WA",
     rating: 5,
     title: "Transparent and trustworthy",
-    body: "What sold me on Offramp was the video of them testing my gold. No guessing, no sketchy back-room deals. I could see the XRF results and the weight. The offer was fair and I got paid fast.",
+    body: "What sold me on Offramp was the video of them testing my gold. No guessing, no sketchy back-room deals. I could see the assay results and the weight. The offer was fair and I got paid fast.",
     item: "18K Gold Ring",
   },
   {

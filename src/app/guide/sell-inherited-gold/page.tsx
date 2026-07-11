@@ -181,7 +181,7 @@ export default function SellInheritedGoldPage() {
             <p className="text-cream-60 font-body leading-relaxed">
               Offramp is a particularly good fit for inherited gold because we
               handle mixed lots &mdash; jewelry, coins, and bullion all in one
-              shipment. Each piece is tested individually with our XRF
+              shipment. Each piece is tested individually with our assay
               spectrometer and recorded on video, so you know exactly what each
               item was worth.
             </p>

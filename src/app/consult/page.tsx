@@ -17,7 +17,7 @@ const FAQS = [
   {
     question: "What does a free gold consult cover?",
     answer:
-      "Anything you're weighing: what your pieces are honestly worth at today's spot price, whether selling or keeping makes sense, how inherited gold gets valued and split among family, how the XRF assay works, and how payment in USD or bitcoin works. It is a conversation, not a sales call.",
+      "Anything you're weighing: what your pieces are honestly worth at today's spot price, whether selling or keeping makes sense, how inherited gold gets valued and split among family, how the professional assay works, and how payment in USD or bitcoin works. It is a conversation, not a sales call.",
   },
   {
     question: "Is there really no fee or requirement?",

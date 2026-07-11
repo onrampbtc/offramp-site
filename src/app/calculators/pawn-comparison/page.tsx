@@ -326,13 +326,13 @@ export default function PawnComparisonCalculator() {
               actual melt value.
             </p>
             <p>
-              Additionally, many pawn shops lack precise assay equipment. Without an XRF
+              Additionally, many pawn shops lack precise assay equipment. Without an assay
               spectrometer, they often estimate purity conservatively, which further
               reduces their offer. Some may also test with acid kits, which are less
               accurate and can only give approximate karat readings.
             </p>
             <p>
-              Offramp operates online with lower overhead and uses professional XRF
+              Offramp operates online with lower overhead and uses professional assay
               spectrometer analysis under video for every piece. This allows us to pay
               80% or more of the true melt value, significantly more than any pawn shop
               or most local jewelers.
@@ -358,7 +358,7 @@ export default function PawnComparisonCalculator() {
               <tbody className="text-cream-60 font-body text-sm">
                 {[
                   ["Payout Rate", "20-55%", "80%+"],
-                  ["Testing Method", "Acid test / visual", "XRF Spectrometer"],
+                  ["Testing Method", "Acid test / visual", "assay Spectrometer"],
                   ["Transparency", "Verbal offer", "Video recorded assay"],
                   ["Payment Options", "Cash only", "Cash or Bitcoin"],
                   ["Shipping", "N/A (walk-in)", "Free insured shipping"],

@@ -4,7 +4,7 @@ import { BreadcrumbJsonLd } from "@/components/JsonLd";
 export const metadata: Metadata = {
   title: "Sell Dental Gold — Dental Gold Value Calculator | Offramp",
   description:
-    "Find out what your dental gold is worth and sell it for cash. Free dental gold value calculator for crowns, bridges, and dental scrap. XRF analysis, insured shipping, fair payouts.",
+    "Find out what your dental gold is worth and sell it for cash. Free dental gold value calculator for crowns, bridges, and dental scrap. professional assay, insured shipping, fair payouts.",
   alternates: { canonical: "https://offrampgold.com/sell-dental-gold" },
   openGraph: {
     title: "Sell Dental Gold — Dental Gold Value Calculator | Offramp",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Sell Dental Gold — Dental Gold Value Calculator | Offramp",
     description:
-      "Free dental gold value calculator for crowns, bridges, and dental scrap. XRF assay, insured shipping.",
+      "Free dental gold value calculator for crowns, bridges, and dental scrap. professional assay, insured shipping.",
   },
 };
 

@@ -11,8 +11,8 @@ This repo is the single source of truth for offrampgold.com AND the operating hu
 
 ## Hard laws (from spec — do not violate)
 - **Five content types only:** calculator · price table · worth page · thesis page · proof asset. No blog posts, no listicles.
-- **Assay Ledger** design system (spec §4, chosen 2026-07-10): bone/graphite/champagne, gold only as photographed material, THE ASSAY LINE on every page, one vault-band dark moment per page, documentary captions on real photos. No shimmer/glow/pulse. All numbers Geist Mono `tabular-nums`.
-- **Never write** "unlock the value", "turn clutter into cash", countdown timers. "Cash out" only at decision moments (vault sell, alerts, offer accept) — never first-contact copy.
+- **Assay Ledger** design system (spec §4, chosen 2026-07-10; COLOR/CONTENT REGISTER UNDER CHIQUE REVIEW per Michael 2026-07-10 — refs: Worthy, Mene, Rolex, Proper Hotel; structure/logo/type stay): bone/graphite/champagne, gold only as photographed material, THE ASSAY LINE on every page, one vault-band dark moment per page, documentary captions on real photos. No shimmer/glow/pulse. All numbers Geist Mono `tabular-nums`.
+- **Never write** "unlock the value", "turn clutter into cash", countdown timers, or "XRF" in customer-facing copy (say "an assay you can watch" / "assayed on camera"; the machine name lives only in the methodology page and ranking-site evidence). "Cash out" only at decision moments (vault sell, alerts, offer accept) — never first-contact copy.
 - **BTC is a differentiator, not acquisition** ("sell gold for bitcoin" = 20 searches/mo). Never build pages targeting gold→BTC keywords.
 - No fabricated proof: no fake reviews, ticker hidden until ≥5 real payouts.
 - Every new page must name its content type + funnel stage; never delete a URL without a 301.
