@@ -7,6 +7,7 @@ import {
   type AskItemInput,
 } from "@/lib/ask";
 import { insertRow, updateRows, isSupabaseConfigured } from "@/lib/supabase";
+import { emailIntake } from "@/lib/notify";
 
 // POST /api/ask/lead — email capture at the completion block of /ask.
 // Inserts a leads row + lead_items (with spot_at_estimate) + an ask_events
@@ -141,6 +142,14 @@ export async function POST(request: Request) {
       email_id: leadId,
     });
   }
+
+  // Notify the inbox (persistence already done above; email leg env-gated).
+  await emailIntake("ask-lead", {
+    email: body.email,
+    items: items.length,
+    sourceProperty,
+    leadId,
+  });
 
   return NextResponse.json({ success: true, leadId });
 }

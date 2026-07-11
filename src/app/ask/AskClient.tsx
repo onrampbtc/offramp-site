@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 
 /*
@@ -101,6 +102,15 @@ export function AskClient({ embed = false, brand = "offramp" }: { embed?: boolea
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [saved, setSaved] = useState(false);
+
+  // Two-door entry: photo-first or details-first. The builder stays mounted
+  // (hidden) so the photo door can open the first piece's file picker
+  // synchronously inside the click gesture.
+  const [entry, setEntry] = useState<"photo" | "manual" | null>(null);
+  const startWithPhotos = useCallback(() => {
+    setEntry("photo");
+    document.getElementById("ask-photo-first")?.click();
+  }, []);
 
   const apiItems = useMemo(
     () =>
@@ -244,6 +254,58 @@ export function AskClient({ embed = false, brand = "offramp" }: { embed?: boolea
         </div>
       )}
 
+      {/* ── Two-door entry ── */}
+      {entry === null && (
+        <div className="grid gap-4 sm:grid-cols-2">
+          <button
+            type="button"
+            onClick={startWithPhotos}
+            className="group relative flex min-h-[260px] flex-col justify-end overflow-hidden rounded-xl p-6 text-left"
+          >
+            <Image
+              src="/photos/gold-ring-pendant-shadow.jpg"
+              alt=""
+              fill
+              sizes="(min-width: 640px) 50vw, 100vw"
+              className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0E2015] via-[#0E2015]/55 to-transparent" />
+            <div className="relative">
+              <p className="label-maison text-gold-brt">Fastest</p>
+              <h2 className="mt-2 font-display text-2xl font-semibold text-panel-ink">
+                Photograph it
+              </h2>
+              <p className="mt-1.5 max-w-xs font-body text-sm leading-relaxed text-panel-ink/80">
+                Snap your pieces with your phone, confirm a couple of details,
+                and we&apos;ll sharpen your range in the emailed breakdown.
+              </p>
+              <span className="mt-4 inline-block rounded-full bg-paper px-5 py-2.5 font-body text-sm font-semibold text-ink">
+                Upload photos
+              </span>
+            </div>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => setEntry("manual")}
+            className="flex min-h-[260px] flex-col justify-end rounded-xl border border-line bg-raise p-6 text-left transition-colors hover:border-ink"
+          >
+            <p className="label-maison text-gold-400">No photos needed</p>
+            <h2 className="mt-2 font-display text-2xl font-semibold text-ink">
+              Enter the details
+            </h2>
+            <p className="mt-1.5 max-w-xs font-body text-sm leading-relaxed text-ink-2">
+              Know the karat and roughly what it weighs? Type it in — your
+              range appears in seconds. &ldquo;Not sure&rdquo; works too.
+            </p>
+            <span className="mt-4 inline-block self-start rounded-full border border-line-2 px-5 py-2.5 font-body text-sm font-semibold text-ink">
+              Start typing
+            </span>
+          </button>
+        </div>
+      )}
+
+      <div className={entry === null ? "hidden" : undefined}>
       {/* ── Add your pieces ── */}
       <div className="space-y-4">
         <p className="label-maison text-ink-3">Add your pieces</p>
@@ -350,6 +412,7 @@ export function AskClient({ embed = false, brand = "offramp" }: { embed?: boolea
                   <input
                     type="file"
                     accept="image/*"
+                    id={i === 0 ? "ask-photo-first" : undefined}
                     className="sr-only"
                     onChange={(e) => attachPhoto(p.key, e.target.files?.[0] ?? null)}
                   />
@@ -505,6 +568,7 @@ export function AskClient({ embed = false, brand = "offramp" }: { embed?: boolea
             )}
           </div>
         )}
+      </div>
       </div>
     </div>
   );

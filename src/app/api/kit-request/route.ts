@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { upsertContact, isHubSpotConfigured } from "@/lib/hubspot";
+import { recordIntake } from "@/lib/notify";
 
 export async function POST(request: Request) {
   try {
@@ -22,6 +23,13 @@ export async function POST(request: Request) {
         { status: 400 }
       );
     }
+
+    // Persist + notify hello@ (Supabase always; email once Resend is live).
+    await recordIntake("kit-request", email, {
+      firstName, lastName, address, city, state, zip,
+      goldType: body.goldType ?? null,
+      paymentPreference: body.paymentPreference ?? null,
+    });
 
     // Push into HubSpot (Offramp-Transactions). No-ops gracefully until the
     // HUBSPOT_PRIVATE_APP_TOKEN env var is set — see onramp-hq/secrets/KEYS-INDEX.md.
