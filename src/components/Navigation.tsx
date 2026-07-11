@@ -60,7 +60,7 @@ export function Navigation() {
                 <li key={href}>
                   <Link
                     href={href}
-                    className={`rounded-full px-4 py-2 text-sm font-body transition-colors ${
+                    className={`rounded-full px-4 py-2 label-maison transition-colors ${
                       active
                         ? "font-semibold text-ink"
                         : "font-medium text-ink-2 hover:text-ink"

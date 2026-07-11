@@ -15,7 +15,7 @@ export function LiveStrip() {
 
   return (
     <section aria-label="Live prices" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div className="rounded-xl bg-panel px-5 py-4 sm:px-8">
+      <div className="vault-atmosphere overflow-hidden rounded-xl px-5 py-6 sm:px-8">
         <div className="flex flex-col items-start justify-between gap-3 font-mono text-sm sm:flex-row sm:items-center">
           <div className="flex items-center gap-2">
             <span

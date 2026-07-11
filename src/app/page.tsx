@@ -53,8 +53,8 @@ export default function HomePage() {
       <section className="mx-auto max-w-7xl px-4 pb-16 pt-14 sm:px-6 lg:px-8 lg:pt-20">
         <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
-            <p className="font-display text-base italic text-gold-400">
-              Austin, Texas — and everywhere by insured mail
+            <p className="label-maison text-gold-400">
+              Austin, Texas &middot; and everywhere by insured mail
             </p>
             <h1 className="mt-4 font-display text-5xl font-semibold leading-[1.05] tracking-tight text-ink sm:text-6xl">
               The family gold, finally in one place.
