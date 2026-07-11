@@ -3,25 +3,33 @@ import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 import { VaultWaitlist } from "./waitlist";
 
+/*
+  Repositioned 2026-07-11 per Michael: tracker-first, not family-first.
+  Persona: 28–35, inherited pieces / post-divorce / drawer of old jewelry —
+  wants a no-obligation valuation, then passive tracking, then a one-step
+  sell when ready. Family sharing is a feature, not the headline.
+  URL stays /family-vault until the product name is locked (301 rule).
+*/
+
 export const metadata: Metadata = {
-  title: "Family Vault | The Family Gold, In One Place",
+  title: "The Gold Ledger (Beta) | Value It, Track It, Sell When Ready",
   description:
-    "A shared inventory for the family gold. Invite siblings and parents, everyone sees the same values, and sell only when everyone's ready. Coming soon from Offramp.",
+    "A tech-enabled valuation of every piece you own — tracked live against the gold price until you're ready to sell. No obligation, no appraisal fees. Add family if you want. Join the beta.",
   alternates: { canonical: "https://offrampgold.com/family-vault" },
 };
 
 const FEATURES = [
   {
-    title: "Everyone sees the same numbers",
-    body: "Invite your siblings — each piece shows one honest range, refreshed against the live gold price. No more guessing what the box in the closet is worth.",
+    title: "A valuation, not a guess",
+    body: "Start with a photo. Every piece gets an honest range — grams, karat, and the math shown — refreshed against the live gold price, every day.",
   },
   {
-    title: "Named by story, not SKU",
-    body: "“Grandma's wedding band.” “Dad's Krugerrand.” Photos, notes, and who added what.",
+    title: "Tracked until you're ready",
+    body: "Name pieces by their story, not a SKU. Watch values move, set an alert at your number, and decide on your own schedule. Nothing about this obligates you to sell.",
   },
   {
-    title: "Sell only when everyone's ready",
-    body: "Optional family sign-off before anything ships. The vault is the patient path: watch values, set an alert, decide together.",
+    title: "One step to sold — family optional",
+    body: "When it's time: a free insured kit or an Austin appointment, an assay you can watch, payment by wire or bitcoin. And if the pieces belong to more than one of you, invite family so everyone sees the same numbers.",
   },
 ] as const;
 
@@ -31,18 +39,20 @@ export default function FamilyVaultPage() {
       <BreadcrumbJsonLd
         items={[
           { name: "Home", url: "https://offrampgold.com" },
-          { name: "Family Vault", url: "https://offrampgold.com/family-vault" },
+          { name: "The Gold Ledger", url: "https://offrampgold.com/family-vault" },
         ]}
       />
 
       <div className="max-w-2xl">
-        <p className="font-display text-base italic text-gold-400">Coming soon</p>
+        <p className="label-maison text-gold-400">New &middot; in beta</p>
         <h1 className="mt-3 font-display text-4xl font-semibold tracking-tight text-ink sm:text-5xl">
-          The family gold, finally in one place.
+          Know what it&rsquo;s worth. Watch it until you&rsquo;re ready.
         </h1>
         <p className="mt-4 font-body text-lg leading-relaxed text-ink-2">
-          A shared vault for the heirlooms. Start with one piece — a photo is enough —
-          and manage the family gold together until you&rsquo;re ready.
+          The ledger is a tech-enabled valuation of everything in the drawer —
+          the inheritance, the pieces from another chapter of life, the jewelry
+          you never wear. Photograph it once, get honest numbers, and track them
+          against the live market until selling actually makes sense.
         </p>
       </div>
 
@@ -57,17 +67,17 @@ export default function FamilyVaultPage() {
 
       <div className="mt-12 max-w-xl rounded-xl border border-line bg-raise p-6 sm:p-8">
         <h2 className="font-display text-2xl font-semibold text-ink">
-          Be first in the vault
+          Be first in the ledger
         </h2>
         <p className="mt-2 font-body text-sm text-ink-2">
-          Leave your email and we&rsquo;ll open your vault as soon as it&rsquo;s ready.
+          Leave your email and we&rsquo;ll open yours as soon as the beta is ready.
         </p>
         <VaultWaitlist />
       </div>
 
       <div className="mt-10">
         <p className="font-body text-sm text-ink-2">
-          Talking it through as a family?{" "}
+          Want a person, not a product?{" "}
           <Link
             href="/consult"
             className="font-medium text-gold-400 underline decoration-line-2 underline-offset-4 hover:text-ink"

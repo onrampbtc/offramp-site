@@ -80,9 +80,9 @@ export default function HomePage() {
               </Link>
             </div>
             <p className="mt-5 font-body text-sm text-ink-3">
-              New — <Link href="/family-vault" className="font-medium text-gold-400 underline decoration-line-2 underline-offset-4 hover:text-ink">the family vault</Link>
+              New — <Link href="/family-vault" className="font-medium text-gold-400 underline decoration-line-2 underline-offset-4 hover:text-ink">the gold ledger</Link>
               <span className="ml-1 rounded-full border border-line-2 px-2 py-0.5 font-mono text-[10px] uppercase tracking-wide">beta</span>
-              : keep every piece, and its value, in one shared place.
+              : tech-enabled valuations you can track until you&rsquo;re ready to sell.
             </p>
           </div>
 
@@ -170,20 +170,22 @@ export default function HomePage() {
       <section className="mx-auto max-w-7xl px-4 pb-20 pt-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
-            <p className="label-maison text-gold-400">The family vault</p>
+            <p className="label-maison text-gold-400">The gold ledger &middot; beta</p>
             <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-              One ledger the whole family can see
+              Value it once. Watch it until you&rsquo;re ready.
             </h2>
             <p className="mt-4 max-w-xl font-body text-base leading-relaxed text-ink-2">
-              Every piece, its weight, and its honest range — in one shared place.
-              Invite your siblings, watch the value move with the market, and
-              decide together, without anyone hovering.
+              The inheritance, the pieces from another chapter, the jewelry you
+              never wear — photograph it once and every piece gets an honest,
+              tech-enabled valuation, tracked live against the gold price. Sell
+              in one step whenever you&rsquo;re ready. And if the pieces belong
+              to more than one of you, invite your family to see the same numbers.
             </p>
             <Link
               href="/family-vault"
               className="mt-6 inline-block font-body text-sm font-medium text-gold-400 underline decoration-line-2 underline-offset-4 hover:text-ink"
             >
-              Start a family vault
+              Join the ledger beta
             </Link>
           </div>
 
@@ -191,8 +193,8 @@ export default function HomePage() {
           <div className="rounded-xl border border-line bg-raise p-6">
             <div className="flex items-center justify-between">
               <div>
-                <p className="font-display text-lg font-semibold text-ink">The Alvarez vault</p>
-                <p className="font-body text-xs text-ink-3">3 pieces · 4 family members</p>
+                <p className="font-display text-lg font-semibold text-ink">Maya&rsquo;s ledger</p>
+                <p className="font-body text-xs text-ink-3">3 pieces · shared with 3 family members</p>
               </div>
               <div className="flex -space-x-2" aria-hidden="true">
                 {["M", "S", "R", "L"].map((i) => (

@@ -9,7 +9,7 @@ const NAV_LINKS = [
   { href: "/sell", label: "Sell gold" },
   { href: "/calculators", label: "What it's worth" },
   { href: "/learn", label: "Learn" },
-  { href: "/family-vault", label: "Family vault" },
+  { href: "/family-vault", label: "Gold ledger" },
 ] as const;
 
 const PHONE_DISPLAY = "(512) 983-5997";

@@ -31,7 +31,7 @@ const LINK_COLUMNS = [
       { label: "Where to sell gold", href: "/guide/where-to-sell-gold" },
       { label: "Bitcoin vs gold", href: "/guide/bitcoin-vs-gold" },
       { label: "Gold to bitcoin", href: "/gold-to-bitcoin" },
-      { label: "Family vault", href: "/family-vault" },
+      { label: "Gold ledger (beta)", href: "/family-vault" },
       { label: "Austin drop-off", href: "/austin" },
       { label: "Free gold consult", href: "/consult" },
     ],
