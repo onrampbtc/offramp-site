@@ -18,6 +18,8 @@
 
 Next milestones: M2 estimate flow → M3 money pages → M4 vault → M5 lane 2 + proof → M6 scale. Full criteria in spec §16.
 
+● Social-share/SEO/icon layer 2026-07-11: dynamic verdant OG cards site-wide (root + /ask /learn /gold-price /gold-calculator route generators, `/api/og?t=` cards for the 42 config-metadata pages), fixed Next shallow-merge bug that left ~37 pages with NO og:image, twitter summary_large_image everywhere, apple-icon + web manifest shipped. Source Serif 4 TTFs committed under src/assets/fonts (OFL).
+
 ● Findability pass 2026-07-11: llms.txt rewritten (Ask/Learn/ledger/consult/satellites, XRF removed), canonicals added to 12 pages (+/widget metadata), /ask cross-linked from learn/calculators/sell/gold-calculator/footer, Learn hub in footer, /learn ItemList schema, IndexNow pinged for 9 key URLs.
 
 ## Content inventory (backlog — build in this order within each type)
