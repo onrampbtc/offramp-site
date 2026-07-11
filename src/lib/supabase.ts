@@ -41,3 +41,8 @@ export async function insertRow(table: string, row: Row) {
 export async function selectRows(table: string, query: string) {
   return rest(`${table}?${query}`, { method: "GET" });
 }
+
+/** PATCH rows matching a PostgREST filter query, e.g. `id=eq.<uuid>`. */
+export async function updateRows(table: string, query: string, patch: Row) {
+  return rest(`${table}?${query}`, { method: "PATCH", body: JSON.stringify(patch) });
+}
