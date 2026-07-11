@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { BreadcrumbJsonLd, JsonLd } from "@/components/JsonLd";
 
@@ -60,17 +61,26 @@ export default function AustinPage() {
         </p>
         <p className="mt-3 font-body text-base leading-relaxed text-ink-2">
           We meet on the 19th floor of 500 W 2nd — the downtown tower Austinites
-          know as the Google building — inside{" "}
-          <a
-            href="https://firmspace.com/locations/austin"
-            className="font-medium text-gold-400 underline decoration-line-2 underline-offset-4 hover:text-ink"
-          >
-            Firmspace
-          </a>
-          , a private office club with a staffed front desk and glass-walled
-          meeting rooms. Professional, quiet, and nothing like a pawn counter.
+          know as the Google building — in a private office suite with a staffed
+          front desk and glass-walled meeting rooms. Professional, quiet, and
+          nothing like a pawn counter.
         </p>
       </div>
+
+      <figure className="mt-10">
+        <div className="relative aspect-[21/9] overflow-hidden rounded-xl">
+          <Image
+            src="/photos/austin/meeting-room-19th-floor.jpg"
+            alt="Glass-walled conference room on the 19th floor with downtown Austin skyline views"
+            fill
+            sizes="(min-width: 1280px) 1216px, 100vw"
+            className="object-cover"
+          />
+        </div>
+        <figcaption className="mt-2 font-body text-xs text-ink-3">
+          The 19th-floor meeting rooms at 500 W 2nd, where appointments happen.
+        </figcaption>
+      </figure>
 
       <div className="mt-10 grid gap-5 md:grid-cols-2">
         <div className="rounded-xl border border-line bg-raise p-6 sm:p-8">

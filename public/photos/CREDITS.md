@@ -18,3 +18,7 @@ All images are free for commercial use, no attribution required (Unsplash Licens
 | jeweler-bench-dark-workshop.jpg | Elena Usai | https://www.pexels.com/photo/artisan-crafting-jewelry-in-sardegna-workshop-36752535/ | Pexels License | Jeweler at a dark bench, hands and gold wire in a single pool of light; vault-dark atmosphere. |
 | goldsmith-necklace-bench.jpg | moha sour | https://www.pexels.com/photo/close-up-shot-of-a-gold-jewelry-11041197/ | Pexels License | Artisan with tweezers finishing a gold serpent necklace on a bench bust; warm workshop light, real tools. |
 | molten-gold-texture.jpg | Peter Olexa | https://unsplash.com/photos/brown-and-black-abstract-painting-Ax6ggq8cSxw | Unsplash License | Molten-gold abstract texture, amber to deep brown; usable as a dark hero/vault background strip. |
+
+## austin/
+- `austin/meeting-room-19th-floor.jpg` — glass conference room with downtown skyline, 500 W 2nd Ste 1900. Source: firmspace.com/locations/austin (Michael authorized use 2026-07-11; he is a member at this location).
+- `austin/front-desk.webp` — staffed reception desk, same location, same source/authorization.
