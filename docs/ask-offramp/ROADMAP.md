@@ -8,10 +8,14 @@ Companion to CONCEPT.md (thesis, skills, guardrails). This file is the build seq
 - **Third-party embeds are a real product track** (SaaS potential; eventually its own sales motion). Build the widget so white-labeling is config, not code.
 - **Cost posture:** cheapest serious inference, no self-hosted LLM ops burden.
 
-## Phase A — the Valuation flow (BUILD NEXT)
+## Phase A — the Valuation flow (● SHIPPED 2026-07-11, on chique-v3-verdant)
 /ask on offrampgold.com: photo upload → vision model reads hallmark/karat cues + weight estimate (user confirms/adjusts) → provisional per-piece ranges vs live spot → completion checkbox: "Email me this breakdown + occasional market notes" → save-to-ledger hook.
-- Ships standalone; no chat needed. Supabase lead tables + Resend wired.
-- Acceptance: photo→range in <60s; provisional labels everywhere; email consent recorded with source property; lead row visible in Supabase.
+- ● Supabase capture schema (0002: assistant_sessions/messages, question_log, leads, lead_items, ask_events, buyer_directory, ask_corpus w/ pgvector) applied + RLS.
+- ● /api/ask/estimate (live spot, 80–90% band, session bookkeeping) · /api/ask/lead (consent + items + spot_at_estimate) · /api/ask/vision (501 env-gated stub — needs ANTHROPIC_API_KEY).
+- ● /ask flagship page: pieces UI (kind/karat/weight+oz/not-sure typical bands), photo = client-side preview only (no upload yet), live ranges + dark-panel total, email completion → ledger/kit/consult CTAs, ?embed=1 minimal chrome.
+- ● /embed/ask.js widget (launcher + inline, config-driven brand/accent) + ask-demo.html.
+- ▢ Remaining for full Phase A acceptance: vision call itself (photo→prefill, blocked on Anthropic key) · Resend send of the breakdown email (blocked on Resend key) · photo persistence (private storage).
+- Acceptance: photo→range in <60s; provisional labels everywhere ✓; email consent recorded with source property ✓; lead row visible in Supabase ✓.
 
 ## Phase B — Learn (chat + RAG)
 Chat wrapper grounded ONLY in owned corpus (see DATA-CORPUS.md) via pgvector. Question logging from day one → weekly content ritual (gaps become /learn pages). Answer cache for the top ~200 questions (serve from DB, zero inference).
