@@ -54,6 +54,7 @@ interface Piece {
   notSureWeight: boolean;
   photoUrl: string | null; // object URL, local preview only
   photoName: string | null;
+  photoB64: string | null; // the ~1024px downscale — uploaded ONLY after save
   aiPending: boolean;
   aiNote: string | null; // what the vision read found, for the seller to confirm
 }
@@ -110,6 +111,7 @@ const newPiece = (): Piece => ({
   notSureWeight: false,
   photoUrl: null,
   photoName: null,
+  photoB64: null,
   aiPending: false,
   aiNote: null,
 });
@@ -197,7 +199,14 @@ export function AskClient({ embed = false, brand = "offramp" }: { embed?: boolea
         prev.map((p) => {
           if (p.key !== key) return p;
           if (p.photoUrl) URL.revokeObjectURL(p.photoUrl);
-          return { ...p, photoUrl: url, photoName: file.name, aiPending: true, aiNote: null };
+          return {
+            ...p,
+            photoUrl: url,
+            photoName: file.name,
+            photoB64: null,
+            aiPending: true,
+            aiNote: null,
+          };
         })
       );
 
@@ -208,6 +217,11 @@ export function AskClient({ embed = false, brand = "offramp" }: { embed?: boolea
           setPieces((prev) => prev.map((p) => (p.key === key ? { ...p, aiPending: false } : p)));
           return;
         }
+        // Keep the downscale so the photo can persist AFTER the save moment
+        // (FLOW-SPEC step 4 — nothing uploads before the email step).
+        setPieces((prev) =>
+          prev.map((p) => (p.key === key ? { ...p, photoB64: payload.b64 } : p))
+        );
         try {
           const res = await fetch("/api/ask/vision", {
             method: "POST",
@@ -280,9 +294,39 @@ export function AskClient({ embed = false, brand = "offramp" }: { embed?: boolea
           brand,
         }),
       });
-      const data = (await res.json()) as { success?: boolean; error?: string };
+      const data = (await res.json()) as {
+        success?: boolean;
+        error?: string;
+        leadId?: string;
+        itemIds?: (string | null)[];
+      };
       if (res.ok && data.success) {
         setSaved(true);
+        // Hand the email to /ledger for prefill (never in the URL).
+        try {
+          sessionStorage.setItem("ask-ledger-email", email.trim().toLowerCase());
+        } catch {
+          /* private mode */
+        }
+        // NOW the photos may persist (FLOW-SPEC step 4: after the save,
+        // never before). Same downscaled jpeg the vision read used; the
+        // bucket is private, display is signed-URL only. Fire-and-forget.
+        if (data.leadId && data.itemIds && sessionIdRef.current) {
+          pieces.forEach((p, i) => {
+            const itemId = data.itemIds?.[i];
+            if (!p.photoB64 || !itemId) return;
+            void fetch("/api/ask/photo", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                leadId: data.leadId,
+                sessionId: sessionIdRef.current,
+                itemId,
+                imageBase64: p.photoB64,
+              }),
+            }).catch(() => {});
+          });
+        }
       } else {
         setSubmitError(data.error ?? "Something went wrong — try again.");
       }
@@ -291,7 +335,7 @@ export function AskClient({ embed = false, brand = "offramp" }: { embed?: boolea
     } finally {
       setSubmitting(false);
     }
-  }, [email, consent, apiItems, brand]);
+  }, [email, consent, apiItems, brand, pieces]);
 
   const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   const canSubmit = emailValid && consent && !submitting && pieces.length > 0;
@@ -600,7 +644,11 @@ export function AskClient({ embed = false, brand = "offramp" }: { embed?: boolea
             </p>
             <div className="mt-5 flex flex-wrap gap-3">
               <Link
-                href="/family-vault"
+                href={
+                  sessionIdRef.current
+                    ? `/ledger?session=${encodeURIComponent(sessionIdRef.current)}`
+                    : "/ledger"
+                }
                 target={ctaTarget}
                 className="rounded-full bg-ink px-6 py-3 font-body text-sm font-semibold text-paper hover:opacity-90"
               >

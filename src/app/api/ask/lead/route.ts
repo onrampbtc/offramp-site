@@ -109,7 +109,9 @@ export async function POST(request: Request) {
   }
   const leadId = String(lead.data[0].id);
 
-  // Per-item rows with the spot they were priced at.
+  // Per-item rows with the spot they were priced at. Ids are returned in
+  // input order so the client can attach photos post-save (/api/ask/photo).
+  const itemIds: (string | null)[] = [];
   if (items.length > 0) {
     const { spot } = await getSpot();
     const rows = items.map((item) => {
@@ -127,6 +129,7 @@ export async function POST(request: Request) {
     for (const row of rows) {
       const ins = await insertRow("lead_items", row);
       if (!ins.ok) console.error("lead_items insert failed:", ins.status);
+      itemIds.push(ins.ok && ins.data?.[0] ? String(ins.data[0].id) : null);
     }
   }
 
@@ -151,5 +154,5 @@ export async function POST(request: Request) {
     leadId,
   });
 
-  return NextResponse.json({ success: true, leadId });
+  return NextResponse.json({ success: true, leadId, itemIds });
 }

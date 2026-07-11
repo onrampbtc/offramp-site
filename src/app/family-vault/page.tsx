@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
-import { VaultWaitlist } from "./waitlist";
 
 /*
   Repositioned 2026-07-11 per Michael: tracker-first, not family-first.
@@ -54,6 +53,14 @@ export default function FamilyVaultPage() {
           you never wear. Photograph it once, get honest numbers, and track them
           against the live market until selling actually makes sense.
         </p>
+        <div className="mt-6">
+          <Link
+            href="/ledger"
+            className="inline-block rounded-full bg-ink px-7 py-3 font-body text-sm font-semibold text-paper hover:opacity-90"
+          >
+            Sign in / create your ledger
+          </Link>
+        </div>
       </div>
 
       <div className="mt-12 grid gap-5 md:grid-cols-3">
@@ -67,12 +74,18 @@ export default function FamilyVaultPage() {
 
       <div className="mt-12 max-w-xl rounded-xl border border-line bg-raise p-6 sm:p-8">
         <h2 className="font-display text-2xl font-semibold text-ink">
-          Be first in the ledger
+          The beta is open
         </h2>
         <p className="mt-2 font-body text-sm text-ink-2">
-          Leave your email and we&rsquo;ll open yours as soon as the beta is ready.
+          One email, no password — your ledger opens in about a minute, and
+          any pieces you saved from an estimate are already inside.
         </p>
-        <VaultWaitlist />
+        <Link
+          href="/ledger"
+          className="mt-4 inline-block rounded-full bg-ink px-7 py-3 font-body text-sm font-semibold text-paper hover:opacity-90"
+        >
+          Sign in / create your ledger
+        </Link>
       </div>
 
       <div className="mt-10">
