@@ -53,6 +53,26 @@ interface Piece {
   notSureWeight: boolean;
   photoUrl: string | null; // object URL, local preview only
   photoName: string | null;
+  aiPending: boolean;
+  aiNote: string | null; // what the vision read found, for the seller to confirm
+}
+
+/** Downscale a photo client-side so the vision call stays cheap and fast. */
+async function toVisionPayload(file: File): Promise<{ b64: string; mediaType: string } | null> {
+  try {
+    const bitmap = await createImageBitmap(file);
+    const scale = Math.min(1, 1024 / Math.max(bitmap.width, bitmap.height));
+    const canvas = document.createElement("canvas");
+    canvas.width = Math.round(bitmap.width * scale);
+    canvas.height = Math.round(bitmap.height * scale);
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return null;
+    ctx.drawImage(bitmap, 0, 0, canvas.width, canvas.height);
+    const dataUrl = canvas.toDataURL("image/jpeg", 0.82);
+    return { b64: dataUrl.split(",")[1], mediaType: "image/jpeg" };
+  } catch {
+    return null; // e.g. HEIC in a browser that can't decode it — photo stays a preview
+  }
 }
 
 interface ItemRange {
@@ -89,6 +109,8 @@ const newPiece = (): Piece => ({
   notSureWeight: false,
   photoUrl: null,
   photoName: null,
+  aiPending: false,
+  aiNote: null,
 });
 
 export function AskClient({ embed = false, brand = "offramp" }: { embed?: boolean; brand?: string }) {
@@ -174,9 +196,70 @@ export function AskClient({ embed = false, brand = "offramp" }: { embed?: boolea
         prev.map((p) => {
           if (p.key !== key) return p;
           if (p.photoUrl) URL.revokeObjectURL(p.photoUrl);
-          return { ...p, photoUrl: url, photoName: file.name };
+          return { ...p, photoUrl: url, photoName: file.name, aiPending: true, aiNote: null };
         })
       );
+
+      // Vision read: pre-fill kind/karat from the hallmark; seller confirms.
+      (async () => {
+        const payload = await toVisionPayload(file);
+        if (!payload) {
+          setPieces((prev) => prev.map((p) => (p.key === key ? { ...p, aiPending: false } : p)));
+          return;
+        }
+        try {
+          const res = await fetch("/api/ask/vision", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              imageBase64: payload.b64,
+              mediaType: payload.mediaType,
+              sessionId: sessionIdRef.current ?? undefined,
+            }),
+          });
+          if (!res.ok) {
+            // 501 = vision not enabled yet; anything else = keep photo as preview
+            setPieces((prev) => prev.map((p) => (p.key === key ? { ...p, aiPending: false } : p)));
+            return;
+          }
+          const { read } = (await res.json()) as {
+            read: {
+              kindGuess: string | null;
+              karatStamp: string | null;
+              karat: string | null;
+              weightHintGrams: { low: number; high: number } | null;
+              looksGold: boolean;
+              confidence: number;
+              note: string | null;
+            };
+          };
+          setPieces((prev) =>
+            prev.map((p) => {
+              if (p.key !== key) return p;
+              const bits: string[] = [];
+              if (read.karatStamp) bits.push(`${read.karatStamp} stamp`);
+              else if (read.karat) bits.push(read.karat);
+              if (read.kindGuess) bits.push(read.kindGuess);
+              if (read.note) bits.push(read.note);
+              const aiNote =
+                bits.length > 0
+                  ? `Read from your photo: ${bits.join(" · ")} — confirm below.`
+                  : read.looksGold
+                    ? "We couldn't read a stamp in this photo — details below are yours to set."
+                    : "We couldn't confirm gold from this photo — worth checking for a stamp (14K, 585, 750).";
+              return {
+                ...p,
+                aiPending: false,
+                aiNote,
+                kind: read.kindGuess ?? p.kind,
+                karat: read.karat ?? p.karat,
+              };
+            })
+          );
+        } catch {
+          setPieces((prev) => prev.map((p) => (p.key === key ? { ...p, aiPending: false } : p)));
+        }
+      })();
     },
     []
   );
@@ -427,9 +510,17 @@ export function AskClient({ embed = false, brand = "offramp" }: { embed?: boolea
                   />
                 )}
                 <p className="font-body text-xs leading-snug text-ink-3">
-                  Photos help our team refine your range — kept private.
+                  {p.aiPending
+                    ? "Reading your photo…"
+                    : "Photos help our team refine your range — kept private."}
                 </p>
               </div>
+
+              {p.aiNote && (
+                <p className="mt-2 font-body text-xs leading-relaxed text-teal">
+                  {p.aiNote}
+                </p>
+              )}
 
               {/* Per-piece provisional range */}
               <div className="mt-4 border-t border-line pt-3">
