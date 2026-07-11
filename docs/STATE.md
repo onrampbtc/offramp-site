@@ -22,6 +22,8 @@ Next milestones: M2 estimate flow → M3 money pages → M4 vault → M5 lane 2 
 
 ● Social-media engine 2026-07-11: `docs/playbooks/SOCIAL-MEDIA-PLAYBOOK.md` (voice laws + 5 good/bad pairs, platform strategy, 7-post pillar cadence, queue format, weekly agent ritual, per-platform credential checklist §8) + first two weeks of drafts `docs/social/queue/2026-W29.md` (14 X, 6 FB/IG w/ image briefs, 3 LinkedIn — grounded in the 150-buyer study: 138/150 publish no rate, 19/150 name a test method, 44/150 mention fees; question bank 400 Qs ≈161k/mo) + `docs/social/README.md`. No posting yet — blocked on @offrampgold handle registration + platform API creds.
 
+● Sentiment engine 2026-07-11: `docs/playbooks/SENTIMENT-CONTENT-PLAYBOOK.md` (biweekly ritual: Reddit JSON via Playwright JS-challenge workaround, BBB complaint pages, WebSearch, question_log gap query; limits: no Yelp, no logged-in X) + first run `docs/research/sentiment/2026-07-11/` (report: 8 themes from ~90 posts/comments + 3 buyers' BBB records + 77/130 question_log gaps; briefs: 6 — pawn-pay worth page, gold-filled worth page, inherited-jewelry thesis, mail-in guide for goldbuyer, pound-of-gold price table, ATH-timing essay for gvb).
+
 ● Findability pass 2026-07-11: llms.txt rewritten (Ask/Learn/ledger/consult/satellites, XRF removed), canonicals added to 12 pages (+/widget metadata), /ask cross-linked from learn/calculators/sell/gold-calculator/footer, Learn hub in footer, /learn ItemList schema, IndexNow pinged for 9 key URLs.
 
 ## Content inventory (backlog — build in this order within each type)
@@ -65,6 +67,17 @@ Next milestones: M2 estimate flow → M3 money pages → M4 vault → M5 lane 2 
 - **gold-domains** repo (`~/Desktop/gold-domains`): ● **deploys healed + restructure LIVE (2026-07-10)** — goldtobtc.com 308→offrampgold.com/gold-to-bitcoin · goldbuyer.io/reviews 308→touchstonereport.com · goldbuyer /gold-price per-karat + Dataset JSON-LD serving · gold-buyer builds Ready in ~37s on push.
 - goldvsbitcoin.org repoint to /learn/ = wk 7–8 (M5). goldbuyer.io ranking site = Phase 2, month 4+.
 - GSC setup: DNS verification TXT records are live for `offrampgold.com`, `goldbuyer.io`, `goldvsbitcoin.org`, and `touchstonereport.com`; each `/sitemap.xml` returns 200. Next: confirm sitemap submission status inside Search Console and request indexing for priority pages.
+
+## Michael's list (his side of the court — updated 2026-07-11)
+1. **Resend** (~10 min) — blocks: intake emails to hello@, /ask breakdown emails, ledger magic-link auth, market notes, waitlist confirmations.
+2. **GSC**: request indexing for /ask + /learn (+/metros on goldbuyer when live).
+3. **Register @offrampgold handles** — X, Facebook/IG, LinkedIn, YouTube (blocks social auto-posting; queue is drafting weekly regardless).
+4. **Register domains**: askofframp.com · askofframpgold.com · askofframp.gold (all unclaimed as of 2026-07-11).
+5. **Semrush unit refill** (semrush.com/mcp-access) — unblocks monthly rank tracking.
+6. **Friendlies program** (his list of participants): real sell-throughs → first 5 payouts unlock the ticker + real testimonials; see review-strategy notes 2026-07-11 (Yelp solicitation ban; GBP sequencing).
+7. **Google Business Profile + review platforms** — decision pending on the "no GBP until staffed space" law (spec §): appointment-only GBP is possible but shared-office verification is suspension-prone; sequence AFTER first real payouts + before ads.
+8. Platform API creds when auto-posting is wanted (checklist in docs/playbooks/SOCIAL-MEDIA-PLAYBOOK.md).
+9. Standing: trademark knockout search · TX dealer registration (footer currently says "in progress" — must become true before real purchases) · verify hello@ mailbox receives mail.
 
 ## Shipped log
 - 2026-07-11 (always-on engine): 3 agents launched — goldbuyer /metros/[slug] ×20 (honesty-lead pages from directory data), sentiment first-run (Reddit/BBB/web + question_log → docs/research/sentiment/ + SENTIMENT-CONTENT-PLAYBOOK.md), social manager scaffold (SOCIAL-MEDIA-PLAYBOOK.md + docs/social/queue/ first 2 weeks of drafts). 2 SCHEDULED TASKS created (local, run while app open): gold-sentiment-content-run (1st+15th 9am CT → research+briefs, follows playbook) · offramp-social-queue (Mon 8am CT → next week's draft queue; NEVER auto-posts). Auto-posting blocked on: @offrampgold handles + platform API creds (documented in social playbook).
