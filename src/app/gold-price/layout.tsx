@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "Gold Price Today | Live Spot Price in USD and BTC | Offramp",
   description:
     "The live gold spot price today is displayed on this page in both US dollars and Bitcoin, updated every 60 seconds. Track gold per ounce, gram, pennyweight, and kilogram.",
+  alternates: { canonical: "https://offrampgold.com/gold-price" },
   openGraph: {
     title: "Gold Price Today | Live Spot Price in USD and BTC | Offramp",
     description:

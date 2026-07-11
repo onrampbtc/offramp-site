@@ -372,6 +372,14 @@ function CalculatorInner() {
             </div>
           </div>
         </div>
+
+        <p className="mt-6 text-center font-body text-sm text-cream-45">
+          Prefer to just photograph it?{" "}
+          <Link href="/ask" className="text-gold-500 hover:text-gold-400 transition-colors underline underline-offset-4">
+            Ask Offramp
+          </Link>{" "}
+          reads the hallmarks from a photo and gives you a provisional range.
+        </p>
       </section>
 
       {/* ════════════════════════ COMPARISON TABLE ════════════════════════ */}

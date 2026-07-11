@@ -28,6 +28,8 @@ const LINK_COLUMNS = [
   {
     title: "Learn",
     links: [
+      { label: "Learn hub", href: "/learn" },
+      { label: "Ask Offramp", href: "/ask" },
       { label: "Where to sell gold", href: "/guide/where-to-sell-gold" },
       { label: "Bitcoin vs gold", href: "/guide/bitcoin-vs-gold" },
       { label: "Gold to bitcoin", href: "/gold-to-bitcoin" },

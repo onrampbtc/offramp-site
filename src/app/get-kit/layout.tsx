@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Get Your Free Shipping Kit",
   description:
     "Request your free insured shipping kit to sell gold for cash or Bitcoin. Prepaid USPS Priority Mail with up to $100,000 insurance. No obligation.",
+  alternates: { canonical: "https://offrampgold.com/get-kit" },
   openGraph: {
     title: "Get Your Free Gold Shipping Kit | Offramp",
     description:

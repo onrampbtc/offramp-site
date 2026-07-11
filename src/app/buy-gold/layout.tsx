@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Buy Physical Gold With Bitcoin | Offramp by Onramp",
   description:
     "Offramp lets you buy physical gold using Bitcoin. Sell BTC through Onramp, receive USD, and purchase gold coins or bars through Offramp. The two-way bridge between digital and physical hard money.",
+  alternates: { canonical: "https://offrampgold.com/buy-gold" },
   openGraph: {
     title: "Buy Physical Gold With Bitcoin | Offramp by Onramp",
     description:

@@ -268,7 +268,11 @@ export default function SellPage() {
               <Link href="/gold-calculator" className="text-gold-500 hover:text-gold-400 transition-colors underline underline-offset-4">
                 Use our calculator
               </Link>{" "}
-              for an instant estimate.
+              for an instant estimate — or photograph your pieces and{" "}
+              <Link href="/ask" className="text-gold-500 hover:text-gold-400 transition-colors underline underline-offset-4">
+                let Ask Offramp read the hallmarks
+              </Link>
+              .
             </p>
           </div>
         </div>

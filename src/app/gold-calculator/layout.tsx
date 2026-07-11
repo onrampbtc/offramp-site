@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Gold Calculator: What Is Your Gold Worth? | Offramp",
   description:
     "Calculate the value of your gold in USD and Bitcoin. Live spot prices updated every 60 seconds. Enter weight and karat for instant value.",
+  alternates: { canonical: "https://offrampgold.com/gold-calculator" },
   openGraph: {
     title: "Gold Calculator: What Is Your Gold Worth? | Offramp",
     description:

@@ -18,6 +18,8 @@
 
 Next milestones: M2 estimate flow → M3 money pages → M4 vault → M5 lane 2 + proof → M6 scale. Full criteria in spec §16.
 
+● Findability pass 2026-07-11: llms.txt rewritten (Ask/Learn/ledger/consult/satellites, XRF removed), canonicals added to 12 pages (+/widget metadata), /ask cross-linked from learn/calculators/sell/gold-calculator/footer, Learn hub in footer, /learn ItemList schema, IndexNow pinged for 9 key URLs.
+
 ## Content inventory (backlog — build in this order within each type)
 - **Prices: ● 14k-per-gram SHIPPED 2026-07-10** (74k/mo target; dated facts from DB, honesty table, sparkline-as-history-accrues)
 - **Calculators (15):** ▢ scrap-gold (27.1k) · ▢ 14k · ▢ pawn-comparison · ▢ dental · ▢ melt-value · ▢ 10k · ▢ 18k · ▢ 24k · ▢ gold-coin · ▢ class-ring · ▢ wedding-band · ▢ silver · ▢ platinum · ▢ gold-to-btc-converter · ▢ cash-for-gold

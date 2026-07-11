@@ -79,6 +79,18 @@ export default function CalculatorsHubPage() {
         ))}
       </div>
 
+      <p className="mt-8 max-w-2xl font-body text-sm text-ink-3">
+        Prefer to just photograph it?{" "}
+        <Link
+          href="/ask"
+          className="font-medium text-gold-400 underline decoration-line-2 underline-offset-4 hover:text-ink"
+        >
+          Ask Offramp
+        </Link>{" "}
+        reads the hallmarks and gives you a provisional range — the final number
+        always comes from the assay.
+      </p>
+
       <div className="mt-12 rounded-xl border border-line bg-raise p-6 sm:p-8">
         <p className="font-body text-base text-ink-2">
           Not sure about karat or weight? Skip the math.

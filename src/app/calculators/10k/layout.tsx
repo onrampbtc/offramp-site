@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "10K Gold Price Per Gram Today | Live Calculator | Offramp",
   description:
     "The current 10K gold price per gram is updated live. 10K gold contains 41.7% pure gold. Calculate your 10K gold value instantly with the Offramp calculator.",
+  alternates: { canonical: "https://offrampgold.com/calculators/10k" },
   openGraph: {
     title: "10K Gold Price Per Gram Today | Live Calculator | Offramp",
     description:

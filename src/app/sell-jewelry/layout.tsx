@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Sell Gold Jewelry for Cash Online | Offramp",
   description:
     "Sell gold jewelry for cash online. Offramp buys gold jewelry in any condition — broken, damaged, or outdated. All karats accepted: 10K, 14K, 18K, 22K, 24K. Free insured shipping, professional assay, 48hr payment.",
+  alternates: { canonical: "https://offrampgold.com/sell-jewelry" },
   openGraph: {
     title: "Sell Gold Jewelry for Cash Online | Offramp",
     description:

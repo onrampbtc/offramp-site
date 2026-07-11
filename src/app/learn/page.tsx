@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BreadcrumbJsonLd } from "@/components/JsonLd";
+import { BreadcrumbJsonLd, JsonLd } from "@/components/JsonLd";
 
 /*
   Content type: thesis hub · funnel stage: top.
@@ -32,6 +32,7 @@ const SECTIONS = [
     title: "What your gold is honestly worth",
     body: "Hallmarks, karats, and grams — and live numbers instead of guesses. Every figure comes from today's spot price, shown with the math.",
     links: [
+      { href: "/ask", label: "Ask Offramp — photograph it, get a read on the hallmarks" },
       { href: "/gold-calculator", label: "Gold calculator — a range in 60 seconds" },
       { href: "/gold-price", label: "Today's gold price, by karat" },
       { href: "/prices/14k-gold-price-per-gram", label: "14k gold price per gram" },
@@ -84,6 +85,24 @@ export default function LearnPage() {
           { name: "Home", url: "https://offrampgold.com" },
           { name: "Learn", url: "https://offrampgold.com/learn" },
         ]}
+      />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          name: "Learn: How to Sell Gold Without Getting Burned",
+          itemListOrder: "https://schema.org/ItemListOrderAscending",
+          itemListElement: SECTIONS.flatMap(
+            (s) => s.links as readonly { href: string; label: string }[]
+          ).map((l, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            name: l.label,
+            url: l.href.startsWith("http")
+              ? l.href
+              : `https://offrampgold.com${l.href}`,
+          })),
+        }}
       />
 
       <p className="label-maison text-gold-400">Learn</p>
