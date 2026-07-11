@@ -30,7 +30,9 @@ async function rest(
       ...init.headers,
     },
   });
-  const data = res.ok ? ((await res.json()) as Row[]) : null;
+  // Void RPCs and Prefer:return=minimal responses have empty bodies.
+  const text = res.ok ? await res.text() : "";
+  const data = res.ok && text ? (JSON.parse(text) as Row[]) : null;
   return { ok: res.ok, status: res.status, data };
 }
 
@@ -45,4 +47,9 @@ export async function selectRows(table: string, query: string) {
 /** PATCH rows matching a PostgREST filter query, e.g. `id=eq.<uuid>`. */
 export async function updateRows(table: string, query: string, patch: Row) {
   return rest(`${table}?${query}`, { method: "PATCH", body: JSON.stringify(patch) });
+}
+
+/** Call a Postgres function via PostgREST, e.g. rpc("search_ask_corpus", { q, n }). */
+export async function rpc(fn: string, args: Row) {
+  return rest(`rpc/${fn}`, { method: "POST", body: JSON.stringify(args) });
 }

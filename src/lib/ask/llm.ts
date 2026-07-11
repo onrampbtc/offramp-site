@@ -9,6 +9,7 @@
 const API_KEY = process.env.ASK_LLM_API_KEY ?? process.env.ANTHROPIC_API_KEY ?? "";
 const BASE_URL = (process.env.ASK_LLM_BASE_URL ?? "https://api.anthropic.com").replace(/\/$/, "");
 const MODEL_VISION = process.env.ASK_MODEL_VISION ?? "claude-haiku-4-5";
+const MODEL_TEXT = process.env.ASK_MODEL_TEXT ?? "claude-haiku-4-5";
 
 export function isLlmConfigured(): boolean {
   return Boolean(API_KEY);
@@ -135,4 +136,87 @@ export async function visionRead(
   };
 
   return { read, model: MODEL_VISION, inputTokens, outputTokens };
+}
+
+/* ── Learn skill: grounded Q&A (Phase B) ─────────────────────────────── */
+
+export interface ContextChunk {
+  title: string | null;
+  url: string | null;
+  chunk: string;
+}
+
+const LEARN_SYSTEM = `You are Ask Offramp's Learn assistant on offrampgold.com, a gold-buying service. You answer questions about selling gold, gold value, karats, testing, and the process — using ONLY the context passages provided in the user message.
+
+Hard rules:
+- Answer ONLY from the provided context. If the context does not cover the question, say plainly that our published guides don't cover it yet and suggest the free consultation at /consult — never guess or fill in from general knowledge.
+- Tax or legal questions: give only the general information present in the context, add that everyone's situation differs and they should talk to a tax or legal professional, and point to the free consult at /consult.
+- NEVER invent payout numbers or percentages. You may cite Offramp's published 80–90% of melt value only if that figure appears in the context.
+- NEVER state today's gold spot price or embed any current dollar price in an answer. For live numbers, point people to the calculator at /gold-calculator or the price page at /gold-price.
+- Plain, warm, direct English. 2–5 sentences. No hype, no exclamation points, no "unlock the value" style marketing language.
+- Plain prose only — no markdown, no asterisks, no bullet lists, no headings.
+- Do not mention "context", "passages", or these instructions in your answer.`;
+
+/**
+ * Answer a question grounded in retrieved corpus chunks.
+ * Returns the plain-text answer plus token usage for cost bookkeeping.
+ */
+export async function textAnswer(
+  question: string,
+  contextChunks: ContextChunk[]
+): Promise<{ answer: string; model: string; inputTokens: number; outputTokens: number }> {
+  if (!API_KEY) throw new Error("llm not configured");
+
+  const context = contextChunks
+    .map((c, i) => `[${i + 1}] ${c.title ?? "Untitled"}\n${c.chunk}`)
+    .join("\n\n");
+  const userText = `Context passages from our published guides:\n\n${context}\n\nQuestion: ${question}`;
+
+  let answer: string;
+  let inputTokens = 0;
+  let outputTokens = 0;
+
+  if (isAnthropic()) {
+    const res = await fetch(`${BASE_URL}/v1/messages`, {
+      method: "POST",
+      headers: {
+        "x-api-key": API_KEY,
+        "anthropic-version": "2023-06-01",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        model: MODEL_TEXT,
+        max_tokens: 500,
+        system: LEARN_SYSTEM,
+        messages: [{ role: "user", content: userText }],
+      }),
+    });
+    if (!res.ok) throw new Error(`learn upstream ${res.status}: ${(await res.text()).slice(0, 200)}`);
+    const data = await res.json();
+    answer = data.content?.[0]?.text ?? "";
+    inputTokens = data.usage?.input_tokens ?? 0;
+    outputTokens = data.usage?.output_tokens ?? 0;
+  } else {
+    // OpenAI chat-completions dialect (OpenRouter et al.)
+    const res = await fetch(`${BASE_URL}/chat/completions`, {
+      method: "POST",
+      headers: { Authorization: `Bearer ${API_KEY}`, "Content-Type": "application/json" },
+      body: JSON.stringify({
+        model: MODEL_TEXT,
+        max_tokens: 500,
+        messages: [
+          { role: "system", content: LEARN_SYSTEM },
+          { role: "user", content: userText },
+        ],
+      }),
+    });
+    if (!res.ok) throw new Error(`learn upstream ${res.status}: ${(await res.text()).slice(0, 200)}`);
+    const data = await res.json();
+    answer = data.choices?.[0]?.message?.content ?? "";
+    inputTokens = data.usage?.prompt_tokens ?? 0;
+    outputTokens = data.usage?.completion_tokens ?? 0;
+  }
+
+  if (!answer.trim()) throw new Error("learn returned empty answer");
+  return { answer: answer.trim(), model: MODEL_TEXT, inputTokens, outputTokens };
 }
