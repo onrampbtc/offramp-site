@@ -1,0 +1,3647 @@
+{
+ "_notes": [
+  "Seed question bank for Ask Offramp \u2014 primes the answer cache (DATA-CORPUS.md \u00a74) and the content flywheel (\u00a75).",
+  "397 rows from SpyFu getQuestionKeywords (US), 3 rows from Semrush (kept at Semrush volumes, marked source:'semrush') \u2014 Semrush units ran out 2026-07-11; SpyFu completed the pull same day.",
+  "Fields: volume = monthly search volume (SpyFu 'searchVolume' / Semrush 'Nq'), kd = ranking difficulty 0-100 (null where SpyFu lacks data), cpc = broad-match CPC USD (null likewise).",
+  "Filtering: question-form only (how/what/where/should/is/can/do/does/why/when/who/which/are/will + >=3 words), volume >= 10 (final cutoff landed at 135 after the 400 cap), 51 off-topic rows dropped (Tinder Gold, Olympic medals, Amex, game currencies, 'bitcoin gold' fork).",
+  "Intent mix: value 159 / learn 125 / match 114 / brand 2. Brand questions barely register organically \u2014 competitor comparisons will have to be earned surface, not captured demand.",
+  "Biggest theme: unit-value questions ('how much is a gram/ounce/pound/bar of gold worth') \u2014 gold BARS alone carry 14k+ monthly searches across 19 questions; people fantasize in bars, sell in rings.",
+  "Match demand is concentrated and local: 48 'near me' questions = ~30k monthly searches \u2014 the buyer directory (\u00a73) answers a third of the bank's total volume by itself.",
+  "Surprises: 'where can i sell my native american jewelry near me' (900/mo) and 'where to sell costume jewelry near me' (900/mo) \u2014 niche-material worth pages are underpriced; dental gold questions total ~2.9k/mo; gold-plated/filled/vermeil 'is it worth anything' questions (~2k/mo) are the classic disappointment conversation the assistant must handle gracefully.",
+  "Tax questions are thin (5 questions, ~1.1k/mo) \u2014 important for trust, not for traffic. Inherited-jewelry question demand is near zero in question form; that persona arrives via 'worth' queries instead.",
+  "Re-pull recipe: GET https://api.spyfu.com/apis/keyword_api/v2/related/getQuestionKeywords?query={seed}&pageSize=150&countryCode=US&sortBy=SearchVolume&sortOrder=Descending&searchVolume.min=10&api_key=$SPYFU_API_KEY for each of the 16 seeds in _seeds."
+ ],
+ "_status": "complete-spyfu+semrush",
+ "generated": "2026-07-11",
+ "source": "spyfu US (getQuestionKeywords) + semrush US (3 rows)",
+ "_seeds": [
+  "sell gold",
+  "gold worth",
+  "gold price per gram",
+  "pawn shop gold",
+  "inherited jewelry",
+  "sell jewelry",
+  "dental gold",
+  "gold coins",
+  "scrap gold",
+  "selling gold taxes",
+  "gold appraisal",
+  "14k gold",
+  "18k gold",
+  "melt value",
+  "sell gold near me",
+  "gold buyer"
+ ],
+ "head_terms_reference": [
+  {
+   "q": "sell gold",
+   "volume": 12100,
+   "kd": 60,
+   "cpc": 5.95,
+   "source": "semrush"
+  }
+ ],
+ "count": 400,
+ "questions": [
+  {
+   "q": "how much is gold worth",
+   "volume": 9900,
+   "kd": 64,
+   "cpc": 0.59,
+   "intent": "value",
+   "skill": "value",
+   "source": "semrush"
+  },
+  {
+   "q": "where to sell gold",
+   "volume": 5400,
+   "kd": 43,
+   "cpc": 3.37,
+   "intent": "match",
+   "skill": "match",
+   "source": "semrush"
+  },
+  {
+   "q": "where to sell gold near me",
+   "volume": 4400,
+   "kd": 63,
+   "cpc": 6.16,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a gold bar worth",
+   "volume": 4000,
+   "kd": 41,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "where can i sell jewelry",
+   "volume": 4000,
+   "kd": 30,
+   "cpc": 3.1,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to sell gold",
+   "volume": 2900,
+   "kd": 37,
+   "cpc": 2.01,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "semrush"
+  },
+  {
+   "q": "how much is a pound of gold worth",
+   "volume": 2800,
+   "kd": 32,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a bar of gold worth",
+   "volume": 2800,
+   "kd": 40,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell jewelry near me",
+   "volume": 2200,
+   "kd": 27,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell gold jewelry for best price near me",
+   "volume": 1800,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a gram of gold worth",
+   "volume": 1500,
+   "kd": 31,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "where can i sell raw gold near me",
+   "volume": 1300,
+   "kd": 39,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 1 gram of gold worth",
+   "volume": 1300,
+   "kd": 34,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is an ounce of gold worth",
+   "volume": 1300,
+   "kd": 33,
+   "cpc": 1.05,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to buy gold coins near me",
+   "volume": 1300,
+   "kd": 60,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a gold bar worth 2018",
+   "volume": 1200,
+   "kd": 41,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "where can i sell jewelry for cash near me",
+   "volume": 1100,
+   "kd": 24,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where can i sell my jewelry near me",
+   "volume": 1100,
+   "kd": 27,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "why is using coins as money easier than using gold bars?",
+   "volume": 1100,
+   "kd": 22,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 14k gold worth",
+   "volume": 1000,
+   "kd": 23,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a gold coin worth",
+   "volume": 900,
+   "kd": 28,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "where can i sell my native american jewelry near me",
+   "volume": 900,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell costume jewelry near me",
+   "volume": 900,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where can i buy gold coins near me",
+   "volume": 900,
+   "kd": 71,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is one ounce of gold worth",
+   "volume": 840,
+   "kd": 37,
+   "cpc": 0.71,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much does a gold coin weigh",
+   "volume": 840,
+   "kd": 24,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to sell gold coins for cash",
+   "volume": 810,
+   "kd": 39,
+   "cpc": 3.98,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is one gram of gold worth",
+   "volume": 810,
+   "kd": 27,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 1 pound of gold worth",
+   "volume": 810,
+   "kd": 36,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "is robinhood gold worth it",
+   "volume": 810,
+   "kd": 20,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a ton of gold worth",
+   "volume": 810,
+   "kd": 31,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "is 10k gold worth anything",
+   "volume": 810,
+   "kd": 26,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is gold worth per ounce",
+   "volume": 750,
+   "kd": 32,
+   "cpc": 0.5,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a gold bar worth 2017",
+   "volume": 750,
+   "kd": 42,
+   "cpc": 0.08,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is gold worth per gram",
+   "volume": 750,
+   "kd": 32,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "where can i sell costume jewelry near me",
+   "volume": 750,
+   "kd": 18,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 24k gold worth",
+   "volume": 720,
+   "kd": 37,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "does 14k gold tarnish",
+   "volume": 720,
+   "kd": 18,
+   "cpc": 0.44,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 1 lb of gold worth",
+   "volume": 630,
+   "kd": 30,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell jewelry",
+   "volume": 630,
+   "kd": 28,
+   "cpc": 5.64,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where can you sell jewelry",
+   "volume": 630,
+   "kd": 27,
+   "cpc": 3.23,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a pound of gold worth 2017",
+   "volume": 600,
+   "kd": 35,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "where can i sell my gold near me",
+   "volume": 570,
+   "kd": 65,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 18k gold worth",
+   "volume": 570,
+   "kd": 19,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "what is 1 gram of gold worth",
+   "volume": 570,
+   "kd": 34,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to fuse 14k gold to sterling silver?",
+   "volume": 570,
+   "kd": 21,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "is 14k gold good",
+   "volume": 570,
+   "kd": 20,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell canadian gold coins",
+   "volume": 540,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell gold bars near me",
+   "volume": 540,
+   "kd": 67,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is my 14k gold worth",
+   "volume": 540,
+   "kd": 24,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 1 ounce of gold worth",
+   "volume": 540,
+   "kd": 26,
+   "cpc": 0.96,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "what is one gram of gold worth",
+   "volume": 540,
+   "kd": 33,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is one pound of gold worth",
+   "volume": 540,
+   "kd": 32,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "is it better to pawn or sell jewelry",
+   "volume": 540,
+   "kd": 16,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell jewelry rdr2",
+   "volume": 540,
+   "kd": 4,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "is 14k gold real",
+   "volume": 540,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 14k gold per gram",
+   "volume": 510,
+   "kd": 24,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell gold bars in red dead redemption",
+   "volume": 480,
+   "kd": 7,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell gold bars",
+   "volume": 480,
+   "kd": 37,
+   "cpc": 2.0,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where can i sell gold near me",
+   "volume": 480,
+   "kd": 41,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to sell jewelry",
+   "volume": 480,
+   "kd": 34,
+   "cpc": 3.61,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to buy gold coins",
+   "volume": 480,
+   "kd": 60,
+   "cpc": 3.59,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "does 18k gold tarnish",
+   "volume": 480,
+   "kd": 11,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell gold coins near me",
+   "volume": 460,
+   "kd": 45,
+   "cpc": 5.01,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell my gold jewelry near me",
+   "volume": 440,
+   "kd": 36,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell gold jewelry for cash near me",
+   "volume": 440,
+   "kd": 37,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell gold jewelry near me",
+   "volume": 440,
+   "kd": 30,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where can i sell scrap gold near me",
+   "volume": 440,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell a gold ring near me",
+   "volume": 440,
+   "kd": 17,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell gold and silver jewelry near me",
+   "volume": 440,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell dental gold near me",
+   "volume": 440,
+   "kd": 20,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where can i sell silver and gold near me",
+   "volume": 440,
+   "kd": 67,
+   "cpc": 3.93,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell gold and silver near me",
+   "volume": 440,
+   "kd": 37,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell gold and diamonds near me",
+   "volume": 440,
+   "kd": 22,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where can you sell gold near me",
+   "volume": 440,
+   "kd": 46,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell gold flakes near me",
+   "volume": 440,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "what is gold worth",
+   "volume": 440,
+   "kd": 21,
+   "cpc": 0.52,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is scrap gold worth",
+   "volume": 440,
+   "kd": 18,
+   "cpc": 0.54,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "what is 14k gold worth",
+   "volume": 440,
+   "kd": 22,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "who sell vintage jewelry near me",
+   "volume": 440,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell vintage jewelry near me",
+   "volume": 440,
+   "kd": 23,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where can i sell my costume jewelry near me",
+   "volume": 440,
+   "kd": 16,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell native american jewelry near me",
+   "volume": 440,
+   "kd": 33,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where can i sell my tiffany jewelry near me",
+   "volume": 440,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell vintage costume jewelry near me",
+   "volume": 440,
+   "kd": 31,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where can i sell jewelry near me",
+   "volume": 440,
+   "kd": 25,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to sell jewelry online",
+   "volume": 440,
+   "kd": 39,
+   "cpc": 6.18,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "who buys dental gold near me",
+   "volume": 440,
+   "kd": 16,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a gold nugget worth",
+   "volume": 420,
+   "kd": 27,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 14k gold",
+   "volume": 420,
+   "kd": 25,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 5 grams of gold worth",
+   "volume": 400,
+   "kd": 31,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is gold worth today",
+   "volume": 400,
+   "kd": 38,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is gold worth per pound",
+   "volume": 400,
+   "kd": 33,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "what is 1g of gold worth",
+   "volume": 400,
+   "kd": null,
+   "cpc": 0.32,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "what is 14k gold",
+   "volume": 400,
+   "kd": 19,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much of retail value will i get from sell your gold for a ring",
+   "volume": 380,
+   "kd": 26,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to go to sell jewelry",
+   "volume": 380,
+   "kd": null,
+   "cpc": 11.87,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to sell gold coins",
+   "volume": 360,
+   "kd": 34,
+   "cpc": 3.22,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to sell gold bars",
+   "volume": 360,
+   "kd": 34,
+   "cpc": 2.5,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to sell gold in usa",
+   "volume": 360,
+   "kd": 55,
+   "cpc": 0.98,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much are gold coins worth",
+   "volume": 360,
+   "kd": 32,
+   "cpc": 1.05,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 10 grams of gold worth",
+   "volume": 360,
+   "kd": 38,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a seiko gold watch worth",
+   "volume": 360,
+   "kd": null,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is an ounce of gold worth today",
+   "volume": 360,
+   "kd": 35,
+   "cpc": 1.57,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 1kg of gold worth",
+   "volume": 360,
+   "kd": 30,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is all the gold in the world worth",
+   "volume": 360,
+   "kd": 38,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 18k gold ring worth",
+   "volume": 360,
+   "kd": 30,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is one bar of gold worth",
+   "volume": 360,
+   "kd": 39,
+   "cpc": 2.55,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a 14k gold ring worth",
+   "volume": 360,
+   "kd": 24,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 40 pounds of gold worth",
+   "volume": 360,
+   "kd": 27,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "is selling paparazzi jewelry worth it",
+   "volume": 360,
+   "kd": 10,
+   "cpc": 1.59,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell old jewelry near me",
+   "volume": 360,
+   "kd": 21,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to sell jewelry on amazon",
+   "volume": 360,
+   "kd": 23,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell fine jewelry",
+   "volume": 360,
+   "kd": 27,
+   "cpc": 3.58,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to sell estate jewelry",
+   "volume": 360,
+   "kd": 26,
+   "cpc": 5.5,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to make money selling jewelry",
+   "volume": 360,
+   "kd": 13,
+   "cpc": 1.34,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "is 18k gold magnetic",
+   "volume": 360,
+   "kd": 18,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "what is the approximate value of the normal melting point?",
+   "volume": 340,
+   "kd": 50,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "where should i sell my jewelry",
+   "volume": 335,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a gold crown worth 2020",
+   "volume": 327,
+   "kd": null,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell gold bars rdr2",
+   "volume": 320,
+   "kd": 8,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "what banks sell gold",
+   "volume": 320,
+   "kd": 58,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 1 oz of gold worth",
+   "volume": 320,
+   "kd": 40,
+   "cpc": 0.89,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 14k gold worth today",
+   "volume": 320,
+   "kd": 24,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "is far cry 5 gold worth it",
+   "volume": 320,
+   "kd": 7,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 1 gold bar worth",
+   "volume": 320,
+   "kd": 41,
+   "cpc": 1.68,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a gram of gold worth today",
+   "volume": 320,
+   "kd": 27,
+   "cpc": 0.44,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a gold bar worth 2020",
+   "volume": 320,
+   "kd": null,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "is robinhood gold worth it reddit",
+   "volume": 320,
+   "kd": 1,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much was a gold coin worth in medieval times",
+   "volume": 320,
+   "kd": 29,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a kilo of gold worth",
+   "volume": 320,
+   "kd": null,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "is platinum worth more than gold",
+   "volume": 320,
+   "kd": 24,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell jewelry red dead 2",
+   "volume": 320,
+   "kd": 4,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "what karat is dental gold",
+   "volume": 320,
+   "kd": 20,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to buy gold coins",
+   "volume": 320,
+   "kd": 63,
+   "cpc": 5.04,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "what is a collectible gold coin in france?",
+   "volume": 320,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to buy gold coin",
+   "volume": 320,
+   "kd": 54,
+   "cpc": 1.47,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "can you wear 18k gold in the shower",
+   "volume": 320,
+   "kd": 18,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to sell gold without paying taxes",
+   "volume": 300,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell dental gold",
+   "volume": 300,
+   "kd": 17,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to sell jewelry on pinterest",
+   "volume": 300,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "where do you sell jewelry",
+   "volume": 300,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to purchase gold coins",
+   "volume": 300,
+   "kd": 50,
+   "cpc": 2.17,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to shine a gold coin",
+   "volume": 290,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "where can i sell my jewelry for the most money",
+   "volume": 280,
+   "kd": 27,
+   "cpc": 13.62,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "can you buy gold coins from the us mint",
+   "volume": 280,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "is it a good time to sell gold",
+   "volume": 270,
+   "kd": 19,
+   "cpc": 3.16,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how do you sell gold",
+   "volume": 270,
+   "kd": 23,
+   "cpc": 2.82,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "is gold filled jewelry worth anything",
+   "volume": 270,
+   "kd": 14,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 3 grams of gold worth",
+   "volume": 270,
+   "kd": 20,
+   "cpc": 1.78,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "is 14k gold worth anything",
+   "volume": 270,
+   "kd": 23,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 1g of gold worth",
+   "volume": 270,
+   "kd": 36,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 24 karat gold worth",
+   "volume": 270,
+   "kd": 37,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is white gold worth",
+   "volume": 270,
+   "kd": 23,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "is recovering gold from electronics worth it",
+   "volume": 270,
+   "kd": 20,
+   "cpc": 6.35,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 7 pounds of gold worth",
+   "volume": 270,
+   "kd": 28,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 10k gold worth",
+   "volume": 270,
+   "kd": 28,
+   "cpc": 0.72,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 1.5 grams of gold worth",
+   "volume": 270,
+   "kd": 27,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a pound of gold worth 2018",
+   "volume": 270,
+   "kd": 14,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "what is 1 oz of gold worth",
+   "volume": 270,
+   "kd": 28,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a brick of gold worth",
+   "volume": 270,
+   "kd": 51,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "is white gold worth more than gold",
+   "volume": 270,
+   "kd": 22,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "is saffron worth more than gold",
+   "volume": 270,
+   "kd": 19,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a block of gold worth",
+   "volume": 270,
+   "kd": null,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is gold bar worth",
+   "volume": 270,
+   "kd": 40,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a gold brick worth",
+   "volume": 270,
+   "kd": 43,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a pound of gold worth 2020",
+   "volume": 270,
+   "kd": null,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to make money selling paparazzi jewelry",
+   "volume": 270,
+   "kd": null,
+   "cpc": 2.51,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell jewelry online",
+   "volume": 270,
+   "kd": 37,
+   "cpc": 6.31,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "does the jewelry exchange sell fake diamonds",
+   "volume": 270,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "is gold safe for dental work?",
+   "volume": 270,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much does a 14k gold chain cost",
+   "volume": 270,
+   "kd": 32,
+   "cpc": 1.49,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how many gold coins are there",
+   "volume": 269,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 4.8 grams of gold worth",
+   "volume": 260,
+   "kd": null,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to sell jewelry rdr2",
+   "volume": 260,
+   "kd": 5,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to sell handmade jewelry",
+   "volume": 260,
+   "kd": 27,
+   "cpc": 2.03,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "what is dental gold",
+   "volume": 260,
+   "kd": 23,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to buy scrap gold",
+   "volume": 260,
+   "kd": 23,
+   "cpc": 2.4,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "what is 14k gold vermeil",
+   "volume": 260,
+   "kd": 17,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "can 14k gold be magnetic",
+   "volume": 260,
+   "kd": 27,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to buy gold coins in us",
+   "volume": 251,
+   "kd": 65,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "where can i sell ivory jewelry",
+   "volume": 250,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell broken jewelry",
+   "volume": 250,
+   "kd": 17,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "will sold gold coin be taxed",
+   "volume": 250,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "who buys gold coins near me",
+   "volume": 250,
+   "kd": 70,
+   "cpc": 3.08,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much do gold coins cost",
+   "volume": 240,
+   "kd": 43,
+   "cpc": 0.93,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 25 grams of gold worth",
+   "volume": 230,
+   "kd": 36,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 10k white gold ring worth",
+   "volume": 230,
+   "kd": 13,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 1/10 oz of gold worth",
+   "volume": 230,
+   "kd": 23,
+   "cpc": 0.59,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a shekel of gold worth in dollars",
+   "volume": 230,
+   "kd": null,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell my jewelry near me",
+   "volume": 230,
+   "kd": 27,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell gold in red dead redemption 2",
+   "volume": 220,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell gold coins",
+   "volume": 220,
+   "kd": 49,
+   "cpc": 3.77,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to sell gold and silver tax-free",
+   "volume": 220,
+   "kd": 40,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "do you get speech level up when selling items for 0 gold in skyrim",
+   "volume": 220,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to sell gold jewelry",
+   "volume": 220,
+   "kd": 40,
+   "cpc": 5.36,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "does fingerhut sell real white gold diamond rings",
+   "volume": 220,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "what is an ounce of gold worth",
+   "volume": 220,
+   "kd": 44,
+   "cpc": 0.45,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 20kg of gold worth",
+   "volume": 220,
+   "kd": 31,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is one gold coin worth",
+   "volume": 220,
+   "kd": 35,
+   "cpc": 1.13,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "is gold worth more than diamonds",
+   "volume": 220,
+   "kd": 18,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 6.7 grams of gold worth",
+   "volume": 220,
+   "kd": 22,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a pound of gold worth?",
+   "volume": 220,
+   "kd": null,
+   "cpc": 0.29,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 2.5 grams of gold worth",
+   "volume": 220,
+   "kd": 26,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 14 karat gold worth",
+   "volume": 220,
+   "kd": 27,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is parker worth off of gold rush?",
+   "volume": 220,
+   "kd": null,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a gold ingot worth",
+   "volume": 220,
+   "kd": null,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 1 ton of gold worth",
+   "volume": 220,
+   "kd": 34,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 90 tons of gold worth",
+   "volume": 220,
+   "kd": 35,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a ounce of gold worth",
+   "volume": 220,
+   "kd": 29,
+   "cpc": 0.56,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is parker from gold rush worth",
+   "volume": 220,
+   "kd": 14,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a 14k gold bracelet worth at a pawn shop",
+   "volume": 220,
+   "kd": null,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is gold plated flatware worth",
+   "volume": 220,
+   "kd": 12,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a gold krugerrand worth",
+   "volume": 220,
+   "kd": 23,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a 14k gold chain worth",
+   "volume": 220,
+   "kd": 24,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a 24k gold bar worth",
+   "volume": 220,
+   "kd": 27,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much do pawn shops pay for 14k gold",
+   "volume": 220,
+   "kd": null,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to make jewelry to sell",
+   "volume": 220,
+   "kd": 39,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "what kind of jewelry sells best at craft shows",
+   "volume": 220,
+   "kd": null,
+   "cpc": 0.79,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to tell if a gold coin is real or fake",
+   "volume": 220,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "are sacagawea coins gold",
+   "volume": 220,
+   "kd": 26,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to buy gold coins from us mint",
+   "volume": 220,
+   "kd": null,
+   "cpc": 21.71,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to get gold coins in terraria",
+   "volume": 220,
+   "kd": 7,
+   "cpc": 1.85,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "what does 14k gold mean",
+   "volume": 220,
+   "kd": 20,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to buy 14k gold chain",
+   "volume": 220,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "what is 14k ge gold",
+   "volume": 220,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "is 18k gold real",
+   "volume": 220,
+   "kd": 19,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to buy a gold coin",
+   "volume": 210,
+   "kd": 44,
+   "cpc": 1.32,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell gold earrings near me",
+   "volume": 200,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "do you get taxed selling gold",
+   "volume": 200,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell gold in london",
+   "volume": 200,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "who sells black and gold semi formal dresses near me",
+   "volume": 200,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "who sells motorcraft premium gold engine coolant",
+   "volume": 200,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to sell gold jewelry for cash calculator",
+   "volume": 200,
+   "kd": 21,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "where can i sell gold and silver in burbank california",
+   "volume": 200,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell a gold bar for best price near me",
+   "volume": 200,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is gold jewelry worth",
+   "volume": 200,
+   "kd": 21,
+   "cpc": 1.81,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "are gold dollars worth anything",
+   "volume": 200,
+   "kd": 40,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much was gold worth 25 years ago",
+   "volume": 200,
+   "kd": null,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 1 gram of pure gold worth",
+   "volume": 200,
+   "kd": null,
+   "cpc": 0.29,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "is shadow of war gold worth it",
+   "volume": 200,
+   "kd": null,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a gold crown worth 2019",
+   "volume": 200,
+   "kd": null,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "will pawn shops buy gold filled jewelry",
+   "volume": 200,
+   "kd": 26,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to photograph jewelry to sell",
+   "volume": 200,
+   "kd": null,
+   "cpc": 0.02,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to sell used jewelry",
+   "volume": 200,
+   "kd": 26,
+   "cpc": 3.38,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to sell used jewelry near me",
+   "volume": 200,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to sell vintage jewelry",
+   "volume": 200,
+   "kd": 26,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to sell paparazzi jewelry online",
+   "volume": 200,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to sell diamond jewelry",
+   "volume": 200,
+   "kd": 30,
+   "cpc": 5.91,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "who sells jewelry near me",
+   "volume": 200,
+   "kd": 76,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "who sells kendra scott jewelry near me",
+   "volume": 200,
+   "kd": 7,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to buy gold coins in us",
+   "volume": 200,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "what is the value of a 1929 indian head 2.50 gold coin",
+   "volume": 200,
+   "kd": null,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to buy gold and silver coins",
+   "volume": 200,
+   "kd": 84,
+   "cpc": 16.9,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "what stores sell body jewelry",
+   "volume": 191,
+   "kd": 69,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "where can i sell raw gold",
+   "volume": 190,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "who sells levi signature gold jeans",
+   "volume": 190,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much do you lose when you sell gold",
+   "volume": 190,
+   "kd": null,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "who sell euphoria gold men in mesa gilbert tempe",
+   "volume": 190,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a 14k gold necklace worth?",
+   "volume": 190,
+   "kd": null,
+   "cpc": 1.1,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 10k gold necklace worth",
+   "volume": 190,
+   "kd": 43,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 5 grams of 24k gold worth",
+   "volume": 190,
+   "kd": null,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 6000 ounces of gold worth",
+   "volume": 190,
+   "kd": 43,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "who inherited princess diana jewelry",
+   "volume": 190,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "where can i sell my tanzanite jewelry",
+   "volume": 190,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell jewelry in austin tx",
+   "volume": 190,
+   "kd": 25,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to sell paparazzi jewelry on facebook",
+   "volume": 190,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is melt for 14k gold",
+   "volume": 190,
+   "kd": null,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a 14k gold cuban link chain",
+   "volume": 190,
+   "kd": null,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "what is harder 18k gold or 950 platinum",
+   "volume": 190,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "will 18k gold plated tarnish",
+   "volume": 190,
+   "kd": 15,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much gold can i sell without reporting",
+   "volume": 180,
+   "kd": 37,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "where can i sell my gold jewelry near me",
+   "volume": 180,
+   "kd": 22,
+   "cpc": 10.15,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell gold in memphis",
+   "volume": 180,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where can i sell gold and silver near me",
+   "volume": 180,
+   "kd": 29,
+   "cpc": 7.18,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to sell physical gold",
+   "volume": 180,
+   "kd": 42,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell gold nuggets",
+   "volume": 180,
+   "kd": 29,
+   "cpc": 2.79,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to sell crowns for gold eso",
+   "volume": 180,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell gold in toledo ohio",
+   "volume": 180,
+   "kd": null,
+   "cpc": 4.95,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell gold coin in san luis obispo ca",
+   "volume": 180,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where can i sell superior china bavaria 22 carat gold",
+   "volume": 180,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much gold can you sell without reporting",
+   "volume": 180,
+   "kd": 36,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 1 kg of gold worth",
+   "volume": 180,
+   "kd": 24,
+   "cpc": 0.79,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 14k gold ring worth",
+   "volume": 180,
+   "kd": null,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 10 karat gold worth",
+   "volume": 180,
+   "kd": 20,
+   "cpc": 0.38,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a gold crown worth 2016",
+   "volume": 180,
+   "kd": null,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 10k gold worth today",
+   "volume": 180,
+   "kd": 27,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 81 grams of gold worth",
+   "volume": 180,
+   "kd": 55,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 1 troy ounce of gold worth",
+   "volume": 180,
+   "kd": 37,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a gold dollar worth",
+   "volume": 180,
+   "kd": 42,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is my gold chain worth",
+   "volume": 180,
+   "kd": 26,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is an 18k gold ring worth",
+   "volume": 180,
+   "kd": null,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 18k gold plated worth",
+   "volume": 180,
+   "kd": null,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 4 tons of gold worth",
+   "volume": 180,
+   "kd": 21,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 20 tons of gold worth",
+   "volume": 180,
+   "kd": 38,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a 14k gold herringbone necklace worth",
+   "volume": 180,
+   "kd": 16,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a troy ounce of gold worth",
+   "volume": 180,
+   "kd": 41,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "is 925 gold worth anything",
+   "volume": 180,
+   "kd": 23,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "is electroplated gold worth anything",
+   "volume": 180,
+   "kd": 16,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "what is one ounce of gold worth",
+   "volume": 180,
+   "kd": 32,
+   "cpc": 0.49,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a gold worth",
+   "volume": 180,
+   "kd": 27,
+   "cpc": 1.32,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "what is a ounce of gold worth",
+   "volume": 180,
+   "kd": 31,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much money is gold worth",
+   "volume": 180,
+   "kd": 40,
+   "cpc": 0.98,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a 14k gold ring worth at a pawn shop",
+   "volume": 180,
+   "kd": 13,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "where can i sell my jewelry",
+   "volume": 180,
+   "kd": 34,
+   "cpc": 4.81,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "does kay jewelers sell fake jewelry",
+   "volume": 180,
+   "kd": null,
+   "cpc": null,
+   "intent": "brand",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "what is the best site to sell jewelry",
+   "volume": 180,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "where do you sell jewelry in red dead redemption 2",
+   "volume": 180,
+   "kd": 4,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "who sells jwbr jewelry",
+   "volume": 180,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "where can i sell my costume jewelry",
+   "volume": 180,
+   "kd": 16,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell handmade jewelry",
+   "volume": 180,
+   "kd": 30,
+   "cpc": 2.54,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "can you sell paparazzi jewelry on ebay",
+   "volume": 180,
+   "kd": null,
+   "cpc": 0.05,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell turquoise jewelry",
+   "volume": 180,
+   "kd": 49,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where in louisville ky can you take jewelry to sell",
+   "volume": 180,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to draw a gold coin",
+   "volume": 180,
+   "kd": 13,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much does a gold coin weight 5e",
+   "volume": 180,
+   "kd": null,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to tell if a coin is gold",
+   "volume": 180,
+   "kd": 19,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to buy 14k gold charms, engravable",
+   "volume": 180,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "what is 14k s in gold",
+   "volume": 180,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "can you tell the difference between 10k and 14k gold",
+   "volume": 180,
+   "kd": 17,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to clean 14k gold",
+   "volume": 180,
+   "kd": 21,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a gram of 14k gold",
+   "volume": 180,
+   "kd": 35,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "is 14k italy real gold",
+   "volume": 180,
+   "kd": 28,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is an ounce of 14k gold worth",
+   "volume": 180,
+   "kd": 24,
+   "cpc": 1.29,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "what is 14k gold filled",
+   "volume": 180,
+   "kd": 11,
+   "cpc": 1.36,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "does 14k white gold tarnish",
+   "volume": 180,
+   "kd": 24,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "what is 18k gold",
+   "volume": 180,
+   "kd": 17,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "does 18k gold plated tarnish",
+   "volume": 180,
+   "kd": 14,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "does pandora sell real gold",
+   "volume": 176,
+   "kd": 6,
+   "cpc": null,
+   "intent": "brand",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "does gold urban sell real gold",
+   "volume": 175,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a 14k gold bracelet worth",
+   "volume": 175,
+   "kd": 31,
+   "cpc": 1.01,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "does belk sell jewelry",
+   "volume": 173,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to sell a gold coin",
+   "volume": 165,
+   "kd": 30,
+   "cpc": 2.97,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "do banks sell gold coins",
+   "volume": 165,
+   "kd": 50,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to sell gold coins without paying taxes",
+   "volume": 165,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "what is the spread between buy and sell for gold coins",
+   "volume": 165,
+   "kd": null,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "can you make money selling jewelry",
+   "volume": 165,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell jewelry in red dead redemption 2 online",
+   "volume": 165,
+   "kd": null,
+   "cpc": 5.1,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell jewelry in skyrim whiterun",
+   "volume": 165,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to make money selling jewelry on etsy",
+   "volume": 165,
+   "kd": null,
+   "cpc": 4.25,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell david yurman jewelry",
+   "volume": 165,
+   "kd": 20,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell jewelry in dayton ohio",
+   "volume": 165,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell jewelry witcher 3",
+   "volume": 165,
+   "kd": 4,
+   "cpc": 9.73,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where can i sell jewelry online",
+   "volume": 165,
+   "kd": 39,
+   "cpc": 4.7,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how do i clean red spots off of my gold proof coin",
+   "volume": 165,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to tell if a gold coin is real",
+   "volume": 165,
+   "kd": 20,
+   "cpc": 0.42,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how many of the double eagle gold coins were melted down",
+   "volume": 165,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to figure the percentage over the spot price of gold and silver coins",
+   "volume": 165,
+   "kd": null,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "do gold coins tarnish",
+   "volume": 165,
+   "kd": 18,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much the price of 14k gold in the philippines pawnshop",
+   "volume": 165,
+   "kd": null,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "what is the difference between 10k and 14k gold",
+   "volume": 165,
+   "kd": 18,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "what is 14k white gold",
+   "volume": 165,
+   "kd": 21,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is a 14k gold chain",
+   "volume": 155,
+   "kd": null,
+   "cpc": 2.02,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell broken gold jewelry near me",
+   "volume": 150,
+   "kd": 14,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to start a business buying and selling gold and silver",
+   "volume": 150,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell raw gold ore",
+   "volume": 150,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "who sells gold toe socks",
+   "volume": 150,
+   "kd": 9,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "what is the price of gold per gram today",
+   "volume": 150,
+   "kd": null,
+   "cpc": 2.52,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "is the gold and silver pawn shop closed",
+   "volume": 150,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "can you sell paparazzi jewelry on etsy",
+   "volume": 150,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "where tp sell jewelry",
+   "volume": 150,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "what is the best camera to use for taking pictures of jewelry to sell on ebay",
+   "volume": 150,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to sell handmade jewelry to stores",
+   "volume": 150,
+   "kd": null,
+   "cpc": 8.55,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to sell your jewelry to pawn shops",
+   "volume": 150,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "what type of jewelry sells best",
+   "volume": 150,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "can you sell paparazzi jewelry on poshmark",
+   "volume": 150,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "where can i get gold dollar coins",
+   "volume": 150,
+   "kd": 25,
+   "cpc": 0.72,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where do you buy gold coins",
+   "volume": 150,
+   "kd": 58,
+   "cpc": 1.96,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to tell a fake indian gold coin",
+   "volume": 150,
+   "kd": null,
+   "cpc": 0.47,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to find gold scrap",
+   "volume": 150,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to buy 14k gold charms",
+   "volume": 150,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much can i get for 14k gold",
+   "volume": 150,
+   "kd": 23,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "what is the difference between 14k and 18k gold",
+   "volume": 150,
+   "kd": 21,
+   "cpc": 1.55,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "is 18k gold better than 14k gold",
+   "volume": 150,
+   "kd": 19,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "where is a good place to sell jewelry",
+   "volume": 145,
+   "kd": 37,
+   "cpc": 6.57,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where can i sell my jewelry online",
+   "volume": 145,
+   "kd": 46,
+   "cpc": 11.88,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much is 14k gold necklace worth",
+   "volume": 145,
+   "kd": null,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "will 14k gold plated tarnish",
+   "volume": 145,
+   "kd": 17,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "where can i sell jewelry in rdr2",
+   "volume": 140,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where can i buy a gold coin",
+   "volume": 140,
+   "kd": 30,
+   "cpc": 14.27,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to sell old gold",
+   "volume": 135,
+   "kd": 32,
+   "cpc": 15.54,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell gold in chattanooga tn",
+   "volume": 135,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell gold bars red dead redemption 2",
+   "volume": 135,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to sell your gold bullion",
+   "volume": 135,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell gold hoarders flag",
+   "volume": 135,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell my 24 caret gold in india",
+   "volume": 135,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "how much does gold sell for",
+   "volume": 135,
+   "kd": 28,
+   "cpc": 2.56,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "who sell gold at spot price",
+   "volume": 135,
+   "kd": null,
+   "cpc": null,
+   "intent": "value",
+   "skill": "value",
+   "source": "spyfu"
+  },
+  {
+   "q": "who sells gold nugget sempervivum",
+   "volume": 135,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell diamonds and gold near me",
+   "volume": 135,
+   "kd": 27,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell gold bars new vegas",
+   "volume": 135,
+   "kd": 5,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "what is gold selling for today",
+   "volume": 135,
+   "kd": 35,
+   "cpc": 2.36,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to sell gold bars rdr2",
+   "volume": 135,
+   "kd": 9,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell scrap gold",
+   "volume": 135,
+   "kd": 23,
+   "cpc": 3.36,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "where to sell gold nuggets rdr2",
+   "volume": 135,
+   "kd": null,
+   "cpc": null,
+   "intent": "match",
+   "skill": "match",
+   "source": "spyfu"
+  },
+  {
+   "q": "do banks sell gold",
+   "volume": 135,
+   "kd": 4,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "when is a good time to sell gold",
+   "volume": 135,
+   "kd": 19,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "how to buy and sell gold jewelry for profit",
+   "volume": 135,
+   "kd": 30,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "does the us mint sell gold coins",
+   "volume": 135,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  },
+  {
+   "q": "what stores sell cougar gold cheese",
+   "volume": 135,
+   "kd": null,
+   "cpc": null,
+   "intent": "learn",
+   "skill": "learn",
+   "source": "spyfu"
+  }
+ ]
+}
