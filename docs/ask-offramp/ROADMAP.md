@@ -17,9 +17,14 @@ Companion to CONCEPT.md (thesis, skills, guardrails). This file is the build seq
 - ▢ Remaining for full Phase A acceptance: vision call itself (photo→prefill, blocked on Anthropic key) · Resend send of the breakdown email (blocked on Resend key) · photo persistence (private storage).
 - Acceptance: photo→range in <60s; provisional labels everywhere ✓; email consent recorded with source property ✓; lead row visible in Supabase ✓.
 
-## Phase B — Learn (chat + RAG)
-Chat wrapper grounded ONLY in owned corpus (see DATA-CORPUS.md) via pgvector. Question logging from day one → weekly content ritual (gaps become /learn pages). Answer cache for the top ~200 questions (serve from DB, zero inference).
-- Acceptance: refuses/routes out-of-corpus; tax/legal hedged + routed to /consult; question_log populating.
+## Phase B — Learn (chat + RAG) (● SHIPPED 2026-07-11, on chique-v3-verdant)
+Chat wrapper grounded ONLY in owned corpus (see DATA-CORPUS.md). Question logging from day one → weekly content ritual (gaps become /learn pages). Answer cache for the top questions (serve from DB, zero inference).
+- ● Retrieval is **Postgres full-text search** (0003: generated tsvector + GIN + `search_ask_corpus` RPC), not pgvector — no embeddings provider wired yet. `ask_corpus.embedding` stays null; upgrade path = Voyage/OpenAI backfill + swap the RPC to cosine. Strict AND query first (digit/noise tokens stripped), OR-fallback for recall; zero strict hits = $0 honest refusal.
+- ● Corpus loaded (scripts/load-corpus.mjs, re-runnable): glossary 1,992 chunks · site pages 112 · GBS methodology 4 · authored pricing-math 5 (~2,113 total). Directory loaded via scripts/load-directory.mjs (picks up new metro files automatically).
+- ● /api/ask/chat: normalize → answer_cache hit ($0) → FTS top-6 → Haiku grounded answer (`textAnswer` in llm.ts: corpus-only, tax/legal hedged → /consult, no invented payouts, no embedded spot prices → /gold-calculator) → question_log upsert (content_gap flags weak retrieval) + assistant_messages w/ cost_cents. 20/hr per-IP rate limit, 400-char cap. Confident answers self-cache.
+- ● Cache primed from top ~120 seed questions (scripts/prime-cache.mjs, near-duplicate skip); chips on /ask pull the most-asked cached questions (GET /api/ask/chat).
+- ● UI: "Or just ask" section on /ask (AskChat.tsx, works in ?embed=1), source links + "answers come from our published guides — the free consult is a person."
+- Acceptance: refuses/routes out-of-corpus ✓; tax/legal hedged + routed to /consult ✓; question_log populating w/ content_gap ✓.
 
 ## Phase C — Match (the map) + widget + satellite deployments
 "Who buys gold near me": buyer directory (DATA-CORPUS.md §3) on a map, overlaid with our two-tier ranking — national buyers carry full Gold Buyer Scores; local places carry directory facts + "not yet scored" honesty. Offramp appears in every geography as the top-ranked mail-in.
