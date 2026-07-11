@@ -58,6 +58,18 @@ export default function AustinPage() {
           front, final price from the reading, paid by wire or bitcoin. Appointment
           only — call or request a time and we&rsquo;ll confirm same day.
         </p>
+        <p className="mt-3 font-body text-base leading-relaxed text-ink-2">
+          We meet on the 19th floor of 500 W 2nd — the downtown tower Austinites
+          know as the Google building — inside{" "}
+          <a
+            href="https://firmspace.com/locations/austin"
+            className="font-medium text-gold-400 underline decoration-line-2 underline-offset-4 hover:text-ink"
+          >
+            Firmspace
+          </a>
+          , a private office club with a staffed front desk and glass-walled
+          meeting rooms. Professional, quiet, and nothing like a pawn counter.
+        </p>
       </div>
 
       <div className="mt-10 grid gap-5 md:grid-cols-2">
