@@ -8,8 +8,8 @@ import { Lockup } from "@/components/Logo";
 const NAV_LINKS = [
   { href: "/sell", label: "Sell gold" },
   { href: "/calculators", label: "What it's worth" },
+  { href: "/learn", label: "Learn" },
   { href: "/family-vault", label: "Family vault" },
-  { href: "/austin", label: "Austin" },
 ] as const;
 
 const PHONE_DISPLAY = "(512) 983-5997";
@@ -74,14 +74,14 @@ export function Navigation() {
             })}
           </ul>
 
-          {/* Phone (the nav's right-side element per spec §6) */}
+          {/* Consult CTA (nav's right-side element; phone lives in footer + mobile panel) */}
           <div className="hidden items-center gap-3 lg:flex">
-            <a
-              href={PHONE_HREF}
-              className="rounded-full border border-line-2 px-4 py-2 font-mono text-sm text-ink transition-colors hover:border-ink"
+            <Link
+              href="/consult"
+              className="rounded-full bg-ink px-5 py-2.5 font-body text-sm font-semibold text-paper transition-opacity hover:opacity-90"
             >
-              {PHONE_DISPLAY}
-            </a>
+              Book a consultation
+            </Link>
           </div>
 
           {/* Mobile hamburger */}
@@ -146,18 +146,25 @@ export function Navigation() {
 
           <div className="my-6 h-px bg-line" />
 
+          <Link
+            href="/consult"
+            onClick={closeMobile}
+            className="flex w-full items-center justify-center rounded-full bg-ink px-6 py-4 font-body text-base font-semibold text-paper"
+          >
+            Book a consultation
+          </Link>
           <a
             href={PHONE_HREF}
             onClick={closeMobile}
-            className="flex w-full items-center justify-center rounded-full border border-line-2 px-6 py-4 font-mono text-base text-ink"
+            className="mt-3 flex w-full items-center justify-center rounded-full border border-line-2 px-6 py-3.5 font-mono text-sm text-ink"
           >
             {PHONE_DISPLAY}
           </a>
 
           <p className="mt-auto pb-10 font-body text-xs leading-relaxed text-ink-3">
-            Austin, Texas, and everywhere by insured mail.
+            Austin, Texas HQ. Online everywhere.
             <br />
-            Free insured kits. Paid in USD or bitcoin.
+            Free insured kits. Paid in USD or bitcoin. No obligation.
           </p>
         </div>
       </div>

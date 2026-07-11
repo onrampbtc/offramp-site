@@ -51,6 +51,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/family-vault", changeFrequency: "monthly" as const, priority: 0.7 },
     { url: "/austin", changeFrequency: "monthly" as const, priority: 0.8 },
     { url: "/consult", changeFrequency: "monthly" as const, priority: 0.8 },
+    { url: "/learn", changeFrequency: "weekly" as const, priority: 0.9 },
   ];
 
   return pages.map((page) => ({

@@ -55,15 +55,15 @@ export default function HomePage() {
         <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
             <p className="label-maison text-gold-400">
-              Austin, Texas &middot; and everywhere by insured mail
+              Austin, Texas HQ &middot; online everywhere, on demand
             </p>
             <h1 className="mt-4 font-display text-5xl font-semibold leading-[1.05] tracking-tight text-ink sm:text-6xl">
-              The family gold, finally in one place.
+              Sell your gold for what it&rsquo;s actually worth.
             </h1>
             <p className="mt-5 max-w-xl font-body text-lg leading-relaxed text-ink-2">
-              Photograph each piece and we&rsquo;ll tell you what it&rsquo;s honestly
-              worth. Keep it all in a shared family vault — invite your siblings, watch
-              the value together, and sell only when everyone&rsquo;s ready.
+              An honest range in about a minute, no account needed. Then a free
+              insured kit or an Austin appointment, an assay you can watch, and
+              payment by wire or bitcoin — with no obligation at any step.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Link
@@ -73,12 +73,17 @@ export default function HomePage() {
                 See what it&rsquo;s worth
               </Link>
               <Link
-                href="/family-vault"
+                href="/sell"
                 className="rounded-full border border-line-2 px-7 py-3.5 font-body text-sm font-semibold text-ink transition-colors hover:border-ink active:scale-[0.98]"
               >
-                Start a family vault
+                Sell gold for cash
               </Link>
             </div>
+            <p className="mt-5 font-body text-sm text-ink-3">
+              New — <Link href="/family-vault" className="font-medium text-gold-400 underline decoration-line-2 underline-offset-4 hover:text-ink">the family vault</Link>
+              <span className="ml-1 rounded-full border border-line-2 px-2 py-0.5 font-mono text-[10px] uppercase tracking-wide">beta</span>
+              : keep every piece, and its value, in one shared place.
+            </p>
           </div>
 
           {/* Hero photograph — human + heirloom, Menē register */}
@@ -98,8 +103,71 @@ export default function HomePage() {
       {/* ============ LIVE STRIP (dark instrument panel) ============ */}
       <LiveStrip />
 
+      {/* ============ HOW IT WORKS ============ */}
+      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+        <h2 className="font-display text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
+          From drawer to paid, in three steps
+        </h2>
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
+          {STEPS.map((s) => (
+            <div key={s.n} className="rounded-xl border border-line bg-raise p-6">
+              <p className="font-mono text-xs text-gold-400">{s.n}</p>
+              <h3 className="mt-3 font-display text-xl font-semibold text-ink">{s.title}</h3>
+              <p className="mt-2 font-body text-sm leading-relaxed text-ink-2">{s.body}</p>
+              <Link
+                href={s.href}
+                className="mt-4 inline-block font-body text-sm font-medium text-gold-400 underline decoration-line-2 underline-offset-4 transition-colors hover:text-ink"
+              >
+                {s.link}
+              </Link>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ============ PAWN VS OFFRAMP ============ */}
+      <section className="mx-auto max-w-5xl px-4 pb-20 sm:px-6 lg:px-8">
+        <h2 className="font-display text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
+          The honest comparison
+        </h2>
+        <p className="mt-3 max-w-2xl font-body text-base text-ink-2">
+          Pawn shops price for people who need money today. We price for families
+          deciding what an heirloom is worth.
+        </p>
+        <div className="mt-8 overflow-x-auto rounded-xl border border-line bg-raise">
+          <table className="w-full min-w-[560px] text-left">
+            <thead>
+              <tr className="border-b border-line">
+                <th className="px-5 py-4 font-body text-xs font-semibold uppercase tracking-wide text-ink-3">
+                  &nbsp;
+                </th>
+                <th className="px-5 py-4 font-body text-sm font-semibold text-coral">Pawn shop</th>
+                <th className="px-5 py-4 font-body text-sm font-semibold text-teal">Offramp</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-line">
+              {COMPARISON_ROWS.map((row) => (
+                <tr key={row.label}>
+                  <td className="px-5 py-4 font-body text-sm font-medium text-ink">{row.label}</td>
+                  <td className="px-5 py-4 font-body text-sm text-coral">{row.pawn}</td>
+                  <td className="px-5 py-4 font-body text-sm text-teal">{row.offramp}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <div className="mt-6">
+          <Link
+            href="/calculators/pawn-comparison"
+            className="font-body text-sm font-medium text-gold-400 underline decoration-line-2 underline-offset-4 hover:text-ink"
+          >
+            Run the numbers on your own gold
+          </Link>
+        </div>
+      </section>
+
       {/* ============ FAMILY VAULT ============ */}
-      <section className="mx-auto max-w-7xl px-4 pt-20 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-7xl px-4 pb-20 pt-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
             <p className="label-maison text-gold-400">The family vault</p>
@@ -167,68 +235,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ============ HOW IT WORKS ============ */}
-      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-        <h2 className="font-display text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-          From drawer to paid, in three steps
-        </h2>
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {STEPS.map((s) => (
-            <div key={s.n} className="rounded-xl border border-line bg-raise p-6">
-              <p className="font-mono text-xs text-gold-400">{s.n}</p>
-              <h3 className="mt-3 font-display text-xl font-semibold text-ink">{s.title}</h3>
-              <p className="mt-2 font-body text-sm leading-relaxed text-ink-2">{s.body}</p>
-              <Link
-                href={s.href}
-                className="mt-4 inline-block font-body text-sm font-medium text-gold-400 underline decoration-line-2 underline-offset-4 transition-colors hover:text-ink"
-              >
-                {s.link}
-              </Link>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* ============ PAWN VS OFFRAMP ============ */}
-      <section className="mx-auto max-w-5xl px-4 pb-20 sm:px-6 lg:px-8">
-        <h2 className="font-display text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-          The honest comparison
-        </h2>
-        <p className="mt-3 max-w-2xl font-body text-base text-ink-2">
-          Pawn shops price for people who need money today. We price for families
-          deciding what an heirloom is worth.
-        </p>
-        <div className="mt-8 overflow-x-auto rounded-xl border border-line bg-raise">
-          <table className="w-full min-w-[560px] text-left">
-            <thead>
-              <tr className="border-b border-line">
-                <th className="px-5 py-4 font-body text-xs font-semibold uppercase tracking-wide text-ink-3">
-                  &nbsp;
-                </th>
-                <th className="px-5 py-4 font-body text-sm font-semibold text-coral">Pawn shop</th>
-                <th className="px-5 py-4 font-body text-sm font-semibold text-teal">Offramp</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-line">
-              {COMPARISON_ROWS.map((row) => (
-                <tr key={row.label}>
-                  <td className="px-5 py-4 font-body text-sm font-medium text-ink">{row.label}</td>
-                  <td className="px-5 py-4 font-body text-sm text-coral">{row.pawn}</td>
-                  <td className="px-5 py-4 font-body text-sm text-teal">{row.offramp}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-        <div className="mt-6">
-          <Link
-            href="/calculators/pawn-comparison"
-            className="font-body text-sm font-medium text-gold-400 underline decoration-line-2 underline-offset-4 hover:text-ink"
-          >
-            Run the numbers on your own gold
-          </Link>
-        </div>
-      </section>
 
       {/* ============ DARK THESIS BAND (the one vault moment) ============ */}
       <section className="vault-atmosphere">
