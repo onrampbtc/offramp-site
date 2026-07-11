@@ -124,12 +124,44 @@ function methodologyRows() {
   return rows;
 }
 
+// ── 4. pricing math (DATA-CORPUS §1: melt formulas, karat table, payout) ──
+// Authored evergreen chunks from spec §7 / src/lib/ask.ts — the canonical
+// math, no live prices (answers must point to /gold-calculator for those).
+
+function pricingRows() {
+  const CALC = `${SITE}/gold-calculator`;
+  const facts = [
+    {
+      title: "How gold melt value is calculated",
+      text: "Melt value is the metal itself, priced at the live market: melt value = (gold spot price per troy ounce ÷ 31.1035) × purity × weight in grams. A troy ounce is 31.1035 grams — slightly heavier than a regular ounce. The spot price changes all day, so how much a gram, an ounce, a pound, or a bar of gold is worth depends on the live number: use the calculator at /gold-calculator or the live price page at /gold-price. To value any weight of gold: multiply the grams by the karat purity, then by the live per-gram spot price.",
+    },
+    {
+      title: "Karat purity table (what 10k, 14k, 18k, 22k, 24k mean)",
+      text: "Karat measures how much of the metal is actually gold. 24k is 99.9% pure gold (stamped 999), 22k is 91.67% (stamped 916), 18k is 75% (stamped 750), 14k is 58.33% (stamped 585), and 10k is 41.67% (stamped 417). Those three-digit stamps inside a ring band or on a jewelry clasp are millesimal fineness — 585 simply means 58.5% gold, the European way of writing 14k. So a gram of 14k gold is worth 58.33% of what a gram of pure gold is worth. Every real karat of gold — 10k, 14k, 18k, 22k, 24k — has melt value, even broken, mismatched, or out-of-style pieces.",
+    },
+    {
+      title: "Gold weights and units (gram, troy ounce, pound, bars)",
+      text: "Gold is priced in troy ounces: 1 troy ounce = 31.1035 grams, and a pound of gold is about 14.58 troy ounces. Common gold bars: 1 gram, 1 troy ounce, 10 troy ounces, 1 kilo (32.15 troy ounces), and the 400 oz good-delivery bar banks use. Common gold coins run 8–34 grams — a standard 1 oz bullion coin like an American Eagle is 31.1 grams of gold content. What any of them is worth in dollars moves with the live spot price — check /gold-price for the number right now, or /gold-calculator to price a specific weight and karat.",
+    },
+    {
+      title: "What Offramp pays (published payout band)",
+      text: "Offramp's published payout is 80–90% of melt value, and the final price always comes from a recorded assay of the actual metal — an assay you can watch, not a guess over the internet. For comparison, pawn shops typically pay 20–55% of melt and local jewelers 40–60%. Every online range is provisional until the assay: that is honesty, not hedging.",
+    },
+    {
+      title: "Typical weights of gold jewelry pieces",
+      text: "If you don't have a scale, typical weights: a ring runs 2–8 grams (wedding bands 3–6 g), a chain 8–30 grams (heavy ones reach 50 g), a bracelet 8–25 grams, a single dental crown 2–6 grams, and small miscellaneous pieces 3–15 grams. Weigh-or-estimate, the karat stamp plus weight is all the math needs: the calculator at /gold-calculator turns them into a dollar range at the live spot price.",
+    },
+  ];
+  return facts.map((f) => ({ source: "pricing", title: f.title, url: CALC, chunk: f.text }));
+}
+
 // ── run ───────────────────────────────────────────────────────────────────
 
 const bySource = {
   glossary: glossaryRows(),
   site: siteRows(),
   methodology: methodologyRows(),
+  pricing: pricingRows(),
 };
 
 for (const [source, rows] of Object.entries(bySource)) {

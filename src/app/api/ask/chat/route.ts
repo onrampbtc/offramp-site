@@ -51,13 +51,25 @@ interface CorpusHit {
   rank: number;
 }
 
+// Tokens that carry no retrieval signal: pure numbers and quantities kill
+// the strict AND-query ("how much is 3 grams of gold worth" must not demand
+// a literal "3" in a chunk). Karat tokens (14k…) stay — they're content.
+const FTS_NOISE = new Set(["anything", "something", "any", "really", "actually", "much", "many"]);
+function ftsTerms(question: string): string {
+  return normalizeQuestion(question)
+    .split(" ")
+    .filter((t) => !/^\d+(\.\d+)?$/.test(t) && !FTS_NOISE.has(t))
+    .join(" ");
+}
+
 /** FTS retrieval: strict websearch (AND) first, OR-fallback for recall. */
 async function retrieve(question: string): Promise<{ chunks: CorpusHit[]; strictCount: number }> {
-  const strict = await rpc("search_ask_corpus", { q: question, n: 6 });
+  const terms = ftsTerms(question) || question;
+  const strict = await rpc("search_ask_corpus", { q: terms, n: 6 });
   const strictHits = (strict.data ?? []) as unknown as CorpusHit[];
   if (strictHits.length >= 4) return { chunks: strictHits, strictCount: strictHits.length };
 
-  const orQuery = normalizeQuestion(question).split(" ").join(" or ");
+  const orQuery = terms.split(" ").join(" or ");
   const loose = orQuery ? await rpc("search_ask_corpus", { q: orQuery, n: 6 }) : { data: [] };
   const seen = new Set(strictHits.map((c) => c.chunk));
   const merged = [
@@ -233,14 +245,30 @@ export async function POST(request: Request) {
   return NextResponse.json({ answer, sources, cached: false, sessionId });
 }
 
-// GET — top cached questions, oldest first (priming inserts by search volume).
+// GET — suggested-question chips: the most-asked questions that have a
+// cached answer (first_asked tie-break ≈ search volume, priming inserts
+// in volume order).
 export async function GET() {
   if (!isSupabaseConfigured()) return NextResponse.json({ questions: [] });
-  const rows = await selectRows(
-    "answer_cache",
-    "select=question&order=created_at.asc&limit=4"
+  const top = await selectRows(
+    "question_log",
+    "select=normalized_q&order=times_asked.desc,first_asked.asc&limit=24"
   );
-  return NextResponse.json({
-    questions: (rows.data ?? []).map((r) => String(r.question)),
-  });
+  const norms = (top.data ?? []).map((r) => String(r.normalized_q));
+  if (norms.length === 0) return NextResponse.json({ questions: [] });
+  const inList = norms.map((n) => `"${n.replace(/"/g, "")}"`).join(",");
+  const cachedRows = await selectRows(
+    "answer_cache",
+    `select=normalized_q,question&normalized_q=in.(${encodeURIComponent(inList)})`
+  );
+  const byNorm = new Map(
+    (cachedRows.data ?? []).map((r) => [String(r.normalized_q), String(r.question)])
+  );
+  const questions: string[] = [];
+  for (const n of norms) {
+    const q = byNorm.get(n);
+    if (q) questions.push(q);
+    if (questions.length >= 4) break;
+  }
+  return NextResponse.json({ questions });
 }

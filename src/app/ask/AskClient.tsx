@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { AskChat } from "./AskChat";
 
 /*
   Ask Offramp — Phase A client flow.
@@ -661,6 +662,9 @@ export function AskClient({ embed = false, brand = "offramp" }: { embed?: boolea
         )}
       </div>
       </div>
+
+      {/* ── Learn skill: grounded Q&A below the valuation flow ── */}
+      <AskChat brand={brand} />
     </div>
   );
 }
