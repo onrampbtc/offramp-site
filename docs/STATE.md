@@ -48,6 +48,12 @@ Next milestones: M2 estimate flow → M3 money pages → M4 vault → M5 lane 2 
 - ▢ Next: remaining 38 states · quarterly re-score ritual · comparison pages ([A] vs [B]) · GSC submission.
 - Targets: "best place to sell gold" 3,600/mo · "+near me" 2,400/mo · 50× "sell gold [state]" long-tail.
 
+## 🚨 INCIDENT: gold content in Onramp's Sanity (2026-07-10, remediation in flight)
+- **Root cause:** goldvsbitcoin.org was wired to Sanity project 7bsc4ela (ONRAMP's company instance) from its original build; the correct "Offramp Gold" project r9qnuhp8 (created March, full schema) sat empty. Every content push (the original blog/glossary/podcast push AND the 2026-07-10 wave) landed in Onramp's lake.
+- **Public blast radius: ZERO** — verified onrampbitcoin.com surfaces none of it (no blog paths render gold posts, no public glossary, /research + /resources clean). Contamination is CMS-layer only.
+- **Misplaced inventory in 7bsc4ela:** 18 gold posts (16 from the 07-10 wave + should-i-sell-gold-for-bitcoin + selling-gold-what-you-need-to-know) · 581 glossaryTerms (with gold-flavored explanations) · gold categories (Bitcoin 101, Gold 101, Conversion, Selling; Compare is SHARED — 25 Onramp posts use it, only our 6 leave).
+- **Plan:** (1) COPY posts+categories+author, glossary ×581, podcasts ×~315 (deliberate syndication, copy-not-move) into r9qnuhp8 with same _ids — 3 agents running; (2) repoint gold-domains Vercel envs NEXT_PUBLIC_SANITY_PROJECT_ID → r9qnuhp8 + redeploy + verify gvb renders fully; (3) ONLY THEN delete from 7bsc4ela: the 18 posts, 581 glossaryTerms, and gold-only categories. Nothing destructive before step-2 verification passes.
+
 ## Satellites
 - **gold-domains** repo (`~/Desktop/gold-domains`): ● **deploys healed + restructure LIVE (2026-07-10)** — goldtobtc.com 308→offrampgold.com/gold-to-bitcoin · goldbuyer.io/reviews 308→touchstonereport.com · goldbuyer /gold-price per-karat + Dataset JSON-LD serving · gold-buyer builds Ready in ~37s on push.
 - goldvsbitcoin.org repoint to /learn/ = wk 7–8 (M5). goldbuyer.io ranking site = Phase 2, month 4+.
