@@ -50,12 +50,12 @@
   /* Data colors */
   --color-teal: #3E6152;           /* value-up, positive */
   --color-coral: #7A3B2E;          /* warnings, pawn comparisons */
-  --color-ember: #A85623;          /* live-market accent on light (AA small text) */
-  --color-ember-brt: #E8964B;      /* live-market accent on dark green */
+  --color-ember: #A0490A;          /* live-market cognac on light — 5.7:1 on paper */
+  --color-ember-brt: #F39F41;      /* terminal amber on dark green — 5.7:1 on vault */
 
-  /* Instrument panel + dark room — hunter green, not black */
-  --color-panel: #0F2B21;
-  --color-panel-2: #0C241C;        /* /gold-to-bitcoin page bg */
+  /* Instrument panel + dark room — Rolex --dark-green, not black */
+  --color-panel: #0B3E27;
+  --color-panel-2: #0A3220;        /* /gold-to-bitcoin page bg */
   --color-panel-ink: #EDE8D8;
   --color-panel-mut: #7E9A8C;
   --color-gold-brt: #D9BC82;       /* gold on dark only */
@@ -106,8 +106,8 @@ h2.font-display, h3.font-display { font-weight: 480; }
 .vault-atmosphere {
   background:
     radial-gradient(120% 90% at 20% 10%, rgba(217,188,130,0.10), transparent 55%),
-    radial-gradient(90% 120% at 85% 90%, rgba(232,150,75,0.05), transparent 50%),
-    #0C241C;
+    radial-gradient(90% 120% at 85% 90%, rgba(243,159,65,0.05), transparent 50%),
+    #0A3220;
   position: relative;
 }
 .vault-atmosphere::after {

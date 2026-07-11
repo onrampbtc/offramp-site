@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { LiveStrip } from "@/components/LiveStrip";
 
@@ -80,6 +81,44 @@ export default function HomePage() {
             </div>
           </div>
 
+          {/* Hero photograph — human + heirloom, Menē register */}
+          <div className="relative aspect-[4/5] overflow-hidden rounded-xl lg:aspect-auto lg:h-[520px]">
+            <Image
+              src="/photos/hands-heirloom-ring-passing.jpg"
+              alt="Two hands resting together over dark stone, one wearing a fine gold ring"
+              fill
+              priority
+              sizes="(min-width: 1024px) 45vw, 100vw"
+              className="object-cover object-[50%_62%]"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* ============ LIVE STRIP (dark instrument panel) ============ */}
+      <LiveStrip />
+
+      {/* ============ FAMILY VAULT ============ */}
+      <section className="mx-auto max-w-7xl px-4 pt-20 sm:px-6 lg:px-8">
+        <div className="grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
+          <div>
+            <p className="label-maison text-gold-400">The family vault</p>
+            <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
+              One ledger the whole family can see
+            </h2>
+            <p className="mt-4 max-w-xl font-body text-base leading-relaxed text-ink-2">
+              Every piece, its weight, and its honest range — in one shared place.
+              Invite your siblings, watch the value move with the market, and
+              decide together, without anyone hovering.
+            </p>
+            <Link
+              href="/family-vault"
+              className="mt-6 inline-block font-body text-sm font-medium text-gold-400 underline decoration-line-2 underline-offset-4 hover:text-ink"
+            >
+              Start a family vault
+            </Link>
+          </div>
+
           {/* Vault preview card (marketing render, clearly illustrative) */}
           <div className="rounded-xl border border-line bg-raise p-6">
             <div className="flex items-center justify-between">
@@ -127,9 +166,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* ============ LIVE STRIP (dark instrument panel) ============ */}
-      <LiveStrip />
 
       {/* ============ HOW IT WORKS ============ */}
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
@@ -194,20 +230,31 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ============ DARK THESIS BAND ============ */}
+      {/* ============ DARK THESIS BAND (the one vault moment) ============ */}
       <section className="vault-atmosphere">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-          <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
-            <p className="max-w-2xl font-display text-2xl font-medium leading-snug text-panel-ink sm:text-3xl">
-              Gold preserved wealth for 5,000 years.
-              <span className="text-gold-brt"> Decide its next 5,000.</span>
-            </p>
-            <Link
-              href="/gold-to-bitcoin"
-              className="shrink-0 rounded-full border border-gold-brt/40 px-6 py-3 font-body text-sm font-semibold text-gold-brt transition-colors hover:border-gold-brt"
-            >
-              Gold to bitcoin
-            </Link>
+          <div className="grid items-center gap-10 lg:grid-cols-[1.15fr_0.85fr]">
+            <div>
+              <p className="max-w-2xl font-display text-2xl font-medium leading-snug text-panel-ink sm:text-3xl">
+                Gold preserved wealth for 5,000 years.
+                <span className="text-gold-brt"> Decide its next 5,000.</span>
+              </p>
+              <Link
+                href="/gold-to-bitcoin"
+                className="mt-8 inline-block rounded-full border border-gold-brt/40 px-6 py-3 font-body text-sm font-semibold text-gold-brt transition-colors hover:border-gold-brt"
+              >
+                Gold to bitcoin
+              </Link>
+            </div>
+            <div className="relative hidden aspect-[16/10] overflow-hidden rounded-lg lg:block">
+              <Image
+                src="/photos/gold-coin-warm-light.jpg"
+                alt="A gold coin standing on edge in a blade of warm light"
+                fill
+                sizes="(min-width: 1024px) 38vw, 0px"
+                className="object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
