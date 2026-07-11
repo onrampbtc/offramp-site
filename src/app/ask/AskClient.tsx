@@ -591,11 +591,11 @@ export function AskClient({ embed = false, brand = "offramp" }: { embed?: boolea
           <div>
             <p className="label-maison text-gold-400">Saved</p>
             <h2 className="mt-2 font-display text-2xl font-semibold text-ink">
-              Your breakdown is on its way
+              Your breakdown is saved
             </h2>
             <p className="mt-2 max-w-xl font-body text-sm leading-relaxed text-ink-2">
-              Check {email}. When you&apos;re ready, the next step is whichever
-              of these fits:
+              We&apos;ll email it to {email}. When you&apos;re ready, the next
+              step is whichever of these fits:
             </p>
             <div className="mt-5 flex flex-wrap gap-3">
               <Link
