@@ -51,28 +51,18 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Offramp" }],
   creator: "Offramp",
+  // og:title/og:description/og:image and the twitter equivalents are filled
+  // per-page by Next: title/description inherit from each page's metadata,
+  // images come from the route-level opengraph-image files (branded, dynamic).
+  // Do NOT add title/description/images here — a static value would shadow
+  // the per-page inheritance on every page that doesn't export openGraph.
   openGraph: {
     type: "website",
     locale: "en_US",
     siteName: "Offramp",
-    title: "Offramp | Sell Gold for Cash or Bitcoin",
-    description:
-      "Sell your gold for cash or Bitcoin. Free insured shipping, professional assay, wire payment. The bridge between gold and the digital economy.",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Offramp — Sell Gold for Cash or Bitcoin",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Offramp | Sell Gold for Cash or Bitcoin",
-    description:
-      "Sell your gold for cash or Bitcoin. Free insured shipping, professional assay, wire payment.",
-    images: ["/og-image.png"],
   },
   verification: {
     google: "kE79H4vFl-MtuLVjy_QxEXdEgb0YWarxhZvouY0GLbo",
