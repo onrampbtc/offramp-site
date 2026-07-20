@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ArticleJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Currency Debasement: A 5,000 Year History | Offramp",
+  title: "Currency Debasement: A 5,000 Year History",
   description:
     "From Roman denarii to modern fiat, governments have debased currencies throughout history. Learn why hard money always wins and how gold and Bitcoin protect wealth.",
   keywords: [

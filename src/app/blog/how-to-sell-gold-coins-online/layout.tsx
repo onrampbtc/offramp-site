@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ArticleJsonLd, BreadcrumbJsonLd, FAQJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "How to Sell Gold Coins Online: Complete Guide for 2026 | Offramp",
+  title: "How to Sell Gold Coins Online: Complete Guide for 2026",
   description:
     "Learn how to sell gold coins online for the best price. Compare bullion vs numismatic value, find the best buyers, and avoid common mistakes that cost sellers money.",
   alternates: { canonical: "https://offrampgold.com/blog/how-to-sell-gold-coins-online" },

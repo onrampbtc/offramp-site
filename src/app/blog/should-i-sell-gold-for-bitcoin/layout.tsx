@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ArticleJsonLd, BreadcrumbJsonLd, FAQJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Should I Sell My Gold for Bitcoin? A 2026 Decision Framework | Offramp",
+  title: "Should I Sell My Gold for Bitcoin? A 2026 Decision Framework",
   description:
     "Gold and Bitcoin are both stores of value — but they behave very differently. Data-driven framework for deciding whether converting gold to BTC makes sense for you.",
   alternates: { canonical: "https://offrampgold.com/blog/should-i-sell-gold-for-bitcoin" },

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { WebApplicationJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Dental Gold Value Calculator | Offramp",
+  title: "Dental Gold Value Calculator",
   description:
     "Dental gold is typically 16K-20K purity and ranges from 1-10 grams per piece. Calculate the value of your dental gold crowns, bridges, and fillings with the Offramp calculator.",
   alternates: { canonical: "https://offrampgold.com/calculators/dental" },

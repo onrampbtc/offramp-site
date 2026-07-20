@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ArticleJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "The Gold Standard: History and Lessons | Offramp",
+  title: "The Gold Standard: History and Lessons",
   description:
     "A complete history of the gold standard from its origins to its collapse, what it taught us about sound money, and what comes next with Bitcoin.",
   keywords: [

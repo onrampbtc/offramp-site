@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Buy Physical Gold With Bitcoin | Offramp by Onramp",
+  title: "Buy Physical Gold With Bitcoin",
   description:
     "Offramp lets you buy physical gold using Bitcoin. Sell BTC through Onramp, receive USD, and purchase gold coins or bars through Offramp. The two-way bridge between digital and physical hard money.",
   alternates: { canonical: "https://offrampgold.com/buy-gold" },

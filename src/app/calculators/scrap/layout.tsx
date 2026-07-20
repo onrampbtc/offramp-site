@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { WebApplicationJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Scrap Gold Calculator — Current Scrap Gold Price Per Gram | Offramp",
+  title: "Scrap Gold Calculator — Current Scrap Gold Price Per Gram",
   description:
     "Calculate your scrap gold value instantly with live spot prices. Get current scrap gold prices per gram for 10K, 14K, 18K, 22K, and 24K. Free scrap gold calculator updated in real time.",
   alternates: { canonical: "https://offrampgold.com/calculators/scrap" },

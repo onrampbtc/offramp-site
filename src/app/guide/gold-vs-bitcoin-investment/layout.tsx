@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ArticleJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Gold vs Bitcoin as an Investment (2026) | Offramp",
+  title: "Gold vs Bitcoin as an Investment (2026)",
   description:
     "Gold vs Bitcoin investment comparison: returns, volatility, risk profile, and portfolio allocation theory. Which is the better investment in 2026?",
   keywords: [

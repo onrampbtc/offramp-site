@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ArticleJsonLd, BreadcrumbJsonLd, FAQJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "The Best Way to Convert Gold to Bitcoin in 2026 | Offramp",
+  title: "The Best Way to Convert Gold to Bitcoin in 2026",
   description:
     "Compare every method to convert physical gold to Bitcoin — peer-to-peer, exchanges, gold-backed tokens, and direct mail-in services. Find the cheapest, fastest, safest option.",
   alternates: { canonical: "https://offrampgold.com/blog/best-way-to-convert-gold-to-bitcoin" },

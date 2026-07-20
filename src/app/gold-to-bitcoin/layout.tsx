@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { FAQJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Sell Gold for Bitcoin | Gold to BTC | Offramp by Onramp",
+  title: "Sell Gold for Bitcoin | Gold to BTC",
   description:
     "Offramp is the bridge from physical gold to Bitcoin. Sell your jewelry, coins, or scrap gold for USD wired to your bank, then convert to BTC through Onramp custody. Gold is old hard money. Bitcoin is new hard money.",
   openGraph: {

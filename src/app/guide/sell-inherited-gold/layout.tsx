@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ArticleJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "How to Sell Inherited Gold and Jewelry | Offramp",
+  title: "How to Sell Inherited Gold and Jewelry",
   description:
     "A sensitive guide to selling inherited gold and jewelry. Learn how to inventory, appraise, and sell inherited precious metals while respecting sentimental value.",
   keywords: [

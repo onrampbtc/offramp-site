@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ArticleJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "How to Sell Scrap Gold: Complete Guide | Offramp",
+  title: "How to Sell Scrap Gold: Complete Guide",
   description:
     "Learn how to sell scrap gold for the best price. What counts as scrap, how to sort by karat, weigh your gold, and find buyers who pay top dollar.",
   keywords: [

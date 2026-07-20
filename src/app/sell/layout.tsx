@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { FAQJsonLd, HowToJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Sell Gold Online for Cash | Offramp by Onramp",
+  title: "Sell Gold Online for Cash",
   description:
     "Sell your gold jewelry, coins, bullion, and scrap gold online for cash. Free insured FedEx shipping, recorded professional assay, and wire payment within 48 hours. Get 80%+ of spot value.",
   keywords: [

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ArticleJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Hard Money: From Gold to Bitcoin | Offramp",
+  title: "Hard Money: From Gold to Bitcoin",
   description:
     "Trace the evolution of hard money from ancient gold coins to the gold standard to Bitcoin. Learn why sound money matters and how hard assets protect purchasing power.",
   keywords: [

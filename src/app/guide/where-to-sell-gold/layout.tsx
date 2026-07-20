@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ArticleJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Where to Sell Gold: Best Places Compared (2026) | Offramp",
+  title: "Where to Sell Gold: Best Places Compared (2026)",
   description:
     "Compare pawn shops, jewelers, online gold buyers, and refineries. See payout percentages, pros and cons, and find the best place to sell your gold.",
   keywords: [

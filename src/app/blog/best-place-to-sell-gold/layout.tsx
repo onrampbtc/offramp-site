@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ArticleJsonLd, BreadcrumbJsonLd, FAQJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Best Place to Sell Gold in 2026: 7 Options Compared | Offramp",
+  title: "Best Place to Sell Gold in 2026: 7 Options Compared",
   description:
     "Where is the best place to sell gold? We compare 7 options including online buyers, pawn shops, jewelers, and coin dealers — with payout percentages, speed, and red flags to avoid.",
   alternates: { canonical: "https://offrampgold.com/blog/best-place-to-sell-gold" },

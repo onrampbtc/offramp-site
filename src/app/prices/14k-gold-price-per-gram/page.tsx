@@ -11,7 +11,9 @@ import { selectRows, isSupabaseConfigured } from "@/lib/supabase";
   Server-rendered, ISR daily; spot from Supabase history with live fallback.
 */
 
-export const revalidate = 86400;
+// 1h: the daily 11:00 UTC spot row must reach the page the same morning,
+// not up to 24h later — "today's price" is the page's core promise.
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: "14k Gold Price Per Gram Today | Melt Value and What Buyers Pay",

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Blog | Offramp",
+  title: "Blog",
   description:
     "Expert insights on selling gold, converting precious metals to Bitcoin, market analysis, and guides to getting the best value for your gold.",
   alternates: { canonical: "https://offrampgold.com/blog" },

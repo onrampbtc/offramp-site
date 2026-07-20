@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ArticleJsonLd, BreadcrumbJsonLd, FAQJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Is Bitcoin the New Gold? What the Data Says in 2026 | Offramp",
+  title: "Is Bitcoin the New Gold? What the Data Says in 2026",
   description:
     "Analyze the 'digital gold' narrative with data. Compare Bitcoin and gold on scarcity, store of value performance, institutional adoption, and correlation. A balanced, evidence-based take.",
   alternates: { canonical: "https://offrampgold.com/blog/is-bitcoin-the-new-gold" },

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ArticleJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Is Now a Good Time to Sell Gold? (March 2026) | Offramp",
+  title: "Is Now a Good Time to Sell Gold? (March 2026)",
   description:
     "Gold prices are near all-time highs in March 2026. Analysis of current market conditions, macro trends, and when selling gold makes financial sense.",
   keywords: [

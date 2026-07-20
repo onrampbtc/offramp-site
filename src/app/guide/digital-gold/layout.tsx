@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ArticleJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Bitcoin: The Digital Gold | Offramp",
+  title: "Bitcoin: The Digital Gold",
   description:
     "Why Bitcoin is called digital gold. Deep comparison of Bitcoin and gold's core properties: fixed supply, resistance to debasement, and no counterparty risk.",
   keywords: [

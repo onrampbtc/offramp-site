@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ArticleJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "How to Sell Gold Jewelry: Step-by-Step Guide | Offramp",
+  title: "How to Sell Gold Jewelry: Step-by-Step Guide",
   description:
     "Learn how to sell gold jewelry for the most money. Identify karat stamps, weigh your pieces, calculate melt value, and choose the best buyer. Step-by-step guide.",
   keywords: [

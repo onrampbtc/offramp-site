@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ArticleJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Bitcoin vs Gold: The Complete Comparison | Offramp",
+  title: "Bitcoin vs Gold: The Complete Comparison",
   description:
     "Bitcoin and gold compared across scarcity, portability, divisibility, durability, and censorship resistance. Learn why owning both is the optimal strategy.",
   keywords: [

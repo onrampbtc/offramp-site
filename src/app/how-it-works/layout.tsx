@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { FAQJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "How It Works: Mail In Gold for Cash | Offramp",
+  title: "How It Works: Mail In Gold for Cash",
   description:
     "Sell gold to Offramp in three steps: request a free insured FedEx kit, mail your gold, and receive a transparent quote based on professional assay and live spot price. Accept and get paid by wire within 48 hours.",
   keywords: [

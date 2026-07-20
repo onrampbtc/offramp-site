@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Sell Dental Gold — Dental Gold Value Calculator | Offramp",
+  title: "Sell Dental Gold — Dental Gold Value Calculator",
   description:
     "Find out what your dental gold is worth and sell it for cash. Free dental gold value calculator for crowns, bridges, and dental scrap. professional assay, insured shipping, fair payouts.",
   alternates: { canonical: "https://offrampgold.com/sell-dental-gold" },

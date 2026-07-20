@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { WebApplicationJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "14K Gold Price Per Gram Today | Live Calculator | Offramp",
+  title: "14K Gold Price Per Gram Today | Live Calculator",
   description:
     "The current 14K gold price per gram is updated live. 14K gold contains 58.3% pure gold. Calculate your 14K gold value instantly with the Offramp calculator.",
   alternates: { canonical: "https://offrampgold.com/calculators/14k" },

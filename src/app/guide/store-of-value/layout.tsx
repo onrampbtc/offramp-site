@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ArticleJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Store of Value: Gold, Bitcoin, and Preserving Wealth | Offramp",
+  title: "Store of Value: Gold, Bitcoin, and Preserving Wealth",
   description:
     "What makes an asset a reliable store of value? Explore the properties of gold and Bitcoin that preserve purchasing power across time and economic cycles.",
   keywords: [

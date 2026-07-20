@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ArticleJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Money Printing: Why Gold and Bitcoin Exist | Offramp",
+  title: "Money Printing: Why Gold and Bitcoin Exist",
   description:
     "How money printing and quantitative easing reduce purchasing power and why hard assets like gold and Bitcoin exist as protection against currency debasement.",
   keywords: [
