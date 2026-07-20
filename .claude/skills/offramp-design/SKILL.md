@@ -7,13 +7,13 @@ description: Master design & brand orchestrator for the Offramp portfolio (offra
 
 Audited stack (see Appendix — every payload security-reviewed 2026-07-09, installed byte-for-byte from pinned commits). This skill doesn't design anything itself; it decides **which specialist leads, what outranks what, and what gates a page before ship.**
 
-## 0. Aesthetic status — OPEN, under active review
+## 0. Aesthetic status — RESOLVED: Verdant (since 2026-07-11)
 
-Estate Paper (BUILD-SPEC §4) is the **incumbent, not the destination**. Michael is unhappy with it and is developing a new brand aesthetic (logo, identity, design system, content look) using this stack. Therefore:
+The review that started 2026-07-09 (Michael unhappy with Estate Paper) concluded 2026-07-11: **Verdant is the production register** — white page ground, estate-paper cards, darkest-hunter panels (#122717/#0E2015), ember-amber live-data accents (#A0490A/#F39F41), green-cast ink. Spec §4 v1.3 is the token source of truth; satellites carry their siblings (gvb = hunter dark room, goldbuyer = light sibling). Therefore:
 
-- Do NOT treat spec §4 tokens or "Estate Paper" as locked or completed. Do not block exploration because "the spec says so."
-- DO treat every candidate direction as a proposal — **only Michael picks the winner.** Never silently restyle live pages to an unchosen direction.
-- Once a direction is chosen: update BUILD-SPEC §4 + CLAUDE.md, run `/impeccable init` to write DESIGN.md from the chosen tokens, then migrate page-by-page.
+- **Refinements only, screenshots first** — no new art-direction explorations unless Michael reopens the question.
+- Any candidate refinement is a proposal — **only Michael approves.** Never silently restyle live pages.
+- Balance law (Uber/TAM lens): the customer is the dusty drawer, not the luxury buyer — never gate warmth behind chique.
 
 **Still binding (business law, not aesthetics):** five content types only · no fabricated proof · copy bans ("unlock the value", "turn clutter into cash", countdowns; "cash out" only at decision moments) · BTC is a differentiator not acquisition · every page names content type + funnel stage · never delete a URL without a 301.
 
